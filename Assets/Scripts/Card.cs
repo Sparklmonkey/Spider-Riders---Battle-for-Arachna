@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -5,17 +6,21 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "Card", menuName = "ScriptableObjects/Card", order = 1)]
 public class Card : ScriptableObject
 {
-    public string cardName;
     public CardType cardType;
     public int buyCost;
     public int sellCost;
 
-    public List<StatType> statModifyList;
-    public List<int> statModifyAmountList;
+    public List<StatModifier> statModifyList;
 
     public string description;
 }
 
+[Serializable]
+public class StatModifier
+{
+    public StatType statType;
+    public int amount;
+}
 public enum CardType
 {
     Boost,
