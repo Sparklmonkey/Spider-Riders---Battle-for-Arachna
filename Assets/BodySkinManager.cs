@@ -6,11 +6,36 @@ using UnityEngine;
 public class BodySkinManager : MonoBehaviour
 {
     [SerializeField]
-    private SVGImage head, shoulderL, shoulderR, foreArmL, foreArmR, upperArmL, upperArmR, fistL, fistR, torso, upperLegL, upperLegR, lowerLegL, lowerLegR;
+    private SVGImage head, torso, lowerLegL, lowerLegR;
     [SerializeField]
     private List<SVGImage> headTones, shoulderTones, foreArmTones, upperArmTones, fistTones, torsoTones, upperLegTones, lowerLegTones;
 
     private int currentToneIndex = 0;
+    public BodyCustomizeManager customizeManager;
+    public SVGImage GetSkinToneForPart(BodyPart part)
+    {
+        switch (part)
+        {
+            case BodyPart.Head:
+                return headTones[currentToneIndex];
+            case BodyPart.Shoulder:
+                return shoulderTones[currentToneIndex];
+            case BodyPart.UpperLeg:
+                return upperLegTones[currentToneIndex];
+            case BodyPart.LowerLeg:
+                return lowerLegTones[currentToneIndex];
+            case BodyPart.UpperArm:
+                return upperArmTones[currentToneIndex];
+            case BodyPart.ForeArm:
+                return foreArmTones[currentToneIndex];
+            case BodyPart.Fist:
+                return fistTones[currentToneIndex];
+            case BodyPart.Torso:
+                return torsoTones[currentToneIndex];
+            default:
+                return torsoTones[currentToneIndex];
+        }
+    }
 
     public void ChangeSkinTone(bool isNext)
     {
@@ -39,20 +64,21 @@ public class BodySkinManager : MonoBehaviour
         }
 
         head.sprite = headTones[colourIndex].sprite;
-        shoulderL.sprite = shoulderTones[colourIndex].sprite;
-        shoulderR.sprite = shoulderTones[colourIndex].sprite;
-        foreArmL.sprite = foreArmTones[colourIndex].sprite;
-        foreArmR.sprite = foreArmTones[colourIndex].sprite;
-        upperArmL.sprite = upperArmTones[colourIndex].sprite;
-        upperArmR.sprite = upperArmTones[colourIndex].sprite;
-        fistL.sprite = fistTones[colourIndex].sprite;
-        fistR.sprite = fistTones[colourIndex].sprite;
         torso.sprite = torsoTones[colourIndex].sprite;
-        upperLegL.sprite = upperLegTones[colourIndex].sprite;
-        upperLegR.sprite = upperLegTones[colourIndex].sprite;
-        lowerLegL.sprite = lowerLegTones[colourIndex].sprite;
-        lowerLegR.sprite = lowerLegTones[colourIndex].sprite;
 
         currentToneIndex = colourIndex;
+        customizeManager.UpdateArmourSets();
     }
+}
+
+public enum BodyPart
+{
+    Head,
+    Shoulder,
+    UpperLeg,
+    LowerLeg,
+    UpperArm,
+    ForeArm,
+    Fist,
+        Torso
 }

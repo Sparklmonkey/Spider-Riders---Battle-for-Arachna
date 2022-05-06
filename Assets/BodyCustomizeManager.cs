@@ -6,18 +6,32 @@ using UnityEngine;
 public class BodyCustomizeManager : MonoBehaviour
 {
     [SerializeField]
-    private SVGImage eyes, torso, shoulderL, shoulderR, upperArmL, upperArmR, foreArmL, foreArmR, fistL, fistR;
+    private SVGImage eyes;
+    [SerializeField]
+    private List<UpperBodySetup> upperBodySets;
+    [SerializeField]
+    private List<LowerBodySetup> lowerBodySets;
     [SerializeField]
     private List<SVGImage> eyeOptions;
     [SerializeField]
-    private List<UpperBodySet> upperBodySets;
-    [SerializeField]
     private List<GameObject> hairOptions;
-    private int eyeIndex, hairIndex, upperBodyindex, armourIndex;
+    private int eyeIndex, hairIndex, upperBodyindex, armourIndex, lowerBodyindex;
     private bool isArmourOn;
     
+
     public void ChangeArmour(bool isNext)
     {
+        if (armourIndex == 0)
+        {
+            upperBodySets[upperBodyindex].gameObject.SetActive(false);
+            lowerBodySets[lowerBodyindex].gameObject.SetActive(false);
+        }
+        else
+        {
+            upperBodySets[armourIndex + 3].gameObject.SetActive(false);
+            lowerBodySets[armourIndex + 3].gameObject.SetActive(false);
+        }
+
         if (isNext)
         {
             if (armourIndex + 1 == 7)
@@ -40,10 +54,34 @@ public class BodyCustomizeManager : MonoBehaviour
                 armourIndex -= 1;
             }
         }
+
+
+        if (armourIndex == 0)
+        {
+            upperBodySets[upperBodyindex].gameObject.SetActive(true);
+            lowerBodySets[lowerBodyindex].gameObject.SetActive(true);
+        }
+        else
+        {
+            upperBodySets[armourIndex + 3].gameObject.SetActive(true);
+            lowerBodySets[armourIndex + 3].gameObject.SetActive(true);
+            upperBodySets[armourIndex + 3].SetupUpperBodyArmour(upperBodyindex);
+            lowerBodySets[armourIndex + 3].SetupLowerBodyArmour(lowerBodyindex);
+        }
     }
 
     public void ChangeUpperBody(bool isNext)
     {
+
+        if (armourIndex == 0)
+        {
+            upperBodySets[upperBodyindex].gameObject.SetActive(false);
+        }
+        else
+        {
+            upperBodySets[armourIndex + 3].gameObject.SetActive(false);
+        }
+
         if (isNext)
         {
             if (upperBodyindex + 1 == 4)
@@ -67,53 +105,81 @@ public class BodyCustomizeManager : MonoBehaviour
             }
         }
 
-        torso.gameObject.SetActive(false);
-        shoulderL.gameObject.SetActive(false);
-        shoulderR.gameObject.SetActive(false);
-        upperArmL.gameObject.SetActive(false);
-        upperArmR.gameObject.SetActive(false);
-        foreArmL.gameObject.SetActive(false);
-        foreArmR.gameObject.SetActive(false);
-        fistL.gameObject.SetActive(false);
-        fistR.gameObject.SetActive(false);
 
-        if (upperBodySets[isArmourOn ? upperBodyindex : upperBodyindex + (armourIndex * 4)].torsoArmour != null)
+        if (armourIndex == 0)
         {
-            torso.gameObject.SetActive(true);
-            torso.sprite = upperBodySets[isArmourOn ? upperBodyindex : upperBodyindex + (armourIndex * 4)].torsoArmour.sprite;
+            upperBodySets[upperBodyindex].gameObject.SetActive(true);
+            upperBodySets[upperBodyindex].SetupUpperBodyArmour(0);
+        }
+        else
+        {
+            upperBodySets[armourIndex + 3].gameObject.SetActive(true);
+            upperBodySets[armourIndex + 3].SetupUpperBodyArmour(upperBodyindex);
+        }
+    }
+
+    public void ChangeLowerBody(bool isNext)
+    {
+
+        if (armourIndex == 0)
+        {
+            lowerBodySets[lowerBodyindex].gameObject.SetActive(false);
+        }
+        else
+        {
+            lowerBodySets[armourIndex + 3].gameObject.SetActive(false);
         }
 
-        if (upperBodySets[isArmourOn ? upperBodyindex : upperBodyindex + (armourIndex * 4)].shoulderArmour != null)
+        if (isNext)
         {
-            shoulderL.gameObject.SetActive(true);
-            shoulderR.gameObject.SetActive(true);
-            shoulderL.sprite = upperBodySets[isArmourOn ? upperBodyindex : upperBodyindex + (armourIndex * 4)].shoulderArmour.sprite;
-            shoulderR.sprite = upperBodySets[isArmourOn ? upperBodyindex : upperBodyindex + (armourIndex * 4)].shoulderArmour.sprite;
+            if (lowerBodyindex + 1 == 4)
+            {
+                lowerBodyindex = 0;
+            }
+            else
+            {
+                lowerBodyindex += 1;
+            }
+        }
+        else
+        {
+            if (lowerBodyindex - 1 < 0)
+            {
+                lowerBodyindex = 3;
+            }
+            else
+            {
+                lowerBodyindex -= 1;
+            }
         }
 
-        if (upperBodySets[isArmourOn ? upperBodyindex : upperBodyindex + (armourIndex * 4)].upperArmArmour != null)
+
+        if (armourIndex == 0)
         {
-            upperArmL.gameObject.SetActive(true);
-            upperArmR.gameObject.SetActive(true);
-            upperArmL.sprite = upperBodySets[isArmourOn ? upperBodyindex : upperBodyindex + (armourIndex * 4)].upperArmArmour.sprite;
-            upperArmR.sprite = upperBodySets[isArmourOn ? upperBodyindex : upperBodyindex + (armourIndex * 4)].upperArmArmour.sprite;
+            lowerBodySets[lowerBodyindex].gameObject.SetActive(true);
+            lowerBodySets[lowerBodyindex].SetupLowerBodyArmour(0);
+        }
+        else
+        {
+            lowerBodySets[armourIndex + 3].gameObject.SetActive(true);
+            lowerBodySets[armourIndex + 3].SetupLowerBodyArmour(lowerBodyindex);
+        }
+    }
+
+    public void UpdateArmourSets()
+    {
+
+        if (armourIndex == 0)
+        {
+            lowerBodySets[lowerBodyindex].SetupLowerBodyArmour(0);
+            upperBodySets[upperBodyindex].SetupUpperBodyArmour(0);
+        }
+        else
+        {
+            lowerBodySets[armourIndex + 3].SetupLowerBodyArmour(lowerBodyindex);
+            upperBodySets[armourIndex + 3].SetupUpperBodyArmour(upperBodyindex);
         }
 
-        if (upperBodySets[isArmourOn ? upperBodyindex : upperBodyindex + (armourIndex * 4)].foreArmArmour != null)
-        {
-            foreArmL.gameObject.SetActive(true);
-            foreArmR.gameObject.SetActive(true);
-            foreArmL.sprite = upperBodySets[isArmourOn ? upperBodyindex : upperBodyindex + (armourIndex * 4)].foreArmArmour.sprite;
-            foreArmR.sprite = upperBodySets[isArmourOn ? upperBodyindex : upperBodyindex + (armourIndex * 4)].foreArmArmour.sprite;
-        }
-
-        if (upperBodySets[isArmourOn ? upperBodyindex : upperBodyindex + (armourIndex * 4)].fistArmour != null)
-        {
-            fistL.gameObject.SetActive(true);
-            fistR.gameObject.SetActive(true);
-            fistL.sprite = upperBodySets[isArmourOn ? upperBodyindex : upperBodyindex + (armourIndex * 4)].fistArmour.sprite;
-            fistR.sprite = upperBodySets[isArmourOn ? upperBodyindex : upperBodyindex + (armourIndex * 4)].fistArmour.sprite;
-        }
     }
 
     public void ChangeEyes(bool isNext)
