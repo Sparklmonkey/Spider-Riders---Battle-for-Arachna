@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b1c954b389178064f8889d63d3820d13, type: 3}
+  m_Name: Set_11
+  m_EditorClassIdentifier: 
+  torsoArmour: {fileID: -2304375700400688866, guid: cd0b81535904d6e4693ede8ee75ecb72, type: 3}
+  shoulderArmour: {fileID: -2304375700400688866, guid: f2766d709b0e89b419c109a9aac8760e, type: 3}
+  upperArmArmour: {fileID: 0}
+  foreArmArmour: {fileID: -2304375700400688866, guid: f2740f897eb70324e80f1cd38b5d5845, type: 3}
+  fistArmour: {fileID: 0}

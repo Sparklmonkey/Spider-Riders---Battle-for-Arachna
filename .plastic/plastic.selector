@@ -1,0 +1,4 @@
+repository "Spider Riders - Battle for Arachna@Sparklmonkey@cloud"
+  path "/"
+    br "/main"
+    co "/main"
