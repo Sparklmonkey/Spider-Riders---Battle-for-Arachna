@@ -3,6 +3,7 @@
 // This software may be modified and distributed under the terms
 // of the zlib license.  See the LICENSE file for details.
 
+using SpriterDotNetUnity;
 using System.Collections.Generic;
 
 namespace SpriterDotNet
@@ -42,7 +43,7 @@ namespace SpriterDotNet
         /// <summary>
         /// Applies the provided character map.
         /// </summary>
-        void PushCharMap(SpriterCharacterMap charMap);
+        void PushCharMap(SpriterCharacterMap charMap, UnityAnimator animator);
 
         /// <summary>
         /// Removes the top character map.

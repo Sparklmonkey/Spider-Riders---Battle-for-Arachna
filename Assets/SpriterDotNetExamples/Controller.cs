@@ -37,19 +37,19 @@ public class Controller : MonoBehaviour
             animator.EventTriggered += e => Debug.Log("Event Triggered. Source: " + animator.CurrentAnimation.Name + ". Value: " + e);
         }
 
-        if (GetAxisDownPositive("Vertical")) PushCharacterMap();
-        if (GetAxisDownNegative("Vertical")) animator.SpriteProvider.PopCharMap();
-        if (Input.GetButtonDown("Jump")) ReverseAnimation();
-        if (GetAxisDownPositive("Horizontal")) Transition(1);
-        if (GetAxisDownNegative("Horizontal")) Transition(-1);
-        if (Input.GetButtonDown("Fire1")) SwitchAnimation(1);
-        if (Input.GetButtonDown("Fire2")) SwitchAnimation(-1);
-        if (Input.GetButtonDown("Cancel")) PushCharacterMap();
+        //if (GetAxisDownPositive("Vertical")) PushCharacterMap();
+        //if (GetAxisDownNegative("Vertical")) animator.SpriteProvider.PopCharMap();
+        //if (Input.GetButtonDown("Jump")) ReverseAnimation();
+        //if (GetAxisDownPositive("Horizontal")) Transition(1);
+        //if (GetAxisDownNegative("Horizontal")) Transition(-1);
+        //if (Input.GetButtonDown("Fire1")) SwitchAnimation(1);
+        //if (Input.GetButtonDown("Fire2")) SwitchAnimation(-1);
+        //if (Input.GetButtonDown("Cancel")) PushCharacterMap();
 
-        float speed = Math.Sign(Input.GetAxis("Mouse ScrollWheel")) * DeltaSpeed;
-        ChangeAnimationSpeed(speed);
+        //float speed = Math.Sign(Input.GetAxis("Mouse ScrollWheel")) * DeltaSpeed;
+        //ChangeAnimationSpeed(speed);
 
-        animator.Speed = AnimatorSpeed;
+        //animator.Speed = AnimatorSpeed;
     }
 
     private void OnGUI()
@@ -93,7 +93,7 @@ public class Controller : MonoBehaviour
             else charMap = maps[index];
         }
 
-        if (charMap != null) animator.SpriteProvider.PushCharMap(charMap);
+        if (charMap != null) animator.SpriteProvider.PushCharMap(charMap, animator);
     }
     public void ChangeCharacterMap(int mapIndex, string mapNamePop)
     {
@@ -106,36 +106,33 @@ public class Controller : MonoBehaviour
             if (mapIndex >= maps.Length) charMap = null;
             else charMap = maps[mapIndex];
         }
-        animator.SpriteProvider.PushCharMap(charMap);
+        animator.SpriteProvider.PushCharMap(charMap, animator);
     }
+
+    private string currentHair = "Hair_0";
+    private string currentEyes = "Eyes_0";
+    private string currentSkin = "Tone_0";
+    private string currentUpperArmour = "UpperArmour0_Set0";
+    private string currentLowerArmour = "LowerArmour0_Set0";
 
     public void ChangeCharacterMap(SpriteMapType mapType, int mapIndex)
     {
         switch (mapType)
         {
             case SpriteMapType.Hair:
-                animator.SpriteProvider.PopCharMap("Hair_0");
-                animator.SpriteProvider.PopCharMap("Hair_1");
-                animator.SpriteProvider.PopCharMap("Hair_2");
-                animator.SpriteProvider.PopCharMap("Hair_3");
-
-                animator.SpriteProvider.PushCharMap(GetMapWithName($"Hair_{mapIndex}"));
+                animator.SpriteProvider.PopCharMap(currentHair);
+                currentHair = $"Hair_{mapIndex}";
+                animator.SpriteProvider.PushCharMap(GetMapWithName(currentHair), animator);
                 break;
             case SpriteMapType.Eyes:
-                animator.SpriteProvider.PopCharMap("Eyes_0");
-                animator.SpriteProvider.PopCharMap("Eyes_1");
-                animator.SpriteProvider.PopCharMap("Eyes_2");
-                animator.SpriteProvider.PopCharMap("Eyes_3");
-
-                animator.SpriteProvider.PushCharMap(GetMapWithName($"Eyes_{mapIndex}"));
+                animator.SpriteProvider.PopCharMap(currentEyes);
+                currentEyes = $"Eyes_{mapIndex}";
+                animator.SpriteProvider.PushCharMap(GetMapWithName(currentEyes), animator);
                 break;
             case SpriteMapType.Skin:
-                animator.SpriteProvider.PopCharMap("Tone_0");
-                animator.SpriteProvider.PopCharMap("Tone_1");
-                animator.SpriteProvider.PopCharMap("Tone_2");
-                animator.SpriteProvider.PopCharMap("Tone_3");
-
-                animator.SpriteProvider.PushCharMap(GetMapWithName($"Tone_{mapIndex}"));
+                animator.SpriteProvider.PopCharMap(currentSkin);
+                currentSkin = $"Tone_{mapIndex}";
+                animator.SpriteProvider.PushCharMap(GetMapWithName(currentSkin), animator);
                 break;
             case SpriteMapType.UpperArmour:
                 break;
@@ -144,6 +141,7 @@ public class Controller : MonoBehaviour
             default:
                 break;
         }
+        //animator.UpdatePivotPoints();
     }
 
     private SpriterCharacterMap GetMapWithName(string name)

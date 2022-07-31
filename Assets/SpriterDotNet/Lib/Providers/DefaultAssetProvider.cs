@@ -4,6 +4,7 @@
 // of the zlib license.  See the LICENSE file for details.
 
 using SpriterDotNet.Helpers;
+using SpriterDotNetUnity;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -69,10 +70,11 @@ namespace SpriterDotNet.Providers
             if (SwappedAssets.ContainsKey(original)) SwappedAssets.Remove(original);
         }
 
-        public virtual void PushCharMap(SpriterCharacterMap charMap)
+        public virtual void PushCharMap(SpriterCharacterMap charMap, UnityAnimator animator)
         {
             ApplyCharMap(charMap);
             CharMaps.Push(charMap);
+            animator.UpdatePivotPoints();
         }
 
         public virtual void PopCharMap()

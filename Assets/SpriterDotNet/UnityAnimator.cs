@@ -37,6 +37,34 @@ namespace SpriterDotNetUnity
             }
         }
 
+        public void UpdatePivotPoints()
+        {
+            for (int i = 0; i < renderers.Length; ++i)
+            {
+                GameObject child = childData.Sprites[i];
+                GameObject pivot = childData.SpritePivots[i];
+                Transform childTransform = childData.SpriteTransforms[i];
+                Transform pivotTransform = childData.SpritePivotTransforms[i];
+                Sprite sprite = renderers[i].sprite;
+                float ppu = sprite.pixelsPerUnit;
+                Vector3 size = sprite.bounds.size;
+                float spritePivotX = sprite.pivot.x / ppu / size.x;
+                float spritePivotY = sprite.pivot.y / ppu / size.y;
+
+                SpriterObject info = FrameData.SpriteData[i];
+                float deltaX = (spritePivotX - info.PivotX) * size.x * info.ScaleX;
+                float deltaY = (spritePivotY - info.PivotY) * size.y * info.ScaleY;
+
+                Color c = renderers[i].color;
+                renderers[i].color = new Color(c.r, c.g, c.b, info.Alpha);
+
+                pivot.transform.localEulerAngles = new Vector3(0, 0, info.Angle);
+                pivot.transform.localPosition = new Vector3(info.X / ppu, info.Y / ppu, 0);
+                child.transform.localPosition = new Vector3(deltaX, deltaY, childTransform.localPosition.z);
+                child.transform.localScale = new Vector3(info.ScaleX, info.ScaleY, 1);
+            }
+        }
+
         protected override void Animate(float deltaTime)
         {
             index = 0;
