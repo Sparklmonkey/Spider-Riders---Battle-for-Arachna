@@ -10,4 +10,5 @@ public class PlayerData : ScriptableObject
     public List<Card> deckB;
     public List<Card> deckC;
     public List<Card> cardInventory;
+    public List<string> itemInventory;
 }

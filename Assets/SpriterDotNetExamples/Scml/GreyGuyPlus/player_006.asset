@@ -20536,7 +20536,7 @@ MonoBehaviour:
   - FolderId: 0
     FileId: 5
     Sprite: {fileID: 0}
-    Sound: {fileID: 0}
+    Sound: {fileID: 8300000, guid: 9e95f404f4fff0e47bd78f3f7a4088cd, type: 3}
   - FolderId: 1
     FileId: 0
     Sprite: {fileID: 21300000, guid: f5429c9018bb49c479703d918f89240e, type: 3}
