@@ -1,0 +1,1230 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5bf7c34a0dc4e6348bea04faa70406ee, type: 3}
+  m_Name: FemaleSpriteLibrary
+  m_EditorClassIdentifier: 
+  m_Labels:
+  - m_Name: Face
+    m_Hash: -1524181927
+    m_CategoryList:
+    - m_Name: Face_0
+      m_Hash: -1327221186
+      m_Sprite: {fileID: 21300000, guid: 3d5af97a4c1424e6080701f90c3c4df7, type: 3}
+    - m_Name: Face_1
+      m_Hash: -941422936
+      m_Sprite: {fileID: 21300000, guid: 4118f6757d60144e2978b94f71232f85, type: 3}
+    - m_Name: Face_2
+      m_Hash: 1592416018
+      m_Sprite: {fileID: 21300000, guid: 2b0994c8391bd4eb387c72e0c3737ef5, type: 3}
+    - m_Name: Face_3
+      m_Hash: 703424388
+      m_Sprite: {fileID: 21300000, guid: 88ef275c9a43b45ef9308196cc0dd3ae, type: 3}
+  - m_Name: Eyes
+    m_Hash: 120101800
+    m_CategoryList:
+    - m_Name: Eyes_0
+      m_Hash: 1528830157
+      m_Sprite: {fileID: 21300000, guid: 131c28d31a496ba45ad7de21d5b95c43, type: 3}
+    - m_Name: Eyes_1
+      m_Hash: 740763739
+      m_Sprite: {fileID: 21300000, guid: be608a29fb25c5f4d99268e9b6023bc5, type: 3}
+    - m_Name: Eyes_2
+      m_Hash: -1255245343
+      m_Sprite: {fileID: 21300000, guid: 1323d2562efd33b4aa70c7022c6c6bbf, type: 3}
+    - m_Name: Eyes_4
+      m_Hash: 1548606676
+      m_Sprite: {fileID: 21300000, guid: 6818dc8075688024b9859b71be5d92e3, type: 3}
+  - m_Name: Hair
+    m_Hash: 1019596327
+    m_CategoryList:
+    - m_Name: Hair_0
+      m_Hash: -63307041
+      m_Sprite: {fileID: 21300000, guid: 3e5074f2df4d7404b847c9ae4260eb16, type: 3}
+    - m_Name: Hair_1
+      m_Hash: -1958923703
+      m_Sprite: {fileID: 21300000, guid: a45cacc3a97a34e2cbe278f80107c44a, type: 3}
+    - m_Name: Hair_2
+      m_Hash: 305423347
+      m_Sprite: {fileID: 21300000, guid: 3619d721e56564731b91d5ca99c3deec, type: 3}
+    - m_Name: Hair_3
+      m_Hash: 1697862501
+      m_Sprite: {fileID: 21300000, guid: f35e5dafbe8d54937b11d9a827eac47f, type: 3}
+  - m_Name: ShoulderSkin
+    m_Hash: -530183951
+    m_CategoryList:
+    - m_Name: ShoulderSkin_0
+      m_Hash: 1499454304
+      m_Sprite: {fileID: 21300000, guid: bfd646b76570d4f979ab8f3a9a9dd074, type: 3}
+    - m_Name: ShoulderSkin_1
+      m_Hash: 777579510
+      m_Sprite: {fileID: 21300000, guid: 7562583fd3d324b5d8c4709e88ed39f2, type: 3}
+    - m_Name: ShoulderSkin_2
+      m_Hash: -1219380660
+      m_Sprite: {fileID: 21300000, guid: 8fc3829d9c32d4372a78ad41864be6b7, type: 3}
+    - m_Name: ShoulderSkin_3
+      m_Hash: -1068070182
+      m_Sprite: {fileID: 21300000, guid: d29b71b935ad7443a82f03d8186b8aa8, type: 3}
+  - m_Name: UpperArmSkin
+    m_Hash: 1776031705
+    m_CategoryList:
+    - m_Name: UpperArmSkin_0
+      m_Hash: -1995771515
+      m_Sprite: {fileID: 21300000, guid: 21043fa08c80a401283a7752dcde6214, type: 3}
+    - m_Name: UpperArmSkin_1
+      m_Hash: -32653037
+      m_Sprite: {fileID: 21300000, guid: e7beeeb314b0d4f12868288faa530da6, type: 3}
+    - m_Name: UpperArmSkin_2
+      m_Hash: 1728352425
+      m_Sprite: {fileID: 21300000, guid: 00642d4bae73c46fea29935148e24725, type: 3}
+    - m_Name: UpperArmSkin_3
+      m_Hash: 268673087
+      m_Sprite: {fileID: 21300000, guid: 90e612ef72aae4dcb8683e25c2758755, type: 3}
+  - m_Name: ForeArmSkin
+    m_Hash: 1978860022
+    m_CategoryList:
+    - m_Name: ForeArmSkin_0
+      m_Hash: 1875009686
+      m_Sprite: {fileID: 21300000, guid: 3b6a567bb943e4e69ba97c81cee18f69, type: 3}
+    - m_Name: ForeArmSkin_1
+      m_Hash: 415584256
+      m_Sprite: {fileID: 21300000, guid: a21eeffc5e047487da5d255e9ebb44ed, type: 3}
+    - m_Name: ForeArmSkin_2
+      m_Hash: -2117336646
+      m_Sprite: {fileID: 21300000, guid: 077bd96561751485894b4922fcc2c85c, type: 3}
+    - m_Name: ForeArmSkin_3
+      m_Hash: -154455764
+      m_Sprite: {fileID: 21300000, guid: 7649a41dba64a4b04a3a7d2de5b78e5d, type: 3}
+  - m_Name: FistSkin
+    m_Hash: -1776993175
+    m_CategoryList:
+    - m_Name: FistSkin_0
+      m_Hash: -1049405004
+      m_Sprite: {fileID: 21300000, guid: c8dc92e9809e64cf4974aa439e0644f6, type: 3}
+    - m_Name: FistSkin_1
+      m_Hash: -1233884894
+      m_Sprite: {fileID: 21300000, guid: 3e45f523f50b5476fbe3aa76e37b18e2, type: 3}
+    - m_Name: FistSkin_2
+      m_Hash: 796735640
+      m_Sprite: {fileID: 21300000, guid: a52c17a832f1f4267b46900cae9ac903, type: 3}
+    - m_Name: FistSkin_3
+      m_Hash: 1484392462
+      m_Sprite: {fileID: 21300000, guid: b05721350a28c42e89bf0b5092b889e5, type: 3}
+  - m_Name: TorsoSkin
+    m_Hash: -1370427378
+    m_CategoryList:
+    - m_Name: TorsoSkin_0
+      m_Hash: 2031948298
+      m_Sprite: {fileID: 21300000, guid: 9fe5a72084f8b410c96ab509dd147ab8, type: 3}
+    - m_Name: TorsoSkin_1
+      m_Hash: 236593820
+      m_Sprite: {fileID: 21300000, guid: 46f135800ec1a4cf09a54a0029d42714, type: 3}
+    - m_Name: TorsoSkin_2
+      m_Hash: -1760333018
+      m_Sprite: {fileID: 21300000, guid: e112ac8c12dc6420ea1301a1e299504d, type: 3}
+    - m_Name: TorsoSkin_3
+      m_Hash: -535542864
+      m_Sprite: {fileID: 21300000, guid: df197887ce23944eba73b2052076d6a3, type: 3}
+  - m_Name: LowerLegSkin
+    m_Hash: 302751874
+    m_CategoryList:
+    - m_Name: LowerLegSkin_0
+      m_Hash: -2059392798
+      m_Sprite: {fileID: 21300000, guid: a42c01a28486a4e7dbb51e3cd1e03273, type: 3}
+    - m_Name: LowerLegSkin_1
+      m_Hash: -230221708
+      m_Sprite: {fileID: 21300000, guid: 1420dd8df322b4a9799a0b5ba5687bc3, type: 3}
+    - m_Name: LowerLegSkin_2
+      m_Hash: 1800292814
+      m_Sprite: {fileID: 21300000, guid: 255afd9f8f84c456f85ee7f14868b46a, type: 3}
+    - m_Name: LowerLegSkin_3
+      m_Hash: 474577240
+      m_Sprite: {fileID: 21300000, guid: 66cf296b93b5d4c628170129505a5544, type: 3}
+  - m_Name: ShoeL
+    m_Hash: 1667793838
+    m_CategoryList:
+    - m_Name: ShoeL_0
+      m_Hash: 504775517
+      m_Sprite: {fileID: 21300000, guid: 4c39bd352f48e4b7eb0c6b18b01fd5a5, type: 3}
+    - m_Name: ShoeL_1
+      m_Hash: 1762751435
+      m_Sprite: {fileID: 21300000, guid: 4c39bd352f48e4b7eb0c6b18b01fd5a5, type: 3}
+    - m_Name: ShoeL_2
+      m_Hash: -266853775
+      m_Sprite: {fileID: 21300000, guid: 4c39bd352f48e4b7eb0c6b18b01fd5a5, type: 3}
+    - m_Name: ShoeL_3
+      m_Hash: -2028006681
+      m_Sprite: {fileID: 21300000, guid: 4c39bd352f48e4b7eb0c6b18b01fd5a5, type: 3}
+    - m_Name: ShoeL_4
+      m_Hash: 427525956
+      m_Sprite: {fileID: 21300000, guid: 48e6d6e32a7834e4f929315702cc6a6b, type: 3}
+    - m_Name: ShoeL_5
+      m_Hash: 1853667282
+      m_Sprite: {fileID: 21300000, guid: 48e6d6e32a7834e4f929315702cc6a6b, type: 3}
+    - m_Name: ShoeL_6
+      m_Hash: -143268248
+      m_Sprite: {fileID: 21300000, guid: 48e6d6e32a7834e4f929315702cc6a6b, type: 3}
+    - m_Name: ShoeL_7
+      m_Hash: -2139957506
+      m_Sprite: {fileID: 21300000, guid: 48e6d6e32a7834e4f929315702cc6a6b, type: 3}
+    - m_Name: ShoeL_8
+      m_Hash: 281922415
+      m_Sprite: {fileID: 21300000, guid: 4c39bd352f48e4b7eb0c6b18b01fd5a5, type: 3}
+    - m_Name: ShoeL_9
+      m_Hash: 1741356025
+      m_Sprite: {fileID: 21300000, guid: 4c39bd352f48e4b7eb0c6b18b01fd5a5, type: 3}
+    - m_Name: ShoeL_10
+      m_Hash: -133900950
+      m_Sprite: {fileID: 21300000, guid: 4c39bd352f48e4b7eb0c6b18b01fd5a5, type: 3}
+    - m_Name: ShoeL_11
+      m_Hash: -1895569924
+      m_Sprite: {fileID: 21300000, guid: 4c39bd352f48e4b7eb0c6b18b01fd5a5, type: 3}
+    - m_Name: ShoeL_12
+      m_Hash: 369800262
+      m_Sprite: {fileID: 21300000, guid: 48e6d6e32a7834e4f929315702cc6a6b, type: 3}
+    - m_Name: ShoeL_13
+      m_Hash: 1628275920
+      m_Sprite: {fileID: 21300000, guid: 48e6d6e32a7834e4f929315702cc6a6b, type: 3}
+    - m_Name: ShoeL_14
+      m_Hash: -26668685
+      m_Sprite: {fileID: 21300000, guid: 48e6d6e32a7834e4f929315702cc6a6b, type: 3}
+    - m_Name: ShoeL_15
+      m_Hash: -2006048283
+      m_Sprite: {fileID: 21300000, guid: 48e6d6e32a7834e4f929315702cc6a6b, type: 3}
+    - m_Name: ShoeL_16
+      m_Hash: 291991647
+      m_Sprite: {fileID: 21300000, guid: 4c39bd352f48e4b7eb0c6b18b01fd5a5, type: 3}
+    - m_Name: ShoeL_17
+      m_Hash: 1717584073
+      m_Sprite: {fileID: 21300000, guid: 4c39bd352f48e4b7eb0c6b18b01fd5a5, type: 3}
+    - m_Name: ShoeL_18
+      m_Hash: -153133736
+      m_Sprite: {fileID: 21300000, guid: 4c39bd352f48e4b7eb0c6b18b01fd5a5, type: 3}
+    - m_Name: ShoeL_19
+      m_Hash: -2116522546
+      m_Sprite: {fileID: 21300000, guid: 4c39bd352f48e4b7eb0c6b18b01fd5a5, type: 3}
+    - m_Name: ShoeL_20
+      m_Hash: -752253271
+      m_Sprite: {fileID: 21300000, guid: 48e6d6e32a7834e4f929315702cc6a6b, type: 3}
+    - m_Name: ShoeL_21
+      m_Hash: -1540442561
+      m_Sprite: {fileID: 21300000, guid: 48e6d6e32a7834e4f929315702cc6a6b, type: 3}
+    - m_Name: ShoeL_22
+      m_Hash: 1026025349
+      m_Sprite: {fileID: 21300000, guid: 48e6d6e32a7834e4f929315702cc6a6b, type: 3}
+    - m_Name: ShoeL_23
+      m_Hash: 1243666195
+      m_Sprite: {fileID: 21300000, guid: 48e6d6e32a7834e4f929315702cc6a6b, type: 3}
+    - m_Name: ShoeL_24
+      m_Hash: -733723984
+      m_Sprite: {fileID: 21300000, guid: 4c39bd352f48e4b7eb0c6b18b01fd5a5, type: 3}
+    - m_Name: ShoeL_25
+      m_Hash: -1555860954
+      m_Sprite: {fileID: 21300000, guid: 4c39bd352f48e4b7eb0c6b18b01fd5a5, type: 3}
+    - m_Name: ShoeL_26
+      m_Hash: 977937308
+      m_Sprite: {fileID: 21300000, guid: 4c39bd352f48e4b7eb0c6b18b01fd5a5, type: 3}
+    - m_Name: ShoeL_27
+      m_Hash: 1296896778
+      m_Sprite: {fileID: 21300000, guid: 4c39bd352f48e4b7eb0c6b18b01fd5a5, type: 3}
+  - m_Name: ShoeR
+    m_Hash: -1721254195
+    m_CategoryList:
+    - m_Name: ShoeR_0
+      m_Hash: 145673511
+      m_Sprite: {fileID: 21300000, guid: 4c39bd352f48e4b7eb0c6b18b01fd5a5, type: 3}
+    - m_Name: ShoeR_1
+      m_Hash: 2141846961
+      m_Sprite: {fileID: 21300000, guid: 4c39bd352f48e4b7eb0c6b18b01fd5a5, type: 3}
+    - m_Name: ShoeR_2
+      m_Hash: -425677813
+      m_Sprite: {fileID: 21300000, guid: 4c39bd352f48e4b7eb0c6b18b01fd5a5, type: 3}
+    - m_Name: ShoeR_3
+      m_Hash: -1851286371
+      m_Sprite: {fileID: 21300000, guid: 4c39bd352f48e4b7eb0c6b18b01fd5a5, type: 3}
+    - m_Name: ShoeR_4
+      m_Hash: 264440126
+      m_Sprite: {fileID: 21300000, guid: 48e6d6e32a7834e4f929315702cc6a6b, type: 3}
+    - m_Name: ShoeR_5
+      m_Hash: 2026125736
+      m_Sprite: {fileID: 21300000, guid: 48e6d6e32a7834e4f929315702cc6a6b, type: 3}
+    - m_Name: ShoeR_6
+      m_Hash: -506632174
+      m_Sprite: {fileID: 21300000, guid: 48e6d6e32a7834e4f929315702cc6a6b, type: 3}
+    - m_Name: ShoeR_7
+      m_Hash: -1765123964
+      m_Sprite: {fileID: 21300000, guid: 48e6d6e32a7834e4f929315702cc6a6b, type: 3}
+    - m_Name: ShoeR_8
+      m_Hash: 108348693
+      m_Sprite: {fileID: 21300000, guid: 4c39bd352f48e4b7eb0c6b18b01fd5a5, type: 3}
+    - m_Name: ShoeR_9
+      m_Hash: 1903326595
+      m_Sprite: {fileID: 21300000, guid: 4c39bd352f48e4b7eb0c6b18b01fd5a5, type: 3}
+    - m_Name: ShoeR_10
+      m_Hash: 1220736454
+      m_Sprite: {fileID: 21300000, guid: 4c39bd352f48e4b7eb0c6b18b01fd5a5, type: 3}
+    - m_Name: ShoeR_11
+      m_Hash: 1069925712
+      m_Sprite: {fileID: 21300000, guid: 4c39bd352f48e4b7eb0c6b18b01fd5a5, type: 3}
+    - m_Name: ShoeR_12
+      m_Hash: -1496541974
+      m_Sprite: {fileID: 21300000, guid: 48e6d6e32a7834e4f929315702cc6a6b, type: 3}
+    - m_Name: ShoeR_13
+      m_Hash: -775183236
+      m_Sprite: {fileID: 21300000, guid: 48e6d6e32a7834e4f929315702cc6a6b, type: 3}
+    - m_Name: ShoeR_14
+      m_Hash: 1336881631
+      m_Sprite: {fileID: 21300000, guid: 48e6d6e32a7834e4f929315702cc6a6b, type: 3}
+    - m_Name: ShoeR_15
+      m_Hash: 950534473
+      m_Sprite: {fileID: 21300000, guid: 48e6d6e32a7834e4f929315702cc6a6b, type: 3}
+    - m_Name: ShoeR_16
+      m_Hash: -1583263501
+      m_Sprite: {fileID: 21300000, guid: 4c39bd352f48e4b7eb0c6b18b01fd5a5, type: 3}
+    - m_Name: ShoeR_17
+      m_Hash: -693739419
+      m_Sprite: {fileID: 21300000, guid: 4c39bd352f48e4b7eb0c6b18b01fd5a5, type: 3}
+    - m_Name: ShoeR_18
+      m_Hash: 1176075764
+      m_Sprite: {fileID: 21300000, guid: 4c39bd352f48e4b7eb0c6b18b01fd5a5, type: 3}
+    - m_Name: ShoeR_19
+      m_Hash: 824069474
+      m_Sprite: {fileID: 21300000, guid: 4c39bd352f48e4b7eb0c6b18b01fd5a5, type: 3}
+    - m_Name: ShoeR_20
+      m_Hash: 1676649989
+      m_Sprite: {fileID: 21300000, guid: 48e6d6e32a7834e4f929315702cc6a6b, type: 3}
+    - m_Name: ShoeR_21
+      m_Hash: 350787219
+      m_Sprite: {fileID: 21300000, guid: 48e6d6e32a7834e4f929315702cc6a6b, type: 3}
+    - m_Name: ShoeR_22
+      m_Hash: -1914583255
+      m_Sprite: {fileID: 21300000, guid: 48e6d6e32a7834e4f929315702cc6a6b, type: 3}
+    - m_Name: ShoeR_23
+      m_Hash: -85526593
+      m_Sprite: {fileID: 21300000, guid: 48e6d6e32a7834e4f929315702cc6a6b, type: 3}
+    - m_Name: ShoeR_24
+      m_Hash: 1686266396
+      m_Sprite: {fileID: 21300000, guid: 4c39bd352f48e4b7eb0c6b18b01fd5a5, type: 3}
+    - m_Name: ShoeR_25
+      m_Hash: 327504522
+      m_Sprite: {fileID: 21300000, guid: 4c39bd352f48e4b7eb0c6b18b01fd5a5, type: 3}
+    - m_Name: ShoeR_26
+      m_Hash: -1970535632
+      m_Sprite: {fileID: 21300000, guid: 4c39bd352f48e4b7eb0c6b18b01fd5a5, type: 3}
+    - m_Name: ShoeR_27
+      m_Hash: -41208922
+      m_Sprite: {fileID: 21300000, guid: 4c39bd352f48e4b7eb0c6b18b01fd5a5, type: 3}
+  - m_Name: ChestArmour
+    m_Hash: -343705568
+    m_CategoryList:
+    - m_Name: ChestArmour_0
+      m_Hash: -1854319129
+      m_Sprite: {fileID: 21300000, guid: d49669cb7ee5c4517a5dd559d181bd34, type: 3}
+    - m_Name: ChestArmour_1
+      m_Hash: -427924111
+      m_Sprite: {fileID: 21300000, guid: b09096d7bf9764df689a7b252e1b4f78, type: 3}
+    - m_Name: ChestArmour_2
+      m_Hash: 2138518731
+      m_Sprite: {fileID: 21300000, guid: bb718ce8ee0ca44eb82e2f8f88dc5a74, type: 3}
+    - m_Name: ChestArmour_3
+      m_Hash: 141558877
+      m_Sprite: {fileID: 21300000, guid: 1dc35a25b523341b4a68926d8a581997, type: 3}
+    - m_Name: ChestArmour_4
+      m_Hash: -1777036802
+      m_Sprite: {fileID: 21300000, guid: 3de6b29f750a04854881c0ec5b2bc0de, type: 3}
+    - m_Name: ChestArmour_5
+      m_Hash: -518807192
+      m_Sprite: {fileID: 21300000, guid: c22b4c0fa29bd42ab9eada2c58ecbf4a, type: 3}
+    - m_Name: ChestArmour_6
+      m_Hash: 2015031506
+      m_Sprite: {fileID: 21300000, guid: 218b906ff14bb4667861013e4228eb3f, type: 3}
+    - m_Name: ChestArmour_7
+      m_Hash: 253608004
+      m_Sprite: {fileID: 21300000, guid: 8b635fc9b5001452c816d4fa86d943cc, type: 3}
+    - m_Name: ChestArmour_8
+      m_Hash: -1616716331
+      m_Sprite: {fileID: 21300000, guid: 87e34fa2c8391475db140cb8d2e39cdf, type: 3}
+    - m_Name: ChestArmour_9
+      m_Hash: -391779005
+      m_Sprite: {fileID: 21300000, guid: 443143d7f58e845e5b30c28e049ae127, type: 3}
+    - m_Name: ChestArmour_10
+      m_Hash: -750788370
+      m_Sprite: {fileID: 21300000, guid: 92b1a904976ae4a758ce938d7e80ad0a, type: 3}
+    - m_Name: ChestArmour_11
+      m_Hash: -1539780488
+      m_Sprite: {fileID: 21300000, guid: 6cc5e921d9be74f76949c5dce4c49d43, type: 3}
+    - m_Name: ChestArmour_12
+      m_Hash: 1026654658
+      m_Sprite: {fileID: 21300000, guid: 039c2988f0c334e4e88356e556de97f8, type: 3}
+    - m_Name: ChestArmour_13
+      m_Hash: 1245098324
+      m_Sprite: {fileID: 21300000, guid: f4facd2d327df4367a3bc39638824700, type: 3}
+    - m_Name: ChestArmour_14
+      m_Hash: -732814089
+      m_Sprite: {fileID: 21300000, guid: d304d5fec24ad4bab991fe47a1aa875c, type: 3}
+    - m_Name: ChestArmour_15
+      m_Hash: -1554705311
+      m_Sprite: {fileID: 21300000, guid: 271679da7abc245c0b742d12065ec178, type: 3}
+    - m_Name: ChestArmour_16
+      m_Hash: 979125723
+      m_Sprite: {fileID: 21300000, guid: 7ec443c966d9d4cfdae0f43662c7e024, type: 3}
+    - m_Name: ChestArmour_17
+      m_Hash: 1297839437
+      m_Sprite: {fileID: 21300000, guid: 42a8241d8e12744da89a59cb16d4e913, type: 3}
+    - m_Name: ChestArmour_18
+      m_Hash: -572233508
+      m_Sprite: {fileID: 21300000, guid: 123a758c91ef2400aab50d8e9df5de8c, type: 3}
+    - m_Name: ChestArmour_19
+      m_Hash: -1427941302
+      m_Sprite: {fileID: 21300000, guid: f0d4d015c734346e6b11b101bef48885, type: 3}
+    - m_Name: ChestArmour_20
+      m_Hash: -132992211
+      m_Sprite: {fileID: 21300000, guid: 2d89432e8e15b4471b30fe2373010d27, type: 3}
+    - m_Name: ChestArmour_21
+      m_Hash: -1894415429
+      m_Sprite: {fileID: 21300000, guid: 10924aaa39c6241a198b681d508c0cc3, type: 3}
+    - m_Name: ChestArmour_22
+      m_Hash: 370987521
+      m_Sprite: {fileID: 21300000, guid: bdf72e798ff78434fa4639e631b377e0, type: 3}
+    - m_Name: ChestArmour_23
+      m_Hash: 1629217431
+      m_Sprite: {fileID: 21300000, guid: 1883e3a182ba2401e937ef55434b1f6d, type: 3}
+    - m_Name: ChestArmour_24
+      m_Hash: -25200844
+      m_Sprite: {fileID: 21300000, guid: 6e8c503b834fa4aabb5c347c0be56d6c, type: 3}
+    - m_Name: ChestArmour_25
+      m_Hash: -2005383262
+      m_Sprite: {fileID: 21300000, guid: 9a70b52d88dd1479ba19feb3e0cad3a8, type: 3}
+    - m_Name: ChestArmour_26
+      m_Hash: 292623896
+      m_Sprite: {fileID: 21300000, guid: ead54751d0b0a4074a6705a0afca02ae, type: 3}
+    - m_Name: ChestArmour_27
+      m_Hash: 1719019150
+      m_Sprite: {fileID: 21300000, guid: 57637976f7f724b3e8d627eddd9eb2aa, type: 3}
+  - m_Name: UpperArmArmour
+    m_Hash: -738347502
+    m_CategoryList:
+    - m_Name: UpperArmArmour_0
+      m_Hash: 14014047
+      m_Sprite: {fileID: 0}
+    - m_Name: UpperArmArmour_1
+      m_Hash: 2010310345
+      m_Sprite: {fileID: 21300000, guid: 984483f9de9fb4a21850103681f7cf13, type: 3}
+    - m_Name: UpperArmArmour_2
+      m_Hash: -287590541
+      m_Sprite: {fileID: 21300000, guid: 51df14a9bbfe84002a2af735e3d95019, type: 3}
+    - m_Name: UpperArmArmour_3
+      m_Hash: -1713600539
+      m_Sprite: {fileID: 21300000, guid: 3b6023e193ba9409ebe0d8517f0a3f45, type: 3}
+    - m_Name: UpperArmArmour_4
+      m_Hash: 129503814
+      m_Sprite: {fileID: 0}
+    - m_Name: UpperArmArmour_5
+      m_Hash: 1891574480
+      m_Sprite: {fileID: 0}
+    - m_Name: UpperArmArmour_6
+      m_Hash: -373918870
+      m_Sprite: {fileID: 0}
+    - m_Name: UpperArmArmour_7
+      m_Hash: -1632549892
+      m_Sprite: {fileID: 0}
+    - m_Name: UpperArmArmour_8
+      m_Hash: 235822701
+      m_Sprite: {fileID: 21300000, guid: 8a15c2c5006c54896972c66fc1a14942, type: 3}
+    - m_Name: UpperArmArmour_9
+      m_Hash: 2030661371
+      m_Sprite: {fileID: 21300000, guid: 8a15c2c5006c54896972c66fc1a14942, type: 3}
+    - m_Name: UpperArmArmour_10
+      m_Hash: 370440147
+      m_Sprite: {fileID: 21300000, guid: 8a15c2c5006c54896972c66fc1a14942, type: 3}
+    - m_Name: UpperArmArmour_11
+      m_Hash: 1628653381
+      m_Sprite: {fileID: 21300000, guid: 8a15c2c5006c54896972c66fc1a14942, type: 3}
+    - m_Name: UpperArmArmour_12
+      m_Hash: -132507905
+      m_Sprite: {fileID: 21300000, guid: 6692b18023dc64153971a785c2b02e5b, type: 3}
+    - m_Name: UpperArmArmour_13
+      m_Hash: -1893915031
+      m_Sprite: {fileID: 21300000, guid: 6692b18023dc64153971a785c2b02e5b, type: 3}
+    - m_Name: UpperArmArmour_14
+      m_Hash: 293188554
+      m_Sprite: {fileID: 21300000, guid: 6692b18023dc64153971a785c2b02e5b, type: 3}
+    - m_Name: UpperArmArmour_15
+      m_Hash: 1719567196
+      m_Sprite: {fileID: 21300000, guid: 6692b18023dc64153971a785c2b02e5b, type: 3}
+    - m_Name: UpperArmArmour_16
+      m_Hash: -25701658
+      m_Sprite: {fileID: 21300000, guid: 6692b18023dc64153971a785c2b02e5b, type: 3}
+    - m_Name: UpperArmArmour_17
+      m_Hash: -2005867920
+      m_Sprite: {fileID: 21300000, guid: 6692b18023dc64153971a785c2b02e5b, type: 3}
+    - m_Name: UpperArmArmour_18
+      m_Hash: 416284641
+      m_Sprite: {fileID: 21300000, guid: 6692b18023dc64153971a785c2b02e5b, type: 3}
+    - m_Name: UpperArmArmour_19
+      m_Hash: 1875431287
+      m_Sprite: {fileID: 21300000, guid: 6692b18023dc64153971a785c2b02e5b, type: 3}
+    - m_Name: UpperArmArmour_20
+      m_Hash: 1027154960
+      m_Sprite: {fileID: 21300000, guid: ed80f68c6ec564d229925615553793e9, type: 3}
+    - m_Name: UpperArmArmour_21
+      m_Hash: 1245582470
+      m_Sprite: {fileID: 21300000, guid: ed80f68c6ec564d229925615553793e9, type: 3}
+    - m_Name: UpperArmArmour_22
+      m_Hash: -751352516
+      m_Sprite: {fileID: 21300000, guid: ed80f68c6ec564d229925615553793e9, type: 3}
+    - m_Name: UpperArmArmour_23
+      m_Hash: -1540328022
+      m_Sprite: {fileID: 21300000, guid: ed80f68c6ec564d229925615553793e9, type: 3}
+    - m_Name: UpperArmArmour_24
+      m_Hash: 978640905
+      m_Sprite: {fileID: 21300000, guid: ed80f68c6ec564d229925615553793e9, type: 3}
+    - m_Name: UpperArmArmour_25
+      m_Hash: 1297338527
+      m_Sprite: {fileID: 21300000, guid: ed80f68c6ec564d229925615553793e9, type: 3}
+    - m_Name: UpperArmArmour_26
+      m_Hash: -732266203
+      m_Sprite: {fileID: 21300000, guid: ed80f68c6ec564d229925615553793e9, type: 3}
+    - m_Name: UpperArmArmour_27
+      m_Hash: -1554140749
+      m_Sprite: {fileID: 21300000, guid: ed80f68c6ec564d229925615553793e9, type: 3}
+  - m_Name: ForeArmArmour
+    m_Hash: 892675841
+    m_CategoryList:
+    - m_Name: ForeArmArmour_0
+      m_Hash: -432876841
+      m_Sprite: {fileID: 0}
+    - m_Name: ForeArmArmour_1
+      m_Hash: -1858739647
+      m_Sprite: {fileID: 21300000, guid: 947240887aefd44d5a5ab7c1be6194bf, type: 3}
+    - m_Name: ForeArmArmour_2
+      m_Hash: 138195963
+      m_Sprite: {fileID: 21300000, guid: ef27d61cfbb474afa84a5cd57c61678e, type: 3}
+    - m_Name: ForeArmArmour_3
+      m_Hash: 2134606701
+      m_Sprite: {fileID: 21300000, guid: 7db596ff651c1498b9f44e1bd7ccf351, type: 3}
+    - m_Name: ForeArmArmour_4
+      m_Hash: -513861938
+      m_Sprite: {fileID: 21300000, guid: a89108be41dbb42038d342c4b108233b, type: 3}
+    - m_Name: ForeArmArmour_5
+      m_Hash: -1772607912
+      m_Sprite: {fileID: 21300000, guid: a89108be41dbb42038d342c4b108233b, type: 3}
+    - m_Name: ForeArmArmour_6
+      m_Hash: 256997346
+      m_Sprite: {fileID: 21300000, guid: a89108be41dbb42038d342c4b108233b, type: 3}
+    - m_Name: ForeArmArmour_7
+      m_Hash: 2018920308
+      m_Sprite: {fileID: 21300000, guid: a89108be41dbb42038d342c4b108233b, type: 3}
+    - m_Name: ForeArmArmour_8
+      m_Hash: -387360027
+      m_Sprite: {fileID: 21300000, guid: 1ea94499d9f754fb7a8f96d59ac0d93b, type: 3}
+    - m_Name: ForeArmArmour_9
+      m_Hash: -1611765133
+      m_Sprite: {fileID: 21300000, guid: 1ea94499d9f754fb7a8f96d59ac0d93b, type: 3}
+    - m_Name: ForeArmArmour_10
+      m_Hash: -175006779
+      m_Sprite: {fileID: 21300000, guid: 1ea94499d9f754fb7a8f96d59ac0d93b, type: 3}
+    - m_Name: ForeArmArmour_11
+      m_Hash: -2104054957
+      m_Sprite: {fileID: 21300000, guid: 1ea94499d9f754fb7a8f96d59ac0d93b, type: 3}
+    - m_Name: ForeArmArmour_12
+      m_Hash: 463469289
+      m_Sprite: {fileID: 21300000, guid: a011b4c1ea5ff46d5b1fe9b4c54122fb, type: 3}
+    - m_Name: ForeArmArmour_13
+      m_Hash: 1821952639
+      m_Sprite: {fileID: 21300000, guid: a011b4c1ea5ff46d5b1fe9b4c54122fb, type: 3}
+    - m_Name: ForeArmArmour_14
+      m_Hash: -218341412
+      m_Sprite: {fileID: 21300000, guid: a011b4c1ea5ff46d5b1fe9b4c54122fb, type: 3}
+    - m_Name: ForeArmArmour_15
+      m_Hash: -2047119542
+      m_Sprite: {fileID: 21300000, guid: a011b4c1ea5ff46d5b1fe9b4c54122fb, type: 3}
+    - m_Name: ForeArmArmour_16
+      m_Hash: 485637872
+      m_Sprite: {fileID: 21300000, guid: c72ea386662644e43b15d2a9ad7476bd, type: 3}
+    - m_Name: ForeArmArmour_17
+      m_Hash: 1811222118
+      m_Sprite: {fileID: 21300000, guid: c72ea386662644e43b15d2a9ad7476bd, type: 3}
+    - m_Name: ForeArmArmour_18
+      m_Hash: -79031305
+      m_Sprite: {fileID: 21300000, guid: c72ea386662644e43b15d2a9ad7476bd, type: 3}
+    - m_Name: ForeArmArmour_19
+      m_Hash: -1941101727
+      m_Sprite: {fileID: 21300000, guid: c72ea386662644e43b15d2a9ad7476bd, type: 3}
+    - m_Name: ForeArmArmour_20
+      m_Hash: -558053370
+      m_Sprite: {fileID: 21300000, guid: 36dc2235167ab44c2a1120e25cb674fd, type: 3}
+    - m_Name: ForeArmArmour_21
+      m_Hash: -1447298928
+      m_Sprite: {fileID: 21300000, guid: 36dc2235167ab44c2a1120e25cb674fd, type: 3}
+    - m_Name: ForeArmArmour_22
+      m_Hash: 817015082
+      m_Sprite: {fileID: 21300000, guid: 36dc2235167ab44c2a1120e25cb674fd, type: 3}
+    - m_Name: ForeArmArmour_23
+      m_Hash: 1203083708
+      m_Sprite: {fileID: 21300000, guid: 36dc2235167ab44c2a1120e25cb674fd, type: 3}
+    - m_Name: ForeArmArmour_24
+      m_Hash: -640611297
+      m_Sprite: {fileID: 21300000, guid: 1515d2dbe187d4d8d8143377fe714670, type: 3}
+    - m_Name: ForeArmArmour_25
+      m_Hash: -1361691511
+      m_Sprite: {fileID: 21300000, guid: 1515d2dbe187d4d8d8143377fe714670, type: 3}
+    - m_Name: ForeArmArmour_26
+      m_Hash: 937389363
+      m_Sprite: {fileID: 21300000, guid: 1515d2dbe187d4d8d8143377fe714670, type: 3}
+    - m_Name: ForeArmArmour_27
+      m_Hash: 1087921573
+      m_Sprite: {fileID: 21300000, guid: 1515d2dbe187d4d8d8143377fe714670, type: 3}
+  - m_Name: FistArmour
+    m_Hash: -1685840349
+    m_CategoryList:
+    - m_Name: FistArmour_0
+      m_Hash: 512078414
+      m_Sprite: {fileID: 0}
+    - m_Name: FistArmour_1
+      m_Hash: 1770160856
+      m_Sprite: {fileID: 0}
+    - m_Name: FistArmour_2
+      m_Hash: -259271838
+      m_Sprite: {fileID: 0}
+    - m_Name: FistArmour_3
+      m_Hash: -2020809740
+      m_Sprite: {fileID: 0}
+    - m_Name: FistArmour_4
+      m_Hash: 434665047
+      m_Sprite: {fileID: 21300000, guid: 275b6b63769f4477daeda317d6123fa3, type: 3}
+    - m_Name: FistArmour_5
+      m_Hash: 1861174977
+      m_Sprite: {fileID: 0}
+    - m_Name: FistArmour_6
+      m_Hash: -135915653
+      m_Sprite: {fileID: 0}
+    - m_Name: FistArmour_7
+      m_Hash: -2132727827
+      m_Sprite: {fileID: 0}
+    - m_Name: FistArmour_8
+      m_Hash: 274610812
+      m_Sprite: {fileID: 0}
+    - m_Name: FistArmour_9
+      m_Hash: 1733888746
+      m_Sprite: {fileID: 21300000, guid: 275b6b63769f4477daeda317d6123fa3, type: 3}
+    - m_Name: FistArmour_10
+      m_Hash: 2092566341
+      m_Sprite: {fileID: 0}
+    - m_Name: FistArmour_11
+      m_Hash: 196949971
+      m_Sprite: {fileID: 0}
+    - m_Name: FistArmour_12
+      m_Hash: -1833671063
+      m_Sprite: {fileID: 0}
+    - m_Name: FistArmour_13
+      m_Hash: -441231617
+      m_Sprite: {fileID: 0}
+    - m_Name: FistArmour_14
+      m_Hash: 2077737820
+      m_Sprite: {fileID: 0}
+    - m_Name: FistArmour_15
+      m_Hash: 215020490
+      m_Sprite: {fileID: 0}
+    - m_Name: FistArmour_16
+      m_Hash: -1780899216
+      m_Sprite: {fileID: 0}
+    - m_Name: FistArmour_17
+      m_Hash: -488729882
+      m_Sprite: {fileID: 0}
+    - m_Name: FistArmour_18
+      m_Hash: 1918996343
+      m_Sprite: {fileID: 0}
+    - m_Name: FistArmour_19
+      m_Hash: 90619873
+      m_Sprite: {fileID: 0}
+    - m_Name: FistArmour_20
+      m_Hash: 1469535366
+      m_Sprite: {fileID: 0}
+    - m_Name: FistArmour_21
+      m_Hash: 546333712
+      m_Sprite: {fileID: 0}
+    - m_Name: FistArmour_22
+      m_Hash: -1181141590
+      m_Sprite: {fileID: 0}
+    - m_Name: FistArmour_23
+      m_Hash: -828504772
+      m_Sprite: {fileID: 0}
+    - m_Name: FistArmour_24
+      m_Hash: 1358598303
+      m_Sprite: {fileID: 0}
+    - m_Name: FistArmour_25
+      m_Hash: 670933001
+      m_Sprite: {fileID: 0}
+    - m_Name: FistArmour_26
+      m_Hash: -1091243597
+      m_Sprite: {fileID: 0}
+    - m_Name: FistArmour_27
+      m_Hash: -906772187
+      m_Sprite: {fileID: 0}
+  - m_Name: ShoulderArmourL
+    m_Hash: -1900925675
+    m_CategoryList:
+    - m_Name: ShoulderArmourL_0
+      m_Hash: 675895067
+      m_Sprite: {fileID: 21300000, guid: 17308ef59cf8e4b5c883406cadd89656, type: 3}
+    - m_Name: ShoulderArmourL_1
+      m_Hash: 1598973837
+      m_Sprite: {fileID: 21300000, guid: ce0aa7416a950450ca1279bc41f5f481, type: 3}
+    - m_Name: ShoulderArmourL_2
+      m_Hash: -968411593
+      m_Sprite: {fileID: 21300000, guid: 3ec9c011b46214bae82d320333c55461, type: 3}
+    - m_Name: ShoulderArmourL_3
+      m_Hash: -1321204063
+      m_Sprite: {fileID: 21300000, guid: 51029b3f3994847839653950c35ce54a, type: 3}
+    - m_Name: ShoulderArmourL_4
+      m_Hash: 790926082
+      m_Sprite: {fileID: 21300000, guid: 1d0c92943d4654528a3b07f1962c7749, type: 3}
+    - m_Name: ShoulderArmourL_5
+      m_Hash: 1478730644
+      m_Sprite: {fileID: 21300000, guid: b4a613ccda8584f8681bf9b6039562fb, type: 3}
+    - m_Name: ShoulderArmourL_6
+      m_Hash: -1054150098
+      m_Sprite: {fileID: 21300000, guid: 20ebde707af2a42dd96fb98355bd6200, type: 3}
+    - m_Name: ShoulderArmourL_7
+      m_Hash: -1238515016
+      m_Sprite: {fileID: 21300000, guid: 0da82730631f4487b911e17544d2f5eb, type: 3}
+    - m_Name: ShoulderArmourL_8
+      m_Hash: 647159593
+      m_Sprite: {fileID: 21300000, guid: 715bc5978c9144ccb8e63198ec7f0ff7, type: 3}
+    - m_Name: ShoulderArmourL_9
+      m_Hash: 1368780735
+      m_Sprite: {fileID: 21300000, guid: 8101d7d16edeb490781e755ca0f96890, type: 3}
+    - m_Name: ShoulderArmourL_10
+      m_Hash: 1737322203
+      m_Sprite: {fileID: 21300000, guid: 5735d273cc9bb479897cc4306ba8389c, type: 3}
+    - m_Name: ShoulderArmourL_11
+      m_Hash: 277503565
+      m_Sprite: {fileID: 21300000, guid: 59473753f0f574c9d9214b096e50de25, type: 3}
+    - m_Name: ShoulderArmourL_12
+      m_Hash: -1987899401
+      m_Sprite: {fileID: 21300000, guid: 45280b5e611bb4df4a1689646388c55c, type: 3}
+    - m_Name: ShoulderArmourL_13
+      m_Hash: -24887455
+      m_Sprite: {fileID: 21300000, guid: e39b2f14ca947477cb9dcc08e6d436f7, type: 3}
+    - m_Name: ShoulderArmourL_14
+      m_Hash: 1625336514
+      m_Sprite: {fileID: 21300000, guid: aaa5efee2af4549baa2111875771700e, type: 3}
+    - m_Name: ShoulderArmourL_15
+      m_Hash: 401054292
+      m_Sprite: {fileID: 21300000, guid: 1e732b62f58a04ee7ae194a2999f9707, type: 3}
+    - m_Name: ShoulderArmourL_16
+      m_Hash: -1896952850
+      m_Sprite: {fileID: 21300000, guid: c49fe1940a68b4ef3b0fd15998eafd7f, type: 3}
+    - m_Name: ShoulderArmourL_17
+      m_Hash: -102106248
+      m_Sprite: {fileID: 21300000, guid: b192723e1ff824677a525fcc1eca406b, type: 3}
+    - m_Name: ShoulderArmourL_18
+      m_Hash: 1767302889
+      m_Sprite: {fileID: 21300000, guid: c5e3a828a70114410825e7f9bbf12219, type: 3}
+    - m_Name: ShoulderArmourL_19
+      m_Hash: 508679807
+      m_Sprite: {fileID: 21300000, guid: 017a3dc1d97de412da188ac43e93376e, type: 3}
+    - m_Name: ShoulderArmourL_20
+      m_Hash: 1285569816
+      m_Sprite: {fileID: 21300000, guid: c443606727a824218a1c362555b23523, type: 3}
+    - m_Name: ShoulderArmourL_21
+      m_Hash: 1000803726
+      m_Sprite: {fileID: 21300000, guid: c403490905a944535a2fbdf3ea60cec0, type: 3}
+    - m_Name: ShoulderArmourL_22
+      m_Hash: -1565631436
+      m_Sprite: {fileID: 21300000, guid: 83fdf3945a3424c8782719ac33a68fb1, type: 3}
+    - m_Name: ShoulderArmourL_23
+      m_Hash: -710316894
+      m_Sprite: {fileID: 21300000, guid: b7a86241a305f49afbb69191a0f59458, type: 3}
+    - m_Name: ShoulderArmourL_24
+      m_Hash: 1271789825
+      m_Sprite: {fileID: 21300000, guid: 285217a718bca4b168e94c368f1d0520, type: 3}
+    - m_Name: ShoulderArmourL_25
+      m_Hash: 1019922839
+      m_Sprite: {fileID: 21300000, guid: 7879aed09795e4071b7a2183aa0920d4, type: 3}
+    - m_Name: ShoulderArmourL_26
+      m_Hash: -1513908179
+      m_Sprite: {fileID: 21300000, guid: 53d8e9f94c52346f18e2c6a0446c0171, type: 3}
+    - m_Name: ShoulderArmourL_27
+      m_Hash: -758863685
+      m_Sprite: {fileID: 21300000, guid: 75cbe353b37ef4ecea383f197c42d018, type: 3}
+  - m_Name: ShoulderArmourR
+    m_Hash: 1958547574
+    m_CategoryList:
+    - m_Name: ShoulderArmourR_0
+      m_Hash: 1056037217
+      m_Sprite: {fileID: 21300000, guid: 2bf1c02a9c7274254bf00b812a28a2c2, type: 3}
+    - m_Name: ShoulderArmourR_1
+      m_Hash: 1240918519
+      m_Sprite: {fileID: 21300000, guid: 2ee8f28ee42994130a27475045e762df, type: 3}
+    - m_Name: ShoulderArmourR_2
+      m_Hash: -788547507
+      m_Sprite: {fileID: 21300000, guid: ade5d627a9d57474ebc7f88a35fb4f78, type: 3}
+    - m_Name: ShoulderArmourR_3
+      m_Hash: -1476884261
+      m_Sprite: {fileID: 21300000, guid: e8777b46d21b04a1bb224640699f9350, type: 3}
+    - m_Name: ShoulderArmourR_4
+      m_Hash: 966532472
+      m_Sprite: {fileID: 21300000, guid: 888398d99cc374da3b14d8602ecced3e, type: 3}
+    - m_Name: ShoulderArmourR_5
+      m_Hash: 1318792686
+      m_Sprite: {fileID: 21300000, guid: 450d8ca1913744d079abc93e4a0cdf28, type: 3}
+    - m_Name: ShoulderArmourR_6
+      m_Hash: -678265772
+      m_Sprite: {fileID: 21300000, guid: 9df25477449864f2a9af5f197e6b5001, type: 3}
+    - m_Name: ShoulderArmourR_7
+      m_Hash: -1600828222
+      m_Sprite: {fileID: 21300000, guid: 4b4e5f6d86e6f492993a44012e32df36, type: 3}
+    - m_Name: ShoulderArmourL_8
+      m_Hash: 647159593
+      m_Sprite: {fileID: 21300000, guid: 0a4104beeb1704034b39ad037d8c2b30, type: 3}
+    - m_Name: ShoulderArmourR_9
+      m_Hash: 1194156485
+      m_Sprite: {fileID: 21300000, guid: 43663a92f5c394e69b581810bf7fe980, type: 3}
+    - m_Name: ShoulderArmourR_10
+      m_Hash: -682930569
+      m_Sprite: {fileID: 21300000, guid: c23f67a997fcc4bb4a9b1f5d0b795a1c, type: 3}
+    - m_Name: ShoulderArmourR_11
+      m_Hash: -1605599519
+      m_Sprite: {fileID: 21300000, guid: 64e295ad4b0ca45b4998bea3c6a93666, type: 3}
+    - m_Name: ShoulderArmourR_12
+      m_Hash: 960835419
+      m_Sprite: {fileID: 21300000, guid: 3714fd5aa69cc4517882652e6db2dedc, type: 3}
+    - m_Name: ShoulderArmourR_13
+      m_Hash: 1312956365
+      m_Sprite: {fileID: 21300000, guid: 467d70bb7093c478693c95db939d2af8, type: 3}
+    - m_Name: ShoulderArmourR_14
+      m_Hash: -802780562
+      m_Sprite: {fileID: 21300000, guid: 96075f12e22d4439cbde220b8f061d8e, type: 3}
+    - m_Name: ShoulderArmourR_15
+      m_Hash: -1490961672
+      m_Sprite: {fileID: 21300000, guid: 6bc876f991c3e44faaaeab0a1384de79, type: 3}
+    - m_Name: ShoulderArmourR_16
+      m_Hash: 1042869058
+      m_Sprite: {fileID: 21300000, guid: 35bef082dc4874fda807b89ec044ebfe, type: 3}
+    - m_Name: ShoulderArmourR_17
+      m_Hash: 1227873236
+      m_Sprite: {fileID: 21300000, guid: dba3f79a738444a8a921879ba2e7d1fe, type: 3}
+    - m_Name: ShoulderArmourR_18
+      m_Hash: -644823483
+      m_Sprite: {fileID: 21300000, guid: 934dcf3a1abe442909be616aeb47bd49, type: 3}
+    - m_Name: ShoulderArmourR_19
+      m_Hash: -1365772589
+      m_Sprite: {fileID: 21300000, guid: bb1298fd76741494e9a20033217eabe3, type: 3}
+    - m_Name: ShoulderArmourR_20
+      m_Hash: -60416588
+      m_Sprite: {fileID: 21300000, guid: 0c5e0d072a77d4ad2867386a079fd729, type: 3}
+    - m_Name: ShoulderArmourR_21
+      m_Hash: -1956565726
+      m_Sprite: {fileID: 21300000, guid: 03e3f70071f5149cd965087522cd6d04, type: 3}
+    - m_Name: ShoulderArmourR_22
+      m_Hash: 308837528
+      m_Sprite: {fileID: 21300000, guid: 6ccbf4500783e4a5eb490862e5c3614a, type: 3}
+    - m_Name: ShoulderArmourR_23
+      m_Hash: 1701792782
+      m_Sprite: {fileID: 21300000, guid: 6ccbf4500783e4a5eb490862e5c3614a, type: 3}
+    - m_Name: ShoulderArmourR_24
+      m_Hash: -83109459
+      m_Sprite: {fileID: 21300000, guid: 8b86ef3bc05914156be42a39e9ff85a1, type: 3}
+    - m_Name: ShoulderArmourR_25
+      m_Hash: -1945310917
+      m_Sprite: {fileID: 21300000, guid: 8654fef44abc9400c9dec64ccd39ca53, type: 3}
+    - m_Name: ShoulderArmourR_26
+      m_Hash: 352696449
+      m_Sprite: {fileID: 21300000, guid: 78e8fdc759b2e4e23818d436424eeea7, type: 3}
+    - m_Name: ShoulderArmourR_27
+      m_Hash: 1644333079
+      m_Sprite: {fileID: 21300000, guid: b4eccb78f78f5490faf779303cfe38d1, type: 3}
+  - m_Name: WaistArmour
+    m_Hash: -275966025
+    m_CategoryList:
+    - m_Name: WaistArmour_0
+      m_Hash: 1920217597
+      m_Sprite: {fileID: 21300000, guid: 30382e61ff46a1b42b1e7df33370a97b, type: 3}
+    - m_Name: WaistArmour_1
+      m_Hash: 91423083
+      m_Sprite: {fileID: 21300000, guid: acf2769067630c7458671af80e6155b8, type: 3}
+    - m_Name: WaistArmour_2
+      m_Hash: -1669705519
+      m_Sprite: {fileID: 21300000, guid: d37bb6a00e6a1a24bb4b5432bfcb6f7a, type: 3}
+    - m_Name: WaistArmour_3
+      m_Hash: -344104889
+      m_Sprite: {fileID: 21300000, guid: 4af5470ee39c167488da8d376c5dab34, type: 3}
+    - m_Name: WaistArmour_4
+      m_Hash: 1964635620
+      m_Sprite: {fileID: 21300000, guid: 823383c925fd2ab49a3df9823e362bff, type: 3}
+    - m_Name: WaistArmour_5
+      m_Hash: 35571058
+      m_Sprite: {fileID: 21300000, guid: 823383c925fd2ab49a3df9823e362bff, type: 3}
+    - m_Name: WaistArmour_6
+      m_Hash: -1692953400
+      m_Sprite: {fileID: 21300000, guid: 823383c925fd2ab49a3df9823e362bff, type: 3}
+    - m_Name: WaistArmour_7
+      m_Hash: -334453666
+      m_Sprite: {fileID: 21300000, guid: 823383c925fd2ab49a3df9823e362bff, type: 3}
+    - m_Name: WaistArmour_8
+      m_Hash: 2091891151
+      m_Sprite: {fileID: 21300000, guid: 1e03b9c7390739148aca974261484399, type: 3}
+    - m_Name: WaistArmour_9
+      m_Hash: 195594585
+      m_Sprite: {fileID: 21300000, guid: 33c0998fc4bbe88418955c07a6dd302d, type: 3}
+    - m_Name: WaistArmour_10
+      m_Hash: 784209136
+      m_Sprite: {fileID: 21300000, guid: cb8e9df62f3d6a947845031eb905adbf, type: 3}
+    - m_Name: WaistArmour_11
+      m_Hash: 1505305702
+      m_Sprite: {fileID: 21300000, guid: 2194131b61fe25c43be39bc59af75e07, type: 3}
+    - m_Name: WaistArmour_12
+      m_Hash: -1062177316
+      m_Sprite: {fileID: 21300000, guid: ff29eb54fa7cac0459670b51d50756db, type: 3}
+    - m_Name: WaistArmour_13
+      m_Hash: -1212725942
+      m_Sprite: {fileID: 21300000, guid: 946d2eda3a182bd4fac521691ce706cc, type: 3}
+    - m_Name: WaistArmour_14
+      m_Hash: 701747433
+      m_Sprite: {fileID: 21300000, guid: ea25147b877b4284eab294d5b7c0247d, type: 3}
+    - m_Name: WaistArmour_15
+      m_Hash: 1591009407
+      m_Sprite: {fileID: 21300000, guid: 5711c5a4a47f897478ab223ba2807afb, type: 3}
+    - m_Name: WaistArmour_16
+      m_Hash: -941772347
+      m_Sprite: {fileID: 21300000, guid: d27bed0b5055c704180bdcdf9befdbc5, type: 3}
+    - m_Name: WaistArmour_17
+      m_Hash: -1327857325
+      m_Sprite: {fileID: 21300000, guid: c60570b68c20071449fc512153c8c345, type: 3}
+    - m_Name: WaistArmour_18
+      m_Hash: 543530178
+      m_Sprite: {fileID: 21300000, guid: 5311d26519e27574e9080b9772cadbd8, type: 3}
+    - m_Name: WaistArmour_19
+      m_Hash: 1466084436
+      m_Sprite: {fileID: 21300000, guid: 53868295d93b46e41ba5d6426f5604dd, type: 3}
+    - m_Name: WaistArmour_20
+      m_Hash: 93538099
+      m_Sprite: {fileID: 21300000, guid: e1da7f5f5a749a54e9d503dddd84671b, type: 3}
+    - m_Name: WaistArmour_21
+      m_Hash: 1922332581
+      m_Sprite: {fileID: 21300000, guid: e8f8c434c3beee8478651dc756c09453, type: 3}
+    - m_Name: WaistArmour_22
+      m_Hash: -342022625
+      m_Sprite: {fileID: 21300000, guid: 7f1cad9ccc21f6f48a9f7243a2f8470d, type: 3}
+    - m_Name: WaistArmour_23
+      m_Hash: -1667623287
+      m_Sprite: {fileID: 21300000, guid: 13e2a20c5b8ac33488071710f3b61998, type: 3}
+    - m_Name: WaistArmour_24
+      m_Hash: 50234154
+      m_Sprite: {fileID: 21300000, guid: f863ef464f7bd294a9b815074b05ca2f, type: 3}
+    - m_Name: WaistArmour_25
+      m_Hash: 1979298748
+      m_Sprite: {fileID: 21300000, guid: 4f4c767834cd43b4b9668710326249f8, type: 3}
+    - m_Name: WaistArmour_26
+      m_Hash: -319757818
+      m_Sprite: {fileID: 21300000, guid: 264996a36d1543149bf5e7b82c87dd34, type: 3}
+    - m_Name: WaistArmour_27
+      m_Hash: -1678257520
+      m_Sprite: {fileID: 21300000, guid: ac02009bdde320a4aa7324db9316b7d8, type: 3}
+  - m_Name: LowerLegArmour
+    m_Hash: -541626507
+    m_CategoryList:
+    - m_Name: LowerLegArmour_0
+      m_Hash: -714715899
+      m_Sprite: {fileID: 21300000, guid: ad159f1a8584145ee8bd5f6e4380093c, type: 3}
+    - m_Name: LowerLegArmour_1
+      m_Hash: -1570669165
+      m_Sprite: {fileID: 21300000, guid: 9d2fc70103740488db4fea82baa3e7f9, type: 3}
+    - m_Name: LowerLegArmour_2
+      m_Hash: 996682793
+      m_Sprite: {fileID: 21300000, guid: e31c3fbad35e84b3496fad2a3a6d8f84, type: 3}
+    - m_Name: LowerLegArmour_3
+      m_Hash: 1282350271
+      m_Sprite: {fileID: 21300000, guid: edf1e09e4708d44559eb457fe057bf78, type: 3}
+    - m_Name: LowerLegArmour_4
+      m_Hash: -770995940
+      m_Sprite: {fileID: 21300000, guid: 8c601524c0ab94d74a2ae3d703780226, type: 3}
+    - m_Name: LowerLegArmour_5
+      m_Hash: -1525892726
+      m_Sprite: {fileID: 21300000, guid: 8c601524c0ab94d74a2ae3d703780226, type: 3}
+    - m_Name: LowerLegArmour_6
+      m_Hash: 1007020080
+      m_Sprite: {fileID: 21300000, guid: 8c601524c0ab94d74a2ae3d703780226, type: 3}
+    - m_Name: LowerLegArmour_7
+      m_Hash: 1258477734
+      m_Sprite: {fileID: 21300000, guid: 8c601524c0ab94d74a2ae3d703780226, type: 3}
+    - m_Name: LowerLegArmour_8
+      m_Hash: -608320201
+      m_Sprite: {fileID: 21300000, guid: c0dbac39b29ce42079d683959860f60d, type: 3}
+    - m_Name: LowerLegArmour_9
+      m_Hash: -1397033567
+      m_Sprite: {fileID: 21300000, guid: c0dbac39b29ce42079d683959860f60d, type: 3}
+    - m_Name: LowerLegArmour_10
+      m_Hash: -1652589406
+      m_Sprite: {fileID: 21300000, guid: c0dbac39b29ce42079d683959860f60d, type: 3}
+    - m_Name: LowerLegArmour_11
+      m_Hash: -361214924
+      m_Sprite: {fileID: 21300000, guid: c0dbac39b29ce42079d683959860f60d, type: 3}
+    - m_Name: LowerLegArmour_12
+      m_Hash: 1936792974
+      m_Sprite: {fileID: 21300000, guid: 07a57a35624194b169c06184fcbfa874, type: 3}
+    - m_Name: LowerLegArmour_13
+      m_Hash: 74853656
+      m_Sprite: {fileID: 21300000, guid: 07a57a35624194b169c06184fcbfa874, type: 3}
+    - m_Name: LowerLegArmour_14
+      m_Hash: -1710049093
+      m_Sprite: {fileID: 21300000, guid: 70e4c680a46f74825aa9cb0f67987598, type: 3}
+    - m_Name: LowerLegArmour_15
+      m_Hash: -317355987
+      m_Sprite: {fileID: 21300000, guid: 70e4c680a46f74825aa9cb0f67987598, type: 3}
+    - m_Name: LowerLegArmour_16
+      m_Hash: 1948047767
+      m_Sprite: {fileID: 21300000, guid: 8f0e90ed528314eb98b2b88bd7cfc41b, type: 3}
+    - m_Name: LowerLegArmour_17
+      m_Hash: 52160769
+      m_Sprite: {fileID: 21300000, guid: 615180d78cc7841f2a4f2993f712de6e, type: 3}
+    - m_Name: LowerLegArmour_18
+      m_Hash: -1817906032
+      m_Sprite: {fileID: 21300000, guid: 8b61c6175bce042f6b0c363524ba58dc, type: 3}
+    - m_Name: LowerLegArmour_19
+      m_Hash: -459029498
+      m_Sprite: {fileID: 21300000, guid: f55115317e792445db5b9e2081a5c119, type: 3}
+    - m_Name: LowerLegArmour_20
+      m_Hash: -1236127903
+      m_Sprite: {fileID: 21300000, guid: 63cfa6b6a2cea488588e675ec191b0a1, type: 3}
+    - m_Name: LowerLegArmour_21
+      m_Hash: -1051385865
+      m_Sprite: {fileID: 21300000, guid: 63cfa6b6a2cea488588e675ec191b0a1, type: 3}
+    - m_Name: LowerLegArmour_22
+      m_Hash: 1482444365
+      m_Sprite: {fileID: 21300000, guid: 63cfa6b6a2cea488588e675ec191b0a1, type: 3}
+    - m_Name: LowerLegArmour_23
+      m_Hash: 794525403
+      m_Sprite: {fileID: 21300000, guid: 63cfa6b6a2cea488588e675ec191b0a1, type: 3}
+    - m_Name: LowerLegArmour_24
+      m_Hash: -1321211016
+      m_Sprite: {fileID: 21300000, guid: 9556f5fb0d6124798b189c7ca568ea24, type: 3}
+    - m_Name: LowerLegArmour_25
+      m_Hash: -969352210
+      m_Sprite: {fileID: 21300000, guid: ff9e4020257384027b3560a6022c06e0, type: 3}
+    - m_Name: LowerLegArmour_26
+      m_Hash: 1597082196
+      m_Sprite: {fileID: 21300000, guid: 7ba11742bb77e4d1b89583815ff77cc9, type: 3}
+    - m_Name: LowerLegArmour_27
+      m_Hash: 674675394
+      m_Sprite: {fileID: 21300000, guid: c8841cb64327d4f1e94cd371213d5285, type: 3}
+  - m_Name: UpperLegArmourL
+    m_Hash: -224537080
+    m_CategoryList:
+    - m_Name: UpperLegArmour_0
+      m_Hash: -1692562601
+      m_Sprite: {fileID: 21300000, guid: 5fcd56331e959476aa935cb311e15e21, type: 3}
+    - m_Name: UpperLegArmour_1
+      m_Hash: -333792319
+      m_Sprite: {fileID: 21300000, guid: 837ab49d548d64cd1b09b59ebabd8f22, type: 3}
+    - m_Name: UpperLegArmour_2
+      m_Hash: 1964239483
+      m_Sprite: {fileID: 21300000, guid: ab521e21b370942d89d617dd927f33ac, type: 3}
+    - m_Name: UpperLegArmour_3
+      m_Hash: 34921197
+      m_Sprite: {fileID: 21300000, guid: 10de7ffd9f5764d9eb028615e0d5676e, type: 3}
+    - m_Name: UpperLegArmour_4
+      m_Hash: -1670361266
+      m_Sprite: {fileID: 21300000, guid: 6983ab0fba479421ab38801be9aae17f, type: 3}
+    - m_Name: UpperLegArmour_5
+      m_Hash: -344490024
+      m_Sprite: {fileID: 21300000, guid: fce6348d16d5e44fdaec263d26a90a00, type: 3}
+    - m_Name: UpperLegArmour_6
+      m_Hash: 1920872034
+      m_Sprite: {fileID: 21300000, guid: 80253583f35574679b0d1c7879c7ff49, type: 3}
+    - m_Name: UpperLegArmour_7
+      m_Hash: 91823860
+      m_Sprite: {fileID: 21300000, guid: 771a2c3b5fa5f4b5984951ca40827faa, type: 3}
+    - m_Name: UpperLegArmour_8
+      m_Hash: -1782185115
+      m_Sprite: {fileID: 21300000, guid: d2c9bfafb5a5649d9a7f7c74bc86ab65, type: 3}
+    - m_Name: UpperLegArmour_9
+      m_Hash: -490654733
+      m_Sprite: {fileID: 21300000, guid: 863741e490d4642af81a68450d47fbfc, type: 3}
+    - m_Name: UpperLegArmour_10
+      m_Hash: 408172476
+      m_Sprite: {fileID: 21300000, guid: 371794690f70248a5b6212e5d5705474, type: 3}
+    - m_Name: UpperLegArmour_11
+      m_Hash: 1867712298
+      m_Sprite: {fileID: 21300000, guid: f7ce9c6d5e7944bab8e3d53fd4666e53, type: 3}
+    - m_Name: UpperLegArmour_12
+      m_Hash: -161851760
+      m_Sprite: {fileID: 21300000, guid: 23346171dee5d4c6abf7ce100f7f62d8, type: 3}
+    - m_Name: UpperLegArmour_13
+      m_Hash: -2124585466
+      m_Sprite: {fileID: 21300000, guid: 2eb87953b644347cbaa065d1af254e34, type: 3}
+    - m_Name: UpperLegArmour_14
+      m_Hash: 523891621
+      m_Sprite: {fileID: 21300000, guid: 0719e22e503424cfc80f8663327a6bc0, type: 3}
+    - m_Name: UpperLegArmour_15
+      m_Hash: 1748943667
+      m_Sprite: {fileID: 21300000, guid: 435b6a94b06c54ffb83fa7d3b3bf5443, type: 3}
+    - m_Name: UpperLegArmour_16
+      m_Hash: -248016247
+      m_Sprite: {fileID: 21300000, guid: 96de4c33ed54c429eb16c6c3b01bb38e, type: 3}
+    - m_Name: UpperLegArmour_17
+      m_Hash: -2043633121
+      m_Sprite: {fileID: 21300000, guid: 96de4c33ed54c429eb16c6c3b01bb38e, type: 3}
+    - m_Name: UpperLegArmour_18
+      m_Hash: 378519438
+      m_Sprite: {fileID: 21300000, guid: 96de4c33ed54c429eb16c6c3b01bb38e, type: 3}
+    - m_Name: UpperLegArmour_19
+      m_Hash: 1636339480
+      m_Sprite: {fileID: 21300000, guid: 96de4c33ed54c429eb16c6c3b01bb38e, type: 3}
+    - m_Name: UpperLegArmour_20
+      m_Hash: 863593599
+      m_Sprite: {fileID: 21300000, guid: 96de4c33ed54c429eb16c6c3b01bb38e, type: 3}
+    - m_Name: UpperLegArmour_21
+      m_Hash: 1149129961
+      m_Sprite: {fileID: 21300000, guid: 96de4c33ed54c429eb16c6c3b01bb38e, type: 3}
+    - m_Name: UpperLegArmour_22
+      m_Hash: -579402413
+      m_Sprite: {fileID: 21300000, guid: 96de4c33ed54c429eb16c6c3b01bb38e, type: 3}
+    - m_Name: UpperLegArmour_23
+      m_Hash: -1435486779
+      m_Sprite: {fileID: 21300000, guid: 96de4c33ed54c429eb16c6c3b01bb38e, type: 3}
+    - m_Name: UpperLegArmour_24
+      m_Hash: 873767014
+      m_Sprite: {fileID: 21300000, guid: a9022e43361284d9c80487187a02d01f, type: 3}
+    - m_Name: UpperLegArmour_25
+      m_Hash: 1125355760
+      m_Sprite: {fileID: 21300000, guid: ac6f03d7160b8452a9a4194f5d7ce425, type: 3}
+    - m_Name: UpperLegArmour_26
+      m_Hash: -635780790
+      m_Sprite: {fileID: 21300000, guid: a92e91ea8112445b29d454b97ceb8a47, type: 3}
+    - m_Name: UpperLegArmour_27
+      m_Hash: -1390546468
+      m_Sprite: {fileID: 21300000, guid: 5c18c4a5ab6a74197890df5f4d63f74b, type: 3}
+  - m_Name: UpperLegArmourR
+    m_Hash: 143846251
+    m_CategoryList:
+    - m_Name: UpperLegArmour_0
+      m_Hash: -1692562601
+      m_Sprite: {fileID: 21300000, guid: f325000c84ebc47a6bebacded6f4967e, type: 3}
+    - m_Name: UpperLegArmour_1
+      m_Hash: -333792319
+      m_Sprite: {fileID: 21300000, guid: f4ccb2fb2a6a945a29c905ad17c572c1, type: 3}
+    - m_Name: UpperLegArmour_2
+      m_Hash: 1964239483
+      m_Sprite: {fileID: 21300000, guid: 15fa8e80f55994e59b4e594377ec74ab, type: 3}
+    - m_Name: UpperLegArmour_3
+      m_Hash: 34921197
+      m_Sprite: {fileID: 21300000, guid: d1db29449c7474ceda92a248f1fc455a, type: 3}
+    - m_Name: UpperLegArmour_4
+      m_Hash: -1670361266
+      m_Sprite: {fileID: 21300000, guid: a7db395c5e26648f8817cf57ade56993, type: 3}
+    - m_Name: UpperLegArmour_5
+      m_Hash: -344490024
+      m_Sprite: {fileID: 21300000, guid: c93d8ed47ec6447fdb5ede32abe5803a, type: 3}
+    - m_Name: UpperLegArmour_6
+      m_Hash: 1920872034
+      m_Sprite: {fileID: 21300000, guid: 4d9173b01a60f482fb8a55476a46ef6a, type: 3}
+    - m_Name: UpperLegArmour_7
+      m_Hash: 91823860
+      m_Sprite: {fileID: 21300000, guid: 0f8333c879b3f40fd844743eea48cc49, type: 3}
+    - m_Name: UpperLegArmour_8
+      m_Hash: -1782185115
+      m_Sprite: {fileID: 21300000, guid: 470cdb81ea15a49328ce933e3720bf37, type: 3}
+    - m_Name: UpperLegArmour_9
+      m_Hash: -490654733
+      m_Sprite: {fileID: 21300000, guid: 3e45e4cd8da6d4dbcb430fa98b9ab657, type: 3}
+    - m_Name: UpperLegArmour_10
+      m_Hash: 408172476
+      m_Sprite: {fileID: 21300000, guid: d429b5ded7765408fa5f852674594835, type: 3}
+    - m_Name: UpperLegArmour_11
+      m_Hash: 1867712298
+      m_Sprite: {fileID: 21300000, guid: 0c322b803b3694e62bef456a655e25b6, type: 3}
+    - m_Name: UpperLegArmour_12
+      m_Hash: -161851760
+      m_Sprite: {fileID: 21300000, guid: 5180a795a41884057887d6930e3f3347, type: 3}
+    - m_Name: UpperLegArmour_13
+      m_Hash: -2124585466
+      m_Sprite: {fileID: 21300000, guid: 70064c4b0b14d47c9aa74f9b549ebd14, type: 3}
+    - m_Name: UpperLegArmour_14
+      m_Hash: 523891621
+      m_Sprite: {fileID: 21300000, guid: e0deb11158e0b46eeb2b11e7b3ba8947, type: 3}
+    - m_Name: UpperLegArmour_15
+      m_Hash: 1748943667
+      m_Sprite: {fileID: 21300000, guid: e54e8986839044626953af8eaa3ffcee, type: 3}
+    - m_Name: UpperLegArmour_16
+      m_Hash: -248016247
+      m_Sprite: {fileID: 21300000, guid: 101457a74d12a4206924bd08acabd5fc, type: 3}
+    - m_Name: UpperLegArmour_17
+      m_Hash: -2043633121
+      m_Sprite: {fileID: 21300000, guid: 101457a74d12a4206924bd08acabd5fc, type: 3}
+    - m_Name: UpperLegArmour_18
+      m_Hash: 378519438
+      m_Sprite: {fileID: 21300000, guid: 101457a74d12a4206924bd08acabd5fc, type: 3}
+    - m_Name: UpperLegArmour_19
+      m_Hash: 1636339480
+      m_Sprite: {fileID: 21300000, guid: 101457a74d12a4206924bd08acabd5fc, type: 3}
+    - m_Name: UpperLegArmour_20
+      m_Hash: 863593599
+      m_Sprite: {fileID: 21300000, guid: 101457a74d12a4206924bd08acabd5fc, type: 3}
+    - m_Name: UpperLegArmour_21
+      m_Hash: 1149129961
+      m_Sprite: {fileID: 21300000, guid: 101457a74d12a4206924bd08acabd5fc, type: 3}
+    - m_Name: UpperLegArmour_22
+      m_Hash: -579402413
+      m_Sprite: {fileID: 21300000, guid: 101457a74d12a4206924bd08acabd5fc, type: 3}
+    - m_Name: UpperLegArmour_23
+      m_Hash: -1435486779
+      m_Sprite: {fileID: 21300000, guid: 101457a74d12a4206924bd08acabd5fc, type: 3}
+    - m_Name: UpperLegArmour_24
+      m_Hash: 873767014
+      m_Sprite: {fileID: 21300000, guid: 0c626ac187cdc4cb0b1ddd57be063365, type: 3}
+    - m_Name: UpperLegArmour_25
+      m_Hash: 1125355760
+      m_Sprite: {fileID: 21300000, guid: ee3ff54098e54470eb1a25701c25446f, type: 3}
+    - m_Name: UpperLegArmour_26
+      m_Hash: -635780790
+      m_Sprite: {fileID: 21300000, guid: 5b1e5e3dcdec448c5bb2711dbad830a3, type: 3}
+    - m_Name: UpperLegArmour_27
+      m_Hash: -1390546468
+      m_Sprite: {fileID: 21300000, guid: 2ef67d1a5bc104e6d86f0e1443a54f0e, type: 3}
+  - m_Name: UpperLegSkinL
+    m_Hash: -890650458
+    m_CategoryList:
+    - m_Name: UpperLegSkin_0
+      m_Hash: -1437896274
+      m_Sprite: {fileID: 21300000, guid: da07e12e7f3fd433795b153f2ce6336d, type: 3}
+    - m_Name: UpperLegSkin_1
+      m_Hash: -582205128
+      m_Sprite: {fileID: 21300000, guid: da07e12e7f3fd433795b153f2ce6336d, type: 3}
+    - m_Name: UpperLegSkin_2
+      m_Hash: 1145376898
+      m_Sprite: {fileID: 21300000, guid: da07e12e7f3fd433795b153f2ce6336d, type: 3}
+    - m_Name: UpperLegSkin_3
+      m_Hash: 859971604
+      m_Sprite: {fileID: 21300000, guid: da07e12e7f3fd433795b153f2ce6336d, type: 3}
+  - m_Name: UpperLegSkinR
+    m_Hash: 820444613
+    m_CategoryList:
+    - m_Name: UpperLegSkin_0
+      m_Hash: -1437896274
+      m_Sprite: {fileID: 21300000, guid: 2fecb9ed6fc0c4648afd1889c8dc70a8, type: 3}
+    - m_Name: UpperLegSkin_1
+      m_Hash: -582205128
+      m_Sprite: {fileID: 21300000, guid: 2fecb9ed6fc0c4648afd1889c8dc70a8, type: 3}
+    - m_Name: UpperLegSkin_2
+      m_Hash: 1145376898
+      m_Sprite: {fileID: 21300000, guid: 2fecb9ed6fc0c4648afd1889c8dc70a8, type: 3}
+    - m_Name: UpperLegSkin_3
+      m_Hash: 859971604
+      m_Sprite: {fileID: 21300000, guid: 2fecb9ed6fc0c4648afd1889c8dc70a8, type: 3}
+  - m_Name: EyeWhite
+    m_Hash: 1622805836
+    m_CategoryList:
+    - m_Name: EyeWhite
+      m_Hash: 1622805836
+      m_Sprite: {fileID: 21300000, guid: 772afb116eccc4c178fe9a9804f759f9, type: 3}
