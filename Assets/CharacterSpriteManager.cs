@@ -78,7 +78,7 @@ public class CharacterSpriteManager : MonoBehaviour
         fistR.SetCategoryAndLabel("FistSkin", $"FistSkin_{skinIndex}");
 
         upperLegL.SetCategoryAndLabel("UpperLegSkin", $"UpperLegSkin_{skinIndex}");
-        upperLegR.SetCategoryAndLabel("UpperLegSkin", $"UpperLegSkin_{skinIndex}");
+        upperLegR.SetCategoryAndLabel("UpperLegSkinR", $"UpperLegSkin_{skinIndex}");
 
         lowerLegL.SetCategoryAndLabel("LowerLegSkin", $"LowerLegSkin_{skinIndex}");
         lowerLegR.SetCategoryAndLabel("LowerLegSkin", $"LowerLegSkin_{skinIndex}");
@@ -127,8 +127,8 @@ public class CharacterSpriteManager : MonoBehaviour
 
         //Lower Set
         waistArmour.SetCategoryAndLabel("WaistArmour", $"WaistArmour_{lowerIndex}");
-        upperLegArmourL.SetCategoryAndLabel("UpperLegArmour", $"UpperLegArmour_{lowerIndex}");
-        upperLegArmourR.SetCategoryAndLabel("UpperLegArmour", $"UpperLegArmour_{lowerIndex}");
+        upperLegArmourL.SetCategoryAndLabel("UpperLegArmourL", $"UpperLegArmour_{lowerIndex}");
+        upperLegArmourR.SetCategoryAndLabel("UpperLegArmourR", $"UpperLegArmour_{lowerIndex}");
         lowerLegArmourL.SetCategoryAndLabel("LowerLegArmour", $"LowerLegArmour_{lowerIndex}");
         lowerLegArmourR.SetCategoryAndLabel("LowerLegArmour", $"LowerLegArmour_{lowerIndex}");
         shoeL.SetCategoryAndLabel("ShoeL", $"ShoeL_{lowerIndex}");
