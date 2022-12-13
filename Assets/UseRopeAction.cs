@@ -9,10 +9,10 @@ public class UseRopeAction : MonoBehaviour, IActionItem
     [SerializeField]
     private Image ropeUsedImage;
     [SerializeField]
-    private List<MapTileDisplay> tilesToChange;
+    private List<MapTileDisplay> tilesToChange, transitionTiles;
     private bool isActive;
     [SerializeField]
-    private GameObject animationObject;
+    private GameObject animationObject, openDoorImage;
 
     public void ActionActivate()
     {
