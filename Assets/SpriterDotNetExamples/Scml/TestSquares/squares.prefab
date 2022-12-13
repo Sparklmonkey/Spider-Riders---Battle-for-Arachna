@@ -142,7 +142,7 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 6896055855374850197}
+  m_Father: {fileID: 3253429647985289046}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &6187172
@@ -340,7 +340,7 @@ MonoBehaviour:
     - {fileID: 115438}
     - {fileID: 189838}
     BoxPivots:
-    - {fileID: 2691222721240053}
+    - {fileID: 4652411500807902009}
     Boxes:
     - {fileID: 139242}
     Points: []
@@ -351,7 +351,7 @@ MonoBehaviour:
     - {fileID: 438014}
     - {fileID: 490992}
     BoxPivotTransforms:
-    - {fileID: 6896055855374850197}
+    - {fileID: 3253429647985289046}
     BoxTransforms:
     - {fileID: 440886}
     PointTransforms: []
@@ -385,7 +385,7 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 6896055855374850197}
+  - {fileID: 3253429647985289046}
   m_Father: {fileID: 422634}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -482,7 +482,7 @@ Transform:
   m_Father: {fileID: 400508}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &2691222721240053
+--- !u!1 &4652411500807902009
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -490,7 +490,7 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 6896055855374850197}
+  - component: {fileID: 3253429647985289046}
   m_Layer: 0
   m_Name: Pivot 0
   m_TagString: Untagged
@@ -498,13 +498,13 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &6896055855374850197
+--- !u!4 &3253429647985289046
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2691222721240053}
+  m_GameObject: {fileID: 4652411500807902009}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
