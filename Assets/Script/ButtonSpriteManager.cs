@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class ButtonSpriteManager : MonoBehaviour
 {
@@ -25,5 +26,10 @@ public class ButtonSpriteManager : MonoBehaviour
         {
             button.TurnOffButton();
         }
+    }
+
+    public void MoveToMapScene()
+    {
+        SceneManager.LoadScene("MissionOne");
     }
 }

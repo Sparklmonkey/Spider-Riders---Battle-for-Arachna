@@ -21,10 +21,11 @@ public class UseRopeAction : MonoBehaviour, IActionItem
             Destroy(animationObject);
             isActive = true;
             ropeUsedImage.color = new Color32(byte.MaxValue, byte.MaxValue, byte.MaxValue, byte.MaxValue);
-            foreach (var item in tilesToChange)
-            {
-                item.isWalkable = true;
-            }
+            //foreach (var item in tilesToChange)
+            //{
+            //    item.isWalkable = true;
+            //}
+            Destroy(this);
         }
     }
 }

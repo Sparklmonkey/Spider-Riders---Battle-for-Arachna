@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -11,4 +12,20 @@ public class PlayerData : ScriptableObject
     public List<Card> deckC;
     public List<Card> cardInventory;
     public List<string> itemInventory;
+    public Stats stats;
+    public CharacterPreset armourIndexes;
+
+}
+
+[Serializable]
+public class CharacterPreset
+{
+    public int skinIndex, upperSetIndex, lowerSetIndex, armourIndex, hairIndex, eyeIndex;
+    public bool isMale = true;
+}
+
+[Serializable]
+public class Stats
+{
+    public int power, defense, health;
 }

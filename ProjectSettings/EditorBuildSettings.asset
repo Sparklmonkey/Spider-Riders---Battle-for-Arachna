@@ -11,4 +11,7 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/LoginScreen.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/MissionOne.unity
+    guid: 802450d4aeaad274d966b3eec98d1351
   m_configObjects: {}

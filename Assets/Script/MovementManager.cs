@@ -13,7 +13,7 @@ public class MovementManager : MonoBehaviour
     private string currentScene = "Scene1";
     public MapTileDisplay currentPlayerTile;
     private PathFinder pathFinder;
-    private bool isMoving;
+    private bool isMoving, isTransition;
     public void StartPathFinding(MapTileDisplay destination)
     {
         var path = pathFinder.FindPath(currentPlayerTile, destination);
@@ -33,21 +33,21 @@ public class MovementManager : MonoBehaviour
             scene.SetActive(false);
         }
         MapTileDisplay playerSpawn = sceneList.Find(x => x.name == currentScene).GetComponentInChildren<MapGrid>().GetPlayerSpawn();
-            player = Instantiate(playerPrefab, sceneList.Find(x => x.name == currentScene).transform);
+            //player = Instantiate(playerPrefab, sceneList.Find(x => x.name == currentScene).transform);
             currentPlayerTile = playerSpawn;
-            player.transform.localScale = new Vector3(0.75f, 0.75f, 0.75f);
-            player.transform.position = playerSpawn.tilePosition;
+        //player.transform.localScale = new Vector3(0.75f, 0.75f, 0.75f);
+        player.transform.position = playerSpawn.tilePosition + new Vector2(0f, 80f);
     }
 
     private void Update()
     {
-        if (isMoving)
+        if (isMoving && !isTransition)
         {
             if(currentPath == null) { isMoving = false; return; }
             if(currentPath.Count == 0) { isMoving = false; return; }
-            player.transform.position = Vector3.MoveTowards(player.transform.position, currentPath[0].tilePosition, Time.deltaTime * 160f);
+            player.transform.position = Vector3.MoveTowards(player.transform.position, currentPath[0].tilePosition + new Vector2(0f, 80f), Time.deltaTime * 160f);
 
-            if(player.transform.position == new Vector3(currentPath[0].tilePosition.x, currentPath[0].tilePosition.y, player.transform.position.z))
+            if(player.transform.position == new Vector3(currentPath[0].tilePosition.x, currentPath[0].tilePosition.y + 80f, player.transform.position.z))
             {
                 currentPlayerTile = currentPath[0];
                 if(currentPath.Count == 1)
@@ -65,30 +65,53 @@ public class MovementManager : MonoBehaviour
                 if (actionItem != null)
                 {
                     actionItem.ActionActivate();
+                    Destroy(currentPlayerTile.GetComponent(actionItem.ToString()));
                     isMoving = false;
                     currentPath = new List<MapTileDisplay>();
                     return;
                 }
                 if (currentPlayerTile.isTransition)
                 {
-                    sceneList.Find(x => x.name == currentScene).SetActive(false);
 
-                    GameObject newScene = sceneList.Find(x => x.name == currentPlayerTile.transitionDestination);
-                    pathFinder.map = newScene.GetComponentInChildren<MapGrid>().GenerateGrid();
-                    newScene.SetActive(true);
+                    if (currentPlayerTile.transitionDestination.Contains("-"))
+                    {
+                        isTransition = true;
+                        StartCoroutine(TransitionToBlock(currentPlayerTile.transitionDestination));
+                    }
+                    else
+                    {
+                        sceneList.Find(x => x.name == currentScene).SetActive(false);
 
-                    MapTileDisplay playerSpawn = newScene.GetComponentInChildren<MapGrid>().GetPlayerSpawn();
-                    isMoving = false;
-                    player.transform.parent = newScene.transform;
-                    player.transform.position = playerSpawn.tilePosition;
-                    currentPlayerTile = playerSpawn;
-                    currentPath = new List<MapTileDisplay>();
-                    return;
+                        GameObject newScene = sceneList.Find(x => x.name == currentPlayerTile.transitionDestination);
+                        pathFinder.map = newScene.GetComponentInChildren<MapGrid>().GenerateGrid();
+                        newScene.SetActive(true);
+
+                        MapTileDisplay playerSpawn = newScene.GetComponentInChildren<MapGrid>().GetPlayerSpawn();
+                        isMoving = false;
+                        player.transform.parent = newScene.transform;
+                        player.transform.position = playerSpawn.tilePosition + new Vector2(0f, 80f);
+                        currentPlayerTile = playerSpawn;
+                        currentPath = new List<MapTileDisplay>();
+                        return;
+                    }
+                    
                 }
                 currentPath.RemoveAt(0);
             }
         }
     }
+    private IEnumerator TransitionToBlock(string desitination)
+    {
+        Transform destinationTile = GameObject.Find(desitination).transform;
+        while(player.transform.position != destinationTile.position + new Vector3(0f, 80f, 0f))
+        {
+            player.transform.position = Vector3.MoveTowards(player.transform.position, destinationTile.position + new Vector3(0f, 80f, 0f), Time.deltaTime * 160f);
+            yield return null;
+        }
+        isTransition = false;
+        isMoving = false;
+        currentPath = new List<MapTileDisplay>();
 
+    }
 
 }

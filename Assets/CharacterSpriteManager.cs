@@ -8,8 +8,8 @@ public class CharacterSpriteManager : MonoBehaviour
     [SerializeField]
     private SpriteLibrary currentLibrary;
     [SerializeField]
-    private SpriteLibraryAsset maleLibraryAsset, femaleLibraryAsset;    
-
+    private SpriteLibraryAsset maleLibraryAsset, femaleLibraryAsset;
+    private bool isMale = true;
     [SerializeField]
     private SpriteResolver face, torso, upperArmL, upperArmR, foreArmL, foreArmR, upperLegL, upperLegR, lowerLegL, lowerLegR,                   //Skin
         fistL, fistR, shoulderL, shoulderR,                                                                                                     //Skin
@@ -19,20 +19,87 @@ public class CharacterSpriteManager : MonoBehaviour
 
     private int skinIndex, upperSetIndex, lowerSetIndex, armourIndex, hairIndex, eyeIndex;
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
+        CharacterPreset characterPreset = TestPlayer<PlayerData>.GetCharacterPreset();
+        skinIndex = characterPreset.skinIndex;
+        upperSetIndex = characterPreset.upperSetIndex;
+        lowerSetIndex = characterPreset.lowerSetIndex;
+        armourIndex = characterPreset.armourIndex;
+        hairIndex = characterPreset.hairIndex;
+        eyeIndex = characterPreset.eyeIndex;
+        isMale = characterPreset.isMale;
+        SetupCharacter();
+    }
+    void SetupCharacter()
+    {
+        currentLibrary.spriteLibraryAsset = isMale ? maleLibraryAsset : femaleLibraryAsset;
+        eyes.SetCategoryAndLabel("Eyes", $"Eyes_{eyeIndex}");
+        hair.SetCategoryAndLabel("Hair", $"Hair_{hairIndex}");
+        face.SetCategoryAndLabel("Face", $"Face_{skinIndex}");
+        torso.SetCategoryAndLabel("TorsoSkin", $"TorsoSkin_{skinIndex}");
 
+        upperArmL.SetCategoryAndLabel("UpperArmSkin", $"UpperArmSkin_{skinIndex}");
+        upperArmR.SetCategoryAndLabel("UpperArmSkin", $"UpperArmSkin_{skinIndex}");
+
+        shoulderL.SetCategoryAndLabel("ShoulderSkin", $"ShoulderSkin_{skinIndex}");
+        shoulderR.SetCategoryAndLabel("ShoulderSkin", $"ShoulderSkin_{skinIndex}");
+
+        foreArmL.SetCategoryAndLabel("ForeArmSkin", $"ForeArmSkin_{skinIndex}");
+        foreArmR.SetCategoryAndLabel("ForeArmSkin", $"ForeArmSkin_{skinIndex}");
+
+        fistL.SetCategoryAndLabel("FistSkin", $"FistSkin_{skinIndex}");
+        fistR.SetCategoryAndLabel("FistSkin", $"FistSkin_{skinIndex}");
+
+        upperLegL.SetCategoryAndLabel("UpperLegSkin", $"UpperLegSkin_{skinIndex}");
+        upperLegR.SetCategoryAndLabel("UpperLegSkinR", $"UpperLegSkin_{skinIndex}");
+
+        lowerLegL.SetCategoryAndLabel("LowerLegSkin", $"LowerLegSkin_{skinIndex}");
+        lowerLegR.SetCategoryAndLabel("LowerLegSkin", $"LowerLegSkin_{skinIndex}");
+
+        int upperIndex = upperSetIndex + (armourIndex * 4);
+        int lowerIndex = lowerSetIndex + (armourIndex * 4);
+        //Upper Set
+        chestArmour.SetCategoryAndLabel("ChestArmour", $"ChestArmour_{upperIndex}");
+        upperArmArmourL.SetCategoryAndLabel("UpperArmArmour", $"UpperArmArmour_{upperIndex}");
+        upperArmArmourR.SetCategoryAndLabel("UpperArmArmour", $"UpperArmArmour_{upperIndex}");
+        foreArmArmourL.SetCategoryAndLabel("ForeArmArmour", $"ForeArmArmour_{upperIndex}");
+        foreArmArmourR.SetCategoryAndLabel("ForeArmArmour", $"ForeArmArmour_{upperIndex}");
+        fistArmourL.SetCategoryAndLabel("FistArmour", $"FistArmour_{upperIndex}");
+        fistArmourR.SetCategoryAndLabel("FistArmour", $"FistArmour_{upperIndex}");
+        shoulderArmourL.SetCategoryAndLabel("ShoulderArmourL", $"ShoulderArmourL_{upperIndex}");
+        shoulderArmourR.SetCategoryAndLabel("ShoulderArmourR", $"ShoulderArmourR_{upperIndex}");
+
+        //Lower Set
+        waistArmour.SetCategoryAndLabel("WaistArmour", $"WaistArmour_{lowerIndex}");
+        upperLegArmourL.SetCategoryAndLabel("UpperLegArmourL", $"UpperLegArmour_{lowerIndex}");
+        upperLegArmourR.SetCategoryAndLabel("UpperLegArmourR", $"UpperLegArmour_{lowerIndex}");
+        lowerLegArmourL.SetCategoryAndLabel("LowerLegArmour", $"LowerLegArmour_{lowerIndex}");
+        lowerLegArmourR.SetCategoryAndLabel("LowerLegArmour", $"LowerLegArmour_{lowerIndex}");
+        shoeL.SetCategoryAndLabel("ShoeL", $"ShoeL_{lowerIndex}");
+        shoeR.SetCategoryAndLabel("ShoeR", $"ShoeR_{lowerIndex}");
     }
 
-    // Update is called once per frame
-    void Update()
+    void UpdateCharacterPreset()
     {
-        
+        CharacterPreset characterPreset = new CharacterPreset();
+
+        characterPreset.skinIndex = skinIndex;
+        characterPreset.upperSetIndex = upperSetIndex;
+        characterPreset.lowerSetIndex = lowerSetIndex;
+        characterPreset.armourIndex = armourIndex;
+        characterPreset.hairIndex = hairIndex;
+        characterPreset.eyeIndex = eyeIndex;
+        characterPreset.isMale = isMale;
+
+        TestPlayer<PlayerData>.SaveCharacterPreset(characterPreset);
     }
 
     public void ChangeGender(bool isMale)
     {
+        this.isMale = isMale;
         currentLibrary.spriteLibraryAsset = isMale ? maleLibraryAsset : femaleLibraryAsset;
+        UpdateCharacterPreset();
     }
 
     public void ChangeEyes(bool isNext)
@@ -43,6 +110,7 @@ public class CharacterSpriteManager : MonoBehaviour
         if (eyeIndex >= 4) { eyeIndex = 0; }
 
         eyes.SetCategoryAndLabel("Eyes", $"Eyes_{eyeIndex}");
+        UpdateCharacterPreset();
     }
 
     public void ChangeHair(bool isNext)
@@ -53,6 +121,7 @@ public class CharacterSpriteManager : MonoBehaviour
         if (hairIndex >= 4) { hairIndex = 0; }
 
         hair.SetCategoryAndLabel("Hair", $"Hair_{hairIndex}");
+        UpdateCharacterPreset();
     }
 
     public void ChangeSkinTone(bool isNext)
@@ -83,6 +152,7 @@ public class CharacterSpriteManager : MonoBehaviour
         lowerLegL.SetCategoryAndLabel("LowerLegSkin", $"LowerLegSkin_{skinIndex}");
         lowerLegR.SetCategoryAndLabel("LowerLegSkin", $"LowerLegSkin_{skinIndex}");
 
+        UpdateCharacterPreset();
     }
 
     public void ChangeArmourIndex(bool isNext)
@@ -133,5 +203,6 @@ public class CharacterSpriteManager : MonoBehaviour
         lowerLegArmourR.SetCategoryAndLabel("LowerLegArmour", $"LowerLegArmour_{lowerIndex}");
         shoeL.SetCategoryAndLabel("ShoeL", $"ShoeL_{lowerIndex}");
         shoeR.SetCategoryAndLabel("ShoeR", $"ShoeR_{lowerIndex}");
+        UpdateCharacterPreset();
     }
 }
