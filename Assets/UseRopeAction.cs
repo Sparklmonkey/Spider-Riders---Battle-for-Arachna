@@ -9,10 +9,10 @@ public class UseRopeAction : MonoBehaviour, IActionItem
     [SerializeField]
     private Image ropeUsedImage;
     [SerializeField]
-    private List<MapTileDisplay> tilesToChange;
+    private List<MapTileDisplay> tilesToChange, transitionTiles;
     private bool isActive;
     [SerializeField]
-    private GameObject animationObject;
+    private GameObject animationObject, openDoorImage;
 
     public void ActionActivate()
     {
@@ -21,11 +21,10 @@ public class UseRopeAction : MonoBehaviour, IActionItem
             Destroy(animationObject);
             isActive = true;
             ropeUsedImage.color = new Color32(byte.MaxValue, byte.MaxValue, byte.MaxValue, byte.MaxValue);
-            //foreach (var item in tilesToChange)
-            //{
-            //    item.isWalkable = true;
-            //}
-            Destroy(this);
+            foreach (var item in tilesToChange)
+            {
+                item.isWalkable = true;
+            }
         }
     }
 }
