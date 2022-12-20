@@ -3,7 +3,13 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - TestTag1
+  - TestTag2
+  - TestTag3
+  - YellowCard
+  - GreenCard
+  - BlueCard
   layers:
   - Default
   - TransparentFX
@@ -40,4 +46,16 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Eyes
+    uniqueID: 1849668303
+    locked: 0
+  - name: Skin
+    uniqueID: 2351611541
+    locked: 0
+  - name: Armour
+    uniqueID: 158421507
+    locked: 0
+  - name: Hair
+    uniqueID: 4057628751
     locked: 0

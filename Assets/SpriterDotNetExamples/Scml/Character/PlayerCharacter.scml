@@ -1,0 +1,705 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<spriter_data scml_version="1.0" generator="BrashMonkey Spriter" generator_version="r11">
+    <folder id="0" name="Male/FaceColour/Front">
+        <file id="0" name="Male/FaceColour/Front/Tone_0.png" width="104" height="128" pivot_x="0.56329" pivot_y="0.158585"/>
+        <file id="1" name="Male/FaceColour/Front/Tone_1.png" width="104" height="128" pivot_x="0.56329" pivot_y="0.158585"/>
+        <file id="2" name="Male/FaceColour/Front/Tone_2.png" width="104" height="128" pivot_x="0.56329" pivot_y="0.158585"/>
+        <file id="3" name="Male/FaceColour/Front/Tone_3.png" width="104" height="128" pivot_x="0.56329" pivot_y="0.158585"/>
+    </folder>
+    <folder id="1" name="Male/Hair/Front">
+        <file id="0" name="Male/Hair/Front/Hair_0.png" width="168" height="152" pivot_x="0.528532" pivot_y="0.547208"/>
+        <file id="1" name="Male/Hair/Front/Hair_1.png" width="128" height="104" pivot_x="0.508833" pivot_y="0.546758"/>
+        <file id="2" name="Male/Hair/Front/Hair_2.png" width="144" height="144" pivot_x="0.344658" pivot_y="0.671644"/>
+        <file id="3" name="Male/Hair/Front/Hair_3.png" width="192" height="192" pivot_x="0.364351" pivot_y="0.562585"/>
+    </folder>
+    <folder id="2" name="Male/UpperArmColour">
+        <file id="0" name="Male/UpperArmColour/2100.png" width="32" height="80" pivot_x="0.534632" pivot_y="0.826279"/>
+    </folder>
+    <folder id="3" name="Male/LowerLegColour">
+        <file id="0" name="Male/LowerLegColour/2006.png" width="56" height="216" pivot_x="0.49809" pivot_y="0.928728"/>
+    </folder>
+    <folder id="4" name="Male/FistColour">
+        <file id="0" name="Male/FistColour/2041.png" width="56" height="64" pivot_x="0.522556" pivot_y="0.838462"/>
+    </folder>
+    <folder id="5" name="Male/Waist">
+        <file id="0" name="Male/Waist/2279.png" width="120" height="72" pivot_x="0" pivot_y="1"/>
+    </folder>
+    <folder id="6" name="Male/UpperLeg">
+        <file id="0" name="Male/UpperLeg/2081.png" width="72" height="144" pivot_x="0" pivot_y="1"/>
+    </folder>
+    <folder id="7" name="Male/UpperLegColour">
+        <file id="0" name="Male/UpperLegColour/2076.png" width="48" height="152" pivot_x="0.489796" pivot_y="0.915033"/>
+    </folder>
+    <folder id="8" name="Male/Shoes/DownFacing">
+        <file id="0" name="Male/Shoes/DownFacing/2150.png" width="88" height="80" pivot_x="0" pivot_y="1"/>
+    </folder>
+    <folder id="9" name="Male/Shoes/SideFacing">
+        <file id="0" name="Male/Shoes/SideFacing/1979.png" width="128" height="64" pivot_x="0" pivot_y="1"/>
+    </folder>
+    <folder id="10" name="Male/LowerLeg/NewFolder">
+        <file id="0" name="Male/LowerLeg/NewFolder/2011.png" width="48" height="64" pivot_x="0" pivot_y="1"/>
+    </folder>
+    <folder id="11" name="Male/ShoulderColour">
+        <file id="0" name="Male/ShoulderColour/2116.png" width="96" height="56" pivot_x="0.502909" pivot_y="0.528684"/>
+    </folder>
+    <folder id="12" name="Male/Skin Colour/Tone_1">
+        <file id="0" name="Male/Skin Colour/Tone_1/Face.png" width="104" height="128" pivot_x="0.56329" pivot_y="0.158585"/>
+        <file id="1" name="Male/Skin Colour/Tone_1/Fist.png" width="56" height="64" pivot_x="0.522556" pivot_y="0.838462"/>
+        <file id="2" name="Male/Skin Colour/Tone_1/Forearm.png" width="48" height="120" pivot_x="0.489796" pivot_y="0.92562"/>
+        <file id="3" name="Male/Skin Colour/Tone_1/Shoulder.png" width="96" height="56" pivot_x="0.502909" pivot_y="0.528684"/>
+        <file id="4" name="Male/Skin Colour/Tone_1/LowerLeg.png" width="56" height="216" pivot_x="0.49809" pivot_y="0.928728"/>
+        <file id="5" name="Male/Skin Colour/Tone_1/UpperLeg.png" width="48" height="152" pivot_x="0.489796" pivot_y="0.915033"/>
+        <file id="6" name="Male/Skin Colour/Tone_1/UpperArm.png" width="32" height="80" pivot_x="0.534632" pivot_y="0.826279"/>
+        <file id="7" name="Male/Skin Colour/Tone_1/Torso.png" width="160" height="240" pivot_x="0.493789" pivot_y="0.605153"/>
+        <file id="8" name="Male/Skin Colour/Tone_1/ForeArm.png" width="48" height="120" pivot_x="0" pivot_y="1"/>
+    </folder>
+    <folder id="13" name="Male/Skin Colour/Tone_2">
+        <file id="0" name="Male/Skin Colour/Tone_2/Face.png" width="104" height="128" pivot_x="0.56329" pivot_y="0.158585"/>
+        <file id="1" name="Male/Skin Colour/Tone_2/Fist.png" width="56" height="64" pivot_x="0.522556" pivot_y="0.838462"/>
+        <file id="2" name="Male/Skin Colour/Tone_2/ForeArm.png" width="48" height="120" pivot_x="0.489796" pivot_y="0.92562"/>
+        <file id="3" name="Male/Skin Colour/Tone_2/Shoulder.png" width="96" height="56" pivot_x="0.502909" pivot_y="0.528684"/>
+        <file id="4" name="Male/Skin Colour/Tone_2/LowerLeg.png" width="56" height="216" pivot_x="0.49809" pivot_y="0.928728"/>
+        <file id="5" name="Male/Skin Colour/Tone_2/UpperLeg.png" width="48" height="152" pivot_x="0.489796" pivot_y="0.915033"/>
+        <file id="6" name="Male/Skin Colour/Tone_2/UpperArm.png" width="32" height="80" pivot_x="0.534632" pivot_y="0.826279"/>
+        <file id="7" name="Male/Skin Colour/Tone_2/Torso.png" width="160" height="240" pivot_x="0.493789" pivot_y="0.605153"/>
+    </folder>
+    <folder id="14" name="Male/Skin Colour/Tone_3">
+        <file id="0" name="Male/Skin Colour/Tone_3/Face.png" width="104" height="128" pivot_x="0.56329" pivot_y="0.158585"/>
+        <file id="1" name="Male/Skin Colour/Tone_3/Fist.png" width="56" height="64" pivot_x="0.522556" pivot_y="0.838462"/>
+        <file id="2" name="Male/Skin Colour/Tone_3/ForeArm.png" width="48" height="120" pivot_x="0.489796" pivot_y="0.92562"/>
+        <file id="3" name="Male/Skin Colour/Tone_3/Shoulder.png" width="96" height="56" pivot_x="0.502909" pivot_y="0.528684"/>
+        <file id="4" name="Male/Skin Colour/Tone_3/LowerLeg.png" width="56" height="216" pivot_x="0.49809" pivot_y="0.928728"/>
+        <file id="5" name="Male/Skin Colour/Tone_3/UpperLeg.png" width="48" height="152" pivot_x="0.489796" pivot_y="0.915033"/>
+        <file id="6" name="Male/Skin Colour/Tone_3/UpperArm.png" width="32" height="80" pivot_x="0.534632" pivot_y="0.826279"/>
+        <file id="7" name="Male/Skin Colour/Tone_3/Torso.png" width="160" height="240" pivot_x="0.493789" pivot_y="0.605153"/>
+    </folder>
+    <folder id="15" name="Male/Skin Colour/Tone_4">
+        <file id="0" name="Male/Skin Colour/Tone_4/Face.png" width="104" height="128" pivot_x="0.56329" pivot_y="0.158585"/>
+        <file id="1" name="Male/Skin Colour/Tone_4/Fist.png" width="56" height="64" pivot_x="0.522556" pivot_y="0.838462"/>
+        <file id="2" name="Male/Skin Colour/Tone_4/ForeArm.png" width="48" height="120" pivot_x="0.489796" pivot_y="0.92562"/>
+        <file id="3" name="Male/Skin Colour/Tone_4/Shoulder.png" width="96" height="56" pivot_x="0.502909" pivot_y="0.528684"/>
+        <file id="4" name="Male/Skin Colour/Tone_4/LowerLeg.png" width="56" height="216" pivot_x="0.49809" pivot_y="0.928728"/>
+        <file id="5" name="Male/Skin Colour/Tone_4/UpperLeg.png" width="48" height="152" pivot_x="0.489796" pivot_y="0.915033"/>
+        <file id="6" name="Male/Skin Colour/Tone_4/UpperArm.png" width="32" height="80" pivot_x="0.534632" pivot_y="0.826279"/>
+        <file id="7" name="Male/Skin Colour/Tone_4/Torso.png" width="160" height="240" pivot_x="0.493789" pivot_y="0.605153"/>
+    </folder>
+    <folder id="16" name="Male/UpperArmour/Armour_0">
+        <file id="0" name="Male/UpperArmour/Armour_0/Screenshot 2022-05-02 095915.png" width="549" height="622" pivot_x="0" pivot_y="1"/>
+        <file id="1" name="Male/UpperArmour/Armour_0/2403.png" width="168" height="216" pivot_x="0" pivot_y="1"/>
+        <file id="2" name="Male/UpperArmour/Armour_0/2237.png" width="128" height="64" pivot_x="0" pivot_y="1"/>
+        <file id="3" name="Male/UpperArmour/Armour_0/2046.png" width="56" height="64" pivot_x="0.522556" pivot_y="0.838462"/>
+        <file id="4" name="Male/UpperArmour/Armour_0/2404.png" width="168" height="224" pivot_x="-0.00218287" pivot_y="0.997527"/>
+        <file id="5" name="Male/UpperArmour/Armour_0/2406.png" width="168" height="216" pivot_x="0" pivot_y="1"/>
+        <file id="6" name="Male/UpperArmour/Armour_0/2239.png" width="104" height="56" pivot_x="0.0537426" pivot_y="0.964752"/>
+        <file id="7" name="Male/UpperArmour/Armour_0/2106.png" width="32" height="80" pivot_x="0" pivot_y="1"/>
+        <file id="8" name="Male/UpperArmour/Armour_0/2052.png" width="48" height="120" pivot_x="0" pivot_y="1"/>
+        <file id="9" name="Male/UpperArmour/Armour_0/2405.png" width="168" height="224" pivot_x="0" pivot_y="1"/>
+        <file id="10" name="Male/UpperArmour/Armour_0/2238.png" width="104" height="56" pivot_x="0" pivot_y="1"/>
+        <file id="11" name="Male/UpperArmour/Armour_0/2105.png" width="32" height="80" pivot_x="0" pivot_y="1"/>
+        <file id="12" name="Male/UpperArmour/Armour_0/2051.png" width="48" height="120" pivot_x="0" pivot_y="1"/>
+        <file id="13" name="Male/UpperArmour/Armour_0/2050.png" width="48" height="96" pivot_x="-0.00301066" pivot_y="1.29931"/>
+        <file id="14" name="Male/UpperArmour/Armour_0/2239 - Copy.png" width="104" height="56" pivot_x="0" pivot_y="1"/>
+        <file id="15" name="Male/UpperArmour/Armour_0/2238 - Copy.png" width="104" height="56" pivot_x="0" pivot_y="1"/>
+    </folder>
+    <folder id="17" name="Male/Eyes/Front">
+        <file id="0" name="Male/Eyes/Front/Eyes_0.png" width="40" height="32" pivot_x="0.464794" pivot_y="0.5656"/>
+        <file id="1" name="Male/Eyes/Front/Eyes_1.png" width="40" height="32" pivot_x="0.464794" pivot_y="0.5656"/>
+        <file id="2" name="Male/Eyes/Front/Eyes_2.png" width="40" height="32" pivot_x="0.464794" pivot_y="0.5656"/>
+        <file id="3" name="Male/Eyes/Front/Eyes_3.png" width="40" height="32" pivot_x="0.464794" pivot_y="0.5656"/>
+    </folder>
+    <folder id="18" name="Male/UpperArmour/Armour_1">
+        <file id="0" name="Male/UpperArmour/Armour_1/2407.png" width="168" height="216" pivot_x="-0.00429635" pivot_y="1.00877"/>
+        <file id="1" name="Male/UpperArmour/Armour_1/2240.png" width="128" height="80" pivot_x="0.166808" pivot_y="0.811134"/>
+        <file id="2" name="Male/UpperArmour/Armour_1/2124.png" width="120" height="88" pivot_x="0.081011" pivot_y="0.733081"/>
+        <file id="3" name="Male/UpperArmour/Armour_1/2053.png" width="48" height="80" pivot_x="-0.00920485" pivot_y="1.47658"/>
+        <file id="4" name="Male/UpperArmour/Armour_1/2107.png" width="32" height="80" pivot_x="0" pivot_y="1"/>
+        <file id="5" name="Male/UpperArmour/Armour_1/2125.png" width="120" height="88" pivot_x="0.081011" pivot_y="0.733081"/>
+        <file id="6" name="Male/UpperArmour/Armour_1/2126.png" width="120" height="88" pivot_x="0.081011" pivot_y="0.733081"/>
+        <file id="7" name="Male/UpperArmour/Armour_1/2127.png" width="120" height="88" pivot_x="0.081011" pivot_y="0.733081"/>
+        <file id="8" name="Male/UpperArmour/Armour_1/2242.png" width="128" height="80" pivot_x="0.166808" pivot_y="0.811134"/>
+        <file id="9" name="Male/UpperArmour/Armour_1/2241.png" width="128" height="80" pivot_x="0.166808" pivot_y="0.811134"/>
+        <file id="10" name="Male/UpperArmour/Armour_1/2408.png" width="168" height="216" pivot_x="-0.00429635" pivot_y="1.00877"/>
+        <file id="11" name="Male/UpperArmour/Armour_1/2409.png" width="168" height="216" pivot_x="-0.00429635" pivot_y="1.00877"/>
+        <file id="12" name="Male/UpperArmour/Armour_1/2410.png" width="168" height="216" pivot_x="-0.00429635" pivot_y="1.00877"/>
+        <file id="13" name="Male/UpperArmour/Armour_1/2243.png" width="128" height="80" pivot_x="0.166808" pivot_y="0.811134"/>
+    </folder>
+    <folder id="19" name="Male/UpperArmour/Armour_2">
+        <file id="0" name="Male/UpperArmour/Armour_2/2411.png" width="168" height="256" pivot_x="-0.0197886" pivot_y="0.917844"/>
+        <file id="1" name="Male/UpperArmour/Armour_2/2244.png" width="152" height="104" pivot_x="0.234434" pivot_y="0.651157"/>
+        <file id="2" name="Male/UpperArmour/Armour_2/2054.png" width="64" height="120" pivot_x="0.0978558" pivot_y="0.993426"/>
+        <file id="3" name="Male/UpperArmour/Armour_2/2128.png" width="128" height="120" pivot_x="0.162079" pivot_y="0.568589"/>
+        <file id="4" name="Male/UpperArmour/Armour_2/2412.png" width="168" height="256" pivot_x="-0.0197886" pivot_y="0.917844"/>
+        <file id="5" name="Male/UpperArmour/Armour_2/2413.png" width="168" height="256" pivot_x="-0.0197886" pivot_y="0.917844"/>
+        <file id="6" name="Male/UpperArmour/Armour_2/2414.png" width="168" height="256" pivot_x="-0.0197886" pivot_y="0.917844"/>
+        <file id="7" name="Male/UpperArmour/Armour_2/2245.png" width="152" height="104" pivot_x="0.234434" pivot_y="0.651157"/>
+        <file id="8" name="Male/UpperArmour/Armour_2/2246.png" width="152" height="104" pivot_x="0.234434" pivot_y="0.651157"/>
+        <file id="9" name="Male/UpperArmour/Armour_2/2247.png" width="152" height="104" pivot_x="0.234434" pivot_y="0.651157"/>
+        <file id="10" name="Male/UpperArmour/Armour_2/2055.png" width="64" height="120" pivot_x="0.0978558" pivot_y="0.993426"/>
+        <file id="11" name="Male/UpperArmour/Armour_2/2129.png" width="128" height="120" pivot_x="0.162079" pivot_y="0.568589"/>
+        <file id="12" name="Male/UpperArmour/Armour_2/2107.png" width="32" height="80" pivot_x="0" pivot_y="1"/>
+        <file id="13" name="Male/UpperArmour/Armour_2/2130.png" width="128" height="120" pivot_x="0.162079" pivot_y="0.568589"/>
+        <file id="14" name="Male/UpperArmour/Armour_2/2131.png" width="128" height="120" pivot_x="0.162079" pivot_y="0.568589"/>
+        <file id="15" name="Male/UpperArmour/Armour_2/2057.png" width="64" height="120" pivot_x="0.0978558" pivot_y="0.993426"/>
+        <file id="16" name="Male/UpperArmour/Armour_2/2056.png" width="64" height="120" pivot_x="0.0978558" pivot_y="0.993426"/>
+        <file id="17" name="Male/UpperArmour/Armour_2/2108.png" width="32" height="80" pivot_x="0" pivot_y="1"/>
+        <file id="18" name="Male/UpperArmour/Armour_2/2109.png" width="32" height="80" pivot_x="0" pivot_y="1"/>
+    </folder>
+    <folder id="20" name="Male/UpperArmour/Armour_3">
+        <file id="0" name="Male/UpperArmour/Armour_3/2415.png" width="168" height="288" pivot_x="-0.00887574" pivot_y="0.929066"/>
+        <file id="1" name="Male/UpperArmour/Armour_3/2248.png" width="160" height="112" pivot_x="0.100974" pivot_y="0.794732"/>
+        <file id="2" name="Male/UpperArmour/Armour_3/2058.png" width="56" height="120" pivot_x="0.0695089" pivot_y="1.04929"/>
+        <file id="3" name="Male/UpperArmour/Armour_3/2132.png" width="104" height="144" pivot_x="0.146703" pivot_y="0.522414"/>
+        <file id="4" name="Male/UpperArmour/Armour_3/2109.png" width="32" height="80" pivot_x="0" pivot_y="1"/>
+        <file id="5" name="Male/UpperArmour/Armour_3/2251.png" width="160" height="104" pivot_x="0.100974" pivot_y="0.794732"/>
+        <file id="6" name="Male/UpperArmour/Armour_3/2249.png" width="160" height="112" pivot_x="0.100974" pivot_y="0.794732"/>
+        <file id="7" name="Male/UpperArmour/Armour_3/2250.png" width="160" height="112" pivot_x="0.100974" pivot_y="0.794732"/>
+        <file id="8" name="Male/UpperArmour/Armour_3/2416.png" width="168" height="288" pivot_x="-0.00887574" pivot_y="0.929066"/>
+        <file id="9" name="Male/UpperArmour/Armour_3/2417.png" width="168" height="288" pivot_x="-0.00887574" pivot_y="0.929066"/>
+        <file id="10" name="Male/UpperArmour/Armour_3/2418.png" width="168" height="288" pivot_x="-0.00887574" pivot_y="0.929066"/>
+        <file id="11" name="Male/UpperArmour/Armour_3/2133.png" width="104" height="144" pivot_x="0.146703" pivot_y="0.522414"/>
+        <file id="12" name="Male/UpperArmour/Armour_3/2134.png" width="104" height="144" pivot_x="0.146703" pivot_y="0.522414"/>
+        <file id="13" name="Male/UpperArmour/Armour_3/2135.png" width="104" height="144" pivot_x="0.146703" pivot_y="0.522414"/>
+        <file id="14" name="Male/UpperArmour/Armour_3/2059.png" width="56" height="120" pivot_x="0.0695089" pivot_y="1.04929"/>
+        <file id="15" name="Male/UpperArmour/Armour_3/2060.png" width="56" height="120" pivot_x="0.0695089" pivot_y="1.04929"/>
+        <file id="16" name="Male/UpperArmour/Armour_3/2061.png" width="56" height="120" pivot_x="0.0695089" pivot_y="1.04929"/>
+    </folder>
+    <folder id="21" name="Male/UpperArmour/Armour_4">
+        <file id="0" name="Male/UpperArmour/Armour_4/2419.png" width="168" height="280" pivot_x="-0.00295858" pivot_y="0.902135"/>
+        <file id="1" name="Male/UpperArmour/Armour_4/2252.png" width="184" height="152" pivot_x="0.213514" pivot_y="0.493464"/>
+        <file id="2" name="Male/UpperArmour/Armour_4/2062.png" width="48" height="128" pivot_x="0" pivot_y="1"/>
+        <file id="3" name="Male/UpperArmour/Armour_4/2136.png" width="168" height="144" pivot_x="0.192308" pivot_y="0.589655"/>
+        <file id="4" name="Male/UpperArmour/Armour_4/2420.png" width="168" height="280" pivot_x="-0.00295858" pivot_y="0.902135"/>
+        <file id="5" name="Male/UpperArmour/Armour_4/2421.png" width="168" height="280" pivot_x="-0.00295858" pivot_y="0.902135"/>
+        <file id="6" name="Male/UpperArmour/Armour_4/2422.png" width="168" height="280" pivot_x="-0.00295858" pivot_y="0.902135"/>
+        <file id="7" name="Male/UpperArmour/Armour_4/2253.png" width="184" height="152" pivot_x="0.213514" pivot_y="0.493464"/>
+        <file id="8" name="Male/UpperArmour/Armour_4/2254.png" width="184" height="152" pivot_x="0.213514" pivot_y="0.493464"/>
+        <file id="9" name="Male/UpperArmour/Armour_4/2255.png" width="184" height="152" pivot_x="0.213514" pivot_y="0.493464"/>
+        <file id="10" name="Male/UpperArmour/Armour_4/2137.png" width="168" height="144" pivot_x="0.192308" pivot_y="0.589655"/>
+        <file id="11" name="Male/UpperArmour/Armour_4/2138.png" width="168" height="144" pivot_x="0.192308" pivot_y="0.589655"/>
+        <file id="12" name="Male/UpperArmour/Armour_4/2139.png" width="168" height="144" pivot_x="0.192308" pivot_y="0.589655"/>
+        <file id="13" name="Male/UpperArmour/Armour_4/2109.png" width="32" height="80" pivot_x="0" pivot_y="1"/>
+        <file id="14" name="Male/UpperArmour/Armour_4/2063.png" width="48" height="128" pivot_x="0" pivot_y="1"/>
+        <file id="15" name="Male/UpperArmour/Armour_4/2064.png" width="48" height="128" pivot_x="0" pivot_y="1"/>
+        <file id="16" name="Male/UpperArmour/Armour_4/2065.png" width="48" height="128" pivot_x="0" pivot_y="1"/>
+    </folder>
+    <folder id="22" name="Male">
+        <file id="0" name="Male/Screenshot 2022-06-03 222631.png" width="267" height="585" pivot_x="0" pivot_y="1"/>
+    </folder>
+    <folder id="23" name="Animations">
+        <file id="0" name="Animations/1.png" width="94" height="127" pivot_x="0" pivot_y="1"/>
+        <file id="1" name="Animations/Screenshot 2022-06-03 225813.png" width="367" height="644" pivot_x="0" pivot_y="1"/>
+    </folder>
+    <entity id="0" name="PlayerCharacter">
+        <obj_info name="bone_000" type="bone" w="63.5714" h="10"/>
+        <obj_info name="bone_001" type="bone" w="70.6024" h="10"/>
+        <obj_info name="bone_002" type="bone" w="63.3181" h="10"/>
+        <obj_info name="bone_003" type="bone" w="154.315" h="10"/>
+        <obj_info name="bone_004" type="bone" w="115.569" h="10"/>
+        <obj_info name="bone_005" type="bone" w="25.3703" h="10"/>
+        <obj_info name="bone_006" type="bone" w="142.408" h="10"/>
+        <obj_info name="bone_007" type="bone" w="102.899" h="10"/>
+        <obj_info name="bone_008" type="bone" w="28.3871" h="10"/>
+        <obj_info name="bone_009" type="bone" w="222.116" h="10"/>
+        <obj_info name="bone_010" type="bone" w="126.5" h="10"/>
+        <obj_info name="bone_011" type="bone" w="197.008" h="10"/>
+        <obj_info name="bone_012" type="bone" w="48.3403" h="10"/>
+        <obj_info name="bone_013" type="bone" w="123.662" h="10"/>
+        <obj_info name="bone_014" type="bone" w="192.166" h="10"/>
+        <obj_info name="bone_015" type="bone" w="27.7384" h="10"/>
+        <character_map id="0" name="Tone_0"/>
+        <character_map id="1" name="Tone_1">
+            <map folder="12" file="0" target_folder="13" target_file="0"/>
+            <map folder="12" file="1" target_folder="13" target_file="1"/>
+            <map folder="12" file="4" target_folder="13" target_file="4"/>
+            <map folder="12" file="3" target_folder="13" target_file="3"/>
+            <map folder="12" file="7" target_folder="13" target_file="7"/>
+            <map folder="12" file="6" target_folder="13" target_file="6"/>
+            <map folder="12" file="5" target_folder="13" target_file="5"/>
+            <map folder="12" file="2" target_folder="13" target_file="2"/>
+        </character_map>
+        <character_map id="2" name="Tone_2">
+            <map folder="12" file="0" target_folder="14" target_file="0"/>
+            <map folder="12" file="1" target_folder="14" target_file="1"/>
+            <map folder="12" file="4" target_folder="14" target_file="4"/>
+            <map folder="12" file="3" target_folder="14" target_file="3"/>
+            <map folder="12" file="7" target_folder="14" target_file="7"/>
+            <map folder="12" file="6" target_folder="14" target_file="6"/>
+            <map folder="12" file="5" target_folder="14" target_file="5"/>
+            <map folder="12" file="2" target_folder="14" target_file="2"/>
+        </character_map>
+        <character_map id="3" name="Tone_3">
+            <map folder="12" file="0" target_folder="15" target_file="0"/>
+            <map folder="12" file="1" target_folder="15" target_file="1"/>
+            <map folder="12" file="4" target_folder="15" target_file="4"/>
+            <map folder="12" file="3" target_folder="15" target_file="3"/>
+            <map folder="12" file="7" target_folder="15" target_file="7"/>
+            <map folder="12" file="6" target_folder="15" target_file="6"/>
+            <map folder="12" file="5" target_folder="15" target_file="5"/>
+            <map folder="12" file="2" target_folder="15" target_file="2"/>
+        </character_map>
+        <character_map id="4" name="Hair_0"/>
+        <character_map id="5" name="Hair_1">
+            <map folder="1" file="0" target_folder="1" target_file="1"/>
+        </character_map>
+        <character_map id="6" name="Hair_2">
+            <map folder="1" file="0" target_folder="1" target_file="2"/>
+        </character_map>
+        <character_map id="7" name="Hair_3">
+            <map folder="1" file="0" target_folder="1" target_file="3"/>
+        </character_map>
+        <character_map id="8" name="Eyes_0"/>
+        <character_map id="9" name="Eyes_1">
+            <map folder="17" file="0" target_folder="17" target_file="1"/>
+        </character_map>
+        <character_map id="10" name="Eyes_2">
+            <map folder="17" file="0" target_folder="17" target_file="2"/>
+        </character_map>
+        <character_map id="11" name="Eyes_3">
+            <map folder="17" file="0" target_folder="17" target_file="3"/>
+        </character_map>
+        <character_map id="12" name="Armour0_Set1">
+            <map folder="16" file="5" target_folder="16" target_file="9"/>
+            <map folder="16" file="6" target_folder="16" target_file="10"/>
+            <map folder="16" file="7" target_folder="16" target_file="11"/>
+            <map folder="16" file="8" target_folder="16" target_file="12"/>
+            <map folder="16" file="3"/>
+            <map folder="16" file="14" target_folder="16" target_file="15"/>
+        </character_map>
+        <character_map id="13" name="Armour0_Set2">
+            <map folder="16" file="5" target_folder="16" target_file="1"/>
+            <map folder="16" file="6" target_folder="16" target_file="2"/>
+            <map folder="16" file="7"/>
+            <map folder="16" file="8"/>
+            <map folder="16" file="14" target_folder="16" target_file="2"/>
+        </character_map>
+        <character_map id="14" name="Armour0_Set3">
+            <map folder="16" file="3"/>
+            <map folder="16" file="7"/>
+            <map folder="16" file="6"/>
+            <map folder="16" file="5" target_folder="16" target_file="4"/>
+            <map folder="16" file="8" target_folder="16" target_file="13"/>
+            <map folder="16" file="14"/>
+        </character_map>
+        <character_map id="15" name="Armour1_Set0">
+            <map folder="16" file="5" target_folder="18" target_file="0"/>
+            <map folder="16" file="6" target_folder="18" target_file="1"/>
+            <map folder="16" file="7" target_folder="18" target_file="4"/>
+            <map folder="16" file="8" target_folder="18" target_file="3"/>
+            <map folder="16" file="14" target_folder="18" target_file="2"/>
+        </character_map>
+        <character_map id="16" name="Armour1_Set1">
+            <map folder="16" file="5" target_folder="18" target_file="10"/>
+            <map folder="16" file="6" target_folder="18" target_file="9"/>
+            <map folder="16" file="7" target_folder="18" target_file="4"/>
+            <map folder="16" file="8" target_folder="18" target_file="3"/>
+            <map folder="16" file="14" target_folder="18" target_file="5"/>
+        </character_map>
+        <character_map id="17" name="Armour1_Set2">
+            <map folder="16" file="5" target_folder="18" target_file="11"/>
+            <map folder="16" file="6" target_folder="18" target_file="8"/>
+            <map folder="16" file="14" target_folder="18" target_file="6"/>
+            <map folder="16" file="7" target_folder="18" target_file="4"/>
+            <map folder="16" file="8" target_folder="18" target_file="3"/>
+        </character_map>
+        <character_map id="18" name="Armour1_Set3">
+            <map folder="16" file="5" target_folder="18" target_file="12"/>
+            <map folder="16" file="6" target_folder="18" target_file="13"/>
+            <map folder="16" file="7" target_folder="18" target_file="4"/>
+            <map folder="16" file="8" target_folder="18" target_file="3"/>
+            <map folder="16" file="14" target_folder="18" target_file="7"/>
+        </character_map>
+        <character_map id="19" name="Armour2_Set0">
+            <map folder="16" file="5" target_folder="19" target_file="0"/>
+            <map folder="16" file="6" target_folder="19" target_file="1"/>
+            <map folder="16" file="8" target_folder="19" target_file="2"/>
+            <map folder="16" file="14" target_folder="19" target_file="3"/>
+            <map folder="16" file="3"/>
+        </character_map>
+        <character_map id="20" name="Armour2_Set1">
+            <map folder="16" file="5" target_folder="19" target_file="4"/>
+            <map folder="16" file="6" target_folder="19" target_file="7"/>
+            <map folder="16" file="8" target_folder="19" target_file="10"/>
+            <map folder="16" file="14" target_folder="19" target_file="11"/>
+            <map folder="16" file="7" target_folder="19" target_file="12"/>
+            <map folder="16" file="3"/>
+        </character_map>
+        <character_map id="21" name="Armour2_Set2">
+            <map folder="16" file="5" target_folder="19" target_file="5"/>
+            <map folder="16" file="6" target_folder="19" target_file="8"/>
+            <map folder="16" file="7" target_folder="19" target_file="17"/>
+            <map folder="16" file="8" target_folder="19" target_file="16"/>
+            <map folder="16" file="14" target_folder="19" target_file="13"/>
+            <map folder="16" file="3"/>
+        </character_map>
+        <character_map id="22" name="Armour2_Set3">
+            <map folder="16" file="5" target_folder="19" target_file="6"/>
+            <map folder="16" file="6" target_folder="19" target_file="9"/>
+            <map folder="16" file="7" target_folder="19" target_file="18"/>
+            <map folder="16" file="8" target_folder="19" target_file="15"/>
+            <map folder="16" file="14" target_folder="19" target_file="14"/>
+            <map folder="16" file="3"/>
+        </character_map>
+        <character_map id="23" name="Armour3_Set0">
+            <map folder="16" file="5" target_folder="20" target_file="0"/>
+            <map folder="16" file="6" target_folder="20" target_file="1"/>
+            <map folder="16" file="8" target_folder="20" target_file="2"/>
+            <map folder="16" file="14" target_folder="20" target_file="3"/>
+            <map folder="16" file="7" target_folder="20" target_file="4"/>
+        </character_map>
+        <character_map id="24" name="Armour3_Set1">
+            <map folder="16" file="5" target_folder="20" target_file="8"/>
+            <map folder="16" file="6" target_folder="20" target_file="6"/>
+            <map folder="16" file="7" target_folder="20" target_file="4"/>
+            <map folder="16" file="8" target_folder="20" target_file="14"/>
+            <map folder="16" file="14" target_folder="20" target_file="11"/>
+        </character_map>
+        <character_map id="25" name="Armour3_Set2">
+            <map folder="16" file="5" target_folder="20" target_file="9"/>
+            <map folder="16" file="6" target_folder="20" target_file="7"/>
+            <map folder="16" file="7" target_folder="20" target_file="4"/>
+            <map folder="16" file="8" target_folder="20" target_file="15"/>
+            <map folder="16" file="14" target_folder="20" target_file="12"/>
+        </character_map>
+        <character_map id="26" name="Armour3_Set3">
+            <map folder="16" file="5" target_folder="20" target_file="10"/>
+            <map folder="16" file="6" target_folder="20" target_file="5"/>
+            <map folder="16" file="7" target_folder="20" target_file="4"/>
+            <map folder="16" file="8" target_folder="20" target_file="16"/>
+            <map folder="16" file="14" target_folder="20" target_file="13"/>
+        </character_map>
+        <character_map id="27" name="Armour4_Set0">
+            <map folder="16" file="5" target_folder="21" target_file="0"/>
+            <map folder="16" file="6" target_folder="21" target_file="1"/>
+            <map folder="16" file="8" target_folder="21" target_file="2"/>
+            <map folder="16" file="14" target_folder="21" target_file="3"/>
+            <map folder="16" file="7" target_folder="21" target_file="13"/>
+        </character_map>
+        <character_map id="28" name="Armour4_Set1">
+            <map folder="16" file="5" target_folder="21" target_file="4"/>
+            <map folder="16" file="6" target_folder="21" target_file="7"/>
+            <map folder="16" file="7" target_folder="21" target_file="13"/>
+            <map folder="16" file="8" target_folder="21" target_file="14"/>
+            <map folder="16" file="14" target_folder="21" target_file="10"/>
+        </character_map>
+        <character_map id="29" name="Armour4_Set2">
+            <map folder="16" file="5" target_folder="21" target_file="5"/>
+            <map folder="16" file="6" target_folder="21" target_file="8"/>
+            <map folder="16" file="7" target_folder="21" target_file="13"/>
+            <map folder="16" file="8" target_folder="21" target_file="15"/>
+            <map folder="16" file="14" target_folder="21" target_file="11"/>
+        </character_map>
+        <character_map id="30" name="Armour4_Set3">
+            <map folder="16" file="5" target_folder="21" target_file="6"/>
+            <map folder="16" file="6" target_folder="21" target_file="9"/>
+            <map folder="16" file="7" target_folder="21" target_file="13"/>
+            <map folder="16" file="8" target_folder="21" target_file="16"/>
+            <map folder="16" file="14" target_folder="21" target_file="12"/>
+        </character_map>
+        <animation id="0" name="NewAnimation_000" length="1000" interval="100">
+            <mainline>
+                <key id="0">
+                    <object_ref id="0" timeline="0" key="0" z_index="0"/>
+                    <object_ref id="1" timeline="1" key="0" z_index="1"/>
+                    <object_ref id="2" timeline="2" key="0" z_index="2"/>
+                    <object_ref id="3" timeline="3" key="0" z_index="3"/>
+                    <object_ref id="4" timeline="4" key="0" z_index="4"/>
+                    <object_ref id="5" timeline="5" key="0" z_index="5"/>
+                </key>
+            </mainline>
+            <timeline id="0" name="Screenshot 2022-06-03 225813_000">
+                <key id="0" spin="0">
+                    <object folder="23" file="1" x="-162.555727" y="349.121458" scale_x="1.25" scale_y="1.2"/>
+                </key>
+            </timeline>
+            <timeline id="1" name="Face">
+                <key id="0" spin="0">
+                    <object folder="12" file="0" x="105.46636" y="200.50698"/>
+                </key>
+            </timeline>
+            <timeline id="2" name="Fist_001">
+                <key id="0" spin="0">
+                    <object folder="12" file="1" x="-66.19217" y="233.80783" angle="108.435" scale_x="-0.9" scale_y="0.9"/>
+                </key>
+            </timeline>
+            <timeline id="3" name="ForeArm">
+                <key id="0" spin="0">
+                    <object folder="12" file="8" x="-89.849624" y="125.56391" angle="177.207298" scale_x="-1" scale_y="0.9"/>
+                </key>
+            </timeline>
+            <timeline id="4" name="UpperArm_001">
+                <key id="0" spin="0">
+                    <object folder="12" file="6" x="5.733264" y="145.004853" angle="271.866152" scale_x="1" scale_y="1"/>
+                </key>
+            </timeline>
+            <timeline id="5" name="Torso_000">
+                <key id="0" spin="0">
+                    <object folder="12" file="7" x="13.67994" y="141.491796" angle="12.476975" scale_y="1" a="0.53793"/>
+                </key>
+            </timeline>
+        </animation>
+        <animation id="1" name="NewAnimation" length="1000" interval="100">
+            <mainline>
+                <key id="0">
+                    <bone_ref id="0" timeline="0" key="0"/>
+                    <bone_ref id="1" parent="0" timeline="1" key="0"/>
+                    <bone_ref id="2" parent="1" timeline="3" key="0"/>
+                    <bone_ref id="3" parent="2" timeline="4" key="0"/>
+                    <bone_ref id="4" parent="3" timeline="5" key="0"/>
+                    <bone_ref id="5" parent="0" timeline="2" key="0"/>
+                    <bone_ref id="6" parent="5" timeline="6" key="0"/>
+                    <bone_ref id="7" parent="6" timeline="7" key="0"/>
+                    <bone_ref id="8" parent="7" timeline="8" key="0"/>
+                    <bone_ref id="9" parent="0" timeline="9" key="0"/>
+                    <bone_ref id="10" parent="9" timeline="10" key="0"/>
+                    <bone_ref id="11" parent="10" timeline="11" key="0"/>
+                    <bone_ref id="12" parent="11" timeline="12" key="0"/>
+                    <bone_ref id="13" parent="9" timeline="13" key="0"/>
+                    <bone_ref id="14" parent="13" timeline="14" key="0"/>
+                    <bone_ref id="15" parent="14" timeline="15" key="0"/>
+                    <object_ref id="0" timeline="41" key="0" z_index="0"/>
+                    <object_ref id="1" timeline="17" key="0" z_index="1"/>
+                    <object_ref id="2" timeline="18" key="0" z_index="2"/>
+                    <object_ref id="3" timeline="19" key="0" z_index="3"/>
+                    <object_ref id="4" timeline="20" key="0" z_index="4"/>
+                    <object_ref id="5" timeline="21" key="0" z_index="5"/>
+                    <object_ref id="6" timeline="22" key="0" z_index="6"/>
+                    <object_ref id="7" timeline="26" key="0" z_index="7"/>
+                    <object_ref id="8" timeline="23" key="0" z_index="8"/>
+                    <object_ref id="9" timeline="37" key="0" z_index="9"/>
+                    <object_ref id="10" timeline="35" key="0" z_index="10"/>
+                    <object_ref id="11" timeline="40" key="0" z_index="11"/>
+                    <object_ref id="12" timeline="27" key="0" z_index="12"/>
+                    <object_ref id="13" timeline="25" key="0" z_index="13"/>
+                    <object_ref id="14" timeline="24" key="0" z_index="14"/>
+                    <object_ref id="15" timeline="28" key="0" z_index="15"/>
+                    <object_ref id="16" timeline="29" key="0" z_index="16"/>
+                    <object_ref id="17" timeline="31" key="0" z_index="17"/>
+                    <object_ref id="18" timeline="32" key="0" z_index="18"/>
+                    <object_ref id="19" timeline="16" key="0" z_index="19"/>
+                    <object_ref id="20" timeline="30" key="0" z_index="20"/>
+                    <object_ref id="21" timeline="36" key="0" z_index="21"/>
+                    <object_ref id="22" timeline="34" key="0" z_index="22"/>
+                    <object_ref id="23" timeline="33" key="0" z_index="23"/>
+                    <object_ref id="24" timeline="38" key="0" z_index="24"/>
+                    <object_ref id="25" timeline="39" key="0" z_index="25"/>
+                    <object_ref id="26" timeline="42" key="0" z_index="26"/>
+                </key>
+            </mainline>
+            <timeline id="0" obj="0" name="bone_000" object_type="bone">
+                <key id="0" spin="0">
+                    <bone x="-7.857143" y="185" angle="270"/>
+                </key>
+            </timeline>
+            <timeline id="1" obj="1" name="bone_001" object_type="bone">
+                <key id="0" spin="0">
+                    <bone x="60.714286" y="-0.714286" angle="68.110443" scale_x="1.180411"/>
+                </key>
+            </timeline>
+            <timeline id="2" obj="2" name="bone_002" object_type="bone">
+                <key id="0" spin="0">
+                    <bone x="61.428571" y="-1.428571" angle="281.056413"/>
+                </key>
+            </timeline>
+            <timeline id="3" obj="3" name="bone_003" object_type="bone">
+                <key id="0" spin="0">
+                    <bone x="70.602365" y="-0" angle="315.655508" scale_x="0.693168"/>
+                </key>
+            </timeline>
+            <timeline id="4" obj="4" name="bone_004" object_type="bone">
+                <key id="0" spin="0">
+                    <bone x="154.708006" y="0.79168" angle="342.532008" scale_x="1.165398"/>
+                </key>
+            </timeline>
+            <timeline id="5" obj="5" name="bone_005" object_type="bone">
+                <key id="0" spin="0">
+                    <bone x="116.87801" y="1.683495" angle="328.857075"/>
+                </key>
+            </timeline>
+            <timeline id="6" obj="6" name="bone_006" object_type="bone">
+                <key id="0" spin="0">
+                    <bone x="63.134022" y="0.428892" angle="64.798061" scale_x="0.774088"/>
+                </key>
+            </timeline>
+            <timeline id="7" obj="7" name="bone_007" object_type="bone">
+                <key id="0" spin="0">
+                    <bone x="145.703726" y="-0.229937" angle="5.25104" scale_x="1.341885"/>
+                </key>
+            </timeline>
+            <timeline id="8" obj="8" name="bone_008" object_type="bone">
+                <key id="0" spin="0">
+                    <bone x="109.578388" y="0.965642" angle="353.461559" scale_x="0.962707"/>
+                </key>
+            </timeline>
+            <timeline id="9" obj="9" name="bone_009" object_type="bone">
+                <key id="0" spin="0">
+                    <bone x="72.401575" y="-2.379078" angle="1.421944"/>
+                </key>
+            </timeline>
+            <timeline id="10" obj="10" name="bone_010" object_type="bone">
+                <key id="0" spin="0">
+                    <bone x="216.66973" y="-29.00765" angle="350.347081"/>
+                </key>
+            </timeline>
+            <timeline id="11" obj="11" name="bone_011" object_type="bone">
+                <key id="0" spin="0">
+                    <bone x="125.833366" y="-0.892018" angle="5.940365"/>
+                </key>
+            </timeline>
+            <timeline id="12" obj="12" name="bone_012" object_type="bone">
+                <key id="0" spin="0">
+                    <bone x="203.296046" y="-4.196469" angle="318.323933"/>
+                </key>
+            </timeline>
+            <timeline id="13" obj="13" name="bone_013" object_type="bone">
+                <key id="0" spin="0">
+                    <bone x="221.596453" y="42.54567" angle="0.037506"/>
+                </key>
+            </timeline>
+            <timeline id="14" obj="14" name="bone_014" object_type="bone">
+                <key id="0" spin="0">
+                    <bone x="131.672104" y="-0.204075" angle="359.71448"/>
+                </key>
+            </timeline>
+            <timeline id="15" obj="15" name="bone_015" object_type="bone">
+                <key id="0" spin="0">
+                    <bone x="200.809786" y="-0.964687" angle="5.345872"/>
+                </key>
+            </timeline>
+            <timeline id="16" name="Face_000">
+                <key id="0" spin="0">
+                    <object folder="12" file="0" y="167" angle="0"/>
+                </key>
+            </timeline>
+            <timeline id="17" name="Fist">
+                <key id="0" spin="0">
+                    <object folder="12" file="1" x="124.143037" y="-139.077189" angle="0"/>
+                </key>
+            </timeline>
+            <timeline id="18" name="Fist_000">
+                <key id="0" spin="0">
+                    <object folder="12" file="1" x="-119.70696" y="-114.42979" angle="0" scale_x="-1"/>
+                </key>
+            </timeline>
+            <timeline id="19" name="Forearm">
+                <key id="0" spin="0">
+                    <object folder="12" file="2" x="117.106449" y="-24.743177" angle="0"/>
+                </key>
+            </timeline>
+            <timeline id="20" name="Forearm_000">
+                <key id="0" spin="0">
+                    <object folder="12" file="2" x="-104.31678" y="-3.34859" angle="356.185" scale_x="-1"/>
+                </key>
+            </timeline>
+            <timeline id="21" name="LowerLeg">
+                <key id="0" spin="0">
+                    <object folder="12" file="4" x="-56.18221" y="-234.48826" angle="0" scale_x="-1"/>
+                </key>
+            </timeline>
+            <timeline id="22" name="LowerLeg_000">
+                <key id="0" spin="0">
+                    <object folder="12" file="4" x="42.4" y="-231.73238" angle="0"/>
+                </key>
+            </timeline>
+            <timeline id="23" name="Shoulder">
+                <key id="0" spin="0">
+                    <object folder="12" file="3" x="-65.66443" y="98.87466" angle="46.618" scale_x="-1"/>
+                </key>
+            </timeline>
+            <timeline id="24" name="Shoulder_000">
+                <key id="0" spin="0">
+                    <object folder="12" file="3" x="72.869437" y="75.674408" angle="307.698418"/>
+                </key>
+            </timeline>
+            <timeline id="25" name="Torso">
+                <key id="0" spin="0">
+                    <object folder="12" file="7" y="80.23673" angle="0"/>
+                </key>
+            </timeline>
+            <timeline id="26" name="UpperArm">
+                <key id="0" spin="0">
+                    <object folder="12" file="6" x="-89.27984" y="56.3203" angle="347.629"/>
+                </key>
+            </timeline>
+            <timeline id="27" name="UpperArm_000">
+                <key id="0" spin="0">
+                    <object folder="12" file="6" x="96.255054" y="25.752731" angle="17.707"/>
+                </key>
+            </timeline>
+            <timeline id="28" name="UpperLeg">
+                <key id="0" spin="0">
+                    <object folder="12" file="5" x="-36.40662" y="-110.82331" angle="352.827"/>
+                </key>
+            </timeline>
+            <timeline id="29" name="UpperLeg_000">
+                <key id="0" spin="0">
+                    <object folder="12" file="5" x="40.92554" y="-108.9534" angle="0" scale_x="-1"/>
+                </key>
+            </timeline>
+            <timeline id="30" name="Hair_0">
+                <key id="0" spin="0">
+                    <object folder="1" file="0" x="-9.576271" y="241.661335" angle="0"/>
+                </key>
+            </timeline>
+            <timeline id="31" name="Eyes_0">
+                <key id="0" spin="0">
+                    <object folder="17" file="0" x="-35.062287" y="193.527715" angle="0"/>
+                </key>
+            </timeline>
+            <timeline id="32" name="2406">
+                <key id="0" spin="0">
+                    <object folder="16" file="5" x="-81.252244" y="146.093532" angle="0"/>
+                </key>
+            </timeline>
+            <timeline id="33" name="2239">
+                <key id="0" spin="0">
+                    <object folder="16" file="6" x="88.288134" y="116.83156" angle="297.389864"/>
+                </key>
+            </timeline>
+            <timeline id="34" name="2106">
+                <key id="0" spin="0">
+                    <object folder="16" file="7" x="76.385251" y="34.902439" pivot_x="0" pivot_y="1" angle="16.587339"/>
+                </key>
+            </timeline>
+            <timeline id="35" name="2106_000">
+                <key id="0" spin="0">
+                    <object folder="16" file="7" x="-101.129755" y="77.657968" pivot_x="0" pivot_y="1" angle="346.842457"/>
+                </key>
+            </timeline>
+            <timeline id="36" name="2052">
+                <key id="0" spin="0">
+                    <object folder="16" file="8" x="92.828685" y="-14.741036" angle="0"/>
+                </key>
+            </timeline>
+            <timeline id="37" name="2052_000">
+                <key id="0" spin="0">
+                    <object folder="16" file="8" x="-80.478088" y="4.780876" angle="356.185" scale_x="-1"/>
+                </key>
+            </timeline>
+            <timeline id="38" name="2046">
+                <key id="0" spin="0">
+                    <object folder="16" file="3" x="124.741007" y="-139.28777" pivot_x="0.522556" pivot_y="0.838462" angle="0"/>
+                </key>
+            </timeline>
+            <timeline id="39" name="2046_000">
+                <key id="0" spin="0">
+                    <object folder="16" file="3" x="-119.966292" y="-114.606742" pivot_x="0.522556" pivot_y="0.838462" angle="0" scale_x="-1"/>
+                </key>
+            </timeline>
+            <timeline id="40" name="2239 - Copy">
+                <key id="0" spin="0">
+                    <object folder="16" file="14" x="-64.80687" y="150.21459" angle="55.061" scale_x="-1"/>
+                </key>
+            </timeline>
+            <timeline id="41" name="1">
+                <key id="0" spin="0">
+                    <object folder="23" file="0" x="363.412918" y="307.886919" scale_x="6" scale_y="6"/>
+                </key>
+            </timeline>
+            <timeline id="42" name="Screenshot 2022-06-03 225813">
+                <key id="0" spin="0">
+                    <object folder="23" file="1" x="-259.594693" y="319.701267" scale_x="1.2" scale_y="1.2"/>
+                </key>
+            </timeline>
+        </animation>
+    </entity>
+</spriter_data>

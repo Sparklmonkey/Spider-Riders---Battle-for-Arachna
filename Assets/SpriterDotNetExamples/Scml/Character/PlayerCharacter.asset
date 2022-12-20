@@ -1,0 +1,4647 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8fd4016cde4e2bc4ea2f88cf390d0ad5, type: 3}
+  m_Name: PlayerCharacter
+  m_EditorClassIdentifier: 
+  Spriter:
+    Folders:
+    - Id: 0
+      Name: Male/FaceColour/Front
+      Files:
+      - Id: 0
+        Name: Male/FaceColour/Front/Tone_0.png
+        Type: 0
+        PivotX: 0.56329
+        PivotY: 0.158585
+        Width: 104
+        Height: 128
+      - Id: 1
+        Name: Male/FaceColour/Front/Tone_1.png
+        Type: 0
+        PivotX: 0.56329
+        PivotY: 0.158585
+        Width: 104
+        Height: 128
+      - Id: 2
+        Name: Male/FaceColour/Front/Tone_2.png
+        Type: 0
+        PivotX: 0.56329
+        PivotY: 0.158585
+        Width: 104
+        Height: 128
+      - Id: 3
+        Name: Male/FaceColour/Front/Tone_3.png
+        Type: 0
+        PivotX: 0.56329
+        PivotY: 0.158585
+        Width: 104
+        Height: 128
+      AtlasId: -1
+    - Id: 1
+      Name: Male/Hair/Front
+      Files:
+      - Id: 0
+        Name: Male/Hair/Front/Hair_0.png
+        Type: 0
+        PivotX: 0.528532
+        PivotY: 0.547208
+        Width: 168
+        Height: 152
+      - Id: 1
+        Name: Male/Hair/Front/Hair_1.png
+        Type: 0
+        PivotX: 0.508833
+        PivotY: 0.546758
+        Width: 128
+        Height: 104
+      - Id: 2
+        Name: Male/Hair/Front/Hair_2.png
+        Type: 0
+        PivotX: 0.344658
+        PivotY: 0.671644
+        Width: 144
+        Height: 144
+      - Id: 3
+        Name: Male/Hair/Front/Hair_3.png
+        Type: 0
+        PivotX: 0.364351
+        PivotY: 0.562585
+        Width: 192
+        Height: 192
+      AtlasId: -1
+    - Id: 2
+      Name: Male/UpperArmColour
+      Files:
+      - Id: 0
+        Name: Male/UpperArmColour/2100.png
+        Type: 0
+        PivotX: 0.534632
+        PivotY: 0.826279
+        Width: 32
+        Height: 80
+      AtlasId: -1
+    - Id: 3
+      Name: Male/LowerLegColour
+      Files:
+      - Id: 0
+        Name: Male/LowerLegColour/2006.png
+        Type: 0
+        PivotX: 0.49809
+        PivotY: 0.928728
+        Width: 56
+        Height: 216
+      AtlasId: -1
+    - Id: 4
+      Name: Male/FistColour
+      Files:
+      - Id: 0
+        Name: Male/FistColour/2041.png
+        Type: 0
+        PivotX: 0.522556
+        PivotY: 0.838462
+        Width: 56
+        Height: 64
+      AtlasId: -1
+    - Id: 5
+      Name: Male/Waist
+      Files:
+      - Id: 0
+        Name: Male/Waist/2279.png
+        Type: 0
+        PivotX: 0
+        PivotY: 1
+        Width: 120
+        Height: 72
+      AtlasId: -1
+    - Id: 6
+      Name: Male/UpperLeg
+      Files:
+      - Id: 0
+        Name: Male/UpperLeg/2081.png
+        Type: 0
+        PivotX: 0
+        PivotY: 1
+        Width: 72
+        Height: 144
+      AtlasId: -1
+    - Id: 7
+      Name: Male/UpperLegColour
+      Files:
+      - Id: 0
+        Name: Male/UpperLegColour/2076.png
+        Type: 0
+        PivotX: 0.489796
+        PivotY: 0.915033
+        Width: 48
+        Height: 152
+      AtlasId: -1
+    - Id: 8
+      Name: Male/Shoes/DownFacing
+      Files:
+      - Id: 0
+        Name: Male/Shoes/DownFacing/2150.png
+        Type: 0
+        PivotX: 0
+        PivotY: 1
+        Width: 88
+        Height: 80
+      AtlasId: -1
+    - Id: 9
+      Name: Male/Shoes/SideFacing
+      Files:
+      - Id: 0
+        Name: Male/Shoes/SideFacing/1979.png
+        Type: 0
+        PivotX: 0
+        PivotY: 1
+        Width: 128
+        Height: 64
+      AtlasId: -1
+    - Id: 10
+      Name: Male/LowerLeg/NewFolder
+      Files:
+      - Id: 0
+        Name: Male/LowerLeg/NewFolder/2011.png
+        Type: 0
+        PivotX: 0
+        PivotY: 1
+        Width: 48
+        Height: 64
+      AtlasId: -1
+    - Id: 11
+      Name: Male/ShoulderColour
+      Files:
+      - Id: 0
+        Name: Male/ShoulderColour/2116.png
+        Type: 0
+        PivotX: 0.502909
+        PivotY: 0.528684
+        Width: 96
+        Height: 56
+      AtlasId: -1
+    - Id: 12
+      Name: Male/Skin Colour/Tone_1
+      Files:
+      - Id: 0
+        Name: Male/Skin Colour/Tone_1/Face.png
+        Type: 0
+        PivotX: 0.56329
+        PivotY: 0.158585
+        Width: 104
+        Height: 128
+      - Id: 1
+        Name: Male/Skin Colour/Tone_1/Fist.png
+        Type: 0
+        PivotX: 0.522556
+        PivotY: 0.838462
+        Width: 56
+        Height: 64
+      - Id: 2
+        Name: Male/Skin Colour/Tone_1/Forearm.png
+        Type: 0
+        PivotX: 0.489796
+        PivotY: 0.92562
+        Width: 48
+        Height: 120
+      - Id: 3
+        Name: Male/Skin Colour/Tone_1/Shoulder.png
+        Type: 0
+        PivotX: 0.502909
+        PivotY: 0.528684
+        Width: 96
+        Height: 56
+      - Id: 4
+        Name: Male/Skin Colour/Tone_1/LowerLeg.png
+        Type: 0
+        PivotX: 0.49809
+        PivotY: 0.928728
+        Width: 56
+        Height: 216
+      - Id: 5
+        Name: Male/Skin Colour/Tone_1/UpperLeg.png
+        Type: 0
+        PivotX: 0.489796
+        PivotY: 0.915033
+        Width: 48
+        Height: 152
+      - Id: 6
+        Name: Male/Skin Colour/Tone_1/UpperArm.png
+        Type: 0
+        PivotX: 0.534632
+        PivotY: 0.826279
+        Width: 32
+        Height: 80
+      - Id: 7
+        Name: Male/Skin Colour/Tone_1/Torso.png
+        Type: 0
+        PivotX: 0.493789
+        PivotY: 0.605153
+        Width: 160
+        Height: 240
+      - Id: 8
+        Name: Male/Skin Colour/Tone_1/ForeArm.png
+        Type: 0
+        PivotX: 0
+        PivotY: 1
+        Width: 48
+        Height: 120
+      AtlasId: -1
+    - Id: 13
+      Name: Male/Skin Colour/Tone_2
+      Files:
+      - Id: 0
+        Name: Male/Skin Colour/Tone_2/Face.png
+        Type: 0
+        PivotX: 0.56329
+        PivotY: 0.158585
+        Width: 104
+        Height: 128
+      - Id: 1
+        Name: Male/Skin Colour/Tone_2/Fist.png
+        Type: 0
+        PivotX: 0.522556
+        PivotY: 0.838462
+        Width: 56
+        Height: 64
+      - Id: 2
+        Name: Male/Skin Colour/Tone_2/ForeArm.png
+        Type: 0
+        PivotX: 0.489796
+        PivotY: 0.92562
+        Width: 48
+        Height: 120
+      - Id: 3
+        Name: Male/Skin Colour/Tone_2/Shoulder.png
+        Type: 0
+        PivotX: 0.502909
+        PivotY: 0.528684
+        Width: 96
+        Height: 56
+      - Id: 4
+        Name: Male/Skin Colour/Tone_2/LowerLeg.png
+        Type: 0
+        PivotX: 0.49809
+        PivotY: 0.928728
+        Width: 56
+        Height: 216
+      - Id: 5
+        Name: Male/Skin Colour/Tone_2/UpperLeg.png
+        Type: 0
+        PivotX: 0.489796
+        PivotY: 0.915033
+        Width: 48
+        Height: 152
+      - Id: 6
+        Name: Male/Skin Colour/Tone_2/UpperArm.png
+        Type: 0
+        PivotX: 0.534632
+        PivotY: 0.826279
+        Width: 32
+        Height: 80
+      - Id: 7
+        Name: Male/Skin Colour/Tone_2/Torso.png
+        Type: 0
+        PivotX: 0.493789
+        PivotY: 0.605153
+        Width: 160
+        Height: 240
+      AtlasId: -1
+    - Id: 14
+      Name: Male/Skin Colour/Tone_3
+      Files:
+      - Id: 0
+        Name: Male/Skin Colour/Tone_3/Face.png
+        Type: 0
+        PivotX: 0.56329
+        PivotY: 0.158585
+        Width: 104
+        Height: 128
+      - Id: 1
+        Name: Male/Skin Colour/Tone_3/Fist.png
+        Type: 0
+        PivotX: 0.522556
+        PivotY: 0.838462
+        Width: 56
+        Height: 64
+      - Id: 2
+        Name: Male/Skin Colour/Tone_3/ForeArm.png
+        Type: 0
+        PivotX: 0.489796
+        PivotY: 0.92562
+        Width: 48
+        Height: 120
+      - Id: 3
+        Name: Male/Skin Colour/Tone_3/Shoulder.png
+        Type: 0
+        PivotX: 0.502909
+        PivotY: 0.528684
+        Width: 96
+        Height: 56
+      - Id: 4
+        Name: Male/Skin Colour/Tone_3/LowerLeg.png
+        Type: 0
+        PivotX: 0.49809
+        PivotY: 0.928728
+        Width: 56
+        Height: 216
+      - Id: 5
+        Name: Male/Skin Colour/Tone_3/UpperLeg.png
+        Type: 0
+        PivotX: 0.489796
+        PivotY: 0.915033
+        Width: 48
+        Height: 152
+      - Id: 6
+        Name: Male/Skin Colour/Tone_3/UpperArm.png
+        Type: 0
+        PivotX: 0.534632
+        PivotY: 0.826279
+        Width: 32
+        Height: 80
+      - Id: 7
+        Name: Male/Skin Colour/Tone_3/Torso.png
+        Type: 0
+        PivotX: 0.493789
+        PivotY: 0.605153
+        Width: 160
+        Height: 240
+      AtlasId: -1
+    - Id: 15
+      Name: Male/Skin Colour/Tone_4
+      Files:
+      - Id: 0
+        Name: Male/Skin Colour/Tone_4/Face.png
+        Type: 0
+        PivotX: 0.56329
+        PivotY: 0.158585
+        Width: 104
+        Height: 128
+      - Id: 1
+        Name: Male/Skin Colour/Tone_4/Fist.png
+        Type: 0
+        PivotX: 0.522556
+        PivotY: 0.838462
+        Width: 56
+        Height: 64
+      - Id: 2
+        Name: Male/Skin Colour/Tone_4/ForeArm.png
+        Type: 0
+        PivotX: 0.489796
+        PivotY: 0.92562
+        Width: 48
+        Height: 120
+      - Id: 3
+        Name: Male/Skin Colour/Tone_4/Shoulder.png
+        Type: 0
+        PivotX: 0.502909
+        PivotY: 0.528684
+        Width: 96
+        Height: 56
+      - Id: 4
+        Name: Male/Skin Colour/Tone_4/LowerLeg.png
+        Type: 0
+        PivotX: 0.49809
+        PivotY: 0.928728
+        Width: 56
+        Height: 216
+      - Id: 5
+        Name: Male/Skin Colour/Tone_4/UpperLeg.png
+        Type: 0
+        PivotX: 0.489796
+        PivotY: 0.915033
+        Width: 48
+        Height: 152
+      - Id: 6
+        Name: Male/Skin Colour/Tone_4/UpperArm.png
+        Type: 0
+        PivotX: 0.534632
+        PivotY: 0.826279
+        Width: 32
+        Height: 80
+      - Id: 7
+        Name: Male/Skin Colour/Tone_4/Torso.png
+        Type: 0
+        PivotX: 0.493789
+        PivotY: 0.605153
+        Width: 160
+        Height: 240
+      AtlasId: -1
+    - Id: 16
+      Name: Male/UpperArmour/Armour_0
+      Files:
+      - Id: 0
+        Name: Male/UpperArmour/Armour_0/Screenshot 2022-05-02 095915.png
+        Type: 0
+        PivotX: 0
+        PivotY: 1
+        Width: 549
+        Height: 622
+      - Id: 1
+        Name: Male/UpperArmour/Armour_0/2403.png
+        Type: 0
+        PivotX: 0
+        PivotY: 1
+        Width: 168
+        Height: 216
+      - Id: 2
+        Name: Male/UpperArmour/Armour_0/2237.png
+        Type: 0
+        PivotX: 0
+        PivotY: 1
+        Width: 128
+        Height: 64
+      - Id: 3
+        Name: Male/UpperArmour/Armour_0/2046.png
+        Type: 0
+        PivotX: 0.522556
+        PivotY: 0.838462
+        Width: 56
+        Height: 64
+      - Id: 4
+        Name: Male/UpperArmour/Armour_0/2404.png
+        Type: 0
+        PivotX: -0.00218287
+        PivotY: 0.997527
+        Width: 168
+        Height: 224
+      - Id: 5
+        Name: Male/UpperArmour/Armour_0/2406.png
+        Type: 0
+        PivotX: 0
+        PivotY: 1
+        Width: 168
+        Height: 216
+      - Id: 6
+        Name: Male/UpperArmour/Armour_0/2239.png
+        Type: 0
+        PivotX: 0.0537426
+        PivotY: 0.964752
+        Width: 104
+        Height: 56
+      - Id: 7
+        Name: Male/UpperArmour/Armour_0/2106.png
+        Type: 0
+        PivotX: 0
+        PivotY: 1
+        Width: 32
+        Height: 80
+      - Id: 8
+        Name: Male/UpperArmour/Armour_0/2052.png
+        Type: 0
+        PivotX: 0
+        PivotY: 1
+        Width: 48
+        Height: 120
+      - Id: 9
+        Name: Male/UpperArmour/Armour_0/2405.png
+        Type: 0
+        PivotX: 0
+        PivotY: 1
+        Width: 168
+        Height: 224
+      - Id: 10
+        Name: Male/UpperArmour/Armour_0/2238.png
+        Type: 0
+        PivotX: 0
+        PivotY: 1
+        Width: 104
+        Height: 56
+      - Id: 11
+        Name: Male/UpperArmour/Armour_0/2105.png
+        Type: 0
+        PivotX: 0
+        PivotY: 1
+        Width: 32
+        Height: 80
+      - Id: 12
+        Name: Male/UpperArmour/Armour_0/2051.png
+        Type: 0
+        PivotX: 0
+        PivotY: 1
+        Width: 48
+        Height: 120
+      - Id: 13
+        Name: Male/UpperArmour/Armour_0/2050.png
+        Type: 0
+        PivotX: -0.00301066
+        PivotY: 1.29931
+        Width: 48
+        Height: 96
+      - Id: 14
+        Name: Male/UpperArmour/Armour_0/2239 - Copy.png
+        Type: 0
+        PivotX: 0
+        PivotY: 1
+        Width: 104
+        Height: 56
+      - Id: 15
+        Name: Male/UpperArmour/Armour_0/2238 - Copy.png
+        Type: 0
+        PivotX: 0
+        PivotY: 1
+        Width: 104
+        Height: 56
+      AtlasId: -1
+    - Id: 17
+      Name: Male/Eyes/Front
+      Files:
+      - Id: 0
+        Name: Male/Eyes/Front/Eyes_0.png
+        Type: 0
+        PivotX: 0.464794
+        PivotY: 0.5656
+        Width: 40
+        Height: 32
+      - Id: 1
+        Name: Male/Eyes/Front/Eyes_1.png
+        Type: 0
+        PivotX: 0.464794
+        PivotY: 0.5656
+        Width: 40
+        Height: 32
+      - Id: 2
+        Name: Male/Eyes/Front/Eyes_2.png
+        Type: 0
+        PivotX: 0.464794
+        PivotY: 0.5656
+        Width: 40
+        Height: 32
+      - Id: 3
+        Name: Male/Eyes/Front/Eyes_3.png
+        Type: 0
+        PivotX: 0.464794
+        PivotY: 0.5656
+        Width: 40
+        Height: 32
+      AtlasId: -1
+    - Id: 18
+      Name: Male/UpperArmour/Armour_1
+      Files:
+      - Id: 0
+        Name: Male/UpperArmour/Armour_1/2407.png
+        Type: 0
+        PivotX: -0.00429635
+        PivotY: 1.00877
+        Width: 168
+        Height: 216
+      - Id: 1
+        Name: Male/UpperArmour/Armour_1/2240.png
+        Type: 0
+        PivotX: 0.166808
+        PivotY: 0.811134
+        Width: 128
+        Height: 80
+      - Id: 2
+        Name: Male/UpperArmour/Armour_1/2124.png
+        Type: 0
+        PivotX: 0.081011
+        PivotY: 0.733081
+        Width: 120
+        Height: 88
+      - Id: 3
+        Name: Male/UpperArmour/Armour_1/2053.png
+        Type: 0
+        PivotX: -0.00920485
+        PivotY: 1.47658
+        Width: 48
+        Height: 80
+      - Id: 4
+        Name: Male/UpperArmour/Armour_1/2107.png
+        Type: 0
+        PivotX: 0
+        PivotY: 1
+        Width: 32
+        Height: 80
+      - Id: 5
+        Name: Male/UpperArmour/Armour_1/2125.png
+        Type: 0
+        PivotX: 0.081011
+        PivotY: 0.733081
+        Width: 120
+        Height: 88
+      - Id: 6
+        Name: Male/UpperArmour/Armour_1/2126.png
+        Type: 0
+        PivotX: 0.081011
+        PivotY: 0.733081
+        Width: 120
+        Height: 88
+      - Id: 7
+        Name: Male/UpperArmour/Armour_1/2127.png
+        Type: 0
+        PivotX: 0.081011
+        PivotY: 0.733081
+        Width: 120
+        Height: 88
+      - Id: 8
+        Name: Male/UpperArmour/Armour_1/2242.png
+        Type: 0
+        PivotX: 0.166808
+        PivotY: 0.811134
+        Width: 128
+        Height: 80
+      - Id: 9
+        Name: Male/UpperArmour/Armour_1/2241.png
+        Type: 0
+        PivotX: 0.166808
+        PivotY: 0.811134
+        Width: 128
+        Height: 80
+      - Id: 10
+        Name: Male/UpperArmour/Armour_1/2408.png
+        Type: 0
+        PivotX: -0.00429635
+        PivotY: 1.00877
+        Width: 168
+        Height: 216
+      - Id: 11
+        Name: Male/UpperArmour/Armour_1/2409.png
+        Type: 0
+        PivotX: -0.00429635
+        PivotY: 1.00877
+        Width: 168
+        Height: 216
+      - Id: 12
+        Name: Male/UpperArmour/Armour_1/2410.png
+        Type: 0
+        PivotX: -0.00429635
+        PivotY: 1.00877
+        Width: 168
+        Height: 216
+      - Id: 13
+        Name: Male/UpperArmour/Armour_1/2243.png
+        Type: 0
+        PivotX: 0.166808
+        PivotY: 0.811134
+        Width: 128
+        Height: 80
+      AtlasId: -1
+    - Id: 19
+      Name: Male/UpperArmour/Armour_2
+      Files:
+      - Id: 0
+        Name: Male/UpperArmour/Armour_2/2411.png
+        Type: 0
+        PivotX: -0.0197886
+        PivotY: 0.917844
+        Width: 168
+        Height: 256
+      - Id: 1
+        Name: Male/UpperArmour/Armour_2/2244.png
+        Type: 0
+        PivotX: 0.234434
+        PivotY: 0.651157
+        Width: 152
+        Height: 104
+      - Id: 2
+        Name: Male/UpperArmour/Armour_2/2054.png
+        Type: 0
+        PivotX: 0.0978558
+        PivotY: 0.993426
+        Width: 64
+        Height: 120
+      - Id: 3
+        Name: Male/UpperArmour/Armour_2/2128.png
+        Type: 0
+        PivotX: 0.162079
+        PivotY: 0.568589
+        Width: 128
+        Height: 120
+      - Id: 4
+        Name: Male/UpperArmour/Armour_2/2412.png
+        Type: 0
+        PivotX: -0.0197886
+        PivotY: 0.917844
+        Width: 168
+        Height: 256
+      - Id: 5
+        Name: Male/UpperArmour/Armour_2/2413.png
+        Type: 0
+        PivotX: -0.0197886
+        PivotY: 0.917844
+        Width: 168
+        Height: 256
+      - Id: 6
+        Name: Male/UpperArmour/Armour_2/2414.png
+        Type: 0
+        PivotX: -0.0197886
+        PivotY: 0.917844
+        Width: 168
+        Height: 256
+      - Id: 7
+        Name: Male/UpperArmour/Armour_2/2245.png
+        Type: 0
+        PivotX: 0.234434
+        PivotY: 0.651157
+        Width: 152
+        Height: 104
+      - Id: 8
+        Name: Male/UpperArmour/Armour_2/2246.png
+        Type: 0
+        PivotX: 0.234434
+        PivotY: 0.651157
+        Width: 152
+        Height: 104
+      - Id: 9
+        Name: Male/UpperArmour/Armour_2/2247.png
+        Type: 0
+        PivotX: 0.234434
+        PivotY: 0.651157
+        Width: 152
+        Height: 104
+      - Id: 10
+        Name: Male/UpperArmour/Armour_2/2055.png
+        Type: 0
+        PivotX: 0.0978558
+        PivotY: 0.993426
+        Width: 64
+        Height: 120
+      - Id: 11
+        Name: Male/UpperArmour/Armour_2/2129.png
+        Type: 0
+        PivotX: 0.162079
+        PivotY: 0.568589
+        Width: 128
+        Height: 120
+      - Id: 12
+        Name: Male/UpperArmour/Armour_2/2107.png
+        Type: 0
+        PivotX: 0
+        PivotY: 1
+        Width: 32
+        Height: 80
+      - Id: 13
+        Name: Male/UpperArmour/Armour_2/2130.png
+        Type: 0
+        PivotX: 0.162079
+        PivotY: 0.568589
+        Width: 128
+        Height: 120
+      - Id: 14
+        Name: Male/UpperArmour/Armour_2/2131.png
+        Type: 0
+        PivotX: 0.162079
+        PivotY: 0.568589
+        Width: 128
+        Height: 120
+      - Id: 15
+        Name: Male/UpperArmour/Armour_2/2057.png
+        Type: 0
+        PivotX: 0.0978558
+        PivotY: 0.993426
+        Width: 64
+        Height: 120
+      - Id: 16
+        Name: Male/UpperArmour/Armour_2/2056.png
+        Type: 0
+        PivotX: 0.0978558
+        PivotY: 0.993426
+        Width: 64
+        Height: 120
+      - Id: 17
+        Name: Male/UpperArmour/Armour_2/2108.png
+        Type: 0
+        PivotX: 0
+        PivotY: 1
+        Width: 32
+        Height: 80
+      - Id: 18
+        Name: Male/UpperArmour/Armour_2/2109.png
+        Type: 0
+        PivotX: 0
+        PivotY: 1
+        Width: 32
+        Height: 80
+      AtlasId: -1
+    - Id: 20
+      Name: Male/UpperArmour/Armour_3
+      Files:
+      - Id: 0
+        Name: Male/UpperArmour/Armour_3/2415.png
+        Type: 0
+        PivotX: -0.00887574
+        PivotY: 0.929066
+        Width: 168
+        Height: 288
+      - Id: 1
+        Name: Male/UpperArmour/Armour_3/2248.png
+        Type: 0
+        PivotX: 0.100974
+        PivotY: 0.794732
+        Width: 160
+        Height: 112
+      - Id: 2
+        Name: Male/UpperArmour/Armour_3/2058.png
+        Type: 0
+        PivotX: 0.0695089
+        PivotY: 1.04929
+        Width: 56
+        Height: 120
+      - Id: 3
+        Name: Male/UpperArmour/Armour_3/2132.png
+        Type: 0
+        PivotX: 0.146703
+        PivotY: 0.522414
+        Width: 104
+        Height: 144
+      - Id: 4
+        Name: Male/UpperArmour/Armour_3/2109.png
+        Type: 0
+        PivotX: 0
+        PivotY: 1
+        Width: 32
+        Height: 80
+      - Id: 5
+        Name: Male/UpperArmour/Armour_3/2251.png
+        Type: 0
+        PivotX: 0.100974
+        PivotY: 0.794732
+        Width: 160
+        Height: 104
+      - Id: 6
+        Name: Male/UpperArmour/Armour_3/2249.png
+        Type: 0
+        PivotX: 0.100974
+        PivotY: 0.794732
+        Width: 160
+        Height: 112
+      - Id: 7
+        Name: Male/UpperArmour/Armour_3/2250.png
+        Type: 0
+        PivotX: 0.100974
+        PivotY: 0.794732
+        Width: 160
+        Height: 112
+      - Id: 8
+        Name: Male/UpperArmour/Armour_3/2416.png
+        Type: 0
+        PivotX: -0.00887574
+        PivotY: 0.929066
+        Width: 168
+        Height: 288
+      - Id: 9
+        Name: Male/UpperArmour/Armour_3/2417.png
+        Type: 0
+        PivotX: -0.00887574
+        PivotY: 0.929066
+        Width: 168
+        Height: 288
+      - Id: 10
+        Name: Male/UpperArmour/Armour_3/2418.png
+        Type: 0
+        PivotX: -0.00887574
+        PivotY: 0.929066
+        Width: 168
+        Height: 288
+      - Id: 11
+        Name: Male/UpperArmour/Armour_3/2133.png
+        Type: 0
+        PivotX: 0.146703
+        PivotY: 0.522414
+        Width: 104
+        Height: 144
+      - Id: 12
+        Name: Male/UpperArmour/Armour_3/2134.png
+        Type: 0
+        PivotX: 0.146703
+        PivotY: 0.522414
+        Width: 104
+        Height: 144
+      - Id: 13
+        Name: Male/UpperArmour/Armour_3/2135.png
+        Type: 0
+        PivotX: 0.146703
+        PivotY: 0.522414
+        Width: 104
+        Height: 144
+      - Id: 14
+        Name: Male/UpperArmour/Armour_3/2059.png
+        Type: 0
+        PivotX: 0.0695089
+        PivotY: 1.04929
+        Width: 56
+        Height: 120
+      - Id: 15
+        Name: Male/UpperArmour/Armour_3/2060.png
+        Type: 0
+        PivotX: 0.0695089
+        PivotY: 1.04929
+        Width: 56
+        Height: 120
+      - Id: 16
+        Name: Male/UpperArmour/Armour_3/2061.png
+        Type: 0
+        PivotX: 0.0695089
+        PivotY: 1.04929
+        Width: 56
+        Height: 120
+      AtlasId: -1
+    - Id: 21
+      Name: Male/UpperArmour/Armour_4
+      Files:
+      - Id: 0
+        Name: Male/UpperArmour/Armour_4/2419.png
+        Type: 0
+        PivotX: -0.00295858
+        PivotY: 0.902135
+        Width: 168
+        Height: 280
+      - Id: 1
+        Name: Male/UpperArmour/Armour_4/2252.png
+        Type: 0
+        PivotX: 0.213514
+        PivotY: 0.493464
+        Width: 184
+        Height: 152
+      - Id: 2
+        Name: Male/UpperArmour/Armour_4/2062.png
+        Type: 0
+        PivotX: 0
+        PivotY: 1
+        Width: 48
+        Height: 128
+      - Id: 3
+        Name: Male/UpperArmour/Armour_4/2136.png
+        Type: 0
+        PivotX: 0.192308
+        PivotY: 0.589655
+        Width: 168
+        Height: 144
+      - Id: 4
+        Name: Male/UpperArmour/Armour_4/2420.png
+        Type: 0
+        PivotX: -0.00295858
+        PivotY: 0.902135
+        Width: 168
+        Height: 280
+      - Id: 5
+        Name: Male/UpperArmour/Armour_4/2421.png
+        Type: 0
+        PivotX: -0.00295858
+        PivotY: 0.902135
+        Width: 168
+        Height: 280
+      - Id: 6
+        Name: Male/UpperArmour/Armour_4/2422.png
+        Type: 0
+        PivotX: -0.00295858
+        PivotY: 0.902135
+        Width: 168
+        Height: 280
+      - Id: 7
+        Name: Male/UpperArmour/Armour_4/2253.png
+        Type: 0
+        PivotX: 0.213514
+        PivotY: 0.493464
+        Width: 184
+        Height: 152
+      - Id: 8
+        Name: Male/UpperArmour/Armour_4/2254.png
+        Type: 0
+        PivotX: 0.213514
+        PivotY: 0.493464
+        Width: 184
+        Height: 152
+      - Id: 9
+        Name: Male/UpperArmour/Armour_4/2255.png
+        Type: 0
+        PivotX: 0.213514
+        PivotY: 0.493464
+        Width: 184
+        Height: 152
+      - Id: 10
+        Name: Male/UpperArmour/Armour_4/2137.png
+        Type: 0
+        PivotX: 0.192308
+        PivotY: 0.589655
+        Width: 168
+        Height: 144
+      - Id: 11
+        Name: Male/UpperArmour/Armour_4/2138.png
+        Type: 0
+        PivotX: 0.192308
+        PivotY: 0.589655
+        Width: 168
+        Height: 144
+      - Id: 12
+        Name: Male/UpperArmour/Armour_4/2139.png
+        Type: 0
+        PivotX: 0.192308
+        PivotY: 0.589655
+        Width: 168
+        Height: 144
+      - Id: 13
+        Name: Male/UpperArmour/Armour_4/2109.png
+        Type: 0
+        PivotX: 0
+        PivotY: 1
+        Width: 32
+        Height: 80
+      - Id: 14
+        Name: Male/UpperArmour/Armour_4/2063.png
+        Type: 0
+        PivotX: 0
+        PivotY: 1
+        Width: 48
+        Height: 128
+      - Id: 15
+        Name: Male/UpperArmour/Armour_4/2064.png
+        Type: 0
+        PivotX: 0
+        PivotY: 1
+        Width: 48
+        Height: 128
+      - Id: 16
+        Name: Male/UpperArmour/Armour_4/2065.png
+        Type: 0
+        PivotX: 0
+        PivotY: 1
+        Width: 48
+        Height: 128
+      AtlasId: -1
+    - Id: 22
+      Name: Male
+      Files:
+      - Id: 0
+        Name: Male/Screenshot 2022-06-03 222631.png
+        Type: 0
+        PivotX: 0
+        PivotY: 1
+        Width: 267
+        Height: 585
+      AtlasId: -1
+    - Id: 23
+      Name: Animations
+      Files:
+      - Id: 0
+        Name: Animations/1.png
+        Type: 0
+        PivotX: 0
+        PivotY: 1
+        Width: 94
+        Height: 127
+      - Id: 1
+        Name: Animations/Screenshot 2022-06-03 225813.png
+        Type: 0
+        PivotX: 0
+        PivotY: 1
+        Width: 367
+        Height: 644
+      AtlasId: -1
+    Entities:
+    - Id: 0
+      Name: PlayerCharacter
+      ObjectInfos:
+      - Id: 0
+        Name: bone_000
+        ObjectType: 1
+        Width: 63.5714
+        Height: 10
+        PivotX: 0
+        PivotY: 0
+        Variables: []
+      - Id: 0
+        Name: bone_001
+        ObjectType: 1
+        Width: 70.6024
+        Height: 10
+        PivotX: 0
+        PivotY: 0
+        Variables: []
+      - Id: 0
+        Name: bone_002
+        ObjectType: 1
+        Width: 63.3181
+        Height: 10
+        PivotX: 0
+        PivotY: 0
+        Variables: []
+      - Id: 0
+        Name: bone_003
+        ObjectType: 1
+        Width: 154.315
+        Height: 10
+        PivotX: 0
+        PivotY: 0
+        Variables: []
+      - Id: 0
+        Name: bone_004
+        ObjectType: 1
+        Width: 115.569
+        Height: 10
+        PivotX: 0
+        PivotY: 0
+        Variables: []
+      - Id: 0
+        Name: bone_005
+        ObjectType: 1
+        Width: 25.3703
+        Height: 10
+        PivotX: 0
+        PivotY: 0
+        Variables: []
+      - Id: 0
+        Name: bone_006
+        ObjectType: 1
+        Width: 142.408
+        Height: 10
+        PivotX: 0
+        PivotY: 0
+        Variables: []
+      - Id: 0
+        Name: bone_007
+        ObjectType: 1
+        Width: 102.899
+        Height: 10
+        PivotX: 0
+        PivotY: 0
+        Variables: []
+      - Id: 0
+        Name: bone_008
+        ObjectType: 1
+        Width: 28.3871
+        Height: 10
+        PivotX: 0
+        PivotY: 0
+        Variables: []
+      - Id: 0
+        Name: bone_009
+        ObjectType: 1
+        Width: 222.116
+        Height: 10
+        PivotX: 0
+        PivotY: 0
+        Variables: []
+      - Id: 0
+        Name: bone_010
+        ObjectType: 1
+        Width: 126.5
+        Height: 10
+        PivotX: 0
+        PivotY: 0
+        Variables: []
+      - Id: 0
+        Name: bone_011
+        ObjectType: 1
+        Width: 197.008
+        Height: 10
+        PivotX: 0
+        PivotY: 0
+        Variables: []
+      - Id: 0
+        Name: bone_012
+        ObjectType: 1
+        Width: 48.3403
+        Height: 10
+        PivotX: 0
+        PivotY: 0
+        Variables: []
+      - Id: 0
+        Name: bone_013
+        ObjectType: 1
+        Width: 123.662
+        Height: 10
+        PivotX: 0
+        PivotY: 0
+        Variables: []
+      - Id: 0
+        Name: bone_014
+        ObjectType: 1
+        Width: 192.166
+        Height: 10
+        PivotX: 0
+        PivotY: 0
+        Variables: []
+      - Id: 0
+        Name: bone_015
+        ObjectType: 1
+        Width: 27.7384
+        Height: 10
+        PivotX: 0
+        PivotY: 0
+        Variables: []
+      CharacterMaps:
+      - Id: 0
+        Name: Tone_0
+        Maps: []
+      - Id: 1
+        Name: Tone_1
+        Maps:
+        - FolderId: 12
+          FileId: 0
+          TargetFolderId: 13
+          TargetFileId: 0
+        - FolderId: 12
+          FileId: 1
+          TargetFolderId: 13
+          TargetFileId: 1
+        - FolderId: 12
+          FileId: 4
+          TargetFolderId: 13
+          TargetFileId: 4
+        - FolderId: 12
+          FileId: 3
+          TargetFolderId: 13
+          TargetFileId: 3
+        - FolderId: 12
+          FileId: 7
+          TargetFolderId: 13
+          TargetFileId: 7
+        - FolderId: 12
+          FileId: 6
+          TargetFolderId: 13
+          TargetFileId: 6
+        - FolderId: 12
+          FileId: 5
+          TargetFolderId: 13
+          TargetFileId: 5
+        - FolderId: 12
+          FileId: 2
+          TargetFolderId: 13
+          TargetFileId: 2
+      - Id: 2
+        Name: Tone_2
+        Maps:
+        - FolderId: 12
+          FileId: 0
+          TargetFolderId: 14
+          TargetFileId: 0
+        - FolderId: 12
+          FileId: 1
+          TargetFolderId: 14
+          TargetFileId: 1
+        - FolderId: 12
+          FileId: 4
+          TargetFolderId: 14
+          TargetFileId: 4
+        - FolderId: 12
+          FileId: 3
+          TargetFolderId: 14
+          TargetFileId: 3
+        - FolderId: 12
+          FileId: 7
+          TargetFolderId: 14
+          TargetFileId: 7
+        - FolderId: 12
+          FileId: 6
+          TargetFolderId: 14
+          TargetFileId: 6
+        - FolderId: 12
+          FileId: 5
+          TargetFolderId: 14
+          TargetFileId: 5
+        - FolderId: 12
+          FileId: 2
+          TargetFolderId: 14
+          TargetFileId: 2
+      - Id: 3
+        Name: Tone_3
+        Maps:
+        - FolderId: 12
+          FileId: 0
+          TargetFolderId: 15
+          TargetFileId: 0
+        - FolderId: 12
+          FileId: 1
+          TargetFolderId: 15
+          TargetFileId: 1
+        - FolderId: 12
+          FileId: 4
+          TargetFolderId: 15
+          TargetFileId: 4
+        - FolderId: 12
+          FileId: 3
+          TargetFolderId: 15
+          TargetFileId: 3
+        - FolderId: 12
+          FileId: 7
+          TargetFolderId: 15
+          TargetFileId: 7
+        - FolderId: 12
+          FileId: 6
+          TargetFolderId: 15
+          TargetFileId: 6
+        - FolderId: 12
+          FileId: 5
+          TargetFolderId: 15
+          TargetFileId: 5
+        - FolderId: 12
+          FileId: 2
+          TargetFolderId: 15
+          TargetFileId: 2
+      - Id: 4
+        Name: Hair_0
+        Maps: []
+      - Id: 5
+        Name: Hair_1
+        Maps:
+        - FolderId: 1
+          FileId: 0
+          TargetFolderId: 1
+          TargetFileId: 1
+      - Id: 6
+        Name: Hair_2
+        Maps:
+        - FolderId: 1
+          FileId: 0
+          TargetFolderId: 1
+          TargetFileId: 2
+      - Id: 7
+        Name: Hair_3
+        Maps:
+        - FolderId: 1
+          FileId: 0
+          TargetFolderId: 1
+          TargetFileId: 3
+      - Id: 8
+        Name: Eyes_0
+        Maps: []
+      - Id: 9
+        Name: Eyes_1
+        Maps:
+        - FolderId: 17
+          FileId: 0
+          TargetFolderId: 17
+          TargetFileId: 1
+      - Id: 10
+        Name: Eyes_2
+        Maps:
+        - FolderId: 17
+          FileId: 0
+          TargetFolderId: 17
+          TargetFileId: 2
+      - Id: 11
+        Name: Eyes_3
+        Maps:
+        - FolderId: 17
+          FileId: 0
+          TargetFolderId: 17
+          TargetFileId: 3
+      - Id: 12
+        Name: Armour0_Set1
+        Maps:
+        - FolderId: 16
+          FileId: 5
+          TargetFolderId: 16
+          TargetFileId: 9
+        - FolderId: 16
+          FileId: 6
+          TargetFolderId: 16
+          TargetFileId: 10
+        - FolderId: 16
+          FileId: 7
+          TargetFolderId: 16
+          TargetFileId: 11
+        - FolderId: 16
+          FileId: 8
+          TargetFolderId: 16
+          TargetFileId: 12
+        - FolderId: 16
+          FileId: 3
+          TargetFolderId: -1
+          TargetFileId: -1
+        - FolderId: 16
+          FileId: 14
+          TargetFolderId: 16
+          TargetFileId: 15
+      - Id: 13
+        Name: Armour0_Set2
+        Maps:
+        - FolderId: 16
+          FileId: 5
+          TargetFolderId: 16
+          TargetFileId: 1
+        - FolderId: 16
+          FileId: 6
+          TargetFolderId: 16
+          TargetFileId: 2
+        - FolderId: 16
+          FileId: 7
+          TargetFolderId: -1
+          TargetFileId: -1
+        - FolderId: 16
+          FileId: 8
+          TargetFolderId: -1
+          TargetFileId: -1
+        - FolderId: 16
+          FileId: 14
+          TargetFolderId: 16
+          TargetFileId: 2
+      - Id: 14
+        Name: Armour0_Set3
+        Maps:
+        - FolderId: 16
+          FileId: 3
+          TargetFolderId: -1
+          TargetFileId: -1
+        - FolderId: 16
+          FileId: 7
+          TargetFolderId: -1
+          TargetFileId: -1
+        - FolderId: 16
+          FileId: 6
+          TargetFolderId: -1
+          TargetFileId: -1
+        - FolderId: 16
+          FileId: 5
+          TargetFolderId: 16
+          TargetFileId: 4
+        - FolderId: 16
+          FileId: 8
+          TargetFolderId: 16
+          TargetFileId: 13
+        - FolderId: 16
+          FileId: 14
+          TargetFolderId: -1
+          TargetFileId: -1
+      - Id: 15
+        Name: Armour1_Set0
+        Maps:
+        - FolderId: 16
+          FileId: 5
+          TargetFolderId: 18
+          TargetFileId: 0
+        - FolderId: 16
+          FileId: 6
+          TargetFolderId: 18
+          TargetFileId: 1
+        - FolderId: 16
+          FileId: 7
+          TargetFolderId: 18
+          TargetFileId: 4
+        - FolderId: 16
+          FileId: 8
+          TargetFolderId: 18
+          TargetFileId: 3
+        - FolderId: 16
+          FileId: 14
+          TargetFolderId: 18
+          TargetFileId: 2
+      - Id: 16
+        Name: Armour1_Set1
+        Maps:
+        - FolderId: 16
+          FileId: 5
+          TargetFolderId: 18
+          TargetFileId: 10
+        - FolderId: 16
+          FileId: 6
+          TargetFolderId: 18
+          TargetFileId: 9
+        - FolderId: 16
+          FileId: 7
+          TargetFolderId: 18
+          TargetFileId: 4
+        - FolderId: 16
+          FileId: 8
+          TargetFolderId: 18
+          TargetFileId: 3
+        - FolderId: 16
+          FileId: 14
+          TargetFolderId: 18
+          TargetFileId: 5
+      - Id: 17
+        Name: Armour1_Set2
+        Maps:
+        - FolderId: 16
+          FileId: 5
+          TargetFolderId: 18
+          TargetFileId: 11
+        - FolderId: 16
+          FileId: 6
+          TargetFolderId: 18
+          TargetFileId: 8
+        - FolderId: 16
+          FileId: 14
+          TargetFolderId: 18
+          TargetFileId: 6
+        - FolderId: 16
+          FileId: 7
+          TargetFolderId: 18
+          TargetFileId: 4
+        - FolderId: 16
+          FileId: 8
+          TargetFolderId: 18
+          TargetFileId: 3
+      - Id: 18
+        Name: Armour1_Set3
+        Maps:
+        - FolderId: 16
+          FileId: 5
+          TargetFolderId: 18
+          TargetFileId: 12
+        - FolderId: 16
+          FileId: 6
+          TargetFolderId: 18
+          TargetFileId: 13
+        - FolderId: 16
+          FileId: 7
+          TargetFolderId: 18
+          TargetFileId: 4
+        - FolderId: 16
+          FileId: 8
+          TargetFolderId: 18
+          TargetFileId: 3
+        - FolderId: 16
+          FileId: 14
+          TargetFolderId: 18
+          TargetFileId: 7
+      - Id: 19
+        Name: Armour2_Set0
+        Maps:
+        - FolderId: 16
+          FileId: 5
+          TargetFolderId: 19
+          TargetFileId: 0
+        - FolderId: 16
+          FileId: 6
+          TargetFolderId: 19
+          TargetFileId: 1
+        - FolderId: 16
+          FileId: 8
+          TargetFolderId: 19
+          TargetFileId: 2
+        - FolderId: 16
+          FileId: 14
+          TargetFolderId: 19
+          TargetFileId: 3
+        - FolderId: 16
+          FileId: 3
+          TargetFolderId: -1
+          TargetFileId: -1
+      - Id: 20
+        Name: Armour2_Set1
+        Maps:
+        - FolderId: 16
+          FileId: 5
+          TargetFolderId: 19
+          TargetFileId: 4
+        - FolderId: 16
+          FileId: 6
+          TargetFolderId: 19
+          TargetFileId: 7
+        - FolderId: 16
+          FileId: 8
+          TargetFolderId: 19
+          TargetFileId: 10
+        - FolderId: 16
+          FileId: 14
+          TargetFolderId: 19
+          TargetFileId: 11
+        - FolderId: 16
+          FileId: 7
+          TargetFolderId: 19
+          TargetFileId: 12
+        - FolderId: 16
+          FileId: 3
+          TargetFolderId: -1
+          TargetFileId: -1
+      - Id: 21
+        Name: Armour2_Set2
+        Maps:
+        - FolderId: 16
+          FileId: 5
+          TargetFolderId: 19
+          TargetFileId: 5
+        - FolderId: 16
+          FileId: 6
+          TargetFolderId: 19
+          TargetFileId: 8
+        - FolderId: 16
+          FileId: 7
+          TargetFolderId: 19
+          TargetFileId: 17
+        - FolderId: 16
+          FileId: 8
+          TargetFolderId: 19
+          TargetFileId: 16
+        - FolderId: 16
+          FileId: 14
+          TargetFolderId: 19
+          TargetFileId: 13
+        - FolderId: 16
+          FileId: 3
+          TargetFolderId: -1
+          TargetFileId: -1
+      - Id: 22
+        Name: Armour2_Set3
+        Maps:
+        - FolderId: 16
+          FileId: 5
+          TargetFolderId: 19
+          TargetFileId: 6
+        - FolderId: 16
+          FileId: 6
+          TargetFolderId: 19
+          TargetFileId: 9
+        - FolderId: 16
+          FileId: 7
+          TargetFolderId: 19
+          TargetFileId: 18
+        - FolderId: 16
+          FileId: 8
+          TargetFolderId: 19
+          TargetFileId: 15
+        - FolderId: 16
+          FileId: 14
+          TargetFolderId: 19
+          TargetFileId: 14
+        - FolderId: 16
+          FileId: 3
+          TargetFolderId: -1
+          TargetFileId: -1
+      - Id: 23
+        Name: Armour3_Set0
+        Maps:
+        - FolderId: 16
+          FileId: 5
+          TargetFolderId: 20
+          TargetFileId: 0
+        - FolderId: 16
+          FileId: 6
+          TargetFolderId: 20
+          TargetFileId: 1
+        - FolderId: 16
+          FileId: 8
+          TargetFolderId: 20
+          TargetFileId: 2
+        - FolderId: 16
+          FileId: 14
+          TargetFolderId: 20
+          TargetFileId: 3
+        - FolderId: 16
+          FileId: 7
+          TargetFolderId: 20
+          TargetFileId: 4
+      - Id: 24
+        Name: Armour3_Set1
+        Maps:
+        - FolderId: 16
+          FileId: 5
+          TargetFolderId: 20
+          TargetFileId: 8
+        - FolderId: 16
+          FileId: 6
+          TargetFolderId: 20
+          TargetFileId: 6
+        - FolderId: 16
+          FileId: 7
+          TargetFolderId: 20
+          TargetFileId: 4
+        - FolderId: 16
+          FileId: 8
+          TargetFolderId: 20
+          TargetFileId: 14
+        - FolderId: 16
+          FileId: 14
+          TargetFolderId: 20
+          TargetFileId: 11
+      - Id: 25
+        Name: Armour3_Set2
+        Maps:
+        - FolderId: 16
+          FileId: 5
+          TargetFolderId: 20
+          TargetFileId: 9
+        - FolderId: 16
+          FileId: 6
+          TargetFolderId: 20
+          TargetFileId: 7
+        - FolderId: 16
+          FileId: 7
+          TargetFolderId: 20
+          TargetFileId: 4
+        - FolderId: 16
+          FileId: 8
+          TargetFolderId: 20
+          TargetFileId: 15
+        - FolderId: 16
+          FileId: 14
+          TargetFolderId: 20
+          TargetFileId: 12
+      - Id: 26
+        Name: Armour3_Set3
+        Maps:
+        - FolderId: 16
+          FileId: 5
+          TargetFolderId: 20
+          TargetFileId: 10
+        - FolderId: 16
+          FileId: 6
+          TargetFolderId: 20
+          TargetFileId: 5
+        - FolderId: 16
+          FileId: 7
+          TargetFolderId: 20
+          TargetFileId: 4
+        - FolderId: 16
+          FileId: 8
+          TargetFolderId: 20
+          TargetFileId: 16
+        - FolderId: 16
+          FileId: 14
+          TargetFolderId: 20
+          TargetFileId: 13
+      - Id: 27
+        Name: Armour4_Set0
+        Maps:
+        - FolderId: 16
+          FileId: 5
+          TargetFolderId: 21
+          TargetFileId: 0
+        - FolderId: 16
+          FileId: 6
+          TargetFolderId: 21
+          TargetFileId: 1
+        - FolderId: 16
+          FileId: 8
+          TargetFolderId: 21
+          TargetFileId: 2
+        - FolderId: 16
+          FileId: 14
+          TargetFolderId: 21
+          TargetFileId: 3
+        - FolderId: 16
+          FileId: 7
+          TargetFolderId: 21
+          TargetFileId: 13
+      - Id: 28
+        Name: Armour4_Set1
+        Maps:
+        - FolderId: 16
+          FileId: 5
+          TargetFolderId: 21
+          TargetFileId: 4
+        - FolderId: 16
+          FileId: 6
+          TargetFolderId: 21
+          TargetFileId: 7
+        - FolderId: 16
+          FileId: 7
+          TargetFolderId: 21
+          TargetFileId: 13
+        - FolderId: 16
+          FileId: 8
+          TargetFolderId: 21
+          TargetFileId: 14
+        - FolderId: 16
+          FileId: 14
+          TargetFolderId: 21
+          TargetFileId: 10
+      - Id: 29
+        Name: Armour4_Set2
+        Maps:
+        - FolderId: 16
+          FileId: 5
+          TargetFolderId: 21
+          TargetFileId: 5
+        - FolderId: 16
+          FileId: 6
+          TargetFolderId: 21
+          TargetFileId: 8
+        - FolderId: 16
+          FileId: 7
+          TargetFolderId: 21
+          TargetFileId: 13
+        - FolderId: 16
+          FileId: 8
+          TargetFolderId: 21
+          TargetFileId: 15
+        - FolderId: 16
+          FileId: 14
+          TargetFolderId: 21
+          TargetFileId: 11
+      - Id: 30
+        Name: Armour4_Set3
+        Maps:
+        - FolderId: 16
+          FileId: 5
+          TargetFolderId: 21
+          TargetFileId: 6
+        - FolderId: 16
+          FileId: 6
+          TargetFolderId: 21
+          TargetFileId: 9
+        - FolderId: 16
+          FileId: 7
+          TargetFolderId: 21
+          TargetFileId: 13
+        - FolderId: 16
+          FileId: 8
+          TargetFolderId: 21
+          TargetFileId: 16
+        - FolderId: 16
+          FileId: 14
+          TargetFolderId: 21
+          TargetFileId: 12
+      Animations:
+      - Id: 0
+        Name: NewAnimation_000
+        Length: 1000
+        Looping: 1
+        MainlineKeys:
+        - Id: 0
+          Name: 
+          Time: 0
+          CurveType: 0
+          C1: 0
+          C2: 0
+          C3: 0
+          C4: 0
+          BoneRefs: []
+          ObjectRefs:
+          - Id: 0
+            Name: 
+            ParentId: -1
+            TimelineId: 0
+            KeyId: 0
+            ZIndex: 0
+          - Id: 1
+            Name: 
+            ParentId: -1
+            TimelineId: 1
+            KeyId: 0
+            ZIndex: 1
+          - Id: 2
+            Name: 
+            ParentId: -1
+            TimelineId: 2
+            KeyId: 0
+            ZIndex: 2
+          - Id: 3
+            Name: 
+            ParentId: -1
+            TimelineId: 3
+            KeyId: 0
+            ZIndex: 3
+          - Id: 4
+            Name: 
+            ParentId: -1
+            TimelineId: 4
+            KeyId: 0
+            ZIndex: 4
+          - Id: 5
+            Name: 
+            ParentId: -1
+            TimelineId: 5
+            KeyId: 0
+            ZIndex: 5
+        Timelines:
+        - Id: 0
+          Name: Screenshot 2022-06-03 225813_000
+          ObjectType: 0
+          ObjectId: 0
+          Keys:
+          - Id: 0
+            Name: 
+            Time: 0
+            CurveType: 0
+            C1: 0
+            C2: 0
+            C3: 0
+            C4: 0
+            Spin: 0
+            BoneInfo:
+              X: 0
+              Y: 0
+              Angle: 0
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+            ObjectInfo:
+              X: -162.55573
+              Y: 349.12146
+              Angle: 0
+              ScaleX: 1.25
+              ScaleY: 1.2
+              Alpha: 1
+              AnimationId: 0
+              EntityId: 0
+              FolderId: 23
+              FileId: 1
+              PivotX: 0
+              PivotY: 1
+              T: 0
+          Meta:
+            Varlines: []
+            Tagline:
+              Keys: []
+        - Id: 1
+          Name: Face
+          ObjectType: 0
+          ObjectId: 0
+          Keys:
+          - Id: 0
+            Name: 
+            Time: 0
+            CurveType: 0
+            C1: 0
+            C2: 0
+            C3: 0
+            C4: 0
+            Spin: 0
+            BoneInfo:
+              X: 0
+              Y: 0
+              Angle: 0
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+            ObjectInfo:
+              X: 105.46636
+              Y: 200.50697
+              Angle: 0
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+              AnimationId: 0
+              EntityId: 0
+              FolderId: 12
+              FileId: 0
+              PivotX: 0.56329
+              PivotY: 0.158585
+              T: 0
+          Meta:
+            Varlines: []
+            Tagline:
+              Keys: []
+        - Id: 2
+          Name: Fist_001
+          ObjectType: 0
+          ObjectId: 0
+          Keys:
+          - Id: 0
+            Name: 
+            Time: 0
+            CurveType: 0
+            C1: 0
+            C2: 0
+            C3: 0
+            C4: 0
+            Spin: 0
+            BoneInfo:
+              X: 0
+              Y: 0
+              Angle: 0
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+            ObjectInfo:
+              X: -66.19217
+              Y: 233.80783
+              Angle: 108.435
+              ScaleX: -0.9
+              ScaleY: 0.9
+              Alpha: 1
+              AnimationId: 0
+              EntityId: 0
+              FolderId: 12
+              FileId: 1
+              PivotX: 0.522556
+              PivotY: 0.838462
+              T: 0
+          Meta:
+            Varlines: []
+            Tagline:
+              Keys: []
+        - Id: 3
+          Name: ForeArm
+          ObjectType: 0
+          ObjectId: 0
+          Keys:
+          - Id: 0
+            Name: 
+            Time: 0
+            CurveType: 0
+            C1: 0
+            C2: 0
+            C3: 0
+            C4: 0
+            Spin: 0
+            BoneInfo:
+              X: 0
+              Y: 0
+              Angle: 0
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+            ObjectInfo:
+              X: -89.849625
+              Y: 125.56391
+              Angle: 177.20729
+              ScaleX: -1
+              ScaleY: 0.9
+              Alpha: 1
+              AnimationId: 0
+              EntityId: 0
+              FolderId: 12
+              FileId: 8
+              PivotX: 0
+              PivotY: 1
+              T: 0
+          Meta:
+            Varlines: []
+            Tagline:
+              Keys: []
+        - Id: 4
+          Name: UpperArm_001
+          ObjectType: 0
+          ObjectId: 0
+          Keys:
+          - Id: 0
+            Name: 
+            Time: 0
+            CurveType: 0
+            C1: 0
+            C2: 0
+            C3: 0
+            C4: 0
+            Spin: 0
+            BoneInfo:
+              X: 0
+              Y: 0
+              Angle: 0
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+            ObjectInfo:
+              X: 5.733264
+              Y: 145.00485
+              Angle: 271.86615
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+              AnimationId: 0
+              EntityId: 0
+              FolderId: 12
+              FileId: 6
+              PivotX: 0.534632
+              PivotY: 0.826279
+              T: 0
+          Meta:
+            Varlines: []
+            Tagline:
+              Keys: []
+        - Id: 5
+          Name: Torso_000
+          ObjectType: 0
+          ObjectId: 0
+          Keys:
+          - Id: 0
+            Name: 
+            Time: 0
+            CurveType: 0
+            C1: 0
+            C2: 0
+            C3: 0
+            C4: 0
+            Spin: 0
+            BoneInfo:
+              X: 0
+              Y: 0
+              Angle: 0
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+            ObjectInfo:
+              X: 13.67994
+              Y: 141.49179
+              Angle: 12.476975
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 0.53793
+              AnimationId: 0
+              EntityId: 0
+              FolderId: 12
+              FileId: 7
+              PivotX: 0.493789
+              PivotY: 0.605153
+              T: 0
+          Meta:
+            Varlines: []
+            Tagline:
+              Keys: []
+        Eventlines: []
+        Soundlines: []
+        Meta:
+          Varlines: []
+          Tagline:
+            Keys: []
+      - Id: 1
+        Name: NewAnimation
+        Length: 1000
+        Looping: 1
+        MainlineKeys:
+        - Id: 0
+          Name: 
+          Time: 0
+          CurveType: 0
+          C1: 0
+          C2: 0
+          C3: 0
+          C4: 0
+          BoneRefs:
+          - Id: 0
+            Name: 
+            ParentId: -1
+            TimelineId: 0
+            KeyId: 0
+          - Id: 1
+            Name: 
+            ParentId: 0
+            TimelineId: 1
+            KeyId: 0
+          - Id: 2
+            Name: 
+            ParentId: 1
+            TimelineId: 3
+            KeyId: 0
+          - Id: 3
+            Name: 
+            ParentId: 2
+            TimelineId: 4
+            KeyId: 0
+          - Id: 4
+            Name: 
+            ParentId: 3
+            TimelineId: 5
+            KeyId: 0
+          - Id: 5
+            Name: 
+            ParentId: 0
+            TimelineId: 2
+            KeyId: 0
+          - Id: 6
+            Name: 
+            ParentId: 5
+            TimelineId: 6
+            KeyId: 0
+          - Id: 7
+            Name: 
+            ParentId: 6
+            TimelineId: 7
+            KeyId: 0
+          - Id: 8
+            Name: 
+            ParentId: 7
+            TimelineId: 8
+            KeyId: 0
+          - Id: 9
+            Name: 
+            ParentId: 0
+            TimelineId: 9
+            KeyId: 0
+          - Id: 10
+            Name: 
+            ParentId: 9
+            TimelineId: 10
+            KeyId: 0
+          - Id: 11
+            Name: 
+            ParentId: 10
+            TimelineId: 11
+            KeyId: 0
+          - Id: 12
+            Name: 
+            ParentId: 11
+            TimelineId: 12
+            KeyId: 0
+          - Id: 13
+            Name: 
+            ParentId: 9
+            TimelineId: 13
+            KeyId: 0
+          - Id: 14
+            Name: 
+            ParentId: 13
+            TimelineId: 14
+            KeyId: 0
+          - Id: 15
+            Name: 
+            ParentId: 14
+            TimelineId: 15
+            KeyId: 0
+          ObjectRefs:
+          - Id: 0
+            Name: 
+            ParentId: -1
+            TimelineId: 41
+            KeyId: 0
+            ZIndex: 0
+          - Id: 1
+            Name: 
+            ParentId: -1
+            TimelineId: 17
+            KeyId: 0
+            ZIndex: 1
+          - Id: 2
+            Name: 
+            ParentId: -1
+            TimelineId: 18
+            KeyId: 0
+            ZIndex: 2
+          - Id: 3
+            Name: 
+            ParentId: -1
+            TimelineId: 19
+            KeyId: 0
+            ZIndex: 3
+          - Id: 4
+            Name: 
+            ParentId: -1
+            TimelineId: 20
+            KeyId: 0
+            ZIndex: 4
+          - Id: 5
+            Name: 
+            ParentId: -1
+            TimelineId: 21
+            KeyId: 0
+            ZIndex: 5
+          - Id: 6
+            Name: 
+            ParentId: -1
+            TimelineId: 22
+            KeyId: 0
+            ZIndex: 6
+          - Id: 7
+            Name: 
+            ParentId: -1
+            TimelineId: 26
+            KeyId: 0
+            ZIndex: 7
+          - Id: 8
+            Name: 
+            ParentId: -1
+            TimelineId: 23
+            KeyId: 0
+            ZIndex: 8
+          - Id: 9
+            Name: 
+            ParentId: -1
+            TimelineId: 37
+            KeyId: 0
+            ZIndex: 9
+          - Id: 10
+            Name: 
+            ParentId: -1
+            TimelineId: 35
+            KeyId: 0
+            ZIndex: 10
+          - Id: 11
+            Name: 
+            ParentId: -1
+            TimelineId: 40
+            KeyId: 0
+            ZIndex: 11
+          - Id: 12
+            Name: 
+            ParentId: -1
+            TimelineId: 27
+            KeyId: 0
+            ZIndex: 12
+          - Id: 13
+            Name: 
+            ParentId: -1
+            TimelineId: 25
+            KeyId: 0
+            ZIndex: 13
+          - Id: 14
+            Name: 
+            ParentId: -1
+            TimelineId: 24
+            KeyId: 0
+            ZIndex: 14
+          - Id: 15
+            Name: 
+            ParentId: -1
+            TimelineId: 28
+            KeyId: 0
+            ZIndex: 15
+          - Id: 16
+            Name: 
+            ParentId: -1
+            TimelineId: 29
+            KeyId: 0
+            ZIndex: 16
+          - Id: 17
+            Name: 
+            ParentId: -1
+            TimelineId: 31
+            KeyId: 0
+            ZIndex: 17
+          - Id: 18
+            Name: 
+            ParentId: -1
+            TimelineId: 32
+            KeyId: 0
+            ZIndex: 18
+          - Id: 19
+            Name: 
+            ParentId: -1
+            TimelineId: 16
+            KeyId: 0
+            ZIndex: 19
+          - Id: 20
+            Name: 
+            ParentId: -1
+            TimelineId: 30
+            KeyId: 0
+            ZIndex: 20
+          - Id: 21
+            Name: 
+            ParentId: -1
+            TimelineId: 36
+            KeyId: 0
+            ZIndex: 21
+          - Id: 22
+            Name: 
+            ParentId: -1
+            TimelineId: 34
+            KeyId: 0
+            ZIndex: 22
+          - Id: 23
+            Name: 
+            ParentId: -1
+            TimelineId: 33
+            KeyId: 0
+            ZIndex: 23
+          - Id: 24
+            Name: 
+            ParentId: -1
+            TimelineId: 38
+            KeyId: 0
+            ZIndex: 24
+          - Id: 25
+            Name: 
+            ParentId: -1
+            TimelineId: 39
+            KeyId: 0
+            ZIndex: 25
+          - Id: 26
+            Name: 
+            ParentId: -1
+            TimelineId: 42
+            KeyId: 0
+            ZIndex: 26
+        Timelines:
+        - Id: 0
+          Name: bone_000
+          ObjectType: 1
+          ObjectId: 0
+          Keys:
+          - Id: 0
+            Name: 
+            Time: 0
+            CurveType: 0
+            C1: 0
+            C2: 0
+            C3: 0
+            C4: 0
+            Spin: 0
+            BoneInfo:
+              X: -7.857143
+              Y: 185
+              Angle: 270
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+            ObjectInfo:
+              X: 0
+              Y: 0
+              Angle: 0
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+              AnimationId: 0
+              EntityId: 0
+              FolderId: 0
+              FileId: 0
+              PivotX: NaN
+              PivotY: NaN
+              T: 0
+          Meta:
+            Varlines: []
+            Tagline:
+              Keys: []
+        - Id: 1
+          Name: bone_001
+          ObjectType: 1
+          ObjectId: 1
+          Keys:
+          - Id: 0
+            Name: 
+            Time: 0
+            CurveType: 0
+            C1: 0
+            C2: 0
+            C3: 0
+            C4: 0
+            Spin: 0
+            BoneInfo:
+              X: 60.714287
+              Y: -0.714286
+              Angle: 68.11044
+              ScaleX: 1.180411
+              ScaleY: 1
+              Alpha: 1
+            ObjectInfo:
+              X: 0
+              Y: 0
+              Angle: 0
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+              AnimationId: 0
+              EntityId: 0
+              FolderId: 0
+              FileId: 0
+              PivotX: NaN
+              PivotY: NaN
+              T: 0
+          Meta:
+            Varlines: []
+            Tagline:
+              Keys: []
+        - Id: 2
+          Name: bone_002
+          ObjectType: 1
+          ObjectId: 2
+          Keys:
+          - Id: 0
+            Name: 
+            Time: 0
+            CurveType: 0
+            C1: 0
+            C2: 0
+            C3: 0
+            C4: 0
+            Spin: 0
+            BoneInfo:
+              X: 61.42857
+              Y: -1.428571
+              Angle: 281.05643
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+            ObjectInfo:
+              X: 0
+              Y: 0
+              Angle: 0
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+              AnimationId: 0
+              EntityId: 0
+              FolderId: 0
+              FileId: 0
+              PivotX: NaN
+              PivotY: NaN
+              T: 0
+          Meta:
+            Varlines: []
+            Tagline:
+              Keys: []
+        - Id: 3
+          Name: bone_003
+          ObjectType: 1
+          ObjectId: 3
+          Keys:
+          - Id: 0
+            Name: 
+            Time: 0
+            CurveType: 0
+            C1: 0
+            C2: 0
+            C3: 0
+            C4: 0
+            Spin: 0
+            BoneInfo:
+              X: 70.60236
+              Y: -0
+              Angle: 315.65552
+              ScaleX: 0.693168
+              ScaleY: 1
+              Alpha: 1
+            ObjectInfo:
+              X: 0
+              Y: 0
+              Angle: 0
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+              AnimationId: 0
+              EntityId: 0
+              FolderId: 0
+              FileId: 0
+              PivotX: NaN
+              PivotY: NaN
+              T: 0
+          Meta:
+            Varlines: []
+            Tagline:
+              Keys: []
+        - Id: 4
+          Name: bone_004
+          ObjectType: 1
+          ObjectId: 4
+          Keys:
+          - Id: 0
+            Name: 
+            Time: 0
+            CurveType: 0
+            C1: 0
+            C2: 0
+            C3: 0
+            C4: 0
+            Spin: 0
+            BoneInfo:
+              X: 154.70801
+              Y: 0.79168
+              Angle: 342.532
+              ScaleX: 1.165398
+              ScaleY: 1
+              Alpha: 1
+            ObjectInfo:
+              X: 0
+              Y: 0
+              Angle: 0
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+              AnimationId: 0
+              EntityId: 0
+              FolderId: 0
+              FileId: 0
+              PivotX: NaN
+              PivotY: NaN
+              T: 0
+          Meta:
+            Varlines: []
+            Tagline:
+              Keys: []
+        - Id: 5
+          Name: bone_005
+          ObjectType: 1
+          ObjectId: 5
+          Keys:
+          - Id: 0
+            Name: 
+            Time: 0
+            CurveType: 0
+            C1: 0
+            C2: 0
+            C3: 0
+            C4: 0
+            Spin: 0
+            BoneInfo:
+              X: 116.87801
+              Y: 1.683495
+              Angle: 328.8571
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+            ObjectInfo:
+              X: 0
+              Y: 0
+              Angle: 0
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+              AnimationId: 0
+              EntityId: 0
+              FolderId: 0
+              FileId: 0
+              PivotX: NaN
+              PivotY: NaN
+              T: 0
+          Meta:
+            Varlines: []
+            Tagline:
+              Keys: []
+        - Id: 6
+          Name: bone_006
+          ObjectType: 1
+          ObjectId: 6
+          Keys:
+          - Id: 0
+            Name: 
+            Time: 0
+            CurveType: 0
+            C1: 0
+            C2: 0
+            C3: 0
+            C4: 0
+            Spin: 0
+            BoneInfo:
+              X: 63.13402
+              Y: 0.428892
+              Angle: 64.79806
+              ScaleX: 0.774088
+              ScaleY: 1
+              Alpha: 1
+            ObjectInfo:
+              X: 0
+              Y: 0
+              Angle: 0
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+              AnimationId: 0
+              EntityId: 0
+              FolderId: 0
+              FileId: 0
+              PivotX: NaN
+              PivotY: NaN
+              T: 0
+          Meta:
+            Varlines: []
+            Tagline:
+              Keys: []
+        - Id: 7
+          Name: bone_007
+          ObjectType: 1
+          ObjectId: 7
+          Keys:
+          - Id: 0
+            Name: 
+            Time: 0
+            CurveType: 0
+            C1: 0
+            C2: 0
+            C3: 0
+            C4: 0
+            Spin: 0
+            BoneInfo:
+              X: 145.70372
+              Y: -0.229937
+              Angle: 5.25104
+              ScaleX: 1.341885
+              ScaleY: 1
+              Alpha: 1
+            ObjectInfo:
+              X: 0
+              Y: 0
+              Angle: 0
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+              AnimationId: 0
+              EntityId: 0
+              FolderId: 0
+              FileId: 0
+              PivotX: NaN
+              PivotY: NaN
+              T: 0
+          Meta:
+            Varlines: []
+            Tagline:
+              Keys: []
+        - Id: 8
+          Name: bone_008
+          ObjectType: 1
+          ObjectId: 8
+          Keys:
+          - Id: 0
+            Name: 
+            Time: 0
+            CurveType: 0
+            C1: 0
+            C2: 0
+            C3: 0
+            C4: 0
+            Spin: 0
+            BoneInfo:
+              X: 109.578384
+              Y: 0.965642
+              Angle: 353.46155
+              ScaleX: 0.962707
+              ScaleY: 1
+              Alpha: 1
+            ObjectInfo:
+              X: 0
+              Y: 0
+              Angle: 0
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+              AnimationId: 0
+              EntityId: 0
+              FolderId: 0
+              FileId: 0
+              PivotX: NaN
+              PivotY: NaN
+              T: 0
+          Meta:
+            Varlines: []
+            Tagline:
+              Keys: []
+        - Id: 9
+          Name: bone_009
+          ObjectType: 1
+          ObjectId: 9
+          Keys:
+          - Id: 0
+            Name: 
+            Time: 0
+            CurveType: 0
+            C1: 0
+            C2: 0
+            C3: 0
+            C4: 0
+            Spin: 0
+            BoneInfo:
+              X: 72.40157
+              Y: -2.379078
+              Angle: 1.421944
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+            ObjectInfo:
+              X: 0
+              Y: 0
+              Angle: 0
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+              AnimationId: 0
+              EntityId: 0
+              FolderId: 0
+              FileId: 0
+              PivotX: NaN
+              PivotY: NaN
+              T: 0
+          Meta:
+            Varlines: []
+            Tagline:
+              Keys: []
+        - Id: 10
+          Name: bone_010
+          ObjectType: 1
+          ObjectId: 10
+          Keys:
+          - Id: 0
+            Name: 
+            Time: 0
+            CurveType: 0
+            C1: 0
+            C2: 0
+            C3: 0
+            C4: 0
+            Spin: 0
+            BoneInfo:
+              X: 216.66972
+              Y: -29.00765
+              Angle: 350.34708
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+            ObjectInfo:
+              X: 0
+              Y: 0
+              Angle: 0
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+              AnimationId: 0
+              EntityId: 0
+              FolderId: 0
+              FileId: 0
+              PivotX: NaN
+              PivotY: NaN
+              T: 0
+          Meta:
+            Varlines: []
+            Tagline:
+              Keys: []
+        - Id: 11
+          Name: bone_011
+          ObjectType: 1
+          ObjectId: 11
+          Keys:
+          - Id: 0
+            Name: 
+            Time: 0
+            CurveType: 0
+            C1: 0
+            C2: 0
+            C3: 0
+            C4: 0
+            Spin: 0
+            BoneInfo:
+              X: 125.83337
+              Y: -0.892018
+              Angle: 5.940365
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+            ObjectInfo:
+              X: 0
+              Y: 0
+              Angle: 0
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+              AnimationId: 0
+              EntityId: 0
+              FolderId: 0
+              FileId: 0
+              PivotX: NaN
+              PivotY: NaN
+              T: 0
+          Meta:
+            Varlines: []
+            Tagline:
+              Keys: []
+        - Id: 12
+          Name: bone_012
+          ObjectType: 1
+          ObjectId: 12
+          Keys:
+          - Id: 0
+            Name: 
+            Time: 0
+            CurveType: 0
+            C1: 0
+            C2: 0
+            C3: 0
+            C4: 0
+            Spin: 0
+            BoneInfo:
+              X: 203.29605
+              Y: -4.196469
+              Angle: 318.32394
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+            ObjectInfo:
+              X: 0
+              Y: 0
+              Angle: 0
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+              AnimationId: 0
+              EntityId: 0
+              FolderId: 0
+              FileId: 0
+              PivotX: NaN
+              PivotY: NaN
+              T: 0
+          Meta:
+            Varlines: []
+            Tagline:
+              Keys: []
+        - Id: 13
+          Name: bone_013
+          ObjectType: 1
+          ObjectId: 13
+          Keys:
+          - Id: 0
+            Name: 
+            Time: 0
+            CurveType: 0
+            C1: 0
+            C2: 0
+            C3: 0
+            C4: 0
+            Spin: 0
+            BoneInfo:
+              X: 221.59645
+              Y: 42.54567
+              Angle: 0.037506
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+            ObjectInfo:
+              X: 0
+              Y: 0
+              Angle: 0
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+              AnimationId: 0
+              EntityId: 0
+              FolderId: 0
+              FileId: 0
+              PivotX: NaN
+              PivotY: NaN
+              T: 0
+          Meta:
+            Varlines: []
+            Tagline:
+              Keys: []
+        - Id: 14
+          Name: bone_014
+          ObjectType: 1
+          ObjectId: 14
+          Keys:
+          - Id: 0
+            Name: 
+            Time: 0
+            CurveType: 0
+            C1: 0
+            C2: 0
+            C3: 0
+            C4: 0
+            Spin: 0
+            BoneInfo:
+              X: 131.6721
+              Y: -0.204075
+              Angle: 359.71448
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+            ObjectInfo:
+              X: 0
+              Y: 0
+              Angle: 0
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+              AnimationId: 0
+              EntityId: 0
+              FolderId: 0
+              FileId: 0
+              PivotX: NaN
+              PivotY: NaN
+              T: 0
+          Meta:
+            Varlines: []
+            Tagline:
+              Keys: []
+        - Id: 15
+          Name: bone_015
+          ObjectType: 1
+          ObjectId: 15
+          Keys:
+          - Id: 0
+            Name: 
+            Time: 0
+            CurveType: 0
+            C1: 0
+            C2: 0
+            C3: 0
+            C4: 0
+            Spin: 0
+            BoneInfo:
+              X: 200.80978
+              Y: -0.964687
+              Angle: 5.345872
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+            ObjectInfo:
+              X: 0
+              Y: 0
+              Angle: 0
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+              AnimationId: 0
+              EntityId: 0
+              FolderId: 0
+              FileId: 0
+              PivotX: NaN
+              PivotY: NaN
+              T: 0
+          Meta:
+            Varlines: []
+            Tagline:
+              Keys: []
+        - Id: 16
+          Name: Face_000
+          ObjectType: 0
+          ObjectId: 0
+          Keys:
+          - Id: 0
+            Name: 
+            Time: 0
+            CurveType: 0
+            C1: 0
+            C2: 0
+            C3: 0
+            C4: 0
+            Spin: 0
+            BoneInfo:
+              X: 0
+              Y: 0
+              Angle: 0
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+            ObjectInfo:
+              X: 0
+              Y: 167
+              Angle: 0
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+              AnimationId: 0
+              EntityId: 0
+              FolderId: 12
+              FileId: 0
+              PivotX: 0.56329
+              PivotY: 0.158585
+              T: 0
+          Meta:
+            Varlines: []
+            Tagline:
+              Keys: []
+        - Id: 17
+          Name: Fist
+          ObjectType: 0
+          ObjectId: 0
+          Keys:
+          - Id: 0
+            Name: 
+            Time: 0
+            CurveType: 0
+            C1: 0
+            C2: 0
+            C3: 0
+            C4: 0
+            Spin: 0
+            BoneInfo:
+              X: 0
+              Y: 0
+              Angle: 0
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+            ObjectInfo:
+              X: 124.143036
+              Y: -139.0772
+              Angle: 0
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+              AnimationId: 0
+              EntityId: 0
+              FolderId: 12
+              FileId: 1
+              PivotX: 0.522556
+              PivotY: 0.838462
+              T: 0
+          Meta:
+            Varlines: []
+            Tagline:
+              Keys: []
+        - Id: 18
+          Name: Fist_000
+          ObjectType: 0
+          ObjectId: 0
+          Keys:
+          - Id: 0
+            Name: 
+            Time: 0
+            CurveType: 0
+            C1: 0
+            C2: 0
+            C3: 0
+            C4: 0
+            Spin: 0
+            BoneInfo:
+              X: 0
+              Y: 0
+              Angle: 0
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+            ObjectInfo:
+              X: -119.70696
+              Y: -114.42979
+              Angle: 0
+              ScaleX: -1
+              ScaleY: 1
+              Alpha: 1
+              AnimationId: 0
+              EntityId: 0
+              FolderId: 12
+              FileId: 1
+              PivotX: 0.522556
+              PivotY: 0.838462
+              T: 0
+          Meta:
+            Varlines: []
+            Tagline:
+              Keys: []
+        - Id: 19
+          Name: Forearm
+          ObjectType: 0
+          ObjectId: 0
+          Keys:
+          - Id: 0
+            Name: 
+            Time: 0
+            CurveType: 0
+            C1: 0
+            C2: 0
+            C3: 0
+            C4: 0
+            Spin: 0
+            BoneInfo:
+              X: 0
+              Y: 0
+              Angle: 0
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+            ObjectInfo:
+              X: 117.106445
+              Y: -24.743177
+              Angle: 0
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+              AnimationId: 0
+              EntityId: 0
+              FolderId: 12
+              FileId: 2
+              PivotX: 0.489796
+              PivotY: 0.92562
+              T: 0
+          Meta:
+            Varlines: []
+            Tagline:
+              Keys: []
+        - Id: 20
+          Name: Forearm_000
+          ObjectType: 0
+          ObjectId: 0
+          Keys:
+          - Id: 0
+            Name: 
+            Time: 0
+            CurveType: 0
+            C1: 0
+            C2: 0
+            C3: 0
+            C4: 0
+            Spin: 0
+            BoneInfo:
+              X: 0
+              Y: 0
+              Angle: 0
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+            ObjectInfo:
+              X: -104.31678
+              Y: -3.34859
+              Angle: 356.185
+              ScaleX: -1
+              ScaleY: 1
+              Alpha: 1
+              AnimationId: 0
+              EntityId: 0
+              FolderId: 12
+              FileId: 2
+              PivotX: 0.489796
+              PivotY: 0.92562
+              T: 0
+          Meta:
+            Varlines: []
+            Tagline:
+              Keys: []
+        - Id: 21
+          Name: LowerLeg
+          ObjectType: 0
+          ObjectId: 0
+          Keys:
+          - Id: 0
+            Name: 
+            Time: 0
+            CurveType: 0
+            C1: 0
+            C2: 0
+            C3: 0
+            C4: 0
+            Spin: 0
+            BoneInfo:
+              X: 0
+              Y: 0
+              Angle: 0
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+            ObjectInfo:
+              X: -56.18221
+              Y: -234.48827
+              Angle: 0
+              ScaleX: -1
+              ScaleY: 1
+              Alpha: 1
+              AnimationId: 0
+              EntityId: 0
+              FolderId: 12
+              FileId: 4
+              PivotX: 0.49809
+              PivotY: 0.928728
+              T: 0
+          Meta:
+            Varlines: []
+            Tagline:
+              Keys: []
+        - Id: 22
+          Name: LowerLeg_000
+          ObjectType: 0
+          ObjectId: 0
+          Keys:
+          - Id: 0
+            Name: 
+            Time: 0
+            CurveType: 0
+            C1: 0
+            C2: 0
+            C3: 0
+            C4: 0
+            Spin: 0
+            BoneInfo:
+              X: 0
+              Y: 0
+              Angle: 0
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+            ObjectInfo:
+              X: 42.4
+              Y: -231.73238
+              Angle: 0
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+              AnimationId: 0
+              EntityId: 0
+              FolderId: 12
+              FileId: 4
+              PivotX: 0.49809
+              PivotY: 0.928728
+              T: 0
+          Meta:
+            Varlines: []
+            Tagline:
+              Keys: []
+        - Id: 23
+          Name: Shoulder
+          ObjectType: 0
+          ObjectId: 0
+          Keys:
+          - Id: 0
+            Name: 
+            Time: 0
+            CurveType: 0
+            C1: 0
+            C2: 0
+            C3: 0
+            C4: 0
+            Spin: 0
+            BoneInfo:
+              X: 0
+              Y: 0
+              Angle: 0
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+            ObjectInfo:
+              X: -65.66443
+              Y: 98.87466
+              Angle: 46.618
+              ScaleX: -1
+              ScaleY: 1
+              Alpha: 1
+              AnimationId: 0
+              EntityId: 0
+              FolderId: 12
+              FileId: 3
+              PivotX: 0.502909
+              PivotY: 0.528684
+              T: 0
+          Meta:
+            Varlines: []
+            Tagline:
+              Keys: []
+        - Id: 24
+          Name: Shoulder_000
+          ObjectType: 0
+          ObjectId: 0
+          Keys:
+          - Id: 0
+            Name: 
+            Time: 0
+            CurveType: 0
+            C1: 0
+            C2: 0
+            C3: 0
+            C4: 0
+            Spin: 0
+            BoneInfo:
+              X: 0
+              Y: 0
+              Angle: 0
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+            ObjectInfo:
+              X: 72.86944
+              Y: 75.67441
+              Angle: 307.69843
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+              AnimationId: 0
+              EntityId: 0
+              FolderId: 12
+              FileId: 3
+              PivotX: 0.502909
+              PivotY: 0.528684
+              T: 0
+          Meta:
+            Varlines: []
+            Tagline:
+              Keys: []
+        - Id: 25
+          Name: Torso
+          ObjectType: 0
+          ObjectId: 0
+          Keys:
+          - Id: 0
+            Name: 
+            Time: 0
+            CurveType: 0
+            C1: 0
+            C2: 0
+            C3: 0
+            C4: 0
+            Spin: 0
+            BoneInfo:
+              X: 0
+              Y: 0
+              Angle: 0
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+            ObjectInfo:
+              X: 0
+              Y: 80.23673
+              Angle: 0
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+              AnimationId: 0
+              EntityId: 0
+              FolderId: 12
+              FileId: 7
+              PivotX: 0.493789
+              PivotY: 0.605153
+              T: 0
+          Meta:
+            Varlines: []
+            Tagline:
+              Keys: []
+        - Id: 26
+          Name: UpperArm
+          ObjectType: 0
+          ObjectId: 0
+          Keys:
+          - Id: 0
+            Name: 
+            Time: 0
+            CurveType: 0
+            C1: 0
+            C2: 0
+            C3: 0
+            C4: 0
+            Spin: 0
+            BoneInfo:
+              X: 0
+              Y: 0
+              Angle: 0
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+            ObjectInfo:
+              X: -89.27984
+              Y: 56.3203
+              Angle: 347.629
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+              AnimationId: 0
+              EntityId: 0
+              FolderId: 12
+              FileId: 6
+              PivotX: 0.534632
+              PivotY: 0.826279
+              T: 0
+          Meta:
+            Varlines: []
+            Tagline:
+              Keys: []
+        - Id: 27
+          Name: UpperArm_000
+          ObjectType: 0
+          ObjectId: 0
+          Keys:
+          - Id: 0
+            Name: 
+            Time: 0
+            CurveType: 0
+            C1: 0
+            C2: 0
+            C3: 0
+            C4: 0
+            Spin: 0
+            BoneInfo:
+              X: 0
+              Y: 0
+              Angle: 0
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+            ObjectInfo:
+              X: 96.25505
+              Y: 25.752731
+              Angle: 17.707
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+              AnimationId: 0
+              EntityId: 0
+              FolderId: 12
+              FileId: 6
+              PivotX: 0.534632
+              PivotY: 0.826279
+              T: 0
+          Meta:
+            Varlines: []
+            Tagline:
+              Keys: []
+        - Id: 28
+          Name: UpperLeg
+          ObjectType: 0
+          ObjectId: 0
+          Keys:
+          - Id: 0
+            Name: 
+            Time: 0
+            CurveType: 0
+            C1: 0
+            C2: 0
+            C3: 0
+            C4: 0
+            Spin: 0
+            BoneInfo:
+              X: 0
+              Y: 0
+              Angle: 0
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+            ObjectInfo:
+              X: -36.40662
+              Y: -110.82331
+              Angle: 352.827
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+              AnimationId: 0
+              EntityId: 0
+              FolderId: 12
+              FileId: 5
+              PivotX: 0.489796
+              PivotY: 0.915033
+              T: 0
+          Meta:
+            Varlines: []
+            Tagline:
+              Keys: []
+        - Id: 29
+          Name: UpperLeg_000
+          ObjectType: 0
+          ObjectId: 0
+          Keys:
+          - Id: 0
+            Name: 
+            Time: 0
+            CurveType: 0
+            C1: 0
+            C2: 0
+            C3: 0
+            C4: 0
+            Spin: 0
+            BoneInfo:
+              X: 0
+              Y: 0
+              Angle: 0
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+            ObjectInfo:
+              X: 40.92554
+              Y: -108.9534
+              Angle: 0
+              ScaleX: -1
+              ScaleY: 1
+              Alpha: 1
+              AnimationId: 0
+              EntityId: 0
+              FolderId: 12
+              FileId: 5
+              PivotX: 0.489796
+              PivotY: 0.915033
+              T: 0
+          Meta:
+            Varlines: []
+            Tagline:
+              Keys: []
+        - Id: 30
+          Name: Hair_0
+          ObjectType: 0
+          ObjectId: 0
+          Keys:
+          - Id: 0
+            Name: 
+            Time: 0
+            CurveType: 0
+            C1: 0
+            C2: 0
+            C3: 0
+            C4: 0
+            Spin: 0
+            BoneInfo:
+              X: 0
+              Y: 0
+              Angle: 0
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+            ObjectInfo:
+              X: -9.576271
+              Y: 241.66133
+              Angle: 0
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+              AnimationId: 0
+              EntityId: 0
+              FolderId: 1
+              FileId: 0
+              PivotX: 0.528532
+              PivotY: 0.547208
+              T: 0
+          Meta:
+            Varlines: []
+            Tagline:
+              Keys: []
+        - Id: 31
+          Name: Eyes_0
+          ObjectType: 0
+          ObjectId: 0
+          Keys:
+          - Id: 0
+            Name: 
+            Time: 0
+            CurveType: 0
+            C1: 0
+            C2: 0
+            C3: 0
+            C4: 0
+            Spin: 0
+            BoneInfo:
+              X: 0
+              Y: 0
+              Angle: 0
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+            ObjectInfo:
+              X: -35.062286
+              Y: 193.52771
+              Angle: 0
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+              AnimationId: 0
+              EntityId: 0
+              FolderId: 17
+              FileId: 0
+              PivotX: 0.464794
+              PivotY: 0.5656
+              T: 0
+          Meta:
+            Varlines: []
+            Tagline:
+              Keys: []
+        - Id: 32
+          Name: 2406
+          ObjectType: 0
+          ObjectId: 0
+          Keys:
+          - Id: 0
+            Name: 
+            Time: 0
+            CurveType: 0
+            C1: 0
+            C2: 0
+            C3: 0
+            C4: 0
+            Spin: 0
+            BoneInfo:
+              X: 0
+              Y: 0
+              Angle: 0
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+            ObjectInfo:
+              X: -81.25224
+              Y: 146.09354
+              Angle: 0
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+              AnimationId: 0
+              EntityId: 0
+              FolderId: 16
+              FileId: 5
+              PivotX: 0
+              PivotY: 1
+              T: 0
+          Meta:
+            Varlines: []
+            Tagline:
+              Keys: []
+        - Id: 33
+          Name: 2239
+          ObjectType: 0
+          ObjectId: 0
+          Keys:
+          - Id: 0
+            Name: 
+            Time: 0
+            CurveType: 0
+            C1: 0
+            C2: 0
+            C3: 0
+            C4: 0
+            Spin: 0
+            BoneInfo:
+              X: 0
+              Y: 0
+              Angle: 0
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+            ObjectInfo:
+              X: 88.28813
+              Y: 116.83156
+              Angle: 297.38986
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+              AnimationId: 0
+              EntityId: 0
+              FolderId: 16
+              FileId: 6
+              PivotX: 0.0537426
+              PivotY: 0.964752
+              T: 0
+          Meta:
+            Varlines: []
+            Tagline:
+              Keys: []
+        - Id: 34
+          Name: 2106
+          ObjectType: 0
+          ObjectId: 0
+          Keys:
+          - Id: 0
+            Name: 
+            Time: 0
+            CurveType: 0
+            C1: 0
+            C2: 0
+            C3: 0
+            C4: 0
+            Spin: 0
+            BoneInfo:
+              X: 0
+              Y: 0
+              Angle: 0
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+            ObjectInfo:
+              X: 76.385254
+              Y: 34.90244
+              Angle: 16.58734
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+              AnimationId: 0
+              EntityId: 0
+              FolderId: 16
+              FileId: 7
+              PivotX: 0
+              PivotY: 1
+              T: 0
+          Meta:
+            Varlines: []
+            Tagline:
+              Keys: []
+        - Id: 35
+          Name: 2106_000
+          ObjectType: 0
+          ObjectId: 0
+          Keys:
+          - Id: 0
+            Name: 
+            Time: 0
+            CurveType: 0
+            C1: 0
+            C2: 0
+            C3: 0
+            C4: 0
+            Spin: 0
+            BoneInfo:
+              X: 0
+              Y: 0
+              Angle: 0
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+            ObjectInfo:
+              X: -101.12975
+              Y: 77.65797
+              Angle: 346.84247
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+              AnimationId: 0
+              EntityId: 0
+              FolderId: 16
+              FileId: 7
+              PivotX: 0
+              PivotY: 1
+              T: 0
+          Meta:
+            Varlines: []
+            Tagline:
+              Keys: []
+        - Id: 36
+          Name: 2052
+          ObjectType: 0
+          ObjectId: 0
+          Keys:
+          - Id: 0
+            Name: 
+            Time: 0
+            CurveType: 0
+            C1: 0
+            C2: 0
+            C3: 0
+            C4: 0
+            Spin: 0
+            BoneInfo:
+              X: 0
+              Y: 0
+              Angle: 0
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+            ObjectInfo:
+              X: 92.82868
+              Y: -14.741036
+              Angle: 0
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+              AnimationId: 0
+              EntityId: 0
+              FolderId: 16
+              FileId: 8
+              PivotX: 0
+              PivotY: 1
+              T: 0
+          Meta:
+            Varlines: []
+            Tagline:
+              Keys: []
+        - Id: 37
+          Name: 2052_000
+          ObjectType: 0
+          ObjectId: 0
+          Keys:
+          - Id: 0
+            Name: 
+            Time: 0
+            CurveType: 0
+            C1: 0
+            C2: 0
+            C3: 0
+            C4: 0
+            Spin: 0
+            BoneInfo:
+              X: 0
+              Y: 0
+              Angle: 0
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+            ObjectInfo:
+              X: -80.47809
+              Y: 4.780876
+              Angle: 356.185
+              ScaleX: -1
+              ScaleY: 1
+              Alpha: 1
+              AnimationId: 0
+              EntityId: 0
+              FolderId: 16
+              FileId: 8
+              PivotX: 0
+              PivotY: 1
+              T: 0
+          Meta:
+            Varlines: []
+            Tagline:
+              Keys: []
+        - Id: 38
+          Name: 2046
+          ObjectType: 0
+          ObjectId: 0
+          Keys:
+          - Id: 0
+            Name: 
+            Time: 0
+            CurveType: 0
+            C1: 0
+            C2: 0
+            C3: 0
+            C4: 0
+            Spin: 0
+            BoneInfo:
+              X: 0
+              Y: 0
+              Angle: 0
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+            ObjectInfo:
+              X: 124.741005
+              Y: -139.28777
+              Angle: 0
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+              AnimationId: 0
+              EntityId: 0
+              FolderId: 16
+              FileId: 3
+              PivotX: 0.522556
+              PivotY: 0.838462
+              T: 0
+          Meta:
+            Varlines: []
+            Tagline:
+              Keys: []
+        - Id: 39
+          Name: 2046_000
+          ObjectType: 0
+          ObjectId: 0
+          Keys:
+          - Id: 0
+            Name: 
+            Time: 0
+            CurveType: 0
+            C1: 0
+            C2: 0
+            C3: 0
+            C4: 0
+            Spin: 0
+            BoneInfo:
+              X: 0
+              Y: 0
+              Angle: 0
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+            ObjectInfo:
+              X: -119.96629
+              Y: -114.60674
+              Angle: 0
+              ScaleX: -1
+              ScaleY: 1
+              Alpha: 1
+              AnimationId: 0
+              EntityId: 0
+              FolderId: 16
+              FileId: 3
+              PivotX: 0.522556
+              PivotY: 0.838462
+              T: 0
+          Meta:
+            Varlines: []
+            Tagline:
+              Keys: []
+        - Id: 40
+          Name: 2239 - Copy
+          ObjectType: 0
+          ObjectId: 0
+          Keys:
+          - Id: 0
+            Name: 
+            Time: 0
+            CurveType: 0
+            C1: 0
+            C2: 0
+            C3: 0
+            C4: 0
+            Spin: 0
+            BoneInfo:
+              X: 0
+              Y: 0
+              Angle: 0
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+            ObjectInfo:
+              X: -64.80687
+              Y: 150.21458
+              Angle: 55.061
+              ScaleX: -1
+              ScaleY: 1
+              Alpha: 1
+              AnimationId: 0
+              EntityId: 0
+              FolderId: 16
+              FileId: 14
+              PivotX: 0
+              PivotY: 1
+              T: 0
+          Meta:
+            Varlines: []
+            Tagline:
+              Keys: []
+        - Id: 41
+          Name: 1
+          ObjectType: 0
+          ObjectId: 0
+          Keys:
+          - Id: 0
+            Name: 
+            Time: 0
+            CurveType: 0
+            C1: 0
+            C2: 0
+            C3: 0
+            C4: 0
+            Spin: 0
+            BoneInfo:
+              X: 0
+              Y: 0
+              Angle: 0
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+            ObjectInfo:
+              X: 363.4129
+              Y: 307.88693
+              Angle: 0
+              ScaleX: 6
+              ScaleY: 6
+              Alpha: 1
+              AnimationId: 0
+              EntityId: 0
+              FolderId: 23
+              FileId: 0
+              PivotX: 0
+              PivotY: 1
+              T: 0
+          Meta:
+            Varlines: []
+            Tagline:
+              Keys: []
+        - Id: 42
+          Name: Screenshot 2022-06-03 225813
+          ObjectType: 0
+          ObjectId: 0
+          Keys:
+          - Id: 0
+            Name: 
+            Time: 0
+            CurveType: 0
+            C1: 0
+            C2: 0
+            C3: 0
+            C4: 0
+            Spin: 0
+            BoneInfo:
+              X: 0
+              Y: 0
+              Angle: 0
+              ScaleX: 1
+              ScaleY: 1
+              Alpha: 1
+            ObjectInfo:
+              X: -259.5947
+              Y: 319.70126
+              Angle: 0
+              ScaleX: 1.2
+              ScaleY: 1.2
+              Alpha: 1
+              AnimationId: 0
+              EntityId: 0
+              FolderId: 23
+              FileId: 1
+              PivotX: 0
+              PivotY: 1
+              T: 0
+          Meta:
+            Varlines: []
+            Tagline:
+              Keys: []
+        Eventlines: []
+        Soundlines: []
+        Meta:
+          Varlines: []
+          Tagline:
+            Keys: []
+      Variables: []
+    Tags: []
+    Atlases: []
+  FileEntries:
+  - FolderId: 0
+    FileId: 0
+    Sprite: {fileID: 0}
+    Sound: {fileID: 0}
+  - FolderId: 0
+    FileId: 1
+    Sprite: {fileID: 0}
+    Sound: {fileID: 0}
+  - FolderId: 0
+    FileId: 2
+    Sprite: {fileID: 0}
+    Sound: {fileID: 0}
+  - FolderId: 0
+    FileId: 3
+    Sprite: {fileID: 0}
+    Sound: {fileID: 0}
+  - FolderId: 1
+    FileId: 0
+    Sprite: {fileID: 0}
+    Sound: {fileID: 0}
+  - FolderId: 1
+    FileId: 1
+    Sprite: {fileID: 0}
+    Sound: {fileID: 0}
+  - FolderId: 1
+    FileId: 2
+    Sprite: {fileID: 0}
+    Sound: {fileID: 0}
+  - FolderId: 1
+    FileId: 3
+    Sprite: {fileID: 0}
+    Sound: {fileID: 0}
+  - FolderId: 2
+    FileId: 0
+    Sprite: {fileID: 0}
+    Sound: {fileID: 0}
+  - FolderId: 3
+    FileId: 0
+    Sprite: {fileID: 0}
+    Sound: {fileID: 0}
+  - FolderId: 4
+    FileId: 0
+    Sprite: {fileID: 0}
+    Sound: {fileID: 0}
+  - FolderId: 5
+    FileId: 0
+    Sprite: {fileID: 0}
+    Sound: {fileID: 0}
+  - FolderId: 6
+    FileId: 0
+    Sprite: {fileID: 0}
+    Sound: {fileID: 0}
+  - FolderId: 7
+    FileId: 0
+    Sprite: {fileID: 0}
+    Sound: {fileID: 0}
+  - FolderId: 8
+    FileId: 0
+    Sprite: {fileID: 0}
+    Sound: {fileID: 0}
+  - FolderId: 9
+    FileId: 0
+    Sprite: {fileID: 0}
+    Sound: {fileID: 0}
+  - FolderId: 10
+    FileId: 0
+    Sprite: {fileID: 0}
+    Sound: {fileID: 0}
+  - FolderId: 11
+    FileId: 0
+    Sprite: {fileID: 0}
+    Sound: {fileID: 0}
+  - FolderId: 12
+    FileId: 0
+    Sprite: {fileID: 0}
+    Sound: {fileID: 0}
+  - FolderId: 12
+    FileId: 1
+    Sprite: {fileID: 0}
+    Sound: {fileID: 0}
+  - FolderId: 12
+    FileId: 2
+    Sprite: {fileID: 0}
+    Sound: {fileID: 0}
+  - FolderId: 12
+    FileId: 3
+    Sprite: {fileID: 0}
+    Sound: {fileID: 0}
+  - FolderId: 12
+    FileId: 4
+    Sprite: {fileID: 0}
+    Sound: {fileID: 0}
+  - FolderId: 12
+    FileId: 5
+    Sprite: {fileID: 0}
+    Sound: {fileID: 0}
+  - FolderId: 12
+    FileId: 6
+    Sprite: {fileID: 0}
+    Sound: {fileID: 0}
+  - FolderId: 12
+    FileId: 7
+    Sprite: {fileID: 0}
+    Sound: {fileID: 0}
+  - FolderId: 12
+    FileId: 8
+    Sprite: {fileID: 0}
+    Sound: {fileID: 0}
+  - FolderId: 13
+    FileId: 0
+    Sprite: {fileID: 0}
+    Sound: {fileID: 0}
+  - FolderId: 13
+    FileId: 1
+    Sprite: {fileID: 0}
+    Sound: {fileID: 0}
+  - FolderId: 13
+    FileId: 2
+    Sprite: {fileID: 0}
+    Sound: {fileID: 0}
+  - FolderId: 13
+    FileId: 3
+    Sprite: {fileID: 0}
+    Sound: {fileID: 0}
+  - FolderId: 13
+    FileId: 4
+    Sprite: {fileID: 0}
+    Sound: {fileID: 0}
+  - FolderId: 13
+    FileId: 5
+    Sprite: {fileID: 0}
+    Sound: {fileID: 0}
+  - FolderId: 13
+    FileId: 6
+    Sprite: {fileID: 0}
+    Sound: {fileID: 0}
+  - FolderId: 13
+    FileId: 7
+    Sprite: {fileID: 0}
+    Sound: {fileID: 0}
+  - FolderId: 14
+    FileId: 0
+    Sprite: {fileID: 0}
+    Sound: {fileID: 0}
+  - FolderId: 14
+    FileId: 1
+    Sprite: {fileID: 0}
+    Sound: {fileID: 0}
+  - FolderId: 14
+    FileId: 2
+    Sprite: {fileID: 0}
+    Sound: {fileID: 0}
+  - FolderId: 14
+    FileId: 3
+    Sprite: {fileID: 0}
+    Sound: {fileID: 0}
+  - FolderId: 14
+    FileId: 4
+    Sprite: {fileID: 0}
+    Sound: {fileID: 0}
+  - FolderId: 14
+    FileId: 5
+    Sprite: {fileID: 0}
+    Sound: {fileID: 0}
+  - FolderId: 14
+    FileId: 6
+    Sprite: {fileID: 0}
+    Sound: {fileID: 0}
+  - FolderId: 14
+    FileId: 7
+    Sprite: {fileID: 0}
+    Sound: {fileID: 0}
+  - FolderId: 15
+    FileId: 0
+    Sprite: {fileID: 0}
+    Sound: {fileID: 0}
+  - FolderId: 15
+    FileId: 1
+    Sprite: {fileID: 0}
+    Sound: {fileID: 0}
+  - FolderId: 15
+    FileId: 2
+    Sprite: {fileID: 0}
+    Sound: {fileID: 0}
+  - FolderId: 15
+    FileId: 3
+    Sprite: {fileID: 0}
+    Sound: {fileID: 0}
+  - FolderId: 15
+    FileId: 4
+    Sprite: {fileID: 0}
+    Sound: {fileID: 0}
+  - FolderId: 15
+    FileId: 5
+    Sprite: {fileID: 0}
+    Sound: {fileID: 0}
+  - FolderId: 15
+    FileId: 6
+    Sprite: {fileID: 0}
+    Sound: {fileID: 0}
+  - FolderId: 15
+    FileId: 7
+    Sprite: {fileID: 0}
+    Sound: {fileID: 0}
+  - FolderId: 16
+    FileId: 0
+    Sprite: {fileID: 0}
+    Sound: {fileID: 0}
+  - FolderId: 16
+    FileId: 1
+    Sprite: {fileID: 0}
+    Sound: {fileID: 0}
+  - FolderId: 16
+    FileId: 2
+    Sprite: {fileID: 0}
+    Sound: {fileID: 0}
+  - FolderId: 16
+    FileId: 3
+    Sprite: {fileID: 0}
+    Sound: {fileID: 0}
+  - FolderId: 16
+    FileId: 4
+    Sprite: {fileID: 0}
+    Sound: {fileID: 0}
+  - FolderId: 16
+    FileId: 5
+    Sprite: {fileID: 0}
+    Sound: {fileID: 0}
+  - FolderId: 16
+    FileId: 6
+    Sprite: {fileID: 0}
+    Sound: {fileID: 0}
+  - FolderId: 16
+    FileId: 7
+    Sprite: {fileID: 0}
+    Sound: {fileID: 0}
+  - FolderId: 16
+    FileId: 8
+    Sprite: {fileID: 0}
+    Sound: {fileID: 0}
+  - FolderId: 16
+    FileId: 9
+    Sprite: {fileID: 0}
+    Sound: {fileID: 0}
+  - FolderId: 16
+    FileId: 10
+    Sprite: {fileID: 0}
+    Sound: {fileID: 0}
+  - FolderId: 16
+    FileId: 11
+    Sprite: {fileID: 0}
+    Sound: {fileID: 0}
+  - FolderId: 16
+    FileId: 12
+    Sprite: {fileID: 0}
+    Sound: {fileID: 0}
+  - FolderId: 16
+    FileId: 13
+    Sprite: {fileID: 0}
+    Sound: {fileID: 0}
+  - FolderId: 16
+    FileId: 14
+    Sprite: {fileID: 0}
+    Sound: {fileID: 0}
+  - FolderId: 16
+    FileId: 15
+    Sprite: {fileID: 0}
+    Sound: {fileID: 0}
+  - FolderId: 17
+    FileId: 0
+    Sprite: {fileID: 0}
+    Sound: {fileID: 0}
+  - FolderId: 17
+    FileId: 1
+    Sprite: {fileID: 0}
+    Sound: {fileID: 0}
+  - FolderId: 17
+    FileId: 2
+    Sprite: {fileID: 0}
+    Sound: {fileID: 0}
+  - FolderId: 17
+    FileId: 3
+    Sprite: {fileID: 0}
+    Sound: {fileID: 0}
+  - FolderId: 18
+    FileId: 0
+    Sprite: {fileID: 0}
+    Sound: {fileID: 0}
+  - FolderId: 18
+    FileId: 1
+    Sprite: {fileID: 0}
+    Sound: {fileID: 0}
+  - FolderId: 18
+    FileId: 2
+    Sprite: {fileID: 0}
+    Sound: {fileID: 0}
+  - FolderId: 18
+    FileId: 3
+    Sprite: {fileID: 0}
+    Sound: {fileID: 0}
+  - FolderId: 18
+    FileId: 4
+    Sprite: {fileID: 0}
+    Sound: {fileID: 0}
+  - FolderId: 18
+    FileId: 5
+    Sprite: {fileID: 0}
+    Sound: {fileID: 0}
+  - FolderId: 18
+    FileId: 6
+    Sprite: {fileID: 0}
+    Sound: {fileID: 0}
+  - FolderId: 18
+    FileId: 7
+    Sprite: {fileID: 0}
+    Sound: {fileID: 0}
+  - FolderId: 18
+    FileId: 8
+    Sprite: {fileID: 0}
+    Sound: {fileID: 0}
+  - FolderId: 18
+    FileId: 9
+    Sprite: {fileID: 0}
+    Sound: {fileID: 0}
+  - FolderId: 18
+    FileId: 10
+    Sprite: {fileID: 0}
+    Sound: {fileID: 0}
+  - FolderId: 18
+    FileId: 11
+    Sprite: {fileID: 0}
+    Sound: {fileID: 0}
+  - FolderId: 18
+    FileId: 12
+    Sprite: {fileID: 0}
+    Sound: {fileID: 0}
+  - FolderId: 18
+    FileId: 13
+    Sprite: {fileID: 0}
+    Sound: {fileID: 0}
+  - FolderId: 19
+    FileId: 0
+    Sprite: {fileID: 0}
+    Sound: {fileID: 0}
+  - FolderId: 19
+    FileId: 1
+    Sprite: {fileID: 0}
+    Sound: {fileID: 0}
+  - FolderId: 19
+    FileId: 2
+    Sprite: {fileID: 0}
+    Sound: {fileID: 0}
+  - FolderId: 19
+    FileId: 3
+    Sprite: {fileID: 0}
+    Sound: {fileID: 0}
+  - FolderId: 19
+    FileId: 4
+    Sprite: {fileID: 0}
+    Sound: {fileID: 0}
+  - FolderId: 19
+    FileId: 5
+    Sprite: {fileID: 0}
+    Sound: {fileID: 0}
+  - FolderId: 19
+    FileId: 6
+    Sprite: {fileID: 0}
+    Sound: {fileID: 0}
+  - FolderId: 19
+    FileId: 7
+    Sprite: {fileID: 0}
+    Sound: {fileID: 0}
+  - FolderId: 19
+    FileId: 8
+    Sprite: {fileID: 0}
+    Sound: {fileID: 0}
+  - FolderId: 19
+    FileId: 9
+    Sprite: {fileID: 0}
+    Sound: {fileID: 0}
+  - FolderId: 19
+    FileId: 10
+    Sprite: {fileID: 0}
+    Sound: {fileID: 0}
+  - FolderId: 19
+    FileId: 11
+    Sprite: {fileID: 0}
+    Sound: {fileID: 0}
+  - FolderId: 19
+    FileId: 12
+    Sprite: {fileID: 0}
+    Sound: {fileID: 0}
+  - FolderId: 19
+    FileId: 13
+    Sprite: {fileID: 0}
+    Sound: {fileID: 0}
+  - FolderId: 19
+    FileId: 14
+    Sprite: {fileID: 0}
+    Sound: {fileID: 0}
+  - FolderId: 19
+    FileId: 15
+    Sprite: {fileID: 0}
+    Sound: {fileID: 0}
+  - FolderId: 19
+    FileId: 16
+    Sprite: {fileID: 0}
+    Sound: {fileID: 0}
+  - FolderId: 19
+    FileId: 17
+    Sprite: {fileID: 0}
+    Sound: {fileID: 0}
+  - FolderId: 19
+    FileId: 18
+    Sprite: {fileID: 0}
+    Sound: {fileID: 0}
+  - FolderId: 20
+    FileId: 0
+    Sprite: {fileID: 0}
+    Sound: {fileID: 0}
+  - FolderId: 20
+    FileId: 1
+    Sprite: {fileID: 0}
+    Sound: {fileID: 0}
+  - FolderId: 20
+    FileId: 2
+    Sprite: {fileID: 0}
+    Sound: {fileID: 0}
+  - FolderId: 20
+    FileId: 3
+    Sprite: {fileID: 0}
+    Sound: {fileID: 0}
+  - FolderId: 20
+    FileId: 4
+    Sprite: {fileID: 0}
+    Sound: {fileID: 0}
+  - FolderId: 20
+    FileId: 5
+    Sprite: {fileID: 0}
+    Sound: {fileID: 0}
+  - FolderId: 20
+    FileId: 6
+    Sprite: {fileID: 0}
+    Sound: {fileID: 0}
+  - FolderId: 20
+    FileId: 7
+    Sprite: {fileID: 0}
+    Sound: {fileID: 0}
+  - FolderId: 20
+    FileId: 8
+    Sprite: {fileID: 0}
+    Sound: {fileID: 0}
+  - FolderId: 20
+    FileId: 9
+    Sprite: {fileID: 0}
+    Sound: {fileID: 0}
+  - FolderId: 20
+    FileId: 10
+    Sprite: {fileID: 0}
+    Sound: {fileID: 0}
+  - FolderId: 20
+    FileId: 11
+    Sprite: {fileID: 0}
+    Sound: {fileID: 0}
+  - FolderId: 20
+    FileId: 12
+    Sprite: {fileID: 0}
+    Sound: {fileID: 0}
+  - FolderId: 20
+    FileId: 13
+    Sprite: {fileID: 0}
+    Sound: {fileID: 0}
+  - FolderId: 20
+    FileId: 14
+    Sprite: {fileID: 0}
+    Sound: {fileID: 0}
+  - FolderId: 20
+    FileId: 15
+    Sprite: {fileID: 0}
+    Sound: {fileID: 0}
+  - FolderId: 20
+    FileId: 16
+    Sprite: {fileID: 0}
+    Sound: {fileID: 0}
+  - FolderId: 21
+    FileId: 0
+    Sprite: {fileID: 0}
+    Sound: {fileID: 0}
+  - FolderId: 21
+    FileId: 1
+    Sprite: {fileID: 0}
+    Sound: {fileID: 0}
+  - FolderId: 21
+    FileId: 2
+    Sprite: {fileID: 0}
+    Sound: {fileID: 0}
+  - FolderId: 21
+    FileId: 3
+    Sprite: {fileID: 0}
+    Sound: {fileID: 0}
+  - FolderId: 21
+    FileId: 4
+    Sprite: {fileID: 0}
+    Sound: {fileID: 0}
+  - FolderId: 21
+    FileId: 5
+    Sprite: {fileID: 0}
+    Sound: {fileID: 0}
+  - FolderId: 21
+    FileId: 6
+    Sprite: {fileID: 0}
+    Sound: {fileID: 0}
+  - FolderId: 21
+    FileId: 7
+    Sprite: {fileID: 0}
+    Sound: {fileID: 0}
+  - FolderId: 21
+    FileId: 8
+    Sprite: {fileID: 0}
+    Sound: {fileID: 0}
+  - FolderId: 21
+    FileId: 9
+    Sprite: {fileID: 0}
+    Sound: {fileID: 0}
+  - FolderId: 21
+    FileId: 10
+    Sprite: {fileID: 0}
+    Sound: {fileID: 0}
+  - FolderId: 21
+    FileId: 11
+    Sprite: {fileID: 0}
+    Sound: {fileID: 0}
+  - FolderId: 21
+    FileId: 12
+    Sprite: {fileID: 0}
+    Sound: {fileID: 0}
+  - FolderId: 21
+    FileId: 13
+    Sprite: {fileID: 0}
+    Sound: {fileID: 0}
+  - FolderId: 21
+    FileId: 14
+    Sprite: {fileID: 0}
+    Sound: {fileID: 0}
+  - FolderId: 21
+    FileId: 15
+    Sprite: {fileID: 0}
+    Sound: {fileID: 0}
+  - FolderId: 21
+    FileId: 16
+    Sprite: {fileID: 0}
+    Sound: {fileID: 0}
+  - FolderId: 22
+    FileId: 0
+    Sprite: {fileID: 21300000, guid: 9158bbd2c11595b40b376e41096a49a1, type: 3}
+    Sound: {fileID: 0}
+  - FolderId: 23
+    FileId: 0
+    Sprite: {fileID: 21300000, guid: 0337f4e7b815dc0459c932e4754a45b9, type: 3}
+    Sound: {fileID: 0}
+  - FolderId: 23
+    FileId: 1
+    Sprite: {fileID: 21300000, guid: ce95d7f4942a96440b6d6bcc54ec7174, type: 3}
+    Sound: {fileID: 0}
