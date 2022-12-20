@@ -6,7 +6,7 @@ public class MapGrid : MonoBehaviour
 {
 
     [SerializeField]
-  private int gridHeight, gridWidth;
+    private int gridHeight, gridWidth;
     [SerializeField]
     private float tileSize;
 
@@ -19,7 +19,7 @@ public class MapGrid : MonoBehaviour
     {
         foreach (var tile in gridMap)
         {
-            if(tile == null) { continue; }
+            if (tile == null) { continue; }
             if (tile.isPlayerSpawn) { return tile; }
         }
         return null;
@@ -29,10 +29,10 @@ public class MapGrid : MonoBehaviour
     {
         gridMap = new MapTileDisplay[gridHeight, gridWidth];
 
-        foreach(Transform child in transform)
+        foreach (Transform child in transform)
         {
             MapTileDisplay mapTileDisplay = child.GetComponent<MapTileDisplay>();
-            if(mapTileDisplay == null) { continue; }
+            if (mapTileDisplay == null) { continue; }
             gridMap[mapTileDisplay.X, mapTileDisplay.Y] = mapTileDisplay;
         }
         return gridMap;

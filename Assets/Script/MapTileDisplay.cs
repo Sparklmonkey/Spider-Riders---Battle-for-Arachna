@@ -25,6 +25,23 @@ public class MapTileDisplay : MonoBehaviour, IPointerEnterHandler, IPointerExitH
     public int G, H, X, Y;
     public int F { get { return H + G; } }
 
+    private void Awake()
+    {
+        tileDisplay.color = new Color32(byte.MaxValue, byte.MaxValue, byte.MaxValue, byte.MinValue);
+        tilePosition = new Vector2(transform.position.x, transform.position.y);
+
+        X = int.Parse(name.Split('-')[0]);
+        Y = int.Parse(name.Split('-')[1]);
+        if (itemName != "")
+        {
+            itemImage = transform.GetChild(0).gameObject;
+            Sprite itemSprite = Resources.Load<Sprite>($"Sprites/Items/{itemName}");
+
+            itemImage.GetComponent<Image>().sprite = itemSprite;
+
+            itemImage.GetComponent<Image>().color = new Color32(byte.MaxValue, byte.MaxValue, byte.MaxValue, byte.MaxValue);
+        }
+    }
     public void OnPointerEnter(PointerEventData eventData)
     {
         if (isWalkable)
@@ -62,21 +79,4 @@ public class MapTileDisplay : MonoBehaviour, IPointerEnterHandler, IPointerExitH
         Destroy(itemImage);
     }
 
-    private void Awake()
-    {
-        tileDisplay.color = new Color32(byte.MaxValue, byte.MaxValue, byte.MaxValue, byte.MinValue);
-        tilePosition = new Vector2(transform.position.x, transform.position.y);
-
-        X = int.Parse(name.Split('-')[0]);
-        Y = int.Parse(name.Split('-')[1]);
-        if(itemName != "")
-        {
-            itemImage = transform.GetChild(0).gameObject;
-            Sprite itemSprite = Resources.Load<Sprite>($"Sprites/Items/{itemName}");
-
-            itemImage.GetComponent<Image>().sprite = itemSprite;
-
-            itemImage.GetComponent<Image>().color = new Color32(byte.MaxValue, byte.MaxValue, byte.MaxValue, byte.MaxValue);
-        }
-    }
 }

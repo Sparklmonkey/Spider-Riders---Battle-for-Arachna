@@ -15,5 +15,6 @@ MonoBehaviour:
   cardType: 1
   buyCost: 300
   sellCost: 300
+  image: {fileID: 21300000, guid: ae3e37f5e89b9f24eb59f59a8983a8c3, type: 3}
   statModifyList: []
   description: Decreases your opponents dice by -1

@@ -1,0 +1,102 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 92a29c149309b0f4ebfe5a344168c917, type: 3}
+  m_Name: TestEnemy
+  m_EditorClassIdentifier: 
+  username: 
+  deckA:
+  - {fileID: 11400000, guid: c3a3747481719364ca2db0f3a4226931, type: 2}
+  - {fileID: 11400000, guid: c836ef7e5412c6f419511ca9cfb9a018, type: 2}
+  - {fileID: 11400000, guid: 328e67f3c15777d4e8fb6133539d48c1, type: 2}
+  - {fileID: 11400000, guid: 3fbfc66363c3e884dadafdd8f5e5ac02, type: 2}
+  - {fileID: 11400000, guid: 862b2d0dce0fd7940be8adc1774d25a1, type: 2}
+  - {fileID: 11400000, guid: 3735fc3fa4080df40906c37c9eda32be, type: 2}
+  - {fileID: 11400000, guid: e05db6beabc538a438b34149ba1ee9eb, type: 2}
+  - {fileID: 11400000, guid: 06b7000162ba373448ef6f6cd8f703da, type: 2}
+  - {fileID: 11400000, guid: 4f9570866759bcf489475221ad799045, type: 2}
+  - {fileID: 11400000, guid: 53b13d51bd68d594980996406a785485, type: 2}
+  - {fileID: 11400000, guid: 3e186d2415ace784e972a52b374892f5, type: 2}
+  deckB:
+  - {fileID: 11400000, guid: 3e5a6131d91dc664493e30dea2d5aae9, type: 2}
+  - {fileID: 11400000, guid: 69d079b556202c44cbcf7ced8721b847, type: 2}
+  - {fileID: 11400000, guid: 6a3458f5ac0110d459bb4c4cb767d0f7, type: 2}
+  - {fileID: 11400000, guid: d2796ae0f5a545043b9138381e4187c1, type: 2}
+  - {fileID: 11400000, guid: 8568894387acdc24189f8c2509ee1bd3, type: 2}
+  - {fileID: 11400000, guid: a6791ed26e43f4e4ab93827dc6d94498, type: 2}
+  - {fileID: 11400000, guid: 49e87a1e60dfe694995ae8fb49da6cbb, type: 2}
+  - {fileID: 11400000, guid: 6752bb36f0d506b4b8177fbff16cbb36, type: 2}
+  - {fileID: 11400000, guid: 4199926b9c91b17469c317248148c9f2, type: 2}
+  - {fileID: 11400000, guid: 85b6a3b5eaf953944b23436218554428, type: 2}
+  - {fileID: 11400000, guid: e5733b30b4322bb419f5cede2705ffb7, type: 2}
+  - {fileID: 11400000, guid: cbe8ac90b4b14754783e8a38293c4bf9, type: 2}
+  - {fileID: 11400000, guid: 09cc1fff736f29243af751d96f1eba57, type: 2}
+  - {fileID: 11400000, guid: 28561f5ccac78304cbd3d139cb9ff05e, type: 2}
+  - {fileID: 11400000, guid: 3ed9fa9335a51724ba4f891df8d52098, type: 2}
+  - {fileID: 11400000, guid: 098d6b18cbef8494eb63fdc333c39c79, type: 2}
+  - {fileID: 11400000, guid: 4bff6daccbb4d864693f4612cdb2bf82, type: 2}
+  - {fileID: 11400000, guid: 28cd1e55f442f254cb7da3b0ef5b8ed1, type: 2}
+  - {fileID: 11400000, guid: e9f00aa5ecf4ef9419f5795465c50479, type: 2}
+  - {fileID: 11400000, guid: 16e06551f31a66a4980c3979eb326b48, type: 2}
+  - {fileID: 11400000, guid: b3f16d74a2d776b4a840cde82465f9e1, type: 2}
+  - {fileID: 11400000, guid: 925c7e1d4766312408231e0b63d0190e, type: 2}
+  - {fileID: 11400000, guid: 23c6dd3a6c700ae4bb09babb895b6f09, type: 2}
+  - {fileID: 11400000, guid: 992046b8709078342b863dc7d71bf1ef, type: 2}
+  deckC: []
+  cardInventory:
+  - {fileID: 11400000, guid: c3a3747481719364ca2db0f3a4226931, type: 2}
+  - {fileID: 11400000, guid: c836ef7e5412c6f419511ca9cfb9a018, type: 2}
+  - {fileID: 11400000, guid: 328e67f3c15777d4e8fb6133539d48c1, type: 2}
+  - {fileID: 11400000, guid: 3fbfc66363c3e884dadafdd8f5e5ac02, type: 2}
+  - {fileID: 11400000, guid: 862b2d0dce0fd7940be8adc1774d25a1, type: 2}
+  - {fileID: 11400000, guid: 3735fc3fa4080df40906c37c9eda32be, type: 2}
+  - {fileID: 11400000, guid: e05db6beabc538a438b34149ba1ee9eb, type: 2}
+  - {fileID: 11400000, guid: 06b7000162ba373448ef6f6cd8f703da, type: 2}
+  - {fileID: 11400000, guid: 4f9570866759bcf489475221ad799045, type: 2}
+  - {fileID: 11400000, guid: 53b13d51bd68d594980996406a785485, type: 2}
+  - {fileID: 11400000, guid: 3e186d2415ace784e972a52b374892f5, type: 2}
+  - {fileID: 11400000, guid: 3e5a6131d91dc664493e30dea2d5aae9, type: 2}
+  - {fileID: 11400000, guid: 69d079b556202c44cbcf7ced8721b847, type: 2}
+  - {fileID: 11400000, guid: 6a3458f5ac0110d459bb4c4cb767d0f7, type: 2}
+  - {fileID: 11400000, guid: d2796ae0f5a545043b9138381e4187c1, type: 2}
+  - {fileID: 11400000, guid: 8568894387acdc24189f8c2509ee1bd3, type: 2}
+  - {fileID: 11400000, guid: a6791ed26e43f4e4ab93827dc6d94498, type: 2}
+  - {fileID: 11400000, guid: 49e87a1e60dfe694995ae8fb49da6cbb, type: 2}
+  - {fileID: 11400000, guid: 6752bb36f0d506b4b8177fbff16cbb36, type: 2}
+  - {fileID: 11400000, guid: 4199926b9c91b17469c317248148c9f2, type: 2}
+  - {fileID: 11400000, guid: 85b6a3b5eaf953944b23436218554428, type: 2}
+  - {fileID: 11400000, guid: e5733b30b4322bb419f5cede2705ffb7, type: 2}
+  - {fileID: 11400000, guid: cbe8ac90b4b14754783e8a38293c4bf9, type: 2}
+  - {fileID: 11400000, guid: 09cc1fff736f29243af751d96f1eba57, type: 2}
+  - {fileID: 11400000, guid: 28561f5ccac78304cbd3d139cb9ff05e, type: 2}
+  - {fileID: 11400000, guid: 3ed9fa9335a51724ba4f891df8d52098, type: 2}
+  - {fileID: 11400000, guid: 098d6b18cbef8494eb63fdc333c39c79, type: 2}
+  - {fileID: 11400000, guid: 4bff6daccbb4d864693f4612cdb2bf82, type: 2}
+  - {fileID: 11400000, guid: 28cd1e55f442f254cb7da3b0ef5b8ed1, type: 2}
+  - {fileID: 11400000, guid: e9f00aa5ecf4ef9419f5795465c50479, type: 2}
+  - {fileID: 11400000, guid: 16e06551f31a66a4980c3979eb326b48, type: 2}
+  - {fileID: 11400000, guid: b3f16d74a2d776b4a840cde82465f9e1, type: 2}
+  - {fileID: 11400000, guid: 925c7e1d4766312408231e0b63d0190e, type: 2}
+  - {fileID: 11400000, guid: 23c6dd3a6c700ae4bb09babb895b6f09, type: 2}
+  - {fileID: 11400000, guid: 992046b8709078342b863dc7d71bf1ef, type: 2}
+  itemInventory: []
+  stats:
+    power: 1
+    defense: 3
+    health: 5
+  armourIndexes:
+    skinIndex: 0
+    upperSetIndex: 0
+    lowerSetIndex: 0
+    armourIndex: 0
+    hairIndex: 0
+    eyeIndex: 0
+    isMale: 1

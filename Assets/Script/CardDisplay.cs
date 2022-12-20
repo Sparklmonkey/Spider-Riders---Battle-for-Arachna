@@ -8,13 +8,13 @@ using UnityEngine.EventSystems;
 public class CardDisplay : MonoBehaviour, IPointerEnterHandler
 {
     [SerializeField]
-    private TextMeshProUGUI cardName, cardPrice, cardDesc, atkValue, defValue, healthValue;
+    public TextMeshProUGUI cardName, cardPrice, cardDesc, atkValue, defValue, healthValue;
     [SerializeField]
-    private GameObject atkObject, defObject, healthObject, cardType;
+    public GameObject atkObject, defObject, healthObject, cardType;
     [SerializeField]
-    private Image cardImage, cardBack;
+    public Image cardImage, cardBack;
     [SerializeField]
-    private CardDisplay largeDisplay;
+    public CardDisplay largeDisplay;
     [SerializeField]
     private DeckInventoryManager inventoryManager;
     public SelectCardBtn selectCardBtn;

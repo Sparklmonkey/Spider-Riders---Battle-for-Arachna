@@ -9,6 +9,7 @@ public class Card : ScriptableObject
     public CardType cardType;
     public int buyCost;
     public int sellCost;
+    public Sprite image;
 
     public List<StatModifier> statModifyList;
 

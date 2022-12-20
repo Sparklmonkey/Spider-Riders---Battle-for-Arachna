@@ -15,5 +15,6 @@ MonoBehaviour:
   cardType: 1
   buyCost: 1600
   sellCost: 1600
+  image: {fileID: 21300000, guid: 462957e8832c91349aa268229c8fd081, type: 3}
   statModifyList: []
   description: Merge 2 equipment defence cards

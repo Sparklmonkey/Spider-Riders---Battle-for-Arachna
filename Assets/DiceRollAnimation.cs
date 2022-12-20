@@ -10,12 +10,17 @@ public class DiceRollAnimation : MonoBehaviour
     [SerializeField]
     private Image diceImage, shineImage;
 
-    private int result;
+    public int result;
     private DiceRollTest manager;
     public void ClearIfWhite()
     {
         if(result > 3)
         {
+            StartCoroutine(ClearDie());
+        }
+        if (result == 3)
+        {
+            BattleManager.Instance.AddAttack(1);
             StartCoroutine(ClearDie());
         }
     }

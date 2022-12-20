@@ -15,5 +15,6 @@ MonoBehaviour:
   cardType: 1
   buyCost: 1600
   sellCost: 1600
+  image: {fileID: 21300000, guid: 789fd581a04742f468543019b37e3187, type: 3}
   statModifyList: []
   description: Merge 2 equipment weapon cards

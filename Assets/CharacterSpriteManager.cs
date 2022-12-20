@@ -1,17 +1,17 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Experimental.U2D.Animation;
+
 
 public class CharacterSpriteManager : MonoBehaviour
 {
     [SerializeField]
-    private SpriteLibrary currentLibrary;
+    private UnityEngine.U2D.Animation.SpriteLibrary currentLibrary;
     [SerializeField]
-    private SpriteLibraryAsset maleLibraryAsset, femaleLibraryAsset;
+    private UnityEngine.U2D.Animation.SpriteLibraryAsset maleLibraryAsset, femaleLibraryAsset;
     private bool isMale = true;
     [SerializeField]
-    private SpriteResolver face, torso, upperArmL, upperArmR, foreArmL, foreArmR, upperLegL, upperLegR, lowerLegL, lowerLegR,                   //Skin
+    private UnityEngine.U2D.Animation.SpriteResolver face, torso, upperArmL, upperArmR, foreArmL, foreArmR, upperLegL, upperLegR, lowerLegL, lowerLegR,                   //Skin
         fistL, fistR, shoulderL, shoulderR,                                                                                                     //Skin
         eyes, hair,                                                                                                                             //Other
         chestArmour, upperArmArmourL, upperArmArmourR, foreArmArmourL, foreArmArmourR, waistArmour, upperLegArmourL, upperLegArmourR,           //Armour

@@ -8,18 +8,26 @@ public class DiceRollTest : MonoBehaviour
     private GameObject dicePrefab;
 
     public List<bool> completedDieRolls = new List<bool>();
-    private List<DiceRollAnimation> diceRollAnimations = new List<DiceRollAnimation>();
+    public List<DiceRollAnimation> diceRollAnimations = new List<DiceRollAnimation>();
+    bool canRollDice = true;
     // Start is called before the first frame update
-    void Start()
+    public void RollDice(int diceAmount)
     {
-        StartCoroutine(DiceRollTestAnim());
+        if (!canRollDice) return;
+        canRollDice = false;
+        completedDieRolls.Clear();
+        for (int i = 0; i < diceRollAnimations.Count; i++)
+            if (diceRollAnimations[i] != null)
+                Destroy(diceRollAnimations[i].gameObject);
+        diceRollAnimations.Clear();
+        StartCoroutine(DiceRollAnim(diceAmount));
     }
 
-    IEnumerator DiceRollTestAnim()
+    IEnumerator DiceRollAnim(int diceAmount)
     {
         int diceCount = TestPlayer<PlayerData>.GetPower();
 
-        for (int i = 0; i < 20; i++)
+        for (int i = 0; i < diceAmount; i++)
         {
             GameObject dice = Instantiate(dicePrefab, transform);
             int result = dice.GetComponent<DiceRollAnimation>().RollDice(this);
@@ -27,7 +35,7 @@ public class DiceRollTest : MonoBehaviour
             yield return new WaitForSeconds(0.05f);
         }
 
-        while(completedDieRolls.Count < 20)
+        while (completedDieRolls.Count < diceAmount)
         {
             yield return new WaitForSeconds(0.05f);
         }
@@ -37,10 +45,6 @@ public class DiceRollTest : MonoBehaviour
         {
             item.ClearIfWhite();
         }
-    }
-    // Update is called once per frame
-    void Update()
-    {
-        
+        canRollDice = true;
     }
 }

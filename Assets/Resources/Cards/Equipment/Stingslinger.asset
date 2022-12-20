@@ -15,6 +15,7 @@ MonoBehaviour:
   cardType: 1
   buyCost: 200
   sellCost: 200
+  image: {fileID: 21300000, guid: 1b5a05a4cb4bd744e8bbe373b755d87c, type: 3}
   statModifyList:
   - statType: 0
     amount: 2
