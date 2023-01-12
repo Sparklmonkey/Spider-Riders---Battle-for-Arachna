@@ -17,7 +17,6 @@ public class MovementManager : MonoBehaviour
     public void StartPathFinding(MapTileDisplay destination)
     {
         var path = pathFinder.FindPath(currentPlayerTile, destination);
-        Debug.Log(path);
         currentPath = path;
         isMoving = true;
     }
@@ -37,6 +36,7 @@ public class MovementManager : MonoBehaviour
             currentPlayerTile = playerSpawn;
         //player.transform.localScale = new Vector3(0.75f, 0.75f, 0.75f);
         player.transform.position = playerSpawn.tilePosition + new Vector2(0f, 80f);
+        Debug.Log(currentPlayerTile.transform.position);
     }
 
     private void Update()
