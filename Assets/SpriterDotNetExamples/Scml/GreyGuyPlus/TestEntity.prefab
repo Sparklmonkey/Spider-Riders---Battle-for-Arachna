@@ -144,7 +144,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1650719926201724142}
+  - {fileID: 9205199752573675626}
   m_Father: {fileID: 4000012352116596}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -264,7 +264,7 @@ MonoBehaviour:
     - {fileID: 1000012546477482}
     - {fileID: 1000011137824498}
     BoxPivots:
-    - {fileID: 950126156786786716}
+    - {fileID: 4435864315666883077}
     Boxes:
     - {fileID: 1000013604459028}
     Points:
@@ -302,7 +302,7 @@ MonoBehaviour:
     - {fileID: 4000013333660520}
     - {fileID: 4000014114770436}
     BoxPivotTransforms:
-    - {fileID: 1650719926201724142}
+    - {fileID: 9205199752573675626}
     BoxTransforms:
     - {fileID: 4000013148000876}
     PointTransforms:
@@ -1989,7 +1989,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1650719926201724142}
+  m_Father: {fileID: 9205199752573675626}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &61000012659126520
@@ -2198,7 +2198,7 @@ Transform:
   m_Father: {fileID: 4000011501189976}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &950126156786786716
+--- !u!1 &4435864315666883077
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2206,7 +2206,7 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 1650719926201724142}
+  - component: {fileID: 9205199752573675626}
   m_Layer: 0
   m_Name: Pivot 0
   m_TagString: Untagged
@@ -2214,13 +2214,13 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &1650719926201724142
+--- !u!4 &9205199752573675626
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 950126156786786716}
+  m_GameObject: {fileID: 4435864315666883077}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
