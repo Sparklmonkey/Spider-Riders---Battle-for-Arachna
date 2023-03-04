@@ -43,7 +43,7 @@ public class BattleManager : MonoBehaviour
     public GameObject enemyDefense;
     public Transform enemyDefensePosition;
     public GameObject playerHealth;
-    public MapTileDisplay currentTile;
+    public OverlayTile currentTile;
     List<Card> currentHand = new List<Card>();
 
     public GameObject cardDisplay;
@@ -80,7 +80,7 @@ public class BattleManager : MonoBehaviour
             attackButton.interactable = false;
         }
     }
-    public void EnterBattle(BattleEntity player, BattleEntity enemy, MapTileDisplay tile)
+    public void EnterBattle(BattleEntity player, BattleEntity enemy, OverlayTile tile)
     {
         this.player = player;
         playerAttackText.text = player.attack.ToString();
@@ -252,7 +252,7 @@ public class BattleManager : MonoBehaviour
         if (state == BattleState.WON)
         {
             Destroy(currentTile.GetComponent<BattleEntity>());
-            currentTile.npcName = "";
+            //currentTile.npcName = "";
             battleScreen.SetActive(false);
         }
         else if (state == BattleState.LOST)
