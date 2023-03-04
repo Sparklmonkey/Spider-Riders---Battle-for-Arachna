@@ -176,11 +176,9 @@ MonoBehaviour:
   tileImage: {fileID: 1870316}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 12
+  tileY: 22
+  tileType: 2
   transitionDestination: 
 --- !u!114 &1870316
 MonoBehaviour:
@@ -195,7 +193,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0.078431375, b: 0.2509804, a: 1}
+  m_Color: {r: 0.08235294, g: 1, b: 0.21176471, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -273,11 +271,9 @@ MonoBehaviour:
   tileImage: {fileID: 3634712}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 3
+  tileY: 19
+  tileType: 5
   transitionDestination: 
 --- !u!114 &3634712
 MonoBehaviour:
@@ -370,11 +366,9 @@ MonoBehaviour:
   tileImage: {fileID: 3731035}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 14
+  tileY: 10
+  tileType: 2
   transitionDestination: 
 --- !u!114 &3731035
 MonoBehaviour:
@@ -389,7 +383,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0.078431375, b: 0.2509804, a: 1}
+  m_Color: {r: 0.08235294, g: 1, b: 0.21176471, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -467,11 +461,9 @@ MonoBehaviour:
   tileImage: {fileID: 4126126}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 12
+  tileY: 25
+  tileType: 2
   transitionDestination: 
 --- !u!114 &4126126
 MonoBehaviour:
@@ -486,7 +478,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0.078431375, b: 0.2509804, a: 1}
+  m_Color: {r: 0.08235294, g: 1, b: 0.21176471, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -661,11 +653,9 @@ MonoBehaviour:
   tileImage: {fileID: 21912508}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 12
+  tileY: 20
+  tileType: 2
   transitionDestination: 
 --- !u!114 &21912508
 MonoBehaviour:
@@ -680,7 +670,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0.078431375, b: 0.2509804, a: 1}
+  m_Color: {r: 0.08235294, g: 1, b: 0.21176471, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -758,11 +748,9 @@ MonoBehaviour:
   tileImage: {fileID: 23003733}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 7
+  tileY: 14
+  tileType: 2
   transitionDestination: 
 --- !u!114 &23003733
 MonoBehaviour:
@@ -777,7 +765,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0.078431375, b: 0.2509804, a: 1}
+  m_Color: {r: 0.08235294, g: 1, b: 0.21176471, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -952,11 +940,9 @@ MonoBehaviour:
   tileImage: {fileID: 30270214}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 10
+  tileY: 26
+  tileType: 5
   transitionDestination: 
 --- !u!114 &30270214
 MonoBehaviour:
@@ -1049,11 +1035,9 @@ MonoBehaviour:
   tileImage: {fileID: 44320313}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 9
+  tileY: 13
+  tileType: 2
   transitionDestination: 
 --- !u!114 &44320313
 MonoBehaviour:
@@ -1068,7 +1052,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0.078431375, b: 0.2509804, a: 1}
+  m_Color: {r: 0.08235294, g: 1, b: 0.21176471, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -1146,11 +1130,9 @@ MonoBehaviour:
   tileImage: {fileID: 55089525}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 24
+  tileY: 10
+  tileType: 5
   transitionDestination: 
 --- !u!114 &55089525
 MonoBehaviour:
@@ -1274,11 +1256,9 @@ MonoBehaviour:
   tileImage: {fileID: 64101675}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 19
+  tileY: 16
+  tileType: 5
   transitionDestination: 
 --- !u!114 &64101675
 MonoBehaviour:
@@ -1371,11 +1351,9 @@ MonoBehaviour:
   tileImage: {fileID: 75484866}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 13
+  tileY: 15
+  tileType: 5
   transitionDestination: 
 --- !u!114 &75484866
 MonoBehaviour:
@@ -1432,7 +1410,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &78799010
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1447,10 +1425,10 @@ RectTransform:
   m_Father: {fileID: 1248318033}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -103.8, y: 283.6}
-  m_SizeDelta: {x: 189.691, y: 292.0938}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &78799011
 MonoBehaviour:
@@ -1543,11 +1521,9 @@ MonoBehaviour:
   tileImage: {fileID: 79989485}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 18
+  tileY: 7
+  tileType: 2
   transitionDestination: 
 --- !u!114 &79989485
 MonoBehaviour:
@@ -1562,7 +1538,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0.078431375, b: 0.2509804, a: 1}
+  m_Color: {r: 0.08235294, g: 1, b: 0.21176471, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -1737,11 +1713,9 @@ MonoBehaviour:
   tileImage: {fileID: 91289080}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 23
+  tileY: 8
+  tileType: 5
   transitionDestination: 
 --- !u!114 &91289080
 MonoBehaviour:
@@ -1931,11 +1905,9 @@ MonoBehaviour:
   tileImage: {fileID: 102189535}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 7
+  tileY: 20
+  tileType: 2
   transitionDestination: 
 --- !u!114 &102189535
 MonoBehaviour:
@@ -1950,7 +1922,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0.078431375, b: 0.2509804, a: 1}
+  m_Color: {r: 0.08235294, g: 1, b: 0.21176471, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -2028,11 +2000,9 @@ MonoBehaviour:
   tileImage: {fileID: 106356089}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 13
+  tileY: 12
+  tileType: 2
   transitionDestination: 
 --- !u!114 &106356089
 MonoBehaviour:
@@ -2047,7 +2017,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0.078431375, b: 0.2509804, a: 1}
+  m_Color: {r: 0.08235294, g: 1, b: 0.21176471, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -2125,11 +2095,9 @@ MonoBehaviour:
   tileImage: {fileID: 110516381}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 10
+  tileY: 20
+  tileType: 2
   transitionDestination: 
 --- !u!114 &110516381
 MonoBehaviour:
@@ -2144,7 +2112,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0.078431375, b: 0.2509804, a: 1}
+  m_Color: {r: 0.08235294, g: 1, b: 0.21176471, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -2222,11 +2190,9 @@ MonoBehaviour:
   tileImage: {fileID: 110616720}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 15
+  tileY: 3
+  tileType: 5
   transitionDestination: 
 --- !u!114 &110616720
 MonoBehaviour:
@@ -2319,11 +2285,9 @@ MonoBehaviour:
   tileImage: {fileID: 112823623}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 9
+  tileY: 24
+  tileType: 2
   transitionDestination: 
 --- !u!114 &112823623
 MonoBehaviour:
@@ -2338,7 +2302,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0.078431375, b: 0.2509804, a: 1}
+  m_Color: {r: 0.08235294, g: 1, b: 0.21176471, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -2416,11 +2380,9 @@ MonoBehaviour:
   tileImage: {fileID: 112894810}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 17
+  tileY: 3
+  tileType: 5
   transitionDestination: 
 --- !u!114 &112894810
 MonoBehaviour:
@@ -2610,11 +2572,9 @@ MonoBehaviour:
   tileImage: {fileID: 128110314}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 21
+  tileY: 10
+  tileType: 5
   transitionDestination: 
 --- !u!114 &128110314
 MonoBehaviour:
@@ -2707,11 +2667,9 @@ MonoBehaviour:
   tileImage: {fileID: 140187283}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 14
+  tileY: 14
+  tileType: 5
   transitionDestination: 
 --- !u!114 &140187283
 MonoBehaviour:
@@ -2804,11 +2762,9 @@ MonoBehaviour:
   tileImage: {fileID: 142731355}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 17
+  tileY: 19
+  tileType: 5
   transitionDestination: 
 --- !u!114 &142731355
 MonoBehaviour:
@@ -2901,11 +2857,9 @@ MonoBehaviour:
   tileImage: {fileID: 146323247}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 19
+  tileY: 9
+  tileType: 5
   transitionDestination: 
 --- !u!114 &146323247
 MonoBehaviour:
@@ -2998,11 +2952,9 @@ MonoBehaviour:
   tileImage: {fileID: 158621750}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 15
+  tileY: 24
+  tileType: 5
   transitionDestination: 
 --- !u!114 &158621750
 MonoBehaviour:
@@ -3095,11 +3047,9 @@ MonoBehaviour:
   tileImage: {fileID: 166863662}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 21
+  tileY: 8
+  tileType: 5
   transitionDestination: 
 --- !u!114 &166863662
 MonoBehaviour:
@@ -3192,11 +3142,9 @@ MonoBehaviour:
   tileImage: {fileID: 176780327}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 13
+  tileY: 21
+  tileType: 2
   transitionDestination: 
 --- !u!114 &176780327
 MonoBehaviour:
@@ -3211,7 +3159,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0.078431375, b: 0.2509804, a: 1}
+  m_Color: {r: 0.08235294, g: 1, b: 0.21176471, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -3289,11 +3237,9 @@ MonoBehaviour:
   tileImage: {fileID: 178775298}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 20
+  tileY: 9
+  tileType: 5
   transitionDestination: 
 --- !u!114 &178775298
 MonoBehaviour:
@@ -3386,11 +3332,9 @@ MonoBehaviour:
   tileImage: {fileID: 179146336}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 6
+  tileY: 22
+  tileType: 5
   transitionDestination: 
 --- !u!114 &179146336
 MonoBehaviour:
@@ -3483,11 +3427,9 @@ MonoBehaviour:
   tileImage: {fileID: 180518830}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 26
+  tileY: 13
+  tileType: 5
   transitionDestination: 
 --- !u!114 &180518830
 MonoBehaviour:
@@ -3580,11 +3522,9 @@ MonoBehaviour:
   tileImage: {fileID: 180740883}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 17
+  tileY: 17
+  tileType: 5
   transitionDestination: 
 --- !u!114 &180740883
 MonoBehaviour:
@@ -3677,11 +3617,9 @@ MonoBehaviour:
   tileImage: {fileID: 180938299}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 13
+  tileY: 4
+  tileType: 5
   transitionDestination: 
 --- !u!114 &180938299
 MonoBehaviour:
@@ -3774,11 +3712,9 @@ MonoBehaviour:
   tileImage: {fileID: 186106625}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 8
+  tileY: 20
+  tileType: 2
   transitionDestination: 
 --- !u!114 &186106625
 MonoBehaviour:
@@ -3793,7 +3729,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0.078431375, b: 0.2509804, a: 1}
+  m_Color: {r: 0.08235294, g: 1, b: 0.21176471, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -3871,11 +3807,9 @@ MonoBehaviour:
   tileImage: {fileID: 188279540}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 8
+  tileY: 23
+  tileType: 2
   transitionDestination: 
 --- !u!114 &188279540
 MonoBehaviour:
@@ -3890,7 +3824,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0.078431375, b: 0.2509804, a: 1}
+  m_Color: {r: 0.08235294, g: 1, b: 0.21176471, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -4041,11 +3975,9 @@ MonoBehaviour:
   tileImage: {fileID: 193662088}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 5
+  tileY: 14
+  tileType: 2
   transitionDestination: 
 --- !u!114 &193662088
 MonoBehaviour:
@@ -4060,7 +3992,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0.078431375, b: 0.2509804, a: 1}
+  m_Color: {r: 0.08235294, g: 1, b: 0.21176471, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -4138,11 +4070,9 @@ MonoBehaviour:
   tileImage: {fileID: 194842356}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 14
+  tileY: 23
+  tileType: 2
   transitionDestination: 
 --- !u!114 &194842356
 MonoBehaviour:
@@ -4157,7 +4087,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0.078431375, b: 0.2509804, a: 1}
+  m_Color: {r: 0.08235294, g: 1, b: 0.21176471, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -4199,7 +4129,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &198942173
 RectTransform:
   m_ObjectHideFlags: 0
@@ -4215,7 +4145,7 @@ RectTransform:
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 0.29}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -4310,11 +4240,9 @@ MonoBehaviour:
   tileImage: {fileID: 201116301}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 14
+  tileY: 20
+  tileType: 2
   transitionDestination: 
 --- !u!114 &201116301
 MonoBehaviour:
@@ -4329,7 +4257,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0.078431375, b: 0.2509804, a: 1}
+  m_Color: {r: 0.08235294, g: 1, b: 0.21176471, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -4407,11 +4335,9 @@ MonoBehaviour:
   tileImage: {fileID: 202269137}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 7
+  tileY: 22
+  tileType: 2
   transitionDestination: 
 --- !u!114 &202269137
 MonoBehaviour:
@@ -4426,7 +4352,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0.078431375, b: 0.2509804, a: 1}
+  m_Color: {r: 0.08235294, g: 1, b: 0.21176471, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -4504,11 +4430,9 @@ MonoBehaviour:
   tileImage: {fileID: 215066099}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 23
+  tileY: 15
+  tileType: 5
   transitionDestination: 
 --- !u!114 &215066099
 MonoBehaviour:
@@ -4698,11 +4622,9 @@ MonoBehaviour:
   tileImage: {fileID: 232154819}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 1
+  tileY: 16
+  tileType: 5
   transitionDestination: 
 --- !u!114 &232154819
 MonoBehaviour:
@@ -4795,11 +4717,9 @@ MonoBehaviour:
   tileImage: {fileID: 237743531}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 6
+  tileY: 12
+  tileType: 2
   transitionDestination: 
 --- !u!114 &237743531
 MonoBehaviour:
@@ -4814,7 +4734,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0.078431375, b: 0.2509804, a: 1}
+  m_Color: {r: 0.08235294, g: 1, b: 0.21176471, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -4892,11 +4812,9 @@ MonoBehaviour:
   tileImage: {fileID: 244918642}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 10
+  tileY: 24
+  tileType: 2
   transitionDestination: 
 --- !u!114 &244918642
 MonoBehaviour:
@@ -4911,7 +4829,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0.078431375, b: 0.2509804, a: 1}
+  m_Color: {r: 0.08235294, g: 1, b: 0.21176471, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -5020,11 +4938,9 @@ MonoBehaviour:
   tileImage: {fileID: 247506110}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 19
+  tileY: 14
+  tileType: 5
   transitionDestination: 
 --- !u!114 &247506110
 MonoBehaviour:
@@ -5117,11 +5033,9 @@ MonoBehaviour:
   tileImage: {fileID: 250988921}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 17
+  tileY: 18
+  tileType: 5
   transitionDestination: 
 --- !u!114 &250988921
 MonoBehaviour:
@@ -5214,11 +5128,9 @@ MonoBehaviour:
   tileImage: {fileID: 251707201}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 6
+  tileY: 17
+  tileType: 2
   transitionDestination: 
 --- !u!114 &251707201
 MonoBehaviour:
@@ -5233,7 +5145,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0.078431375, b: 0.2509804, a: 1}
+  m_Color: {r: 0.08235294, g: 1, b: 0.21176471, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -5311,11 +5223,9 @@ MonoBehaviour:
   tileImage: {fileID: 253988317}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 23
+  tileY: 14
+  tileType: 5
   transitionDestination: 
 --- !u!114 &253988317
 MonoBehaviour:
@@ -5408,11 +5318,9 @@ MonoBehaviour:
   tileImage: {fileID: 261146791}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 9
+  tileY: 17
+  tileType: 2
   transitionDestination: 
 --- !u!114 &261146791
 MonoBehaviour:
@@ -5427,7 +5335,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0.078431375, b: 0.2509804, a: 1}
+  m_Color: {r: 0.08235294, g: 1, b: 0.21176471, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -5505,11 +5413,9 @@ MonoBehaviour:
   tileImage: {fileID: 262350006}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 23
+  tileY: 10
+  tileType: 5
   transitionDestination: 
 --- !u!114 &262350006
 MonoBehaviour:
@@ -5602,11 +5508,9 @@ MonoBehaviour:
   tileImage: {fileID: 274919528}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 21
+  tileY: 12
+  tileType: 5
   transitionDestination: 
 --- !u!114 &274919528
 MonoBehaviour:
@@ -5699,11 +5603,9 @@ MonoBehaviour:
   tileImage: {fileID: 282824091}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 14
+  tileY: 25
+  tileType: 5
   transitionDestination: 
 --- !u!114 &282824091
 MonoBehaviour:
@@ -5796,11 +5698,9 @@ MonoBehaviour:
   tileImage: {fileID: 284097753}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 12
+  tileY: 27
+  tileType: 5
   transitionDestination: 
 --- !u!114 &284097753
 MonoBehaviour:
@@ -5858,7 +5758,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &291643554
 RectTransform:
   m_ObjectHideFlags: 0
@@ -6061,11 +5961,9 @@ MonoBehaviour:
   tileImage: {fileID: 293591148}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 22
+  tileY: 5
+  tileType: 5
   transitionDestination: 
 --- !u!114 &293591148
 MonoBehaviour:
@@ -6158,11 +6056,9 @@ MonoBehaviour:
   tileImage: {fileID: 296805270}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 24
+  tileY: 9
+  tileType: 5
   transitionDestination: 
 --- !u!114 &296805270
 MonoBehaviour:
@@ -6255,11 +6151,9 @@ MonoBehaviour:
   tileImage: {fileID: 304419778}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 16
+  tileY: 16
+  tileType: 5
   transitionDestination: 
 --- !u!114 &304419778
 MonoBehaviour:
@@ -6352,11 +6246,9 @@ MonoBehaviour:
   tileImage: {fileID: 307406867}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 20
+  tileY: 16
+  tileType: 5
   transitionDestination: 
 --- !u!114 &307406867
 MonoBehaviour:
@@ -6449,11 +6341,9 @@ MonoBehaviour:
   tileImage: {fileID: 307846231}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 18
+  tileY: 19
+  tileType: 5
   transitionDestination: 
 --- !u!114 &307846231
 MonoBehaviour:
@@ -6546,11 +6436,9 @@ MonoBehaviour:
   tileImage: {fileID: 310345869}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 11
+  tileY: 6
+  tileType: 5
   transitionDestination: 
 --- !u!114 &310345869
 MonoBehaviour:
@@ -6643,11 +6531,9 @@ MonoBehaviour:
   tileImage: {fileID: 322673738}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 23
+  tileY: 12
+  tileType: 5
   transitionDestination: 
 --- !u!114 &322673738
 MonoBehaviour:
@@ -6936,11 +6822,9 @@ MonoBehaviour:
   tileImage: {fileID: 345122049}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 17
+  tileY: 22
+  tileType: 5
   transitionDestination: 
 --- !u!114 &345122049
 MonoBehaviour:
@@ -7033,11 +6917,9 @@ MonoBehaviour:
   tileImage: {fileID: 364546615}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 10
+  tileY: 25
+  tileType: 2
   transitionDestination: 
 --- !u!114 &364546615
 MonoBehaviour:
@@ -7052,7 +6934,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0.078431375, b: 0.2509804, a: 1}
+  m_Color: {r: 0.08235294, g: 1, b: 0.21176471, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -7130,11 +7012,9 @@ MonoBehaviour:
   tileImage: {fileID: 370269822}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 8
+  tileY: 13
+  tileType: 2
   transitionDestination: 
 --- !u!114 &370269822
 MonoBehaviour:
@@ -7149,7 +7029,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0.078431375, b: 0.2509804, a: 1}
+  m_Color: {r: 0.08235294, g: 1, b: 0.21176471, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -7227,11 +7107,9 @@ MonoBehaviour:
   tileImage: {fileID: 373050450}
   itemName: 
   npcName: 
-  tileX: 0
+  tileX: 17
   tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileType: 5
   transitionDestination: 
 --- !u!114 &373050450
 MonoBehaviour:
@@ -7324,11 +7202,9 @@ MonoBehaviour:
   tileImage: {fileID: 382050839}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 9
+  tileY: 16
+  tileType: 2
   transitionDestination: 
 --- !u!114 &382050839
 MonoBehaviour:
@@ -7343,7 +7219,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0.078431375, b: 0.2509804, a: 1}
+  m_Color: {r: 0.08235294, g: 1, b: 0.21176471, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -7421,11 +7297,9 @@ MonoBehaviour:
   tileImage: {fileID: 383313741}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 8
+  tileY: 11
+  tileType: 2
   transitionDestination: 
 --- !u!114 &383313741
 MonoBehaviour:
@@ -7440,7 +7314,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0.078431375, b: 0.2509804, a: 1}
+  m_Color: {r: 0.08235294, g: 1, b: 0.21176471, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -7617,11 +7491,9 @@ MonoBehaviour:
   tileImage: {fileID: 390640791}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 26
+  tileY: 10
+  tileType: 5
   transitionDestination: 
 --- !u!114 &390640791
 MonoBehaviour:
@@ -7714,11 +7586,9 @@ MonoBehaviour:
   tileImage: {fileID: 395835355}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 15
+  tileY: 19
+  tileType: 5
   transitionDestination: 
 --- !u!114 &395835355
 MonoBehaviour:
@@ -7842,11 +7712,9 @@ MonoBehaviour:
   tileImage: {fileID: 427815230}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 16
+  tileY: 7
+  tileType: 2
   transitionDestination: 
 --- !u!114 &427815230
 MonoBehaviour:
@@ -7861,7 +7729,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0.078431375, b: 0.2509804, a: 1}
+  m_Color: {r: 0.08235294, g: 1, b: 0.21176471, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -7971,11 +7839,9 @@ MonoBehaviour:
   tileImage: {fileID: 429665039}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 17
+  tileY: 10
+  tileType: 5
   transitionDestination: 
 --- !u!114 &429665039
 MonoBehaviour:
@@ -8068,11 +7934,9 @@ MonoBehaviour:
   tileImage: {fileID: 431793504}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 16
+  tileY: 12
+  tileType: 5
   transitionDestination: 
 --- !u!114 &431793504
 MonoBehaviour:
@@ -8165,11 +8029,9 @@ MonoBehaviour:
   tileImage: {fileID: 434238814}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 25
+  tileY: 13
+  tileType: 5
   transitionDestination: 
 --- !u!114 &434238814
 MonoBehaviour:
@@ -8241,6 +8103,396 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3e2269d8fb327c041973fa5824b71df2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  tileList:
+  - {fileID: 232154818}
+  - {fileID: 1732443131}
+  - {fileID: 1383319474}
+  - {fileID: 1486059619}
+  - {fileID: 978061826}
+  - {fileID: 813783392}
+  - {fileID: 1060382488}
+  - {fileID: 2100274815}
+  - {fileID: 612422395}
+  - {fileID: 1068962853}
+  - {fileID: 1449824785}
+  - {fileID: 3634711}
+  - {fileID: 2035082823}
+  - {fileID: 1857422285}
+  - {fileID: 1430799587}
+  - {fileID: 1228219589}
+  - {fileID: 1636002434}
+  - {fileID: 1015802979}
+  - {fileID: 779680769}
+  - {fileID: 461591278}
+  - {fileID: 2090372001}
+  - {fileID: 626238933}
+  - {fileID: 193662087}
+  - {fileID: 1273792838}
+  - {fileID: 1973339335}
+  - {fileID: 1827086218}
+  - {fileID: 1325581594}
+  - {fileID: 1314148955}
+  - {fileID: 820933324}
+  - {fileID: 1491212525}
+  - {fileID: 1660524621}
+  - {fileID: 237743530}
+  - {fileID: 1616002585}
+  - {fileID: 2012049064}
+  - {fileID: 1655505775}
+  - {fileID: 2097586512}
+  - {fileID: 251707200}
+  - {fileID: 1961352391}
+  - {fileID: 1610149394}
+  - {fileID: 575064516}
+  - {fileID: 1924328093}
+  - {fileID: 179146335}
+  - {fileID: 578130085}
+  - {fileID: 2100144829}
+  - {fileID: 878064525}
+  - {fileID: 1456684065}
+  - {fileID: 23003732}
+  - {fileID: 460470816}
+  - {fileID: 1050945679}
+  - {fileID: 762353364}
+  - {fileID: 491530133}
+  - {fileID: 449029636}
+  - {fileID: 102189534}
+  - {fileID: 1203651436}
+  - {fileID: 202269136}
+  - {fileID: 912251323}
+  - {fileID: 2043125882}
+  - {fileID: 1531397982}
+  - {fileID: 383313740}
+  - {fileID: 1913734182}
+  - {fileID: 370269821}
+  - {fileID: 531972985}
+  - {fileID: 876368280}
+  - {fileID: 1450339946}
+  - {fileID: 1247783919}
+  - {fileID: 656084449}
+  - {fileID: 1603396837}
+  - {fileID: 186106624}
+  - {fileID: 1363829951}
+  - {fileID: 668541607}
+  - {fileID: 188279539}
+  - {fileID: 1368197400}
+  - {fileID: 1830130273}
+  - {fileID: 1143703729}
+  - {fileID: 1325500990}
+  - {fileID: 711824009}
+  - {fileID: 1332633625}
+  - {fileID: 44320312}
+  - {fileID: 1781062565}
+  - {fileID: 1533056771}
+  - {fileID: 382050838}
+  - {fileID: 261146790}
+  - {fileID: 1924349979}
+  - {fileID: 1529900370}
+  - {fileID: 1988134891}
+  - {fileID: 2003689245}
+  - {fileID: 1217646918}
+  - {fileID: 1958490081}
+  - {fileID: 112823622}
+  - {fileID: 534990389}
+  - {fileID: 1518750854}
+  - {fileID: 1375612575}
+  - {fileID: 1673452360}
+  - {fileID: 677156903}
+  - {fileID: 577791633}
+  - {fileID: 1771961763}
+  - {fileID: 694096821}
+  - {fileID: 2062749587}
+  - {fileID: 1965498179}
+  - {fileID: 1160194972}
+  - {fileID: 1199135209}
+  - {fileID: 1577747973}
+  - {fileID: 1637176869}
+  - {fileID: 110516380}
+  - {fileID: 1833761412}
+  - {fileID: 2054529530}
+  - {fileID: 1307459929}
+  - {fileID: 244918641}
+  - {fileID: 364546614}
+  - {fileID: 30270213}
+  - {fileID: 310345868}
+  - {fileID: 556023538}
+  - {fileID: 780904096}
+  - {fileID: 1019281961}
+  - {fileID: 671751539}
+  - {fileID: 1599334724}
+  - {fileID: 2147338128}
+  - {fileID: 1977062065}
+  - {fileID: 2064577445}
+  - {fileID: 1423613910}
+  - {fileID: 1375142482}
+  - {fileID: 1519519238}
+  - {fileID: 828461832}
+  - {fileID: 1200027406}
+  - {fileID: 525963307}
+  - {fileID: 1965998112}
+  - {fileID: 750175802}
+  - {fileID: 1354464589}
+  - {fileID: 1968568624}
+  - {fileID: 1454223176}
+  - {fileID: 692601916}
+  - {fileID: 1257635616}
+  - {fileID: 627623541}
+  - {fileID: 1200594833}
+  - {fileID: 985651693}
+  - {fileID: 1942544618}
+  - {fileID: 1266092227}
+  - {fileID: 777361694}
+  - {fileID: 871854310}
+  - {fileID: 524527841}
+  - {fileID: 726102307}
+  - {fileID: 652670153}
+  - {fileID: 1287642570}
+  - {fileID: 1427184190}
+  - {fileID: 646497980}
+  - {fileID: 2022054722}
+  - {fileID: 547187616}
+  - {fileID: 21912507}
+  - {fileID: 1457501002}
+  - {fileID: 1870315}
+  - {fileID: 1984276021}
+  - {fileID: 1811210067}
+  - {fileID: 4126125}
+  - {fileID: 546848121}
+  - {fileID: 284097752}
+  - {fileID: 180938298}
+  - {fileID: 2003804692}
+  - {fileID: 1396342681}
+  - {fileID: 1189454350}
+  - {fileID: 458940436}
+  - {fileID: 1167548010}
+  - {fileID: 783847353}
+  - {fileID: 2100679922}
+  - {fileID: 106356088}
+  - {fileID: 1989518089}
+  - {fileID: 1313097723}
+  - {fileID: 75484865}
+  - {fileID: 1085341229}
+  - {fileID: 752286003}
+  - {fileID: 650165204}
+  - {fileID: 1473979287}
+  - {fileID: 1609549046}
+  - {fileID: 176780326}
+  - {fileID: 1077529356}
+  - {fileID: 1871768200}
+  - {fileID: 824106351}
+  - {fileID: 1511077432}
+  - {fileID: 598872664}
+  - {fileID: 954806189}
+  - {fileID: 1406500329}
+  - {fileID: 698897444}
+  - {fileID: 1754622905}
+  - {fileID: 1143795416}
+  - {fileID: 2094626039}
+  - {fileID: 1231405265}
+  - {fileID: 3731034}
+  - {fileID: 729753610}
+  - {fileID: 1271666326}
+  - {fileID: 1274685269}
+  - {fileID: 140187282}
+  - {fileID: 1588706450}
+  - {fileID: 464497331}
+  - {fileID: 1596817133}
+  - {fileID: 2121136278}
+  - {fileID: 596467851}
+  - {fileID: 201116300}
+  - {fileID: 1354693937}
+  - {fileID: 1137124132}
+  - {fileID: 194842355}
+  - {fileID: 1647281959}
+  - {fileID: 282824090}
+  - {fileID: 1729798910}
+  - {fileID: 110616719}
+  - {fileID: 518652017}
+  - {fileID: 1902615472}
+  - {fileID: 1657089917}
+  - {fileID: 1668288916}
+  - {fileID: 1492714696}
+  - {fileID: 2042789908}
+  - {fileID: 2104059196}
+  - {fileID: 1061149740}
+  - {fileID: 2092182219}
+  - {fileID: 1461147894}
+  - {fileID: 1227345609}
+  - {fileID: 1419128036}
+  - {fileID: 1949169168}
+  - {fileID: 1160663451}
+  - {fileID: 1737654118}
+  - {fileID: 395835354}
+  - {fileID: 1224007706}
+  - {fileID: 517334735}
+  - {fileID: 1818491399}
+  - {fileID: 1201583145}
+  - {fileID: 158621749}
+  - {fileID: 477978967}
+  - {fileID: 1602777172}
+  - {fileID: 2138877831}
+  - {fileID: 535795267}
+  - {fileID: 2105917581}
+  - {fileID: 1065260808}
+  - {fileID: 427815229}
+  - {fileID: 1275132869}
+  - {fileID: 1716397696}
+  - {fileID: 704693688}
+  - {fileID: 1948163738}
+  - {fileID: 431793503}
+  - {fileID: 836565304}
+  - {fileID: 1785590383}
+  - {fileID: 1882325109}
+  - {fileID: 304419777}
+  - {fileID: 1467580325}
+  - {fileID: 1720160435}
+  - {fileID: 439473017}
+  - {fileID: 968009315}
+  - {fileID: 1463228013}
+  - {fileID: 957009208}
+  - {fileID: 1477701944}
+  - {fileID: 373050449}
+  - {fileID: 459590506}
+  - {fileID: 1638615935}
+  - {fileID: 112894809}
+  - {fileID: 1531845162}
+  - {fileID: 1522611441}
+  - {fileID: 1193001378}
+  - {fileID: 1532256533}
+  - {fileID: 1835567769}
+  - {fileID: 1760557365}
+  - {fileID: 429665038}
+  - {fileID: 2146029336}
+  - {fileID: 1901824114}
+  - {fileID: 1081541067}
+  - {fileID: 550461023}
+  - {fileID: 1992938735}
+  - {fileID: 1450912896}
+  - {fileID: 180740882}
+  - {fileID: 250988920}
+  - {fileID: 142731354}
+  - {fileID: 1314013121}
+  - {fileID: 850586214}
+  - {fileID: 345122048}
+  - {fileID: 1040977457}
+  - {fileID: 2019127402}
+  - {fileID: 1816226762}
+  - {fileID: 1455429941}
+  - {fileID: 1631310701}
+  - {fileID: 1936416433}
+  - {fileID: 79989484}
+  - {fileID: 1470935004}
+  - {fileID: 2145512357}
+  - {fileID: 2145277329}
+  - {fileID: 2137813806}
+  - {fileID: 1443966986}
+  - {fileID: 589192370}
+  - {fileID: 1489442159}
+  - {fileID: 1918781808}
+  - {fileID: 818075610}
+  - {fileID: 1488230660}
+  - {fileID: 725642498}
+  - {fileID: 307846230}
+  - {fileID: 1185937816}
+  - {fileID: 1726052350}
+  - {fileID: 1134900395}
+  - {fileID: 874372320}
+  - {fileID: 1119394630}
+  - {fileID: 1381233254}
+  - {fileID: 2039861468}
+  - {fileID: 1535991451}
+  - {fileID: 1410687218}
+  - {fileID: 146323246}
+  - {fileID: 710222412}
+  - {fileID: 1429241779}
+  - {fileID: 822142322}
+  - {fileID: 1633078764}
+  - {fileID: 247506109}
+  - {fileID: 878563866}
+  - {fileID: 64101674}
+  - {fileID: 1992924964}
+  - {fileID: 1403584302}
+  - {fileID: 907800363}
+  - {fileID: 1871685185}
+  - {fileID: 2101493898}
+  - {fileID: 1816559918}
+  - {fileID: 553943877}
+  - {fileID: 951616318}
+  - {fileID: 1109142312}
+  - {fileID: 545002929}
+  - {fileID: 178775297}
+  - {fileID: 1299570834}
+  - {fileID: 750633328}
+  - {fileID: 1314101200}
+  - {fileID: 1615837489}
+  - {fileID: 1903915296}
+  - {fileID: 649627459}
+  - {fileID: 307406866}
+  - {fileID: 1486981563}
+  - {fileID: 1500567492}
+  - {fileID: 1330428608}
+  - {fileID: 457660791}
+  - {fileID: 527409206}
+  - {fileID: 1169051574}
+  - {fileID: 1968834093}
+  - {fileID: 166863661}
+  - {fileID: 1072668150}
+  - {fileID: 128110313}
+  - {fileID: 1413592991}
+  - {fileID: 274919527}
+  - {fileID: 1447612353}
+  - {fileID: 540506290}
+  - {fileID: 1507201374}
+  - {fileID: 791717609}
+  - {fileID: 1266736474}
+  - {fileID: 1554199606}
+  - {fileID: 293591147}
+  - {fileID: 1446754234}
+  - {fileID: 711359426}
+  - {fileID: 465877148}
+  - {fileID: 1301902575}
+  - {fileID: 1994012360}
+  - {fileID: 1522388279}
+  - {fileID: 702339615}
+  - {fileID: 516144373}
+  - {fileID: 812220164}
+  - {fileID: 1935367991}
+  - {fileID: 496287657}
+  - {fileID: 1808163852}
+  - {fileID: 2080544236}
+  - {fileID: 91289079}
+  - {fileID: 2033519641}
+  - {fileID: 262350005}
+  - {fileID: 1813656551}
+  - {fileID: 322673737}
+  - {fileID: 2129510974}
+  - {fileID: 253988316}
+  - {fileID: 215066098}
+  - {fileID: 1286458591}
+  - {fileID: 803262551}
+  - {fileID: 2124733696}
+  - {fileID: 296805269}
+  - {fileID: 55089524}
+  - {fileID: 1406886163}
+  - {fileID: 793701383}
+  - {fileID: 1362839653}
+  - {fileID: 1549835557}
+  - {fileID: 1322199100}
+  - {fileID: 1546070567}
+  - {fileID: 1020293934}
+  - {fileID: 1091845972}
+  - {fileID: 1106121058}
+  - {fileID: 1018828530}
+  - {fileID: 434238813}
+  - {fileID: 1447812689}
+  - {fileID: 1055639321}
+  - {fileID: 390640790}
+  - {fileID: 1907352367}
+  - {fileID: 799167681}
+  - {fileID: 180518829}
+  - {fileID: 1977306047}
+  - {fileID: 668473606}
+  - {fileID: 1159752527}
 --- !u!114 &435039836
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8375,11 +8627,9 @@ MonoBehaviour:
   tileImage: {fileID: 439473018}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 16
+  tileY: 19
+  tileType: 5
   transitionDestination: 
 --- !u!114 &439473018
 MonoBehaviour:
@@ -8472,11 +8722,9 @@ MonoBehaviour:
   tileImage: {fileID: 449029637}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 7
+  tileY: 19
+  tileType: 2
   transitionDestination: 
 --- !u!114 &449029637
 MonoBehaviour:
@@ -8491,7 +8739,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0.078431375, b: 0.2509804, a: 1}
+  m_Color: {r: 0.08235294, g: 1, b: 0.21176471, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -8569,11 +8817,9 @@ MonoBehaviour:
   tileImage: {fileID: 457660792}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 21
+  tileY: 4
+  tileType: 5
   transitionDestination: 
 --- !u!114 &457660792
 MonoBehaviour:
@@ -8666,11 +8912,9 @@ MonoBehaviour:
   tileImage: {fileID: 458940437}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 13
+  tileY: 8
+  tileType: 2
   transitionDestination: 
 --- !u!114 &458940437
 MonoBehaviour:
@@ -8685,7 +8929,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0.078431375, b: 0.2509804, a: 1}
+  m_Color: {r: 0.08235294, g: 1, b: 0.21176471, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -8763,11 +9007,9 @@ MonoBehaviour:
   tileImage: {fileID: 459590507}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 17
+  tileY: 1
+  tileType: 5
   transitionDestination: 
 --- !u!114 &459590507
 MonoBehaviour:
@@ -8860,11 +9102,9 @@ MonoBehaviour:
   tileImage: {fileID: 460470817}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 7
+  tileY: 15
+  tileType: 2
   transitionDestination: 
 --- !u!114 &460470817
 MonoBehaviour:
@@ -8879,7 +9119,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0.078431375, b: 0.2509804, a: 1}
+  m_Color: {r: 0.08235294, g: 1, b: 0.21176471, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -8957,11 +9197,9 @@ MonoBehaviour:
   tileImage: {fileID: 461591279}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 4
+  tileY: 20
+  tileType: 5
   transitionDestination: 
 --- !u!114 &461591279
 MonoBehaviour:
@@ -9054,11 +9292,9 @@ MonoBehaviour:
   tileImage: {fileID: 464497332}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 14
+  tileY: 16
+  tileType: 5
   transitionDestination: 
 --- !u!114 &464497332
 MonoBehaviour:
@@ -9151,11 +9387,9 @@ MonoBehaviour:
   tileImage: {fileID: 465877149}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 22
+  tileY: 9
+  tileType: 5
   transitionDestination: 
 --- !u!114 &465877149
 MonoBehaviour:
@@ -9345,11 +9579,9 @@ MonoBehaviour:
   tileImage: {fileID: 477978968}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 16
+  tileY: 1
+  tileType: 5
   transitionDestination: 
 --- !u!114 &477978968
 MonoBehaviour:
@@ -9442,11 +9674,9 @@ MonoBehaviour:
   tileImage: {fileID: 491530134}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 7
+  tileY: 18
+  tileType: 2
   transitionDestination: 
 --- !u!114 &491530134
 MonoBehaviour:
@@ -9461,7 +9691,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0.078431375, b: 0.2509804, a: 1}
+  m_Color: {r: 0.08235294, g: 1, b: 0.21176471, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -9539,11 +9769,9 @@ MonoBehaviour:
   tileImage: {fileID: 496287658}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 22
+  tileY: 17
+  tileType: 5
   transitionDestination: 
 --- !u!114 &496287658
 MonoBehaviour:
@@ -9636,11 +9864,9 @@ MonoBehaviour:
   tileImage: {fileID: 516144374}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 22
+  tileY: 14
+  tileType: 5
   transitionDestination: 
 --- !u!114 &516144374
 MonoBehaviour:
@@ -9733,11 +9959,9 @@ MonoBehaviour:
   tileImage: {fileID: 517334736}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 15
+  tileY: 21
+  tileType: 2
   transitionDestination: 
 --- !u!114 &517334736
 MonoBehaviour:
@@ -9752,7 +9976,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0.078431375, b: 0.2509804, a: 1}
+  m_Color: {r: 0.08235294, g: 1, b: 0.21176471, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -9830,11 +10054,9 @@ MonoBehaviour:
   tileImage: {fileID: 518652018}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 15
+  tileY: 4
+  tileType: 5
   transitionDestination: 
 --- !u!114 &518652018
 MonoBehaviour:
@@ -9927,11 +10149,9 @@ MonoBehaviour:
   tileImage: {fileID: 524527842}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 12
+  tileY: 12
+  tileType: 2
   transitionDestination: 
 --- !u!114 &524527842
 MonoBehaviour:
@@ -9946,7 +10166,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0.078431375, b: 0.2509804, a: 1}
+  m_Color: {r: 0.08235294, g: 1, b: 0.21176471, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -10024,11 +10244,9 @@ MonoBehaviour:
   tileImage: {fileID: 525963308}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 11
+  tileY: 20
+  tileType: 2
   transitionDestination: 
 --- !u!114 &525963308
 MonoBehaviour:
@@ -10043,7 +10261,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0.078431375, b: 0.2509804, a: 1}
+  m_Color: {r: 0.08235294, g: 1, b: 0.21176471, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -10121,11 +10339,9 @@ MonoBehaviour:
   tileImage: {fileID: 527409207}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 21
+  tileY: 5
+  tileType: 5
   transitionDestination: 
 --- !u!114 &527409207
 MonoBehaviour:
@@ -10218,11 +10434,9 @@ MonoBehaviour:
   tileImage: {fileID: 531972986}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 8
+  tileY: 14
+  tileType: 2
   transitionDestination: 
 --- !u!114 &531972986
 MonoBehaviour:
@@ -10237,7 +10451,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0.078431375, b: 0.2509804, a: 1}
+  m_Color: {r: 0.08235294, g: 1, b: 0.21176471, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -10315,11 +10529,9 @@ MonoBehaviour:
   tileImage: {fileID: 534990390}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 9
+  tileY: 25
+  tileType: 5
   transitionDestination: 
 --- !u!114 &534990390
 MonoBehaviour:
@@ -10412,11 +10624,9 @@ MonoBehaviour:
   tileImage: {fileID: 535795268}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 16
+  tileY: 4
+  tileType: 5
   transitionDestination: 
 --- !u!114 &535795268
 MonoBehaviour:
@@ -10509,11 +10719,9 @@ MonoBehaviour:
   tileImage: {fileID: 540506291}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 21
+  tileY: 14
+  tileType: 5
   transitionDestination: 
 --- !u!114 &540506291
 MonoBehaviour:
@@ -10606,11 +10814,9 @@ MonoBehaviour:
   tileImage: {fileID: 545002930}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 20
+  tileY: 8
+  tileType: 5
   transitionDestination: 
 --- !u!114 &545002930
 MonoBehaviour:
@@ -10703,11 +10909,9 @@ MonoBehaviour:
   tileImage: {fileID: 546848122}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 12
+  tileY: 26
+  tileType: 5
   transitionDestination: 
 --- !u!114 &546848122
 MonoBehaviour:
@@ -10800,11 +11004,9 @@ MonoBehaviour:
   tileImage: {fileID: 547187617}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 12
+  tileY: 19
+  tileType: 5
   transitionDestination: 
 --- !u!114 &547187617
 MonoBehaviour:
@@ -10897,11 +11099,9 @@ MonoBehaviour:
   tileImage: {fileID: 550461024}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 17
+  tileY: 14
+  tileType: 5
   transitionDestination: 
 --- !u!114 &550461024
 MonoBehaviour:
@@ -10994,12 +11194,10 @@ MonoBehaviour:
   tileImage: {fileID: 553943878}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
-  transitionDestination: 
+  tileX: 20
+  tileY: 5
+  tileType: 1
+  transitionDestination: SceneTwo
 --- !u!114 &553943878
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11013,7 +11211,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0.078431375, b: 0.2509804, a: 1}
+  m_Color: {r: 1, g: 0.23921569, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -11091,11 +11289,9 @@ MonoBehaviour:
   tileImage: {fileID: 556023539}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 11
+  tileY: 7
+  tileType: 2
   transitionDestination: 
 --- !u!114 &556023539
 MonoBehaviour:
@@ -11110,7 +11306,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0.078431375, b: 0.2509804, a: 1}
+  m_Color: {r: 0.08235294, g: 1, b: 0.21176471, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -11188,11 +11384,9 @@ MonoBehaviour:
   tileImage: {fileID: 575064517}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 6
+  tileY: 20
+  tileType: 2
   transitionDestination: 
 --- !u!114 &575064517
 MonoBehaviour:
@@ -11207,7 +11401,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0.078431375, b: 0.2509804, a: 1}
+  m_Color: {r: 0.08235294, g: 1, b: 0.21176471, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -11285,11 +11479,9 @@ MonoBehaviour:
   tileImage: {fileID: 577791634}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 10
+  tileY: 11
+  tileType: 2
   transitionDestination: 
 --- !u!114 &577791634
 MonoBehaviour:
@@ -11304,7 +11496,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0.078431375, b: 0.2509804, a: 1}
+  m_Color: {r: 0.08235294, g: 1, b: 0.21176471, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -11382,11 +11574,9 @@ MonoBehaviour:
   tileImage: {fileID: 578130086}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 7
+  tileY: 10
+  tileType: 5
   transitionDestination: 
 --- !u!114 &578130086
 MonoBehaviour:
@@ -11479,11 +11669,9 @@ MonoBehaviour:
   tileImage: {fileID: 589192371}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 18
+  tileY: 13
+  tileType: 5
   transitionDestination: 
 --- !u!114 &589192371
 MonoBehaviour:
@@ -11576,11 +11764,9 @@ MonoBehaviour:
   tileImage: {fileID: 596467852}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 14
+  tileY: 19
+  tileType: 5
   transitionDestination: 
 --- !u!114 &596467852
 MonoBehaviour:
@@ -11673,11 +11859,9 @@ MonoBehaviour:
   tileImage: {fileID: 598872665}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 13
+  tileY: 26
+  tileType: 5
   transitionDestination: 
 --- !u!114 &598872665
 MonoBehaviour:
@@ -11804,11 +11988,9 @@ MonoBehaviour:
   tileImage: {fileID: 612422396}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 3
+  tileY: 16
+  tileType: 5
   transitionDestination: 
 --- !u!114 &612422396
 MonoBehaviour:
@@ -11901,11 +12083,9 @@ MonoBehaviour:
   tileImage: {fileID: 626238934}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 5
+  tileY: 13
+  tileType: 2
   transitionDestination: 
 --- !u!114 &626238934
 MonoBehaviour:
@@ -11920,7 +12100,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0.078431375, b: 0.2509804, a: 1}
+  m_Color: {r: 0.08235294, g: 1, b: 0.21176471, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -11998,11 +12178,9 @@ MonoBehaviour:
   tileImage: {fileID: 627623542}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 12
+  tileY: 5
+  tileType: 5
   transitionDestination: 
 --- !u!114 &627623542
 MonoBehaviour:
@@ -12095,11 +12273,9 @@ MonoBehaviour:
   tileImage: {fileID: 646497981}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 12
+  tileY: 17
+  tileType: 5
   transitionDestination: 
 --- !u!114 &646497981
 MonoBehaviour:
@@ -12192,11 +12368,9 @@ MonoBehaviour:
   tileImage: {fileID: 649627460}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 20
+  tileY: 15
+  tileType: 5
   transitionDestination: 
 --- !u!114 &649627460
 MonoBehaviour:
@@ -12289,11 +12463,9 @@ MonoBehaviour:
   tileImage: {fileID: 650165205}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 13
+  tileY: 18
+  tileType: 5
   transitionDestination: 
 --- !u!114 &650165205
 MonoBehaviour:
@@ -12386,11 +12558,9 @@ MonoBehaviour:
   tileImage: {fileID: 652670154}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 12
+  tileY: 14
+  tileType: 5
   transitionDestination: 
 --- !u!114 &652670154
 MonoBehaviour:
@@ -12483,11 +12653,9 @@ MonoBehaviour:
   tileImage: {fileID: 656084450}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 8
+  tileY: 18
+  tileType: 2
   transitionDestination: 
 --- !u!114 &656084450
 MonoBehaviour:
@@ -12502,7 +12670,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0.078431375, b: 0.2509804, a: 1}
+  m_Color: {r: 0.08235294, g: 1, b: 0.21176471, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -12580,11 +12748,9 @@ MonoBehaviour:
   tileImage: {fileID: 668473607}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 27
+  tileY: 11
+  tileType: 5
   transitionDestination: 
 --- !u!114 &668473607
 MonoBehaviour:
@@ -12677,11 +12843,9 @@ MonoBehaviour:
   tileImage: {fileID: 668541608}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 8
+  tileY: 22
+  tileType: 2
   transitionDestination: 
 --- !u!114 &668541608
 MonoBehaviour:
@@ -12696,7 +12860,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0.078431375, b: 0.2509804, a: 1}
+  m_Color: {r: 0.08235294, g: 1, b: 0.21176471, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -12774,11 +12938,9 @@ MonoBehaviour:
   tileImage: {fileID: 671751540}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 11
+  tileY: 10
+  tileType: 2
   transitionDestination: 
 --- !u!114 &671751540
 MonoBehaviour:
@@ -12793,7 +12955,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0.078431375, b: 0.2509804, a: 1}
+  m_Color: {r: 0.08235294, g: 1, b: 0.21176471, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -12871,11 +13033,9 @@ MonoBehaviour:
   tileImage: {fileID: 677156904}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 10
+  tileY: 10
+  tileType: 2
   transitionDestination: 
 --- !u!114 &677156904
 MonoBehaviour:
@@ -12890,7 +13050,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0.078431375, b: 0.2509804, a: 1}
+  m_Color: {r: 0.08235294, g: 1, b: 0.21176471, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -12968,11 +13128,9 @@ MonoBehaviour:
   tileImage: {fileID: 692601917}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 11
+  tileY: 26
+  tileType: 2
   transitionDestination: 
 --- !u!114 &692601917
 MonoBehaviour:
@@ -12987,7 +13145,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0.078431375, b: 0.2509804, a: 1}
+  m_Color: {r: 0.08235294, g: 1, b: 0.21176471, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -13065,11 +13223,9 @@ MonoBehaviour:
   tileImage: {fileID: 694096822}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 10
+  tileY: 13
+  tileType: 5
   transitionDestination: 
 --- !u!114 &694096822
 MonoBehaviour:
@@ -13162,11 +13318,9 @@ MonoBehaviour:
   tileImage: {fileID: 698897445}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 14
+  tileY: 5
+  tileType: 5
   transitionDestination: 
 --- !u!114 &698897445
 MonoBehaviour:
@@ -13356,11 +13510,9 @@ MonoBehaviour:
   tileImage: {fileID: 702339616}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 22
+  tileY: 13
+  tileType: 5
   transitionDestination: 
 --- !u!114 &702339616
 MonoBehaviour:
@@ -13453,11 +13605,9 @@ MonoBehaviour:
   tileImage: {fileID: 704693689}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 16
+  tileY: 10
+  tileType: 5
   transitionDestination: 
 --- !u!114 &704693689
 MonoBehaviour:
@@ -13550,11 +13700,9 @@ MonoBehaviour:
   tileImage: {fileID: 710222413}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 19
+  tileY: 10
+  tileType: 5
   transitionDestination: 
 --- !u!114 &710222413
 MonoBehaviour:
@@ -13647,11 +13795,9 @@ MonoBehaviour:
   tileImage: {fileID: 711359427}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 22
+  tileY: 8
+  tileType: 5
   transitionDestination: 
 --- !u!114 &711359427
 MonoBehaviour:
@@ -13744,11 +13890,9 @@ MonoBehaviour:
   tileImage: {fileID: 711824010}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 9
+  tileY: 11
+  tileType: 2
   transitionDestination: 
 --- !u!114 &711824010
 MonoBehaviour:
@@ -13763,7 +13907,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0.078431375, b: 0.2509804, a: 1}
+  m_Color: {r: 0.08235294, g: 1, b: 0.21176471, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -13841,11 +13985,9 @@ MonoBehaviour:
   tileImage: {fileID: 725642499}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 18
+  tileY: 18
+  tileType: 5
   transitionDestination: 
 --- !u!114 &725642499
 MonoBehaviour:
@@ -13938,11 +14080,9 @@ MonoBehaviour:
   tileImage: {fileID: 726102308}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 12
+  tileY: 13
+  tileType: 5
   transitionDestination: 
 --- !u!114 &726102308
 MonoBehaviour:
@@ -14035,11 +14175,9 @@ MonoBehaviour:
   tileImage: {fileID: 729753611}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 14
+  tileY: 11
+  tileType: 2
   transitionDestination: 
 --- !u!114 &729753611
 MonoBehaviour:
@@ -14054,7 +14192,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0.078431375, b: 0.2509804, a: 1}
+  m_Color: {r: 0.08235294, g: 1, b: 0.21176471, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -14132,11 +14270,9 @@ MonoBehaviour:
   tileImage: {fileID: 750175803}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 11
+  tileY: 22
+  tileType: 2
   transitionDestination: 
 --- !u!114 &750175803
 MonoBehaviour:
@@ -14151,7 +14287,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0.078431375, b: 0.2509804, a: 1}
+  m_Color: {r: 0.08235294, g: 1, b: 0.21176471, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -14229,11 +14365,9 @@ MonoBehaviour:
   tileImage: {fileID: 750633329}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 20
+  tileY: 11
+  tileType: 5
   transitionDestination: 
 --- !u!114 &750633329
 MonoBehaviour:
@@ -14326,11 +14460,9 @@ MonoBehaviour:
   tileImage: {fileID: 752286004}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 13
+  tileY: 17
+  tileType: 5
   transitionDestination: 
 --- !u!114 &752286004
 MonoBehaviour:
@@ -14423,11 +14555,9 @@ MonoBehaviour:
   tileImage: {fileID: 762353365}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 7
+  tileY: 17
+  tileType: 2
   transitionDestination: 
 --- !u!114 &762353365
 MonoBehaviour:
@@ -14442,7 +14572,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0.078431375, b: 0.2509804, a: 1}
+  m_Color: {r: 0.08235294, g: 1, b: 0.21176471, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -14550,11 +14680,9 @@ MonoBehaviour:
   tileImage: {fileID: 777361695}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 12
+  tileY: 10
+  tileType: 2
   transitionDestination: 
 --- !u!114 &777361695
 MonoBehaviour:
@@ -14569,7 +14697,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0.078431375, b: 0.2509804, a: 1}
+  m_Color: {r: 0.08235294, g: 1, b: 0.21176471, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -14647,11 +14775,9 @@ MonoBehaviour:
   tileImage: {fileID: 779680770}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 4
+  tileY: 19
+  tileType: 2
   transitionDestination: 
 --- !u!114 &779680770
 MonoBehaviour:
@@ -14666,7 +14792,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0.078431375, b: 0.2509804, a: 1}
+  m_Color: {r: 0.08235294, g: 1, b: 0.21176471, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -14744,11 +14870,9 @@ MonoBehaviour:
   tileImage: {fileID: 780904097}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 11
+  tileY: 8
+  tileType: 2
   transitionDestination: 
 --- !u!114 &780904097
 MonoBehaviour:
@@ -14763,7 +14887,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0.078431375, b: 0.2509804, a: 1}
+  m_Color: {r: 0.08235294, g: 1, b: 0.21176471, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -14841,11 +14965,9 @@ MonoBehaviour:
   tileImage: {fileID: 783847354}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 13
+  tileY: 10
+  tileType: 2
   transitionDestination: 
 --- !u!114 &783847354
 MonoBehaviour:
@@ -14860,7 +14982,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0.078431375, b: 0.2509804, a: 1}
+  m_Color: {r: 0.08235294, g: 1, b: 0.21176471, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -14938,11 +15060,9 @@ MonoBehaviour:
   tileImage: {fileID: 791717610}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 21
+  tileY: 16
+  tileType: 5
   transitionDestination: 
 --- !u!114 &791717610
 MonoBehaviour:
@@ -15035,11 +15155,9 @@ MonoBehaviour:
   tileImage: {fileID: 793701384}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 24
+  tileY: 12
+  tileType: 5
   transitionDestination: 
 --- !u!114 &793701384
 MonoBehaviour:
@@ -15132,11 +15250,9 @@ MonoBehaviour:
   tileImage: {fileID: 799167682}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 26
+  tileY: 12
+  tileType: 5
   transitionDestination: 
 --- !u!114 &799167682
 MonoBehaviour:
@@ -15229,11 +15345,9 @@ MonoBehaviour:
   tileImage: {fileID: 803262552}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 24
+  tileY: 7
+  tileType: 5
   transitionDestination: 
 --- !u!114 &803262552
 MonoBehaviour:
@@ -15326,11 +15440,9 @@ MonoBehaviour:
   tileImage: {fileID: 812220165}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 22
+  tileY: 15
+  tileType: 5
   transitionDestination: 
 --- !u!114 &812220165
 MonoBehaviour:
@@ -15423,11 +15535,9 @@ MonoBehaviour:
   tileImage: {fileID: 813783393}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 2
+  tileY: 18
+  tileType: 5
   transitionDestination: 
 --- !u!114 &813783393
 MonoBehaviour:
@@ -15520,11 +15630,9 @@ MonoBehaviour:
   tileImage: {fileID: 818075611}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 18
+  tileY: 16
+  tileType: 5
   transitionDestination: 
 --- !u!114 &818075611
 MonoBehaviour:
@@ -15617,11 +15725,9 @@ MonoBehaviour:
   tileImage: {fileID: 820933325}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 5
+  tileY: 20
+  tileType: 2
   transitionDestination: 
 --- !u!114 &820933325
 MonoBehaviour:
@@ -15636,7 +15742,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0.078431375, b: 0.2509804, a: 1}
+  m_Color: {r: 0.08235294, g: 1, b: 0.21176471, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -15714,11 +15820,9 @@ MonoBehaviour:
   tileImage: {fileID: 822142323}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 19
+  tileY: 12
+  tileType: 5
   transitionDestination: 
 --- !u!114 &822142323
 MonoBehaviour:
@@ -15908,11 +16012,9 @@ MonoBehaviour:
   tileImage: {fileID: 824106352}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 13
+  tileY: 24
+  tileType: 2
   transitionDestination: 
 --- !u!114 &824106352
 MonoBehaviour:
@@ -15927,7 +16029,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0.078431375, b: 0.2509804, a: 1}
+  m_Color: {r: 0.08235294, g: 1, b: 0.21176471, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -16005,11 +16107,9 @@ MonoBehaviour:
   tileImage: {fileID: 828461833}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 11
+  tileY: 18
+  tileType: 5
   transitionDestination: 
 --- !u!114 &828461833
 MonoBehaviour:
@@ -16133,11 +16233,9 @@ MonoBehaviour:
   tileImage: {fileID: 836565305}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 16
+  tileY: 13
+  tileType: 5
   transitionDestination: 
 --- !u!114 &836565305
 MonoBehaviour:
@@ -16230,11 +16328,9 @@ MonoBehaviour:
   tileImage: {fileID: 850586215}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 17
+  tileY: 21
+  tileType: 5
   transitionDestination: 
 --- !u!114 &850586215
 MonoBehaviour:
@@ -16327,11 +16423,9 @@ MonoBehaviour:
   tileImage: {fileID: 871854311}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 12
+  tileY: 11
+  tileType: 2
   transitionDestination: 
 --- !u!114 &871854311
 MonoBehaviour:
@@ -16346,7 +16440,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0.078431375, b: 0.2509804, a: 1}
+  m_Color: {r: 0.08235294, g: 1, b: 0.21176471, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -16424,11 +16518,9 @@ MonoBehaviour:
   tileImage: {fileID: 874372321}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 19
+  tileY: 3
+  tileType: 5
   transitionDestination: 
 --- !u!114 &874372321
 MonoBehaviour:
@@ -16521,11 +16613,9 @@ MonoBehaviour:
   tileImage: {fileID: 876368281}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 8
+  tileY: 15
+  tileType: 2
   transitionDestination: 
 --- !u!114 &876368281
 MonoBehaviour:
@@ -16540,7 +16630,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0.078431375, b: 0.2509804, a: 1}
+  m_Color: {r: 0.08235294, g: 1, b: 0.21176471, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -16618,11 +16708,9 @@ MonoBehaviour:
   tileImage: {fileID: 878064526}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 7
+  tileY: 12
+  tileType: 2
   transitionDestination: 
 --- !u!114 &878064526
 MonoBehaviour:
@@ -16637,7 +16725,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0.078431375, b: 0.2509804, a: 1}
+  m_Color: {r: 0.08235294, g: 1, b: 0.21176471, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -16715,11 +16803,9 @@ MonoBehaviour:
   tileImage: {fileID: 878563867}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 19
+  tileY: 15
+  tileType: 5
   transitionDestination: 
 --- !u!114 &878563867
 MonoBehaviour:
@@ -16909,11 +16995,9 @@ MonoBehaviour:
   tileImage: {fileID: 907800364}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 19
+  tileY: 19
+  tileType: 5
   transitionDestination: 
 --- !u!114 &907800364
 MonoBehaviour:
@@ -17006,11 +17090,9 @@ MonoBehaviour:
   tileImage: {fileID: 912251324}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 7
+  tileY: 23
+  tileType: 5
   transitionDestination: 
 --- !u!114 &912251324
 MonoBehaviour:
@@ -17103,12 +17185,10 @@ MonoBehaviour:
   tileImage: {fileID: 951616319}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
-  transitionDestination: 
+  tileX: 20
+  tileY: 6
+  tileType: 1
+  transitionDestination: SceneTwo
 --- !u!114 &951616319
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17122,7 +17202,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0.078431375, b: 0.2509804, a: 1}
+  m_Color: {r: 1, g: 0.23921569, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -17200,11 +17280,9 @@ MonoBehaviour:
   tileImage: {fileID: 954806190}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 14
+  tileY: 3
+  tileType: 5
   transitionDestination: 
 --- !u!114 &954806190
 MonoBehaviour:
@@ -17297,11 +17375,9 @@ MonoBehaviour:
   tileImage: {fileID: 957009209}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 16
+  tileY: 22
+  tileType: 2
   transitionDestination: 
 --- !u!114 &957009209
 MonoBehaviour:
@@ -17316,7 +17392,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0.078431375, b: 0.2509804, a: 1}
+  m_Color: {r: 0.08235294, g: 1, b: 0.21176471, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -17394,11 +17470,9 @@ MonoBehaviour:
   tileImage: {fileID: 968009316}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 16
+  tileY: 20
+  tileType: 2
   transitionDestination: 
 --- !u!114 &968009316
 MonoBehaviour:
@@ -17413,7 +17487,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0.078431375, b: 0.2509804, a: 1}
+  m_Color: {r: 0.08235294, g: 1, b: 0.21176471, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -17491,11 +17565,9 @@ MonoBehaviour:
   tileImage: {fileID: 978061827}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 2
+  tileY: 17
+  tileType: 5
   transitionDestination: 
 --- !u!114 &978061827
 MonoBehaviour:
@@ -17588,11 +17660,9 @@ MonoBehaviour:
   tileImage: {fileID: 985651694}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 12
+  tileY: 7
+  tileType: 2
   transitionDestination: 
 --- !u!114 &985651694
 MonoBehaviour:
@@ -17607,7 +17677,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0.078431375, b: 0.2509804, a: 1}
+  m_Color: {r: 0.08235294, g: 1, b: 0.21176471, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -17685,11 +17755,9 @@ MonoBehaviour:
   tileImage: {fileID: 1015802980}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 4
+  tileY: 18
+  tileType: 2
   transitionDestination: 
 --- !u!114 &1015802980
 MonoBehaviour:
@@ -17704,7 +17772,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0.078431375, b: 0.2509804, a: 1}
+  m_Color: {r: 0.08235294, g: 1, b: 0.21176471, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -17782,11 +17850,9 @@ MonoBehaviour:
   tileImage: {fileID: 1018828531}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 25
+  tileY: 12
+  tileType: 5
   transitionDestination: 
 --- !u!114 &1018828531
 MonoBehaviour:
@@ -17879,11 +17945,9 @@ MonoBehaviour:
   tileImage: {fileID: 1019281962}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 11
+  tileY: 9
+  tileType: 2
   transitionDestination: 
 --- !u!114 &1019281962
 MonoBehaviour:
@@ -17898,7 +17962,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0.078431375, b: 0.2509804, a: 1}
+  m_Color: {r: 0.08235294, g: 1, b: 0.21176471, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -17976,11 +18040,9 @@ MonoBehaviour:
   tileImage: {fileID: 1020293935}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 25
+  tileY: 9
+  tileType: 5
   transitionDestination: 
 --- !u!114 &1020293935
 MonoBehaviour:
@@ -18177,11 +18239,9 @@ MonoBehaviour:
   tileImage: {fileID: 1040977458}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 18
+  tileY: 1
+  tileType: 5
   transitionDestination: 
 --- !u!114 &1040977458
 MonoBehaviour:
@@ -18373,11 +18433,9 @@ MonoBehaviour:
   tileImage: {fileID: 1050945680}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 7
+  tileY: 16
+  tileType: 2
   transitionDestination: 
 --- !u!114 &1050945680
 MonoBehaviour:
@@ -18392,7 +18450,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0.078431375, b: 0.2509804, a: 1}
+  m_Color: {r: 0.08235294, g: 1, b: 0.21176471, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -18470,11 +18528,9 @@ MonoBehaviour:
   tileImage: {fileID: 1055639322}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 26
+  tileY: 9
+  tileType: 5
   transitionDestination: 
 --- !u!114 &1055639322
 MonoBehaviour:
@@ -18567,11 +18623,9 @@ MonoBehaviour:
   tileImage: {fileID: 1060382489}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 3
+  tileY: 14
+  tileType: 5
   transitionDestination: 
 --- !u!114 &1060382489
 MonoBehaviour:
@@ -18664,11 +18718,9 @@ MonoBehaviour:
   tileImage: {fileID: 1061149741}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 15
+  tileY: 11
+  tileType: 2
   transitionDestination: 
 --- !u!114 &1061149741
 MonoBehaviour:
@@ -18683,7 +18735,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0.078431375, b: 0.2509804, a: 1}
+  m_Color: {r: 0.08235294, g: 1, b: 0.21176471, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -18761,11 +18813,9 @@ MonoBehaviour:
   tileImage: {fileID: 1065260809}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 16
+  tileY: 6
+  tileType: 2
   transitionDestination: 
 --- !u!114 &1065260809
 MonoBehaviour:
@@ -18780,7 +18830,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0.078431375, b: 0.2509804, a: 1}
+  m_Color: {r: 0.08235294, g: 1, b: 0.21176471, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -18858,11 +18908,9 @@ MonoBehaviour:
   tileImage: {fileID: 1068962854}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 3
+  tileY: 17
+  tileType: 5
   transitionDestination: 
 --- !u!114 &1068962854
 MonoBehaviour:
@@ -18955,11 +19003,9 @@ MonoBehaviour:
   tileImage: {fileID: 1072668151}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 21
+  tileY: 9
+  tileType: 5
   transitionDestination: 
 --- !u!114 &1072668151
 MonoBehaviour:
@@ -19052,11 +19098,9 @@ MonoBehaviour:
   tileImage: {fileID: 1077529357}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 13
+  tileY: 22
+  tileType: 2
   transitionDestination: 
 --- !u!114 &1077529357
 MonoBehaviour:
@@ -19071,7 +19115,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0.078431375, b: 0.2509804, a: 1}
+  m_Color: {r: 0.08235294, g: 1, b: 0.21176471, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -19149,11 +19193,9 @@ MonoBehaviour:
   tileImage: {fileID: 1081541068}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 17
+  tileY: 13
+  tileType: 5
   transitionDestination: 
 --- !u!114 &1081541068
 MonoBehaviour:
@@ -19246,11 +19288,9 @@ MonoBehaviour:
   tileImage: {fileID: 1085341230}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 13
+  tileY: 16
+  tileType: 5
   transitionDestination: 
 --- !u!114 &1085341230
 MonoBehaviour:
@@ -19343,11 +19383,9 @@ MonoBehaviour:
   tileImage: {fileID: 1091845973}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 25
+  tileY: 10
+  tileType: 5
   transitionDestination: 
 --- !u!114 &1091845973
 MonoBehaviour:
@@ -19440,11 +19478,9 @@ MonoBehaviour:
   tileImage: {fileID: 1106121059}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 25
+  tileY: 11
+  tileType: 5
   transitionDestination: 
 --- !u!114 &1106121059
 MonoBehaviour:
@@ -19636,12 +19672,10 @@ MonoBehaviour:
   tileImage: {fileID: 1109142313}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
-  transitionDestination: 
+  tileX: 20
+  tileY: 7
+  tileType: 1
+  transitionDestination: SceneTwo
 --- !u!114 &1109142313
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19655,7 +19689,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0.078431375, b: 0.2509804, a: 1}
+  m_Color: {r: 1, g: 0.23921569, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -19733,11 +19767,9 @@ MonoBehaviour:
   tileImage: {fileID: 1119394631}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 19
+  tileY: 4
+  tileType: 5
   transitionDestination: 
 --- !u!114 &1119394631
 MonoBehaviour:
@@ -19830,11 +19862,9 @@ MonoBehaviour:
   tileImage: {fileID: 1134900396}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 19
+  tileY: 2
+  tileType: 5
   transitionDestination: 
 --- !u!114 &1134900396
 MonoBehaviour:
@@ -19927,11 +19957,9 @@ MonoBehaviour:
   tileImage: {fileID: 1137124133}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 14
+  tileY: 22
+  tileType: 2
   transitionDestination: 
 --- !u!114 &1137124133
 MonoBehaviour:
@@ -19946,7 +19974,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0.078431375, b: 0.2509804, a: 1}
+  m_Color: {r: 0.08235294, g: 1, b: 0.21176471, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -20024,11 +20052,9 @@ MonoBehaviour:
   tileImage: {fileID: 1143703730}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 9
+  tileY: 9
+  tileType: 2
   transitionDestination: 
 --- !u!114 &1143703730
 MonoBehaviour:
@@ -20043,7 +20069,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0.078431375, b: 0.2509804, a: 1}
+  m_Color: {r: 0.08235294, g: 1, b: 0.21176471, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -20121,11 +20147,9 @@ MonoBehaviour:
   tileImage: {fileID: 1143795417}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 14
+  tileY: 7
+  tileType: 2
   transitionDestination: 
 --- !u!114 &1143795417
 MonoBehaviour:
@@ -20140,7 +20164,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0.078431375, b: 0.2509804, a: 1}
+  m_Color: {r: 0.08235294, g: 1, b: 0.21176471, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -20218,11 +20242,9 @@ MonoBehaviour:
   tileImage: {fileID: 1159752528}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 27
+  tileY: 12
+  tileType: 5
   transitionDestination: 
 --- !u!114 &1159752528
 MonoBehaviour:
@@ -20315,11 +20337,9 @@ MonoBehaviour:
   tileImage: {fileID: 1160194973}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 10
+  tileY: 16
+  tileType: 5
   transitionDestination: 
 --- !u!114 &1160194973
 MonoBehaviour:
@@ -20412,11 +20432,9 @@ MonoBehaviour:
   tileImage: {fileID: 1160663452}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 15
+  tileY: 17
+  tileType: 5
   transitionDestination: 
 --- !u!114 &1160663452
 MonoBehaviour:
@@ -20539,11 +20557,9 @@ MonoBehaviour:
   tileImage: {fileID: 1167548011}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 13
+  tileY: 9
+  tileType: 2
   transitionDestination: 
 --- !u!114 &1167548011
 MonoBehaviour:
@@ -20558,7 +20574,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0.078431375, b: 0.2509804, a: 1}
+  m_Color: {r: 0.08235294, g: 1, b: 0.21176471, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -20636,11 +20652,9 @@ MonoBehaviour:
   tileImage: {fileID: 1169051575}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 21
+  tileY: 6
+  tileType: 5
   transitionDestination: 
 --- !u!114 &1169051575
 MonoBehaviour:
@@ -20733,11 +20747,9 @@ MonoBehaviour:
   tileImage: {fileID: 1185937817}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 18
+  tileY: 20
+  tileType: 5
   transitionDestination: 
 --- !u!114 &1185937817
 MonoBehaviour:
@@ -20830,11 +20842,9 @@ MonoBehaviour:
   tileImage: {fileID: 1189454351}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 13
+  tileY: 7
+  tileType: 2
   transitionDestination: 
 --- !u!114 &1189454351
 MonoBehaviour:
@@ -20849,7 +20859,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0.078431375, b: 0.2509804, a: 1}
+  m_Color: {r: 0.08235294, g: 1, b: 0.21176471, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -20927,11 +20937,9 @@ MonoBehaviour:
   tileImage: {fileID: 1193001379}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 17
+  tileY: 6
+  tileType: 2
   transitionDestination: 
 --- !u!114 &1193001379
 MonoBehaviour:
@@ -20946,7 +20954,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0.078431375, b: 0.2509804, a: 1}
+  m_Color: {r: 0.08235294, g: 1, b: 0.21176471, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -21024,11 +21032,9 @@ MonoBehaviour:
   tileImage: {fileID: 1199135210}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 10
+  tileY: 17
+  tileType: 5
   transitionDestination: 
 --- !u!114 &1199135210
 MonoBehaviour:
@@ -21121,11 +21127,9 @@ MonoBehaviour:
   tileImage: {fileID: 1200027407}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 11
+  tileY: 19
+  tileType: 5
   transitionDestination: 
 --- !u!114 &1200027407
 MonoBehaviour:
@@ -21218,11 +21222,9 @@ MonoBehaviour:
   tileImage: {fileID: 1200594834}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 12
+  tileY: 6
+  tileType: 2
   transitionDestination: 
 --- !u!114 &1200594834
 MonoBehaviour:
@@ -21237,7 +21239,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0.078431375, b: 0.2509804, a: 1}
+  m_Color: {r: 0.08235294, g: 1, b: 0.21176471, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -21315,11 +21317,9 @@ MonoBehaviour:
   tileImage: {fileID: 1201583146}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 15
+  tileY: 23
+  tileType: 2
   transitionDestination: 
 --- !u!114 &1201583146
 MonoBehaviour:
@@ -21334,7 +21334,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0.078431375, b: 0.2509804, a: 1}
+  m_Color: {r: 0.08235294, g: 1, b: 0.21176471, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -21412,11 +21412,9 @@ MonoBehaviour:
   tileImage: {fileID: 1203651437}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 7
+  tileY: 21
+  tileType: 2
   transitionDestination: 
 --- !u!114 &1203651437
 MonoBehaviour:
@@ -21431,7 +21429,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0.078431375, b: 0.2509804, a: 1}
+  m_Color: {r: 0.08235294, g: 1, b: 0.21176471, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -21473,7 +21471,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1217564092
 RectTransform:
   m_ObjectHideFlags: 0
@@ -21486,12 +21484,12 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1248318033}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 84.9, y: 408.46}
-  m_SizeDelta: {x: 348.371, y: 145.0856}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1217564093
 MonoBehaviour:
@@ -21584,11 +21582,9 @@ MonoBehaviour:
   tileImage: {fileID: 1217646919}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 9
+  tileY: 22
+  tileType: 2
   transitionDestination: 
 --- !u!114 &1217646919
 MonoBehaviour:
@@ -21603,7 +21599,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0.078431375, b: 0.2509804, a: 1}
+  m_Color: {r: 0.08235294, g: 1, b: 0.21176471, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -21681,11 +21677,9 @@ MonoBehaviour:
   tileImage: {fileID: 1224007707}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 15
+  tileY: 20
+  tileType: 2
   transitionDestination: 
 --- !u!114 &1224007707
 MonoBehaviour:
@@ -21700,7 +21694,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0.078431375, b: 0.2509804, a: 1}
+  m_Color: {r: 0.08235294, g: 1, b: 0.21176471, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -21778,11 +21772,9 @@ MonoBehaviour:
   tileImage: {fileID: 1227345610}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 15
+  tileY: 14
+  tileType: 5
   transitionDestination: 
 --- !u!114 &1227345610
 MonoBehaviour:
@@ -21875,11 +21867,9 @@ MonoBehaviour:
   tileImage: {fileID: 1228219590}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 4
+  tileY: 16
+  tileType: 2
   transitionDestination: 
 --- !u!114 &1228219590
 MonoBehaviour:
@@ -21894,7 +21884,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0.078431375, b: 0.2509804, a: 1}
+  m_Color: {r: 0.08235294, g: 1, b: 0.21176471, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -21972,11 +21962,9 @@ MonoBehaviour:
   tileImage: {fileID: 1231405266}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 14
+  tileY: 9
+  tileType: 2
   transitionDestination: 
 --- !u!114 &1231405266
 MonoBehaviour:
@@ -21991,7 +21979,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0.078431375, b: 0.2509804, a: 1}
+  m_Color: {r: 0.08235294, g: 1, b: 0.21176471, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -22166,11 +22154,9 @@ MonoBehaviour:
   tileImage: {fileID: 1247783920}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 8
+  tileY: 17
+  tileType: 2
   transitionDestination: 
 --- !u!114 &1247783920
 MonoBehaviour:
@@ -22185,7 +22171,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0.078431375, b: 0.2509804, a: 1}
+  m_Color: {r: 0.08235294, g: 1, b: 0.21176471, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -22239,8 +22225,8 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 1217564092}
   - {fileID: 1463531624}
+  - {fileID: 1217564092}
   - {fileID: 1341884308}
   - {fileID: 78799010}
   - {fileID: 198942173}
@@ -22261,19 +22247,27 @@ MonoBehaviour:
   m_GameObject: {fileID: 1248318032}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ef8b96895a0ec4ba685178a052544251, type: 3}
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.7647059}
-  m_RaycastTarget: 0
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
   m_Sprite: {fileID: 21300000, guid: 2fd3c3dffe52ab043959b7f37655cfa1, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
 --- !u!222 &1248318035
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -22335,11 +22329,9 @@ MonoBehaviour:
   tileImage: {fileID: 1257635617}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 11
+  tileY: 27
+  tileType: 5
   transitionDestination: 
 --- !u!114 &1257635617
 MonoBehaviour:
@@ -22529,11 +22521,9 @@ MonoBehaviour:
   tileImage: {fileID: 1266092228}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 12
+  tileY: 9
+  tileType: 2
   transitionDestination: 
 --- !u!114 &1266092228
 MonoBehaviour:
@@ -22548,7 +22538,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0.078431375, b: 0.2509804, a: 1}
+  m_Color: {r: 0.08235294, g: 1, b: 0.21176471, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -22626,11 +22616,9 @@ MonoBehaviour:
   tileImage: {fileID: 1266736475}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 21
+  tileY: 17
+  tileType: 5
   transitionDestination: 
 --- !u!114 &1266736475
 MonoBehaviour:
@@ -22723,11 +22711,9 @@ MonoBehaviour:
   tileImage: {fileID: 1271666327}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 14
+  tileY: 12
+  tileType: 2
   transitionDestination: 
 --- !u!114 &1271666327
 MonoBehaviour:
@@ -22742,7 +22728,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0.078431375, b: 0.2509804, a: 1}
+  m_Color: {r: 0.08235294, g: 1, b: 0.21176471, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -22820,11 +22806,9 @@ MonoBehaviour:
   tileImage: {fileID: 1273792839}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 5
+  tileY: 15
+  tileType: 2
   transitionDestination: 
 --- !u!114 &1273792839
 MonoBehaviour:
@@ -22839,7 +22823,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0.078431375, b: 0.2509804, a: 1}
+  m_Color: {r: 0.08235294, g: 1, b: 0.21176471, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -22917,11 +22901,9 @@ MonoBehaviour:
   tileImage: {fileID: 1274685270}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 14
+  tileY: 13
+  tileType: 5
   transitionDestination: 
 --- !u!114 &1274685270
 MonoBehaviour:
@@ -23014,11 +22996,9 @@ MonoBehaviour:
   tileImage: {fileID: 1275132870}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 16
+  tileY: 8
+  tileType: 2
   transitionDestination: 
 --- !u!114 &1275132870
 MonoBehaviour:
@@ -23033,7 +23013,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0.078431375, b: 0.2509804, a: 1}
+  m_Color: {r: 0.08235294, g: 1, b: 0.21176471, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -23111,11 +23091,9 @@ MonoBehaviour:
   tileImage: {fileID: 1286458592}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 23
+  tileY: 16
+  tileType: 5
   transitionDestination: 
 --- !u!114 &1286458592
 MonoBehaviour:
@@ -23208,11 +23186,9 @@ MonoBehaviour:
   tileImage: {fileID: 1287642571}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 12
+  tileY: 15
+  tileType: 5
   transitionDestination: 
 --- !u!114 &1287642571
 MonoBehaviour:
@@ -23305,11 +23281,9 @@ MonoBehaviour:
   tileImage: {fileID: 1299570835}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 20
+  tileY: 10
+  tileType: 5
   transitionDestination: 
 --- !u!114 &1299570835
 MonoBehaviour:
@@ -23402,11 +23376,9 @@ MonoBehaviour:
   tileImage: {fileID: 1301902576}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 22
+  tileY: 10
+  tileType: 5
   transitionDestination: 
 --- !u!114 &1301902576
 MonoBehaviour:
@@ -23499,11 +23471,9 @@ MonoBehaviour:
   tileImage: {fileID: 1307459930}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 10
+  tileY: 23
+  tileType: 2
   transitionDestination: 
 --- !u!114 &1307459930
 MonoBehaviour:
@@ -23518,7 +23488,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0.078431375, b: 0.2509804, a: 1}
+  m_Color: {r: 0.08235294, g: 1, b: 0.21176471, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -23596,11 +23566,9 @@ MonoBehaviour:
   tileImage: {fileID: 1313097724}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 13
+  tileY: 14
+  tileType: 5
   transitionDestination: 
 --- !u!114 &1313097724
 MonoBehaviour:
@@ -23693,11 +23661,9 @@ MonoBehaviour:
   tileImage: {fileID: 1314013122}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 17
+  tileY: 20
+  tileType: 5
   transitionDestination: 
 --- !u!114 &1314013122
 MonoBehaviour:
@@ -23790,11 +23756,9 @@ MonoBehaviour:
   tileImage: {fileID: 1314101201}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 20
+  tileY: 12
+  tileType: 5
   transitionDestination: 
 --- !u!114 &1314101201
 MonoBehaviour:
@@ -23887,11 +23851,9 @@ MonoBehaviour:
   tileImage: {fileID: 1314148956}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 5
+  tileY: 19
+  tileType: 2
   transitionDestination: 
 --- !u!114 &1314148956
 MonoBehaviour:
@@ -23906,7 +23868,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0.078431375, b: 0.2509804, a: 1}
+  m_Color: {r: 0.08235294, g: 1, b: 0.21176471, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -23984,11 +23946,9 @@ MonoBehaviour:
   tileImage: {fileID: 1322199101}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 24
+  tileY: 15
+  tileType: 5
   transitionDestination: 
 --- !u!114 &1322199101
 MonoBehaviour:
@@ -24081,11 +24041,9 @@ MonoBehaviour:
   tileImage: {fileID: 1325500991}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 9
+  tileY: 10
+  tileType: 2
   transitionDestination: 
 --- !u!114 &1325500991
 MonoBehaviour:
@@ -24100,7 +24058,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0.078431375, b: 0.2509804, a: 1}
+  m_Color: {r: 0.08235294, g: 1, b: 0.21176471, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -24178,11 +24136,9 @@ MonoBehaviour:
   tileImage: {fileID: 1325581595}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 1
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 5
+  tileY: 18
+  tileType: 2
   transitionDestination: 
 --- !u!114 &1325581595
 MonoBehaviour:
@@ -24275,11 +24231,9 @@ MonoBehaviour:
   tileImage: {fileID: 1330428609}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 20
+  tileY: 19
+  tileType: 5
   transitionDestination: 
 --- !u!114 &1330428609
 MonoBehaviour:
@@ -24372,11 +24326,9 @@ MonoBehaviour:
   tileImage: {fileID: 1332633626}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 9
+  tileY: 12
+  tileType: 2
   transitionDestination: 
 --- !u!114 &1332633626
 MonoBehaviour:
@@ -24391,7 +24343,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0.078431375, b: 0.2509804, a: 1}
+  m_Color: {r: 0.08235294, g: 1, b: 0.21176471, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -24433,7 +24385,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1341884308
 RectTransform:
   m_ObjectHideFlags: 0
@@ -24448,10 +24400,10 @@ RectTransform:
   m_Father: {fileID: 1248318033}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -108.3, y: 6.1}
-  m_SizeDelta: {x: 395.3238, y: 314.503}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1341884309
 MonoBehaviour:
@@ -24544,11 +24496,9 @@ MonoBehaviour:
   tileImage: {fileID: 1354464590}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 11
+  tileY: 23
+  tileType: 2
   transitionDestination: 
 --- !u!114 &1354464590
 MonoBehaviour:
@@ -24563,7 +24513,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0.078431375, b: 0.2509804, a: 1}
+  m_Color: {r: 0.08235294, g: 1, b: 0.21176471, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -24641,11 +24591,9 @@ MonoBehaviour:
   tileImage: {fileID: 1354693938}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 14
+  tileY: 21
+  tileType: 2
   transitionDestination: 
 --- !u!114 &1354693938
 MonoBehaviour:
@@ -24660,7 +24608,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0.078431375, b: 0.2509804, a: 1}
+  m_Color: {r: 0.08235294, g: 1, b: 0.21176471, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -24738,11 +24686,9 @@ MonoBehaviour:
   tileImage: {fileID: 1362839654}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 24
+  tileY: 13
+  tileType: 5
   transitionDestination: 
 --- !u!114 &1362839654
 MonoBehaviour:
@@ -24835,11 +24781,9 @@ MonoBehaviour:
   tileImage: {fileID: 1363829952}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 8
+  tileY: 21
+  tileType: 2
   transitionDestination: 
 --- !u!114 &1363829952
 MonoBehaviour:
@@ -24854,7 +24798,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0.078431375, b: 0.2509804, a: 1}
+  m_Color: {r: 0.08235294, g: 1, b: 0.21176471, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -25029,11 +24973,9 @@ MonoBehaviour:
   tileImage: {fileID: 1368197401}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 8
+  tileY: 24
+  tileType: 5
   transitionDestination: 
 --- !u!114 &1368197401
 MonoBehaviour:
@@ -25126,11 +25068,9 @@ MonoBehaviour:
   tileImage: {fileID: 1375142483}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 11
+  tileY: 16
+  tileType: 5
   transitionDestination: 
 --- !u!114 &1375142483
 MonoBehaviour:
@@ -25223,11 +25163,9 @@ MonoBehaviour:
   tileImage: {fileID: 1375612576}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 10
+  tileY: 8
+  tileType: 2
   transitionDestination: 
 --- !u!114 &1375612576
 MonoBehaviour:
@@ -25242,7 +25180,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0.078431375, b: 0.2509804, a: 1}
+  m_Color: {r: 0.08235294, g: 1, b: 0.21176471, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -25320,11 +25258,9 @@ MonoBehaviour:
   tileImage: {fileID: 1381233255}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 19
+  tileY: 5
+  tileType: 2
   transitionDestination: 
 --- !u!114 &1381233255
 MonoBehaviour:
@@ -25339,7 +25275,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0.078431375, b: 0.2509804, a: 1}
+  m_Color: {r: 0.08235294, g: 1, b: 0.21176471, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -25417,11 +25353,9 @@ MonoBehaviour:
   tileImage: {fileID: 1383319475}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 2
+  tileY: 15
+  tileType: 5
   transitionDestination: 
 --- !u!114 &1383319475
 MonoBehaviour:
@@ -25613,11 +25547,9 @@ MonoBehaviour:
   tileImage: {fileID: 1396342682}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 13
+  tileY: 6
+  tileType: 2
   transitionDestination: 
 --- !u!114 &1396342682
 MonoBehaviour:
@@ -25632,7 +25564,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0.078431375, b: 0.2509804, a: 1}
+  m_Color: {r: 0.08235294, g: 1, b: 0.21176471, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -25710,11 +25642,9 @@ MonoBehaviour:
   tileImage: {fileID: 1403584303}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 19
+  tileY: 18
+  tileType: 5
   transitionDestination: 
 --- !u!114 &1403584303
 MonoBehaviour:
@@ -25905,11 +25835,9 @@ MonoBehaviour:
   tileImage: {fileID: 1406500330}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 14
+  tileY: 4
+  tileType: 5
   transitionDestination: 
 --- !u!114 &1406500330
 MonoBehaviour:
@@ -26002,11 +25930,9 @@ MonoBehaviour:
   tileImage: {fileID: 1406886164}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 24
+  tileY: 11
+  tileType: 5
   transitionDestination: 
 --- !u!114 &1406886164
 MonoBehaviour:
@@ -26099,11 +26025,9 @@ MonoBehaviour:
   tileImage: {fileID: 1410687219}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 19
+  tileY: 8
+  tileType: 5
   transitionDestination: 
 --- !u!114 &1410687219
 MonoBehaviour:
@@ -26196,11 +26120,9 @@ MonoBehaviour:
   tileImage: {fileID: 1413592992}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 21
+  tileY: 11
+  tileType: 5
   transitionDestination: 
 --- !u!114 &1413592992
 MonoBehaviour:
@@ -26293,11 +26215,9 @@ MonoBehaviour:
   tileImage: {fileID: 1419128037}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 15
+  tileY: 15
+  tileType: 5
   transitionDestination: 
 --- !u!114 &1419128037
 MonoBehaviour:
@@ -26390,11 +26310,9 @@ MonoBehaviour:
   tileImage: {fileID: 1423613911}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 11
+  tileY: 15
+  tileType: 5
   transitionDestination: 
 --- !u!114 &1423613911
 MonoBehaviour:
@@ -26487,11 +26405,9 @@ MonoBehaviour:
   tileImage: {fileID: 1427184191}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 12
+  tileY: 16
+  tileType: 5
   transitionDestination: 
 --- !u!114 &1427184191
 MonoBehaviour:
@@ -26584,11 +26500,9 @@ MonoBehaviour:
   tileImage: {fileID: 1429241780}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 19
+  tileY: 11
+  tileType: 5
   transitionDestination: 
 --- !u!114 &1429241780
 MonoBehaviour:
@@ -26681,11 +26595,9 @@ MonoBehaviour:
   tileImage: {fileID: 1430799588}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 4
+  tileY: 15
+  tileType: 2
   transitionDestination: 
 --- !u!114 &1430799588
 MonoBehaviour:
@@ -26700,7 +26612,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0.078431375, b: 0.2509804, a: 1}
+  m_Color: {r: 0.08235294, g: 1, b: 0.21176471, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -26877,11 +26789,9 @@ MonoBehaviour:
   tileImage: {fileID: 1443966987}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 18
+  tileY: 12
+  tileType: 5
   transitionDestination: 
 --- !u!114 &1443966987
 MonoBehaviour:
@@ -26974,11 +26884,9 @@ MonoBehaviour:
   tileImage: {fileID: 1446754235}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 22
+  tileY: 7
+  tileType: 5
   transitionDestination: 
 --- !u!114 &1446754235
 MonoBehaviour:
@@ -27071,11 +26979,9 @@ MonoBehaviour:
   tileImage: {fileID: 1447612354}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 21
+  tileY: 13
+  tileType: 5
   transitionDestination: 
 --- !u!114 &1447612354
 MonoBehaviour:
@@ -27168,11 +27074,9 @@ MonoBehaviour:
   tileImage: {fileID: 1447812690}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 25
+  tileY: 14
+  tileType: 5
   transitionDestination: 
 --- !u!114 &1447812690
 MonoBehaviour:
@@ -27265,11 +27169,9 @@ MonoBehaviour:
   tileImage: {fileID: 1449824786}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 3
+  tileY: 18
+  tileType: 5
   transitionDestination: 
 --- !u!114 &1449824786
 MonoBehaviour:
@@ -27362,11 +27264,9 @@ MonoBehaviour:
   tileImage: {fileID: 1450339947}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 8
+  tileY: 16
+  tileType: 2
   transitionDestination: 
 --- !u!114 &1450339947
 MonoBehaviour:
@@ -27381,7 +27281,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0.078431375, b: 0.2509804, a: 1}
+  m_Color: {r: 0.08235294, g: 1, b: 0.21176471, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -27459,11 +27359,9 @@ MonoBehaviour:
   tileImage: {fileID: 1450912897}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 17
+  tileY: 16
+  tileType: 5
   transitionDestination: 
 --- !u!114 &1450912897
 MonoBehaviour:
@@ -27556,11 +27454,9 @@ MonoBehaviour:
   tileImage: {fileID: 1454223177}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 11
+  tileY: 25
+  tileType: 2
   transitionDestination: 
 --- !u!114 &1454223177
 MonoBehaviour:
@@ -27575,7 +27471,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0.078431375, b: 0.2509804, a: 1}
+  m_Color: {r: 0.08235294, g: 1, b: 0.21176471, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -27653,11 +27549,9 @@ MonoBehaviour:
   tileImage: {fileID: 1455429942}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 18
+  tileY: 4
+  tileType: 5
   transitionDestination: 
 --- !u!114 &1455429942
 MonoBehaviour:
@@ -27750,11 +27644,9 @@ MonoBehaviour:
   tileImage: {fileID: 1456684066}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 7
+  tileY: 13
+  tileType: 2
   transitionDestination: 
 --- !u!114 &1456684066
 MonoBehaviour:
@@ -27769,7 +27661,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0.078431375, b: 0.2509804, a: 1}
+  m_Color: {r: 0.08235294, g: 1, b: 0.21176471, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -27944,11 +27836,9 @@ MonoBehaviour:
   tileImage: {fileID: 1457501003}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 12
+  tileY: 21
+  tileType: 2
   transitionDestination: 
 --- !u!114 &1457501003
 MonoBehaviour:
@@ -27963,7 +27853,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0.078431375, b: 0.2509804, a: 1}
+  m_Color: {r: 0.08235294, g: 1, b: 0.21176471, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -28041,11 +27931,9 @@ MonoBehaviour:
   tileImage: {fileID: 1461147895}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 15
+  tileY: 13
+  tileType: 5
   transitionDestination: 
 --- !u!114 &1461147895
 MonoBehaviour:
@@ -28137,13 +28025,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tileImage: {fileID: 1463228014}
-  itemName: 
+  itemName: Rope
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 16
+  tileY: 21
+  tileType: 4
   transitionDestination: 
 --- !u!114 &1463228014
 MonoBehaviour:
@@ -28158,7 +28044,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0.078431375, b: 0.2509804, a: 1}
+  m_Color: {r: 0.08235294, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -28602,7 +28488,7 @@ RectTransform:
   - {fileID: 1159752526}
   - {fileID: 191611267}
   m_Father: {fileID: 1248318033}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -28678,11 +28564,9 @@ MonoBehaviour:
   tileImage: {fileID: 1467580326}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 16
+  tileY: 17
+  tileType: 5
   transitionDestination: 
 --- !u!114 &1467580326
 MonoBehaviour:
@@ -28775,11 +28659,9 @@ MonoBehaviour:
   tileImage: {fileID: 1470935005}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 18
+  tileY: 8
+  tileType: 5
   transitionDestination: 
 --- !u!114 &1470935005
 MonoBehaviour:
@@ -28872,11 +28754,9 @@ MonoBehaviour:
   tileImage: {fileID: 1473979288}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 13
+  tileY: 19
+  tileType: 5
   transitionDestination: 
 --- !u!114 &1473979288
 MonoBehaviour:
@@ -28969,11 +28849,9 @@ MonoBehaviour:
   tileImage: {fileID: 1477701945}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 16
+  tileY: 23
+  tileType: 5
   transitionDestination: 
 --- !u!114 &1477701945
 MonoBehaviour:
@@ -29066,11 +28944,9 @@ MonoBehaviour:
   tileImage: {fileID: 1486059620}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 2
+  tileY: 16
+  tileType: 5
   transitionDestination: 
 --- !u!114 &1486059620
 MonoBehaviour:
@@ -29163,11 +29039,9 @@ MonoBehaviour:
   tileImage: {fileID: 1486981564}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 20
+  tileY: 17
+  tileType: 5
   transitionDestination: 
 --- !u!114 &1486981564
 MonoBehaviour:
@@ -29260,11 +29134,9 @@ MonoBehaviour:
   tileImage: {fileID: 1488230661}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 18
+  tileY: 17
+  tileType: 5
   transitionDestination: 
 --- !u!114 &1488230661
 MonoBehaviour:
@@ -29357,11 +29229,9 @@ MonoBehaviour:
   tileImage: {fileID: 1489442160}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 18
+  tileY: 14
+  tileType: 5
   transitionDestination: 
 --- !u!114 &1489442160
 MonoBehaviour:
@@ -29454,11 +29324,9 @@ MonoBehaviour:
   tileImage: {fileID: 1491212526}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 5
+  tileY: 21
+  tileType: 5
   transitionDestination: 
 --- !u!114 &1491212526
 MonoBehaviour:
@@ -29551,11 +29419,9 @@ MonoBehaviour:
   tileImage: {fileID: 1492714697}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 15
+  tileY: 8
+  tileType: 2
   transitionDestination: 
 --- !u!114 &1492714697
 MonoBehaviour:
@@ -29570,7 +29436,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0.078431375, b: 0.2509804, a: 1}
+  m_Color: {r: 0.08235294, g: 1, b: 0.21176471, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -29731,11 +29597,9 @@ MonoBehaviour:
   tileImage: {fileID: 1500567493}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 20
+  tileY: 18
+  tileType: 5
   transitionDestination: 
 --- !u!114 &1500567493
 MonoBehaviour:
@@ -29828,11 +29692,9 @@ MonoBehaviour:
   tileImage: {fileID: 1507201375}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 21
+  tileY: 15
+  tileType: 5
   transitionDestination: 
 --- !u!114 &1507201375
 MonoBehaviour:
@@ -29925,11 +29787,9 @@ MonoBehaviour:
   tileImage: {fileID: 1511077433}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 13
+  tileY: 25
+  tileType: 5
   transitionDestination: 
 --- !u!114 &1511077433
 MonoBehaviour:
@@ -30022,11 +29882,9 @@ MonoBehaviour:
   tileImage: {fileID: 1518750855}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 10
+  tileY: 7
+  tileType: 5
   transitionDestination: 
 --- !u!114 &1518750855
 MonoBehaviour:
@@ -30119,11 +29977,9 @@ MonoBehaviour:
   tileImage: {fileID: 1519519239}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 11
+  tileY: 17
+  tileType: 5
   transitionDestination: 
 --- !u!114 &1519519239
 MonoBehaviour:
@@ -30216,11 +30072,9 @@ MonoBehaviour:
   tileImage: {fileID: 1522388280}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 22
+  tileY: 12
+  tileType: 5
   transitionDestination: 
 --- !u!114 &1522388280
 MonoBehaviour:
@@ -30313,11 +30167,9 @@ MonoBehaviour:
   tileImage: {fileID: 1522611442}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 17
+  tileY: 5
+  tileType: 5
   transitionDestination: 
 --- !u!114 &1522611442
 MonoBehaviour:
@@ -30410,11 +30262,9 @@ MonoBehaviour:
   tileImage: {fileID: 1529900371}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 9
+  tileY: 19
+  tileType: 2
   transitionDestination: 
 --- !u!114 &1529900371
 MonoBehaviour:
@@ -30429,7 +30279,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0.078431375, b: 0.2509804, a: 1}
+  m_Color: {r: 0.08235294, g: 1, b: 0.21176471, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -30488,11 +30338,9 @@ MonoBehaviour:
   tileImage: {fileID: 1531397983}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 8
+  tileY: 10
+  tileType: 2
   transitionDestination: 
 --- !u!114 &1531397983
 MonoBehaviour:
@@ -30507,7 +30355,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0.078431375, b: 0.2509804, a: 1}
+  m_Color: {r: 0.08235294, g: 1, b: 0.21176471, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -30604,11 +30452,9 @@ MonoBehaviour:
   tileImage: {fileID: 1531845163}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 17
+  tileY: 4
+  tileType: 5
   transitionDestination: 
 --- !u!114 &1531845163
 MonoBehaviour:
@@ -30701,11 +30547,9 @@ MonoBehaviour:
   tileImage: {fileID: 1532256534}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 17
+  tileY: 7
+  tileType: 2
   transitionDestination: 
 --- !u!114 &1532256534
 MonoBehaviour:
@@ -30720,7 +30564,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0.078431375, b: 0.2509804, a: 1}
+  m_Color: {r: 0.08235294, g: 1, b: 0.21176471, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -30798,11 +30642,9 @@ MonoBehaviour:
   tileImage: {fileID: 1533056772}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 9
+  tileY: 15
+  tileType: 2
   transitionDestination: 
 --- !u!114 &1533056772
 MonoBehaviour:
@@ -30817,7 +30659,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0.078431375, b: 0.2509804, a: 1}
+  m_Color: {r: 0.08235294, g: 1, b: 0.21176471, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -30895,11 +30737,9 @@ MonoBehaviour:
   tileImage: {fileID: 1535991452}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 19
+  tileY: 7
+  tileType: 2
   transitionDestination: 
 --- !u!114 &1535991452
 MonoBehaviour:
@@ -30914,7 +30754,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0.078431375, b: 0.2509804, a: 1}
+  m_Color: {r: 0.08235294, g: 1, b: 0.21176471, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -30992,11 +30832,9 @@ MonoBehaviour:
   tileImage: {fileID: 1546070568}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 25
+  tileY: 8
+  tileType: 5
   transitionDestination: 
 --- !u!114 &1546070568
 MonoBehaviour:
@@ -31089,11 +30927,9 @@ MonoBehaviour:
   tileImage: {fileID: 1549835558}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 24
+  tileY: 14
+  tileType: 5
   transitionDestination: 
 --- !u!114 &1549835558
 MonoBehaviour:
@@ -31186,11 +31022,9 @@ MonoBehaviour:
   tileImage: {fileID: 1554199607}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 21
+  tileY: 18
+  tileType: 5
   transitionDestination: 
 --- !u!114 &1554199607
 MonoBehaviour:
@@ -31283,11 +31117,9 @@ MonoBehaviour:
   tileImage: {fileID: 1577747974}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 10
+  tileY: 18
+  tileType: 5
   transitionDestination: 
 --- !u!114 &1577747974
 MonoBehaviour:
@@ -31380,11 +31212,9 @@ MonoBehaviour:
   tileImage: {fileID: 1588706451}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 14
+  tileY: 15
+  tileType: 5
   transitionDestination: 
 --- !u!114 &1588706451
 MonoBehaviour:
@@ -31477,11 +31307,9 @@ MonoBehaviour:
   tileImage: {fileID: 1596817134}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 14
+  tileY: 17
+  tileType: 5
   transitionDestination: 
 --- !u!114 &1596817134
 MonoBehaviour:
@@ -31574,11 +31402,9 @@ MonoBehaviour:
   tileImage: {fileID: 1599334725}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 11
+  tileY: 11
+  tileType: 2
   transitionDestination: 
 --- !u!114 &1599334725
 MonoBehaviour:
@@ -31593,7 +31419,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0.078431375, b: 0.2509804, a: 1}
+  m_Color: {r: 0.08235294, g: 1, b: 0.21176471, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -31671,11 +31497,9 @@ MonoBehaviour:
   tileImage: {fileID: 1602777173}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 16
+  tileY: 2
+  tileType: 5
   transitionDestination: 
 --- !u!114 &1602777173
 MonoBehaviour:
@@ -31768,11 +31592,9 @@ MonoBehaviour:
   tileImage: {fileID: 1603396838}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 8
+  tileY: 19
+  tileType: 2
   transitionDestination: 
 --- !u!114 &1603396838
 MonoBehaviour:
@@ -31787,7 +31609,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0.078431375, b: 0.2509804, a: 1}
+  m_Color: {r: 0.08235294, g: 1, b: 0.21176471, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -31865,11 +31687,9 @@ MonoBehaviour:
   tileImage: {fileID: 1609549047}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 13
+  tileY: 20
+  tileType: 2
   transitionDestination: 
 --- !u!114 &1609549047
 MonoBehaviour:
@@ -31884,7 +31704,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0.078431375, b: 0.2509804, a: 1}
+  m_Color: {r: 0.08235294, g: 1, b: 0.21176471, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -31962,11 +31782,9 @@ MonoBehaviour:
   tileImage: {fileID: 1610149395}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 6
+  tileY: 19
+  tileType: 2
   transitionDestination: 
 --- !u!114 &1610149395
 MonoBehaviour:
@@ -31981,7 +31799,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0.078431375, b: 0.2509804, a: 1}
+  m_Color: {r: 0.08235294, g: 1, b: 0.21176471, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -32059,11 +31877,9 @@ MonoBehaviour:
   tileImage: {fileID: 1615837490}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 20
+  tileY: 13
+  tileType: 5
   transitionDestination: 
 --- !u!114 &1615837490
 MonoBehaviour:
@@ -32156,11 +31972,9 @@ MonoBehaviour:
   tileImage: {fileID: 1616002586}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 6
+  tileY: 13
+  tileType: 2
   transitionDestination: 
 --- !u!114 &1616002586
 MonoBehaviour:
@@ -32175,7 +31989,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0.078431375, b: 0.2509804, a: 1}
+  m_Color: {r: 0.08235294, g: 1, b: 0.21176471, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -32253,11 +32067,9 @@ MonoBehaviour:
   tileImage: {fileID: 1631310702}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 18
+  tileY: 5
+  tileType: 5
   transitionDestination: 
 --- !u!114 &1631310702
 MonoBehaviour:
@@ -32350,11 +32162,9 @@ MonoBehaviour:
   tileImage: {fileID: 1633078765}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 19
+  tileY: 13
+  tileType: 5
   transitionDestination: 
 --- !u!114 &1633078765
 MonoBehaviour:
@@ -32447,11 +32257,9 @@ MonoBehaviour:
   tileImage: {fileID: 1636002435}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 4
+  tileY: 17
+  tileType: 2
   transitionDestination: 
 --- !u!114 &1636002435
 MonoBehaviour:
@@ -32466,7 +32274,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0.078431375, b: 0.2509804, a: 1}
+  m_Color: {r: 0.08235294, g: 1, b: 0.21176471, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -32544,11 +32352,9 @@ MonoBehaviour:
   tileImage: {fileID: 1637176870}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 10
+  tileY: 19
+  tileType: 5
   transitionDestination: 
 --- !u!114 &1637176870
 MonoBehaviour:
@@ -32641,11 +32447,9 @@ MonoBehaviour:
   tileImage: {fileID: 1638615936}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 17
+  tileY: 2
+  tileType: 5
   transitionDestination: 
 --- !u!114 &1638615936
 MonoBehaviour:
@@ -32738,11 +32542,9 @@ MonoBehaviour:
   tileImage: {fileID: 1647281960}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 14
+  tileY: 24
+  tileType: 5
   transitionDestination: 
 --- !u!114 &1647281960
 MonoBehaviour:
@@ -32835,11 +32637,9 @@ MonoBehaviour:
   tileImage: {fileID: 1655505776}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 6
+  tileY: 15
+  tileType: 2
   transitionDestination: 
 --- !u!114 &1655505776
 MonoBehaviour:
@@ -32854,7 +32654,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0.078431375, b: 0.2509804, a: 1}
+  m_Color: {r: 0.08235294, g: 1, b: 0.21176471, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -32932,11 +32732,9 @@ MonoBehaviour:
   tileImage: {fileID: 1657089918}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 15
+  tileY: 6
+  tileType: 2
   transitionDestination: 
 --- !u!114 &1657089918
 MonoBehaviour:
@@ -32951,7 +32749,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0.078431375, b: 0.2509804, a: 1}
+  m_Color: {r: 0.08235294, g: 1, b: 0.21176471, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -33128,11 +32926,9 @@ MonoBehaviour:
   tileImage: {fileID: 1660524622}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 6
+  tileY: 11
+  tileType: 5
   transitionDestination: 
 --- !u!114 &1660524622
 MonoBehaviour:
@@ -33355,11 +33151,9 @@ MonoBehaviour:
   tileImage: {fileID: 1668288917}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 15
+  tileY: 7
+  tileType: 2
   transitionDestination: 
 --- !u!114 &1668288917
 MonoBehaviour:
@@ -33374,7 +33168,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0.078431375, b: 0.2509804, a: 1}
+  m_Color: {r: 0.08235294, g: 1, b: 0.21176471, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -33452,11 +33246,9 @@ MonoBehaviour:
   tileImage: {fileID: 1673452361}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 10
+  tileY: 9
+  tileType: 2
   transitionDestination: 
 --- !u!114 &1673452361
 MonoBehaviour:
@@ -33471,7 +33263,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0.078431375, b: 0.2509804, a: 1}
+  m_Color: {r: 0.08235294, g: 1, b: 0.21176471, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -33648,11 +33440,9 @@ MonoBehaviour:
   tileImage: {fileID: 1716397697}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 16
+  tileY: 9
+  tileType: 5
   transitionDestination: 
 --- !u!114 &1716397697
 MonoBehaviour:
@@ -33745,11 +33535,9 @@ MonoBehaviour:
   tileImage: {fileID: 1720160436}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 16
+  tileY: 18
+  tileType: 5
   transitionDestination: 
 --- !u!114 &1720160436
 MonoBehaviour:
@@ -33842,11 +33630,9 @@ MonoBehaviour:
   tileImage: {fileID: 1726052351}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 18
+  tileY: 21
+  tileType: 5
   transitionDestination: 
 --- !u!114 &1726052351
 MonoBehaviour:
@@ -34038,11 +33824,9 @@ MonoBehaviour:
   tileImage: {fileID: 1729798911}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 15
+  tileY: 2
+  tileType: 5
   transitionDestination: 
 --- !u!114 &1729798911
 MonoBehaviour:
@@ -34135,11 +33919,9 @@ MonoBehaviour:
   tileImage: {fileID: 1732443132}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 1
+  tileY: 17
+  tileType: 5
   transitionDestination: 
 --- !u!114 &1732443132
 MonoBehaviour:
@@ -34232,11 +34014,9 @@ MonoBehaviour:
   tileImage: {fileID: 1737654119}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 15
+  tileY: 18
+  tileType: 5
   transitionDestination: 
 --- !u!114 &1737654119
 MonoBehaviour:
@@ -34621,11 +34401,9 @@ MonoBehaviour:
   tileImage: {fileID: 1754622906}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 14
+  tileY: 6
+  tileType: 2
   transitionDestination: 
 --- !u!114 &1754622906
 MonoBehaviour:
@@ -34640,7 +34418,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0.078431375, b: 0.2509804, a: 1}
+  m_Color: {r: 0.08235294, g: 1, b: 0.21176471, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -34718,11 +34496,9 @@ MonoBehaviour:
   tileImage: {fileID: 1760557366}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 17
+  tileY: 9
+  tileType: 5
   transitionDestination: 
 --- !u!114 &1760557366
 MonoBehaviour:
@@ -34815,11 +34591,9 @@ MonoBehaviour:
   tileImage: {fileID: 1771961764}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 10
+  tileY: 12
+  tileType: 2
   transitionDestination: 
 --- !u!114 &1771961764
 MonoBehaviour:
@@ -34834,7 +34608,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0.078431375, b: 0.2509804, a: 1}
+  m_Color: {r: 0.08235294, g: 1, b: 0.21176471, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -34912,11 +34686,9 @@ MonoBehaviour:
   tileImage: {fileID: 1781062566}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 9
+  tileY: 14
+  tileType: 2
   transitionDestination: 
 --- !u!114 &1781062566
 MonoBehaviour:
@@ -34931,7 +34703,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0.078431375, b: 0.2509804, a: 1}
+  m_Color: {r: 0.08235294, g: 1, b: 0.21176471, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -35009,11 +34781,9 @@ MonoBehaviour:
   tileImage: {fileID: 1785590384}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 16
+  tileY: 14
+  tileType: 5
   transitionDestination: 
 --- !u!114 &1785590384
 MonoBehaviour:
@@ -35205,11 +34975,9 @@ MonoBehaviour:
   tileImage: {fileID: 1808163853}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 23
+  tileY: 6
+  tileType: 5
   transitionDestination: 
 --- !u!114 &1808163853
 MonoBehaviour:
@@ -35302,11 +35070,9 @@ MonoBehaviour:
   tileImage: {fileID: 1811210068}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 12
+  tileY: 24
+  tileType: 2
   transitionDestination: 
 --- !u!114 &1811210068
 MonoBehaviour:
@@ -35321,7 +35087,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0.078431375, b: 0.2509804, a: 1}
+  m_Color: {r: 0.08235294, g: 1, b: 0.21176471, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -35399,11 +35165,9 @@ MonoBehaviour:
   tileImage: {fileID: 1813656552}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 23
+  tileY: 11
+  tileType: 5
   transitionDestination: 
 --- !u!114 &1813656552
 MonoBehaviour:
@@ -35526,11 +35290,9 @@ MonoBehaviour:
   tileImage: {fileID: 1816226763}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 18
+  tileY: 3
+  tileType: 5
   transitionDestination: 
 --- !u!114 &1816226763
 MonoBehaviour:
@@ -35623,11 +35385,9 @@ MonoBehaviour:
   tileImage: {fileID: 1816559919}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 20
+  tileY: 4
+  tileType: 5
   transitionDestination: 
 --- !u!114 &1816559919
 MonoBehaviour:
@@ -35720,11 +35480,9 @@ MonoBehaviour:
   tileImage: {fileID: 1818491400}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 15
+  tileY: 22
+  tileType: 2
   transitionDestination: 
 --- !u!114 &1818491400
 MonoBehaviour:
@@ -35739,7 +35497,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0.078431375, b: 0.2509804, a: 1}
+  m_Color: {r: 0.08235294, g: 1, b: 0.21176471, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -35817,11 +35575,9 @@ MonoBehaviour:
   tileImage: {fileID: 1827086219}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 5
+  tileY: 17
+  tileType: 2
   transitionDestination: 
 --- !u!114 &1827086219
 MonoBehaviour:
@@ -35836,7 +35592,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0.078431375, b: 0.2509804, a: 1}
+  m_Color: {r: 0.08235294, g: 1, b: 0.21176471, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -35914,11 +35670,9 @@ MonoBehaviour:
   tileImage: {fileID: 1830130274}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 9
+  tileY: 8
+  tileType: 5
   transitionDestination: 
 --- !u!114 &1830130274
 MonoBehaviour:
@@ -36108,11 +35862,9 @@ MonoBehaviour:
   tileImage: {fileID: 1833761413}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 10
+  tileY: 21
+  tileType: 2
   transitionDestination: 
 --- !u!114 &1833761413
 MonoBehaviour:
@@ -36127,7 +35879,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0.078431375, b: 0.2509804, a: 1}
+  m_Color: {r: 0.08235294, g: 1, b: 0.21176471, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -36205,11 +35957,9 @@ MonoBehaviour:
   tileImage: {fileID: 1835567770}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 17
+  tileY: 8
+  tileType: 2
   transitionDestination: 
 --- !u!114 &1835567770
 MonoBehaviour:
@@ -36224,7 +35974,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0.078431375, b: 0.2509804, a: 1}
+  m_Color: {r: 0.08235294, g: 1, b: 0.21176471, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -36400,11 +36150,9 @@ MonoBehaviour:
   tileImage: {fileID: 1857422286}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 4
+  tileY: 14
+  tileType: 2
   transitionDestination: 
 --- !u!114 &1857422286
 MonoBehaviour:
@@ -36419,7 +36167,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0.078431375, b: 0.2509804, a: 1}
+  m_Color: {r: 0.08235294, g: 1, b: 0.21176471, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -36497,11 +36245,9 @@ MonoBehaviour:
   tileImage: {fileID: 1871685186}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 19
+  tileY: 20
+  tileType: 5
   transitionDestination: 
 --- !u!114 &1871685186
 MonoBehaviour:
@@ -36594,11 +36340,9 @@ MonoBehaviour:
   tileImage: {fileID: 1871768201}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 13
+  tileY: 23
+  tileType: 2
   transitionDestination: 
 --- !u!114 &1871768201
 MonoBehaviour:
@@ -36613,7 +36357,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0.078431375, b: 0.2509804, a: 1}
+  m_Color: {r: 0.08235294, g: 1, b: 0.21176471, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -36691,11 +36435,9 @@ MonoBehaviour:
   tileImage: {fileID: 1882325110}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 16
+  tileY: 15
+  tileType: 5
   transitionDestination: 
 --- !u!114 &1882325110
 MonoBehaviour:
@@ -36819,11 +36561,9 @@ MonoBehaviour:
   tileImage: {fileID: 1901824115}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 17
+  tileY: 12
+  tileType: 5
   transitionDestination: 
 --- !u!114 &1901824115
 MonoBehaviour:
@@ -36916,11 +36656,9 @@ MonoBehaviour:
   tileImage: {fileID: 1902615473}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 15
+  tileY: 5
+  tileType: 5
   transitionDestination: 
 --- !u!114 &1902615473
 MonoBehaviour:
@@ -37013,11 +36751,9 @@ MonoBehaviour:
   tileImage: {fileID: 1903915297}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 20
+  tileY: 14
+  tileType: 5
   transitionDestination: 
 --- !u!114 &1903915297
 MonoBehaviour:
@@ -37110,11 +36846,9 @@ MonoBehaviour:
   tileImage: {fileID: 1907352368}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 26
+  tileY: 11
+  tileType: 5
   transitionDestination: 
 --- !u!114 &1907352368
 MonoBehaviour:
@@ -37207,11 +36941,9 @@ MonoBehaviour:
   tileImage: {fileID: 1913734183}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 8
+  tileY: 12
+  tileType: 2
   transitionDestination: 
 --- !u!114 &1913734183
 MonoBehaviour:
@@ -37226,7 +36958,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0.078431375, b: 0.2509804, a: 1}
+  m_Color: {r: 0.08235294, g: 1, b: 0.21176471, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -37335,11 +37067,9 @@ MonoBehaviour:
   tileImage: {fileID: 1918781809}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 18
+  tileY: 15
+  tileType: 5
   transitionDestination: 
 --- !u!114 &1918781809
 MonoBehaviour:
@@ -37432,11 +37162,9 @@ MonoBehaviour:
   tileImage: {fileID: 1924328094}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 6
+  tileY: 21
+  tileType: 2
   transitionDestination: 
 --- !u!114 &1924328094
 MonoBehaviour:
@@ -37451,7 +37179,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0.078431375, b: 0.2509804, a: 1}
+  m_Color: {r: 0.08235294, g: 1, b: 0.21176471, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -37529,11 +37257,9 @@ MonoBehaviour:
   tileImage: {fileID: 1924349980}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 9
+  tileY: 18
+  tileType: 2
   transitionDestination: 
 --- !u!114 &1924349980
 MonoBehaviour:
@@ -37548,7 +37274,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0.078431375, b: 0.2509804, a: 1}
+  m_Color: {r: 0.08235294, g: 1, b: 0.21176471, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -37723,11 +37449,9 @@ MonoBehaviour:
   tileImage: {fileID: 1935367992}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 22
+  tileY: 16
+  tileType: 5
   transitionDestination: 
 --- !u!114 &1935367992
 MonoBehaviour:
@@ -37820,11 +37544,9 @@ MonoBehaviour:
   tileImage: {fileID: 1936416434}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 18
+  tileY: 6
+  tileType: 2
   transitionDestination: 
 --- !u!114 &1936416434
 MonoBehaviour:
@@ -37839,7 +37561,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0.078431375, b: 0.2509804, a: 1}
+  m_Color: {r: 0.08235294, g: 1, b: 0.21176471, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -37917,11 +37639,9 @@ MonoBehaviour:
   tileImage: {fileID: 1942544619}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 12
+  tileY: 8
+  tileType: 2
   transitionDestination: 
 --- !u!114 &1942544619
 MonoBehaviour:
@@ -37936,7 +37656,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0.078431375, b: 0.2509804, a: 1}
+  m_Color: {r: 0.08235294, g: 1, b: 0.21176471, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -38014,11 +37734,9 @@ MonoBehaviour:
   tileImage: {fileID: 1948163739}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 16
+  tileY: 11
+  tileType: 5
   transitionDestination: 
 --- !u!114 &1948163739
 MonoBehaviour:
@@ -38111,11 +37829,9 @@ MonoBehaviour:
   tileImage: {fileID: 1949169169}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 15
+  tileY: 16
+  tileType: 5
   transitionDestination: 
 --- !u!114 &1949169169
 MonoBehaviour:
@@ -38269,11 +37985,9 @@ MonoBehaviour:
   tileImage: {fileID: 1958490082}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 9
+  tileY: 23
+  tileType: 2
   transitionDestination: 
 --- !u!114 &1958490082
 MonoBehaviour:
@@ -38288,7 +38002,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0.078431375, b: 0.2509804, a: 1}
+  m_Color: {r: 0.08235294, g: 1, b: 0.21176471, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -38366,11 +38080,9 @@ MonoBehaviour:
   tileImage: {fileID: 1961352392}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 6
+  tileY: 18
+  tileType: 2
   transitionDestination: 
 --- !u!114 &1961352392
 MonoBehaviour:
@@ -38385,7 +38097,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0.078431375, b: 0.2509804, a: 1}
+  m_Color: {r: 0.08235294, g: 1, b: 0.21176471, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -38463,11 +38175,9 @@ MonoBehaviour:
   tileImage: {fileID: 1965498180}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 10
+  tileY: 15
+  tileType: 5
   transitionDestination: 
 --- !u!114 &1965498180
 MonoBehaviour:
@@ -38560,11 +38270,9 @@ MonoBehaviour:
   tileImage: {fileID: 1965998113}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 11
+  tileY: 21
+  tileType: 2
   transitionDestination: 
 --- !u!114 &1965998113
 MonoBehaviour:
@@ -38579,7 +38287,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0.078431375, b: 0.2509804, a: 1}
+  m_Color: {r: 0.08235294, g: 1, b: 0.21176471, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -38657,11 +38365,9 @@ MonoBehaviour:
   tileImage: {fileID: 1968568625}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 11
+  tileY: 24
+  tileType: 2
   transitionDestination: 
 --- !u!114 &1968568625
 MonoBehaviour:
@@ -38676,7 +38382,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0.078431375, b: 0.2509804, a: 1}
+  m_Color: {r: 0.08235294, g: 1, b: 0.21176471, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -38754,11 +38460,9 @@ MonoBehaviour:
   tileImage: {fileID: 1968834094}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 21
+  tileY: 7
+  tileType: 5
   transitionDestination: 
 --- !u!114 &1968834094
 MonoBehaviour:
@@ -38950,11 +38654,9 @@ MonoBehaviour:
   tileImage: {fileID: 1973339336}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 5
+  tileY: 16
+  tileType: 2
   transitionDestination: 
 --- !u!114 &1973339336
 MonoBehaviour:
@@ -38969,7 +38671,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0.078431375, b: 0.2509804, a: 1}
+  m_Color: {r: 0.08235294, g: 1, b: 0.21176471, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -39047,11 +38749,9 @@ MonoBehaviour:
   tileImage: {fileID: 1977062066}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 11
+  tileY: 13
+  tileType: 5
   transitionDestination: 
 --- !u!114 &1977062066
 MonoBehaviour:
@@ -39144,11 +38844,9 @@ MonoBehaviour:
   tileImage: {fileID: 1977306048}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 27
+  tileY: 10
+  tileType: 5
   transitionDestination: 
 --- !u!114 &1977306048
 MonoBehaviour:
@@ -39241,11 +38939,9 @@ MonoBehaviour:
   tileImage: {fileID: 1984276022}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 12
+  tileY: 23
+  tileType: 2
   transitionDestination: 
 --- !u!114 &1984276022
 MonoBehaviour:
@@ -39260,7 +38956,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0.078431375, b: 0.2509804, a: 1}
+  m_Color: {r: 0.08235294, g: 1, b: 0.21176471, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -39338,11 +39034,9 @@ MonoBehaviour:
   tileImage: {fileID: 1988134892}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 9
+  tileY: 20
+  tileType: 2
   transitionDestination: 
 --- !u!114 &1988134892
 MonoBehaviour:
@@ -39357,7 +39051,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0.078431375, b: 0.2509804, a: 1}
+  m_Color: {r: 0.08235294, g: 1, b: 0.21176471, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -39435,11 +39129,9 @@ MonoBehaviour:
   tileImage: {fileID: 1989518090}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 13
+  tileY: 13
+  tileType: 5
   transitionDestination: 
 --- !u!114 &1989518090
 MonoBehaviour:
@@ -39532,11 +39224,9 @@ MonoBehaviour:
   tileImage: {fileID: 1992924965}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 19
+  tileY: 17
+  tileType: 5
   transitionDestination: 
 --- !u!114 &1992924965
 MonoBehaviour:
@@ -39629,11 +39319,9 @@ MonoBehaviour:
   tileImage: {fileID: 1992938736}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 17
+  tileY: 15
+  tileType: 5
   transitionDestination: 
 --- !u!114 &1992938736
 MonoBehaviour:
@@ -39726,11 +39414,9 @@ MonoBehaviour:
   tileImage: {fileID: 1994012361}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 22
+  tileY: 11
+  tileType: 5
   transitionDestination: 
 --- !u!114 &1994012361
 MonoBehaviour:
@@ -39823,11 +39509,9 @@ MonoBehaviour:
   tileImage: {fileID: 2003689246}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 9
+  tileY: 21
+  tileType: 2
   transitionDestination: 
 --- !u!114 &2003689246
 MonoBehaviour:
@@ -39842,7 +39526,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0.078431375, b: 0.2509804, a: 1}
+  m_Color: {r: 0.08235294, g: 1, b: 0.21176471, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -39920,11 +39604,9 @@ MonoBehaviour:
   tileImage: {fileID: 2003804693}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 13
+  tileY: 5
+  tileType: 5
   transitionDestination: 
 --- !u!114 &2003804693
 MonoBehaviour:
@@ -40017,11 +39699,9 @@ MonoBehaviour:
   tileImage: {fileID: 2012049065}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 6
+  tileY: 14
+  tileType: 2
   transitionDestination: 
 --- !u!114 &2012049065
 MonoBehaviour:
@@ -40036,7 +39716,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0.078431375, b: 0.2509804, a: 1}
+  m_Color: {r: 0.08235294, g: 1, b: 0.21176471, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -40114,11 +39794,9 @@ MonoBehaviour:
   tileImage: {fileID: 2019127403}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 18
+  tileY: 2
+  tileType: 5
   transitionDestination: 
 --- !u!114 &2019127403
 MonoBehaviour:
@@ -40211,11 +39889,9 @@ MonoBehaviour:
   tileImage: {fileID: 2022054723}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 12
+  tileY: 18
+  tileType: 5
   transitionDestination: 
 --- !u!114 &2022054723
 MonoBehaviour:
@@ -40308,11 +39984,9 @@ MonoBehaviour:
   tileImage: {fileID: 2033519642}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 23
+  tileY: 9
+  tileType: 5
   transitionDestination: 
 --- !u!114 &2033519642
 MonoBehaviour:
@@ -40405,11 +40079,9 @@ MonoBehaviour:
   tileImage: {fileID: 2035082824}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 4
+  tileY: 13
+  tileType: 5
   transitionDestination: 
 --- !u!114 &2035082824
 MonoBehaviour:
@@ -40502,11 +40174,9 @@ MonoBehaviour:
   tileImage: {fileID: 2039861469}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 19
+  tileY: 6
+  tileType: 2
   transitionDestination: 
 --- !u!114 &2039861469
 MonoBehaviour:
@@ -40521,7 +40191,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0.078431375, b: 0.2509804, a: 1}
+  m_Color: {r: 0.08235294, g: 1, b: 0.21176471, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -40660,11 +40330,9 @@ MonoBehaviour:
   tileImage: {fileID: 2042789909}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 15
+  tileY: 9
+  tileType: 2
   transitionDestination: 
 --- !u!114 &2042789909
 MonoBehaviour:
@@ -40679,7 +40347,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0.078431375, b: 0.2509804, a: 1}
+  m_Color: {r: 0.08235294, g: 1, b: 0.21176471, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -40757,11 +40425,9 @@ MonoBehaviour:
   tileImage: {fileID: 2043125883}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 8
+  tileY: 9
+  tileType: 5
   transitionDestination: 
 --- !u!114 &2043125883
 MonoBehaviour:
@@ -40854,11 +40520,9 @@ MonoBehaviour:
   tileImage: {fileID: 2054529531}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 10
+  tileY: 22
+  tileType: 2
   transitionDestination: 
 --- !u!114 &2054529531
 MonoBehaviour:
@@ -40873,7 +40537,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0.078431375, b: 0.2509804, a: 1}
+  m_Color: {r: 0.08235294, g: 1, b: 0.21176471, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -40951,11 +40615,9 @@ MonoBehaviour:
   tileImage: {fileID: 2062749588}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 10
+  tileY: 14
+  tileType: 5
   transitionDestination: 
 --- !u!114 &2062749588
 MonoBehaviour:
@@ -41048,11 +40710,9 @@ MonoBehaviour:
   tileImage: {fileID: 2064577446}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 11
+  tileY: 14
+  tileType: 5
   transitionDestination: 
 --- !u!114 &2064577446
 MonoBehaviour:
@@ -41145,11 +40805,9 @@ MonoBehaviour:
   tileImage: {fileID: 2080544237}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 23
+  tileY: 7
+  tileType: 5
   transitionDestination: 
 --- !u!114 &2080544237
 MonoBehaviour:
@@ -41242,11 +40900,9 @@ MonoBehaviour:
   tileImage: {fileID: 2090372002}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 5
+  tileY: 12
+  tileType: 5
   transitionDestination: 
 --- !u!114 &2090372002
 MonoBehaviour:
@@ -41339,11 +40995,9 @@ MonoBehaviour:
   tileImage: {fileID: 2092182220}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 15
+  tileY: 12
+  tileType: 2
   transitionDestination: 
 --- !u!114 &2092182220
 MonoBehaviour:
@@ -41358,7 +41012,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0.078431375, b: 0.2509804, a: 1}
+  m_Color: {r: 0.08235294, g: 1, b: 0.21176471, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -41436,11 +41090,9 @@ MonoBehaviour:
   tileImage: {fileID: 2094626040}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 14
+  tileY: 8
+  tileType: 2
   transitionDestination: 
 --- !u!114 &2094626040
 MonoBehaviour:
@@ -41455,7 +41107,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0.078431375, b: 0.2509804, a: 1}
+  m_Color: {r: 0.08235294, g: 1, b: 0.21176471, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -41533,11 +41185,9 @@ MonoBehaviour:
   tileImage: {fileID: 2097586513}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 6
+  tileY: 16
+  tileType: 2
   transitionDestination: 
 --- !u!114 &2097586513
 MonoBehaviour:
@@ -41552,7 +41202,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0.078431375, b: 0.2509804, a: 1}
+  m_Color: {r: 0.08235294, g: 1, b: 0.21176471, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -41630,11 +41280,9 @@ MonoBehaviour:
   tileImage: {fileID: 2100144830}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 7
+  tileY: 11
+  tileType: 0
   transitionDestination: 
 --- !u!114 &2100144830
 MonoBehaviour:
@@ -41649,7 +41297,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0.078431375, b: 0.2509804, a: 1}
+  m_Color: {r: 0.08235294, g: 0.23921569, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -41727,11 +41375,9 @@ MonoBehaviour:
   tileImage: {fileID: 2100274816}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 3
+  tileY: 15
+  tileType: 5
   transitionDestination: 
 --- !u!114 &2100274816
 MonoBehaviour:
@@ -41824,11 +41470,9 @@ MonoBehaviour:
   tileImage: {fileID: 2100679923}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 13
+  tileY: 11
+  tileType: 2
   transitionDestination: 
 --- !u!114 &2100679923
 MonoBehaviour:
@@ -41843,7 +41487,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0.078431375, b: 0.2509804, a: 1}
+  m_Color: {r: 0.08235294, g: 1, b: 0.21176471, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -41921,11 +41565,9 @@ MonoBehaviour:
   tileImage: {fileID: 2101493899}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 20
+  tileY: 3
+  tileType: 5
   transitionDestination: 
 --- !u!114 &2101493899
 MonoBehaviour:
@@ -42018,11 +41660,9 @@ MonoBehaviour:
   tileImage: {fileID: 2104059197}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 15
+  tileY: 10
+  tileType: 2
   transitionDestination: 
 --- !u!114 &2104059197
 MonoBehaviour:
@@ -42037,7 +41677,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0.078431375, b: 0.2509804, a: 1}
+  m_Color: {r: 0.08235294, g: 1, b: 0.21176471, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -42115,11 +41755,9 @@ MonoBehaviour:
   tileImage: {fileID: 2105917582}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 16
+  tileY: 5
+  tileType: 5
   transitionDestination: 
 --- !u!114 &2105917582
 MonoBehaviour:
@@ -42212,11 +41850,9 @@ MonoBehaviour:
   tileImage: {fileID: 2121136279}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 14
+  tileY: 18
+  tileType: 5
   transitionDestination: 
 --- !u!114 &2121136279
 MonoBehaviour:
@@ -42309,11 +41945,9 @@ MonoBehaviour:
   tileImage: {fileID: 2124733697}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 24
+  tileY: 8
+  tileType: 5
   transitionDestination: 
 --- !u!114 &2124733697
 MonoBehaviour:
@@ -42437,11 +42071,9 @@ MonoBehaviour:
   tileImage: {fileID: 2129510975}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 23
+  tileY: 13
+  tileType: 5
   transitionDestination: 
 --- !u!114 &2129510975
 MonoBehaviour:
@@ -42534,11 +42166,9 @@ MonoBehaviour:
   tileImage: {fileID: 2137813807}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 18
+  tileY: 11
+  tileType: 5
   transitionDestination: 
 --- !u!114 &2137813807
 MonoBehaviour:
@@ -42631,11 +42261,9 @@ MonoBehaviour:
   tileImage: {fileID: 2138877832}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 16
+  tileY: 3
+  tileType: 5
   transitionDestination: 
 --- !u!114 &2138877832
 MonoBehaviour:
@@ -42763,11 +42391,9 @@ MonoBehaviour:
   tileImage: {fileID: 2145277330}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 18
+  tileY: 10
+  tileType: 5
   transitionDestination: 
 --- !u!114 &2145277330
 MonoBehaviour:
@@ -42860,11 +42486,9 @@ MonoBehaviour:
   tileImage: {fileID: 2145512358}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 18
+  tileY: 9
+  tileType: 5
   transitionDestination: 
 --- !u!114 &2145512358
 MonoBehaviour:
@@ -42957,11 +42581,9 @@ MonoBehaviour:
   tileImage: {fileID: 2146029337}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 17
+  tileY: 11
+  tileType: 5
   transitionDestination: 
 --- !u!114 &2146029337
 MonoBehaviour:
@@ -43054,11 +42676,9 @@ MonoBehaviour:
   tileImage: {fileID: 2147338129}
   itemName: 
   npcName: 
-  tileX: 0
-  tileY: 0
-  isWalkable: 0
-  isPlayerSpawn: 0
-  isTransition: 0
+  tileX: 11
+  tileY: 12
+  tileType: 2
   transitionDestination: 
 --- !u!114 &2147338129
 MonoBehaviour:
@@ -43073,7 +42693,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0.078431375, b: 0.2509804, a: 1}
+  m_Color: {r: 0.08235294, g: 1, b: 0.21176471, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1

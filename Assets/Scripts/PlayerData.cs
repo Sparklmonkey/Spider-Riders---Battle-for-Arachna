@@ -14,7 +14,7 @@ public class PlayerData : ScriptableObject
     public List<string> itemInventory;
     public Stats stats;
     public CharacterPreset armourIndexes;
-
+    public int missionIndex;
 }
 
 [Serializable]

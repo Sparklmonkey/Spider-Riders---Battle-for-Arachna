@@ -16,10 +16,15 @@ public class TestPlayer<T> : ScriptableObject where T : ScriptableObject
         return _instance;
     }
 
-    
+    public static int GetPlayerMission() { return GetInstance().missionIndex; }
+    public static void FinishMission() { GetInstance().missionIndex++; }
     public static void AddItemToInventory(string itemToAdd)
     {
         GetInstance().itemInventory.Add(itemToAdd);
+    }
+    public static void RemoveItemFromInventory(string itemToAdd)
+    {
+        GetInstance().itemInventory.Remove(itemToAdd);
     }
 
     public static CharacterPreset GetCharacterPreset()
