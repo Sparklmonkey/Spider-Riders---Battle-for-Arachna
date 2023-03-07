@@ -20,7 +20,7 @@ public class MouseController : MonoBehaviour
         if (_characterObject == null)
         {
             MapManager.Instance.SetupFirstScene();
-            var playerStartTile = MapManager.Instance.GetPlayerStartTile();
+            var playerStartTile = MapManager.Instance.GetPlayerStartTile(0);
             _characterObject = Instantiate(CharacterPrefab).GetComponent<CharacterMapInfo>();
             _characterObject.CurrentTile = playerStartTile;
             _characterObject.transform.position = playerStartTile.transform.position;
@@ -64,25 +64,13 @@ public class MouseController : MonoBehaviour
             switch (_currentPath[0].gameObject.name)
             {
                 case "Transition_1":
-                    MapManager.Instance.SetupMap(0);
-                    MapSceneManager.Instance.SetupMapScene(1);
-                    var playerStartTile = MapManager.Instance.GetPlayerStartTile();
-                    _characterObject.CurrentTile = playerStartTile;
-                    _characterObject.transform.position = playerStartTile.transform.position;
-                    _currentPath.Clear();
-                    return;
                 case "Transition_2":
-                    MapManager.Instance.SetupMap(1);
-                    MapSceneManager.Instance.SetupMapScene(2);
-                    playerStartTile = MapManager.Instance.GetPlayerStartTile();
-                    _characterObject.CurrentTile = playerStartTile;
-                    _characterObject.transform.position = playerStartTile.transform.position;
-                    _currentPath.Clear();
-                    return;
                 case "Transition_3":
-                    MapManager.Instance.SetupMap(2);
-                    MapSceneManager.Instance.SetupMapScene(3);
-                    playerStartTile = MapManager.Instance.GetPlayerStartTile();
+                case "Transition_4":
+                    int nextScene = int.Parse(_currentPath[0].gameObject.name.Split("_")[1]);
+                    MapManager.Instance.SetupMap(nextScene - 1);
+                    MapSceneManager.Instance.SetupMapScene(nextScene);
+                    var playerStartTile = MapManager.Instance.GetPlayerStartTile(nextScene);
                     _characterObject.CurrentTile = playerStartTile;
                     _characterObject.transform.position = playerStartTile.transform.position;
                     _currentPath.Clear();
@@ -91,39 +79,86 @@ public class MouseController : MonoBehaviour
                     TestPlayer<PlayerData>.FinishMission();
                     MapManager.Instance.SetupNextMission();
                     MapSceneManager.Instance.SetupMapScene(1);
-                    playerStartTile = MapManager.Instance.GetPlayerStartTile();
+                    playerStartTile = MapManager.Instance.GetPlayerStartTile(0);
                     _characterObject.CurrentTile = playerStartTile;
                     _characterObject.transform.position = playerStartTile.transform.position;
                     _currentPath.Clear();
                     return;
-                case "Animate_Climb_Up":
+                case "Action_Rope_Unused_Right":
+                    if (_currentPath[0].PlaceRope())
+                    {
+                        _currentPath[0].PlaceRope();
+                        MapManager.Instance.ChangeTileRopeUsed(new Vector2Int(_characterObject.CurrentTile.tileLocation.x, _characterObject.CurrentTile.tileLocation.y), new Vector2Int(_characterObject.CurrentTile.tileLocation.x + 4, _characterObject.CurrentTile.tileLocation.y + 3), true);
+                        _characterObject.CurrentTile = MapManager.Instance.Map[new Vector2Int(_characterObject.CurrentTile.tileLocation.x + 4, _characterObject.CurrentTile.tileLocation.y + 3)];
+                        _characterObject.transform.position = _characterObject.CurrentTile.transform.position;
+                        _currentPath.Clear();
+                    }
+                    return;
+                case "Action_Rope_Unused_Left":
+                    if (_currentPath[0].PlaceRope())
+                    {
+                        MapManager.Instance.ChangeTileRopeUsed(new Vector2Int(_characterObject.CurrentTile.tileLocation.x, _characterObject.CurrentTile.tileLocation.y), new Vector2Int(_characterObject.CurrentTile.tileLocation.x - 4, _characterObject.CurrentTile.tileLocation.y - 4), false);
+                        _characterObject.CurrentTile = MapManager.Instance.Map[new Vector2Int(_characterObject.CurrentTile.tileLocation.x - 4, _characterObject.CurrentTile.tileLocation.y - 4)];
+                        _characterObject.transform.position = _characterObject.CurrentTile.transform.position;
+                        _currentPath.Clear();
+                    }
+                    return;
+                case "Action_Board_Unused":
+                    if (_currentPath[0].PlaceBoard())
+                    {
+                    }
+                        return;
+                case "Animate_Climb_Up_Left":
+                    _characterObject.CurrentTile = MapManager.Instance.Map[new Vector2Int(_characterObject.CurrentTile.tileLocation.x - 4, _characterObject.CurrentTile.tileLocation.y - 4)];
+                    _characterObject.transform.position = _characterObject.CurrentTile.transform.position;
+                    _currentPath.Clear();
+                    return;
+                case "Animate_Climb_Down_Left":
+                    _characterObject.CurrentTile = MapManager.Instance.Map[new Vector2Int(_characterObject.CurrentTile.tileLocation.x + 4, _characterObject.CurrentTile.tileLocation.y + 4)];
+                    _characterObject.transform.position = _characterObject.CurrentTile.transform.position;
+                    _currentPath.Clear();
+                    return;
+                case "Animate_Climb_Up_Right":
                     _characterObject.CurrentTile = MapManager.Instance.Map[new Vector2Int(_characterObject.CurrentTile.tileLocation.x + 4, _characterObject.CurrentTile.tileLocation.y + 3)];
                     _characterObject.transform.position = _characterObject.CurrentTile.transform.position;
                     _currentPath.Clear();
                     return;
-                case "Animate_Climb_Down":
+                case "Animate_Climb_Down_Right":
                     _characterObject.CurrentTile = MapManager.Instance.Map[new Vector2Int(_characterObject.CurrentTile.tileLocation.x - 4, _characterObject.CurrentTile.tileLocation.y - 3)];
                     _characterObject.transform.position = _characterObject.CurrentTile.transform.position;
                     _currentPath.Clear();
                     return;
-                case "Rope_Action_Unused":
-                    _currentPath[0].PlaceRope();
-                    _characterObject.CurrentTile = MapManager.Instance.Map[new Vector2Int(_characterObject.CurrentTile.tileLocation.x + 4, _characterObject.CurrentTile.tileLocation.y + 3)];
-                    _characterObject.transform.position = _characterObject.CurrentTile.transform.position;
+                case "Door_Closed":
+                    if (_currentPath[0].OpenDoor())
+                    {
+                        MapManager.Instance.ChangeTileToOpenDoor(new Vector2Int(_characterObject.CurrentTile.tileLocation.x, _characterObject.CurrentTile.tileLocation.y));
+                        MapManager.Instance.ChangeTileToWalkable(new Vector2Int(_characterObject.CurrentTile.tileLocation.x, _characterObject.CurrentTile.tileLocation.y + 1));
+                        _currentPath.Clear();
+                    }
+                    return;
+
+                case "Statue":
+                    if (_currentPath[0].GiveManacle())
+                    {
+                        MapManager.Instance.OpenPortal();
+                        MapManager.Instance.ChangeTileToWalkable(new Vector2Int(_characterObject.CurrentTile.tileLocation.x, _characterObject.CurrentTile.tileLocation.y + 1));
+                        _currentPath.Clear();
+                    }
+                        return;
+                case "Rope":
+                case "Key":
+                case "Board_Overworld":
+                case "CardItem":
+                case "Manacle":
+                    _currentPath[0].PickUpItem();
                     _currentPath.Clear();
+                    MapManager.Instance.ChangeTileToWalkable(new Vector2Int(_characterObject.CurrentTile.tileLocation.x, _characterObject.CurrentTile.tileLocation.y));
                     return;
                 default:
                     break;
             }
-
-            if (_currentPath[0].PickUpItem())
-            {
-                _currentPath.Clear();
-            }
-            else
-            {
-                _currentPath.RemoveAt(0);
-            }
+            
+            _currentPath.RemoveAt(0);
         }
     }
 

@@ -21,43 +21,75 @@ public class OverlayTile : MonoBehaviour
     {
         switch (gameObject.name)
         {
-            case "Rope":
-                _itemObject = Instantiate(Resources.Load<GameObject>($"Prefabs/Items/Rope"), transform);
-                _itemObject.transform.position = transform.position;
+
+            case "Door_Open":
+                MapSceneManager.Instance.ChangeDoorToOpen();
                 break;
-            case "CardItem":
-                _itemObject = Instantiate(Resources.Load<GameObject>($"Prefabs/Items/CardItem"), transform);
-                _itemObject.transform.position = transform.position;
-                break;
-            case "Monacle":
-                _itemObject = Instantiate(Resources.Load<GameObject>($"Prefabs/Items/Monacle"), transform);
-                _itemObject.transform.position = transform.position;
-                break;
-            case "Rope_Action_Unused":
+            case "Door_Closed":
+                MapSceneManager.Instance.AddClosedDoorImage();
                 _itemObject = Instantiate(Resources.Load<GameObject>($"Prefabs/Items/Action_Anim"), transform);
                 _itemObject.transform.position = transform.position;
+                break;
+            case "Rope":
+            case "CardItem":
+            case "Manacle":
+            case "Statue":
+            case "Key":
+            case "Board_Overworld":
+                _itemObject = Instantiate(Resources.Load<GameObject>($"Prefabs/Items/{gameObject.name}"), transform);
+                _itemObject.transform.position = transform.position;
+                break;
+            case "Action_Rope_Unused_Right":
+            case "Action_Rope_Unused_Left":
+            case "Action_Board_Unused":
+                _itemObject = Instantiate(Resources.Load<GameObject>($"Prefabs/Items/Action_Anim"), transform);
+                _itemObject.transform.position = transform.position;
+                break;
+            case "Animate_Climb_Up_Right":
+            case "Animate_Climb_Up_Left":
+                MapSceneManager.Instance.AddRopeUsedImage();
                 break;
             default:
                 break;
         }
     }
 
-    public void PlaceRope()
+    public bool GiveManacle()
     {
-        if (!TestPlayer<PlayerData>.PlayerHasItem("Rope")) { return; }
-        gameObject.name = "Animate_Climb_Up";
-        MapManager.Instance.Map[new Vector2Int(tileLocation.x + 4, tileLocation.y + 3)].gameObject.name = "Animate_Climb_Down";
+        if (!TestPlayer<PlayerData>.PlayerHasItem("Manacle")) { return false; }
+        TestPlayer<PlayerData>.RemoveItemFromInventory(gameObject.name);
+        MapSceneManager.Instance.OpenManaclePortal();
+        Destroy(_itemObject);
+        return true;
+    }
+    public bool PlaceRope()
+    {
+        if (!TestPlayer<PlayerData>.PlayerHasItem("Rope")) { return false; }
         TestPlayer<PlayerData>.RemoveItemFromInventory(gameObject.name);
         MapSceneManager.Instance.AddRopeUsedImage();
         Destroy(_itemObject);
+        return true;
     }
-    public bool PickUpItem()
+    public bool PlaceBoard()
     {
-        if (!MapManager.Instance.ItemList.Contains(gameObject.name)) { return false; }
+        if (!TestPlayer<PlayerData>.PlayerHasItem("Board_Overworld")) { return false; }
+        TestPlayer<PlayerData>.RemoveItemFromInventory(gameObject.name);
+        MapSceneManager.Instance.AddBoardUsedImage();
+        Destroy(_itemObject);
+        return true;
+    }
+    public bool OpenDoor()
+    {
+        if (!TestPlayer<PlayerData>.PlayerHasItem("Key")) { return false; }
+        TestPlayer<PlayerData>.RemoveItemFromInventory(gameObject.name);
+        MapSceneManager.Instance.ChangeDoorToOpen();
+        Destroy(_itemObject);
+        return true;
+    }
+    public void PickUpItem()
+    {
         TestPlayer<PlayerData>.AddItemToInventory(gameObject.name);
         Destroy(_itemObject);
-        gameObject.name = "WalkableTile";
-        return true;
     }
 
     public bool StartBattle()

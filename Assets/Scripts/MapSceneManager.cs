@@ -26,9 +26,38 @@ public class MapSceneManager : MonoBehaviour
         }
     }
 
+    public void AddClosedDoorImage()
+    {
+        GameObject backgroundPrefab = Resources.Load<GameObject>($"Prefabs/ActionDetails/Mission_{_missionIndex}/Door_Closed");
+        GameObject backgroundObject = Instantiate(backgroundPrefab, transform);
+        backgroundObject.transform.localPosition = new Vector3(0, 0, -1);
+    }
     public void AddRopeUsedImage()
     {
         GameObject backgroundPrefab = Resources.Load<GameObject>($"Prefabs/ActionDetails/Mission_{_missionIndex}/RopeUsed");
+        GameObject backgroundObject = Instantiate(backgroundPrefab, transform);
+        backgroundObject.transform.localPosition = new Vector3(0, 0, -1);
+    }
+    public void AddBoardUsedImage()
+    {
+        GameObject backgroundPrefab = Resources.Load<GameObject>($"Prefabs/ActionDetails/Mission_{_missionIndex}/BoardUsed");
+        GameObject backgroundObject = Instantiate(backgroundPrefab, transform);
+        backgroundObject.transform.localPosition = new Vector3(0, 0, -1);
+    }
+    public void OpenManaclePortal()
+    {
+        GameObject backgroundPrefab = Resources.Load<GameObject>($"Prefabs/ActionDetails/Mission_{_missionIndex}/Portal_Open");
+        GameObject backgroundObject = Instantiate(backgroundPrefab, transform);
+        backgroundObject.transform.localPosition = new Vector3(0, 0, -1);
+    }
+    public void ChangeDoorToOpen()
+    {
+        Transform doorClosed = transform.Find("Door_Closed");
+        if(doorClosed != null)
+        {
+            Destroy(doorClosed.gameObject);
+        }
+        GameObject backgroundPrefab = Resources.Load<GameObject>($"Prefabs/ActionDetails/Mission_{_missionIndex}/Door_Open");
         GameObject backgroundObject = Instantiate(backgroundPrefab, transform);
         backgroundObject.transform.localPosition = new Vector3(0, 0, -1);
     }

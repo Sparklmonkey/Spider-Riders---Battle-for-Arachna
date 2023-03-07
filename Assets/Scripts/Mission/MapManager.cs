@@ -22,10 +22,35 @@ public class MapManager : MonoBehaviour
     private GameObject _gridObject;
     public GameObject OverlayTileContainer;
     private Tilemap _currentTileMap;
-    private int _sceneIndex;
-    public OverlayTile GetPlayerStartTile()
+    private int _sceneIndex, _previousSceneIndex;
+    public OverlayTile GetPlayerStartTile(int origin)
     {
-        return Map.First(x => x.Value.name == "PlayerSpawn").Value;
+        if(origin == 0)
+        {
+            return Map.First(x => x.Value.name == "PlayerSpawn").Value;
+        }
+        else
+        {
+            return Map.First(x => x.Value.name == $"Spawn_{_previousSceneIndex}").Value;
+        }
+    }
+
+    public void ChangeTileToWalkable(Vector2Int tile)
+    {
+        _currentTileMap.SetTile(new Vector3Int(tile.x, tile.y, 0), Resources.Load<TileBase>("TileTypes/Basic/WalkableTile"));
+        Map[tile].gameObject.name = "WalkableTile";
+    }
+    public void ChangeTileToOpenDoor(Vector2Int tile)
+    {
+        _currentTileMap.SetTile(new Vector3Int(tile.x, tile.y, 0), Resources.Load<TileBase>("TileTypes/Items/Door_Open"));
+        Map[tile].gameObject.name = "Door_Open";
+    }
+    public void ChangeTileRopeUsed(Vector2Int goUp, Vector2Int goDown, bool isRight)
+    {
+        _currentTileMap.SetTile(new Vector3Int(goUp.x, goUp.y, 0), Resources.Load<TileBase>($"TileTypes/Actions/Animate_Climb_Up_{(isRight ? "Right" : "Left")}"));
+        Map[goUp].gameObject.name = $"Animate_Climb_Up_{(isRight ? "Right" : "Left")}";
+        _currentTileMap.SetTile(new Vector3Int(goDown.x, goDown.y, 0), Resources.Load<TileBase>($"TileTypes/Actions/Animate_Climb_Down_{(isRight ? "Right" : "Left")}"));
+        Map[goDown].gameObject.name = $"Animate_Climb_Down_{(isRight ? "Right" : "Left")}";
     }
 
     public void SetupNextMission()
@@ -46,8 +71,6 @@ public class MapManager : MonoBehaviour
         else
         {
             _instance = this;
-            _gridObject = GetComponentInChildren<Grid>().gameObject;
-            _sceneList = new List<Tilemap>(_gridObject.GetComponentsInChildren<Tilemap>(true));
         }
     }
 
@@ -62,6 +85,8 @@ public class MapManager : MonoBehaviour
 
     public void SetupFirstScene()
     {
+        _gridObject = Instantiate(Resources.Load<GameObject>($"Prefabs/TileMaps/Mission_{TestPlayer<PlayerData>.GetPlayerMission()}/Grid"), transform);
+        _sceneList = new List<Tilemap>(_gridObject.GetComponentsInChildren<Tilemap>(true));
         _sceneIndex = 0;
         MapSceneManager.Instance.SetupMapScene(1);
         _currentTileMap = _sceneList[_sceneIndex];
@@ -96,6 +121,7 @@ public class MapManager : MonoBehaviour
     {
         ClearOverlayContainer();
         _currentTileMap.gameObject.SetActive(false);
+        _previousSceneIndex = _sceneIndex + 1;
         _sceneIndex = scene;
 
         _currentTileMap = _sceneList[_sceneIndex];
@@ -127,4 +153,16 @@ public class MapManager : MonoBehaviour
         }
     }
 
+
+
+    private readonly List<(int, int)> _missionThreePortal = new() { (0, 1), (1,-1), (1,-2), (0,1), (0,0), (0,-1), (0,-2), (0,-3), (-1,1), (-1,0), (-1,-1),
+                                                                    (-1,-2), (-1,-3), (-2,1), (-2,0), (-2,-1), (-2,-2), (-2,-3), (-3,0), (-3,-1), (-3,-2) };
+    public void OpenPortal()
+    {
+        foreach (var item in _missionThreePortal)
+        {
+            _currentTileMap.SetTile(new Vector3Int(item.Item1, item.Item2, 0), Resources.Load<TileBase>("TileTypes/Basic/MissionEnd"));
+            Map[new Vector2Int(item.Item1, item.Item2)].gameObject.name = "MissionEnd";
+        }
+    }
 }
