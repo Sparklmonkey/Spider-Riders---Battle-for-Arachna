@@ -9,12 +9,12 @@ public class DiceRollTest : MonoBehaviour
 
     public List<bool> completedDieRolls = new List<bool>();
     public List<DiceRollAnimation> diceRollAnimations = new List<DiceRollAnimation>();
-    bool canRollDice = true;
-    // Start is called before the first frame update
+    private bool _canRollDice = true;
+
     public void RollDice(int diceAmount)
     {
-        if (!canRollDice) return;
-        canRollDice = false;
+        if (!_canRollDice) return;
+        _canRollDice = false;
         completedDieRolls.Clear();
         for (int i = 0; i < diceRollAnimations.Count; i++)
             if (diceRollAnimations[i] != null)
@@ -45,6 +45,6 @@ public class DiceRollTest : MonoBehaviour
         {
             item.ClearIfWhite();
         }
-        canRollDice = true;
+        _canRollDice = true;
     }
 }

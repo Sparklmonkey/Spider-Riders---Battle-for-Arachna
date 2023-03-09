@@ -7,6 +7,7 @@ using UnityEngine;
 public class PlayerData : ScriptableObject
 {
     public string username;
+    public string selectedDeck;
     public List<Card> deckA;
     public List<Card> deckB;
     public List<Card> deckC;

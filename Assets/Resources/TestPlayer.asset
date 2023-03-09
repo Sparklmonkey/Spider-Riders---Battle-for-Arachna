@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: TestPlayer
   m_EditorClassIdentifier: 
   username: 
+  selectedDeck: A
   deckA:
   - {fileID: 11400000, guid: c3a3747481719364ca2db0f3a4226931, type: 2}
   - {fileID: 11400000, guid: c836ef7e5412c6f419511ca9cfb9a018, type: 2}
@@ -87,7 +88,19 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 925c7e1d4766312408231e0b63d0190e, type: 2}
   - {fileID: 11400000, guid: 23c6dd3a6c700ae4bb09babb895b6f09, type: 2}
   - {fileID: 11400000, guid: 992046b8709078342b863dc7d71bf1ef, type: 2}
-  itemInventory: []
+  itemInventory:
+  - Rope
+  - Rope
+  - Rope
+  - Rope
+  - Rope
+  - Rope
+  - Rope
+  - Rope
+  - Rope
+  - Rope
+  - Rope
+  - Rope
   stats:
     power: 3
     defense: 6

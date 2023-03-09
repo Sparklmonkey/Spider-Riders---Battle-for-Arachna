@@ -17,11 +17,11 @@ public class OverlayTile : MonoBehaviour
     {
         _overlaySprite = gameObject.GetComponent<SpriteRenderer>();
     }
-    public void RenderTileContent()
+    public void RenderTileContent(string tileName)
     {
-        switch (gameObject.name)
+        name = tileName;
+        switch (tileName)
         {
-
             case "Door_Open":
                 MapSceneManager.Instance.ChangeDoorToOpen();
                 break;
@@ -30,8 +30,12 @@ public class OverlayTile : MonoBehaviour
                 _itemObject = Instantiate(Resources.Load<GameObject>($"Prefabs/Items/Action_Anim"), transform);
                 _itemObject.transform.position = transform.position;
                 break;
+
+            case "Board_Used":
+                MapSceneManager.Instance.AddBoardUsedImage();
+                break;
             case "Rope":
-            case "CardItem":
+            case "Card_Item":
             case "Manacle":
             case "Statue":
             case "Key":
@@ -57,34 +61,28 @@ public class OverlayTile : MonoBehaviour
     public bool GiveManacle()
     {
         if (!TestPlayer<PlayerData>.PlayerHasItem("Manacle")) { return false; }
-        TestPlayer<PlayerData>.RemoveItemFromInventory(gameObject.name);
+        TestPlayer<PlayerData>.RemoveItemFromInventory("Manacle");
         MapSceneManager.Instance.OpenManaclePortal();
         Destroy(_itemObject);
         return true;
     }
-    public bool PlaceRope()
+    public void PlaceRope()
     {
-        if (!TestPlayer<PlayerData>.PlayerHasItem("Rope")) { return false; }
-        TestPlayer<PlayerData>.RemoveItemFromInventory(gameObject.name);
+        TestPlayer<PlayerData>.RemoveItemFromInventory("Rope");
         MapSceneManager.Instance.AddRopeUsedImage();
         Destroy(_itemObject);
-        return true;
     }
-    public bool PlaceBoard()
+    public void PlaceBoard()
     {
-        if (!TestPlayer<PlayerData>.PlayerHasItem("Board_Overworld")) { return false; }
-        TestPlayer<PlayerData>.RemoveItemFromInventory(gameObject.name);
+        TestPlayer<PlayerData>.RemoveItemFromInventory("Board_Overworld");
         MapSceneManager.Instance.AddBoardUsedImage();
         Destroy(_itemObject);
-        return true;
     }
-    public bool OpenDoor()
+    public void OpenDoor()
     {
-        if (!TestPlayer<PlayerData>.PlayerHasItem("Key")) { return false; }
-        TestPlayer<PlayerData>.RemoveItemFromInventory(gameObject.name);
+        TestPlayer<PlayerData>.RemoveItemFromInventory("Key");
         MapSceneManager.Instance.ChangeDoorToOpen();
         Destroy(_itemObject);
-        return true;
     }
     public void PickUpItem()
     {

@@ -45,6 +45,11 @@ public class MapManager : MonoBehaviour
         _currentTileMap.SetTile(new Vector3Int(tile.x, tile.y, 0), Resources.Load<TileBase>("TileTypes/Items/Door_Open"));
         Map[tile].gameObject.name = "Door_Open";
     }
+    public void ChangeTileToBoardUsed(Vector2Int tile)
+    {
+        _currentTileMap.SetTile(new Vector3Int(tile.x, tile.y, 0), Resources.Load<TileBase>("TileTypes/Items/Board_Used"));
+        Map[tile].gameObject.name = "Board_Used";
+    }
     public void ChangeTileRopeUsed(Vector2Int goUp, Vector2Int goDown, bool isRight)
     {
         _currentTileMap.SetTile(new Vector3Int(goUp.x, goUp.y, 0), Resources.Load<TileBase>($"TileTypes/Actions/Animate_Climb_Up_{(isRight ? "Right" : "Left")}"));
@@ -108,9 +113,8 @@ public class MapManager : MonoBehaviour
 
                     overlayTile.transform.position = new Vector3(cellWorldPosition.x, cellWorldPosition.y - 0.03f, 0);
                     overlayTile.GetComponent<SpriteRenderer>().sortingOrder = sortingOrder;
-                    overlayTile.name = _currentTileMap.GetTile(tilePosition).name;
                     overlayTile.tileLocation = tilePosition;
-                    overlayTile.RenderTileContent();
+                    overlayTile.RenderTileContent(_currentTileMap.GetTile(tilePosition).name);
                     Map.Add(tileKey, overlayTile);
                 }
             }
@@ -144,9 +148,8 @@ public class MapManager : MonoBehaviour
 
                     overlayTile.transform.position = new Vector3(cellWorldPosition.x, cellWorldPosition.y - 0.03f, 0);
                     overlayTile.GetComponent<SpriteRenderer>().sortingOrder = sortingOrder;
-                    overlayTile.name = _currentTileMap.GetTile(tilePosition).name;
                     overlayTile.tileLocation = tilePosition;
-                    overlayTile.RenderTileContent();
+                    overlayTile.RenderTileContent(_currentTileMap.GetTile(tilePosition).name);
                     Map.Add(tileKey, overlayTile);
                 }
             }

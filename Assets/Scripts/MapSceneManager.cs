@@ -28,19 +28,21 @@ public class MapSceneManager : MonoBehaviour
 
     public void AddClosedDoorImage()
     {
+        Debug.Log($"Prefabs/ActionDetails/Mission_{_missionIndex}/Door_Closed");
         GameObject backgroundPrefab = Resources.Load<GameObject>($"Prefabs/ActionDetails/Mission_{_missionIndex}/Door_Closed");
         GameObject backgroundObject = Instantiate(backgroundPrefab, transform);
+        Debug.Log(backgroundObject);
         backgroundObject.transform.localPosition = new Vector3(0, 0, -1);
     }
     public void AddRopeUsedImage()
     {
-        GameObject backgroundPrefab = Resources.Load<GameObject>($"Prefabs/ActionDetails/Mission_{_missionIndex}/RopeUsed");
+        GameObject backgroundPrefab = Resources.Load<GameObject>($"Prefabs/ActionDetails/Mission_{_missionIndex}/Rope_Used");
         GameObject backgroundObject = Instantiate(backgroundPrefab, transform);
         backgroundObject.transform.localPosition = new Vector3(0, 0, -1);
     }
     public void AddBoardUsedImage()
     {
-        GameObject backgroundPrefab = Resources.Load<GameObject>($"Prefabs/ActionDetails/Mission_{_missionIndex}/BoardUsed");
+        GameObject backgroundPrefab = Resources.Load<GameObject>($"Prefabs/ActionDetails/Mission_{_missionIndex}/Board_Used");
         GameObject backgroundObject = Instantiate(backgroundPrefab, transform);
         backgroundObject.transform.localPosition = new Vector3(0, 0, -1);
     }
@@ -77,7 +79,7 @@ public class MapSceneManager : MonoBehaviour
         if(detailPrefab != null)
         {
             GameObject mapDetails = Instantiate(detailPrefab, transform);
-            mapDetails.transform.localPosition = new Vector3(0, 0, 0);
+            mapDetails.transform.localPosition = new Vector3(0, 0, -1);
         }
 
     }

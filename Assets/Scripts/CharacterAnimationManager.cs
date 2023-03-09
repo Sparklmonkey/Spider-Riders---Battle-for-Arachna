@@ -4,26 +4,34 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 public class CharacterAnimationManager : MonoBehaviour
 {
-    private Animator animator;
-    private bool isIdle = true;
+    private Animator _animator;
+    private bool _isIdle = true;
     private void Awake()
     {
-        animator = GetComponent<Animator>();
-        if(SceneManager.GetActiveScene().name == "CharacterSheet")
-        {
-            StartCoroutine("IdleAnimationRoutine");
-        }
+        //if(SceneManager.GetActiveScene().name == "CharacterSheet")
+        //{
+        //    StartCoroutine("IdleAnimationRoutine");
+        //}
     }
 
+    public void TriggerRunAnim()
+    {
+        _animator.SetTrigger("Run");
+    }
+
+    public void StopRunAnim()
+    {
+        _animator.SetTrigger("Idle");
+    }
     private IEnumerator IdleAnimationRoutine()
     {
-        while (isIdle)
+        while (_isIdle)
         {
             yield return new WaitForSeconds(30f);
 
             if(Random.Range(0,2) == 0)
             {
-                animator.SetTrigger("Idle");
+                _animator.SetTrigger("Idle");
             }
         }
     }
