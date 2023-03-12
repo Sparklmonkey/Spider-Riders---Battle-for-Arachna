@@ -11,22 +11,34 @@ public class DiceBtnManager : MonoBehaviour
     }
     private void OnMouseDown()
     {
-        _animator.SetTrigger("Click");
+        if (BattleManagerNew.Instance.IsPlayerTurn)
+        {
+            _animator.SetTrigger("Click");
+        }
     }
 
     private void OnMouseUp()
     {
-        _animator.SetTrigger("Idle");
-        //Roll Dice
+        if (BattleManagerNew.Instance.IsPlayerTurn)
+        {
+            _animator.SetTrigger("Idle");
+            BattleManagerNew.Instance.RollDice();
+        }
     }
 
     private void OnMouseEnter()
     {
-        _animator.SetTrigger("Hover");
+        if (BattleManagerNew.Instance.IsPlayerTurn)
+        {
+            _animator.SetTrigger("Hover");
+        }
     }
 
     private void OnMouseExit()
     {
-        _animator.SetTrigger("Idle");
+        if (BattleManagerNew.Instance.IsPlayerTurn)
+        {
+            _animator.SetTrigger("Idle");
+        }
     }
 }

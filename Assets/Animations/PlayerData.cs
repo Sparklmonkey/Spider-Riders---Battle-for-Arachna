@@ -54,6 +54,15 @@ public class TestPlayer<T> : ScriptableObject where T : ScriptableObject
     {
         return GetInstance().stats.power;
     }
+    public static int GetHealth()
+    {
+        return GetInstance().stats.health;
+    }
+    public static int GetDefense()
+    {
+        return GetInstance().stats.defense;
+    }
+
 
     public static bool PlayerHasItem(string itemToCheck)
     {
