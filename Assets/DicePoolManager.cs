@@ -10,7 +10,7 @@ public class DicePoolManager : MonoBehaviour
         get { return _instance; }
     }
 
-
+    public bool IsAllStillAnimating { get { if (_diceManagers == null) { return false; } else { return _diceManagers.FindAll(x => x.IsAnimating).Count > 0; } } }
     private Transform _redDieDestination;
     private List<DiceManager> _redDiceManagers;
     private List<DiceManager> _diceManagers;
@@ -22,6 +22,18 @@ public class DicePoolManager : MonoBehaviour
 
     public int DiceCount;
 
+    public void ClearDice()
+    {
+        foreach (var dice in _diceManagers)
+        {
+            if(dice != null)
+            {
+                Destroy(dice.gameObject);
+            }
+        }
+        _diceManagers.Clear();
+        _diceManagers.Clear();
+    }
     private void Awake()
     {
         if (_instance != null && _instance != this)
@@ -39,8 +51,10 @@ public class DicePoolManager : MonoBehaviour
     private Vector2 _startPoint = new Vector2(-1.3f, 0.87f);
     private float _diff = 0.2f;
 
-    public void RollDiceForTurn(int atkValue, Transform redDieDestination)
+    public IEnumerator RollDiceForTurn(int atkValue, Transform redDieDestination)
     {
+        _diceManagers = new List<DiceManager>();
+        _redDiceManagers = new List<DiceManager>();
         _redDieDestination = redDieDestination;
         int rowCount = 0;
         int columnCount = 0;
@@ -64,14 +78,41 @@ public class DicePoolManager : MonoBehaviour
                 columnCount = 0;
                 rowCount++;
             }
+            yield return null;
         }
 
-        while(_diceManagers.FindAll(x => x.IsAnimating).Count > 0)
+        while(IsAllStillAnimating)
         {
-
+            yield return null;
         }
-        StartCoroutine(MoveRedDice());
+        StartCoroutine(RemoveWhiteDie());
     }
+
+    private IEnumerator RemoveWhiteDie()
+    {
+        var diceList = new List<DiceManager>();
+        float cumalativeLength = 0;
+        foreach (var dice in _diceManagers)
+        {
+            if (dice.DiceResult.Equals(DiceFace.White))
+            {
+                StartCoroutine(dice.PlayDissapearAnim());
+                cumalativeLength = dice.DissapearingAnimLength;
+            }
+            else
+            {
+                diceList.Add(dice);
+            }
+        }
+        yield return new WaitForSeconds(cumalativeLength);
+
+        _diceManagers = diceList;
+        if (_redDiceManagers.Count > 0)
+        {
+            StartCoroutine(MoveRedDice());
+        }
+    }
+
 
     private IEnumerator MoveRedDice()
     {
@@ -85,16 +126,6 @@ public class DicePoolManager : MonoBehaviour
             BattleManagerNew.Instance.AddRedDie();
             Destroy(dice.gameObject);
         }
-
-        foreach (var dice in _diceManagers)
-        {
-            if(dice.DiceResult == DiceFace.White)
-            {
-                Destroy(dice.gameObject);
-            }
-        }
-
-        
     }
 
 

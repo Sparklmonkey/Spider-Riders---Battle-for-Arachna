@@ -4,22 +4,14 @@ using UnityEngine;
 
 public class DiceManager : MonoBehaviour
 {
-    private Animator _animator;
     public DiceFace DiceResult;
-
-    private List<string> _diceAnimQueue;
-    public bool IsAnimating;
-
+    public bool IsAnimating = true;
+    public float DissapearingAnimLength { get { return _dissapearClip.length; } }
     private Vector3 _originalPosition;
     private bool _isDragging;
-    private void Awake()
-    {
-        _animator = GetComponent<Animator>();
-    }
-
     private void Update()
     {
-        if (IsAnimating) { return; }
+        if (IsAnimating || DiceResult.Equals(DiceFace.Red)) { return; }
         if (_isDragging)
         {
             var mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
@@ -45,29 +37,50 @@ public class DiceManager : MonoBehaviour
     {
         transform.localPosition = position;
         _originalPosition = transform.position;
-        _diceAnimQueue = new List<string> { "DiceRollStart", $"Result{result}" };
         DiceResult = result;
-        if (result == DiceFace.White)
-        {
-            _diceAnimQueue.Add("ResultWhite");
-            _diceAnimQueue.Add("DiceDisappearAnim");
-        }
-        StartCoroutine(PlayDiceAnimQueue());
+        _clipsToPlay = _baseClips;
+        _clipsToPlay.Add(_endResults[(int)result]);
+        PlayClips();
     }
 
+    public Animator animator;
+    [SerializeField]
+    private List<AnimationClip> _baseClips, _endResults;
+    [SerializeField]
+    private AnimationClip _dissapearClip;
+    private List<AnimationClip> _clipsToPlay;
 
-    private IEnumerator PlayDiceAnimQueue()
+    public void PlayClips()
+    {
+        float cumulativeLength = 0;
+        foreach (AnimationClip clip in _clipsToPlay)
+         {
+            StartCoroutine(PlayClip(clip.name, cumulativeLength));
+            cumulativeLength += clip.length;
+        }
+        StartCoroutine(SetAnimationBool(cumulativeLength));
+    }
+
+    private IEnumerator SetAnimationBool(float startTime)
+    {
+        yield return new WaitForSeconds(startTime);
+        IsAnimating = false;
+    }
+
+    public IEnumerator PlayDissapearAnim()
     {
         IsAnimating = true;
-        foreach (var animClip in _diceAnimQueue)
-        {
-            _animator.Play(animClip);
-            while (_animator.GetCurrentAnimatorStateInfo(0).IsName(animClip))
-            {
-                yield return null;
-            }
-        }
+        animator.Play("DiceDisappearAnim");
+        yield return new WaitForSeconds(_dissapearClip.length);
         IsAnimating = false;
+        Destroy(gameObject);
+    }
+
+    private IEnumerator PlayClip(string clipName, float startTime)
+    {
+        yield return new WaitForSeconds(startTime);
+        // Remeber to set you Animator Animation state name same as the Clip name! 
+        animator.Play(clipName);
     }
 }
 

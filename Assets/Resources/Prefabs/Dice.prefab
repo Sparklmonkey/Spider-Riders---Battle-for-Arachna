@@ -10,9 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 3920135715831882741}
   - component: {fileID: 3920135715831882746}
-  - component: {fileID: 3920135715831882747}
   - component: {fileID: 3920135715831882740}
   - component: {fileID: 2166998423215556759}
+  - component: {fileID: 4961868945191408744}
   m_Layer: 0
   m_Name: Dice
   m_TagString: Untagged
@@ -87,7 +87,58 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!95 &3920135715831882747
+--- !u!114 &3920135715831882740
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3920135715831882744}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 64c38777d46146e4c91e02f7b35cb38c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DiceResult: 0
+  IsAnimating: 1
+  animator: {fileID: 4961868945191408744}
+  _baseClips:
+  - {fileID: 7400000, guid: d0e8db3795df53c42b09f964061f83b3, type: 2}
+  - {fileID: 7400000, guid: 1637bcb960ca3ba41afa87234c6c2866, type: 2}
+  _endResults:
+  - {fileID: 7400000, guid: 0edfe45bed7bd454cbcdfb2c8c639435, type: 2}
+  - {fileID: 7400000, guid: 50ab92179beecde45953e30d28352d34, type: 2}
+  - {fileID: 7400000, guid: 06de85360ab0cb54886c092258d01fa2, type: 2}
+  - {fileID: 7400000, guid: 01f36c02d07eb094a9b485bf526f38ef, type: 2}
+  - {fileID: 7400000, guid: eff604e918fcfbb4994e57c5e5d2f5ea, type: 2}
+  _dissapearClip: {fileID: 7400000, guid: 6c754933dc5570c4988b62865b0e6fdb, type: 2}
+--- !u!61 &2166998423215556759
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3920135715831882744}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0.01}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.33, y: 0.38}
+    newSize: {x: 0.33, y: 0.38}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.33, y: 0.33}
+  m_EdgeRadius: 0
+--- !u!95 &4961868945191408744
 Animator:
   serializedVersion: 4
   m_ObjectHideFlags: 0
@@ -107,42 +158,3 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &3920135715831882740
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3920135715831882744}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 64c38777d46146e4c91e02f7b35cb38c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  DiceResult: 0
---- !u!61 &2166998423215556759
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3920135715831882744}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0.01}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.33, y: 0.38}
-    newSize: {x: 0.33, y: 0.38}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.33, y: 0.33}
-  m_EdgeRadius: 0
