@@ -28,7 +28,6 @@ public class PlayerBattleManager : MonoBehaviour
     {
         _animator.Play("Hit_1");
         yield return new WaitForSeconds(_playerAnimations.Find(x => x.name == "Hit_1").length);
-        PlayIdleAnimation();
     }
 
     public IEnumerator PlayMobAttackAnim()

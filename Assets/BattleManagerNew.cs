@@ -81,15 +81,17 @@ public class BattleManagerNew : MonoBehaviour
     {
         var numberDisplayer = Instantiate(_damageValuePrefab, (IsPlayerTurn ? _enemyContainer : _playercontainer)).GetComponent<NumberDisplayManager>();
         StartCoroutine(numberDisplayer.MoveDamageText(damage));
-        yield return StartCoroutine(IsPlayerTurn ? _playerAnimator.PlayPlayerAttackAnim() : _mobAnimator.PlayMobAttackAnim());
         if (damage > _mobData.stats.health)
         {
-            yield return StartCoroutine(_mobAnimator.PlayDeathAnim());
+            StartCoroutine(_mobAnimator.PlayDeathAnim());
+            yield return StartCoroutine(IsPlayerTurn ? _playerAnimator.PlayPlayerAttackAnim() : _mobAnimator.PlayMobAttackAnim());
             yield return StartCoroutine(_playerAnimator.PlayVictoryAnim());
         }
         else
         {
+            StartCoroutine(IsPlayerTurn ? _playerAnimator.PlayPlayerAttackAnim() : _mobAnimator.PlayMobAttackAnim());
             yield return StartCoroutine(_mobAnimator.PlayTakeDamageAnim());
+            _playerAnimator.PlayIdleAnimation();
         }
         
     }

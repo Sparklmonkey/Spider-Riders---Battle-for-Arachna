@@ -33,12 +33,21 @@ public class MobAnimationManager : MonoBehaviour
         _canStartAnimating = true;
         PlayIdleAnimation();
     }
+
     private IEnumerator PlayAnimation(bool isLoop)
     {
-        for (int i = 0; i < animationSpriteList.Count; i++)
+        float time = 0f;
+        _frame = 0;
+        while (_frame < animationSpriteList.Count - 1)
         {
-            _spriteRenderer.sprite = animationSpriteList.Find(x => x.name == _frame.ToString());
-            yield return new WaitForSeconds(_frameSeconds);
+            time += Time.deltaTime;
+            if(time >= _frameSeconds)
+            {
+                time -= _frameSeconds;
+                _frame++;
+                _spriteRenderer.sprite = animationSpriteList.Find(x => x.name == _frame.ToString());
+            }
+            yield return null;
         }
         if (isLoop)
         {
@@ -86,11 +95,9 @@ public class MobAnimationManager : MonoBehaviour
 
     public IEnumerator PlayDeathAnim()
     {
-        StopCoroutine(PlayAnimation(true));
-        StopCoroutine(PlayAnimation(false));
+        StopAllCoroutines();
         LoadAnimationSprites("Death");
         yield return StartCoroutine(PlayAnimation(false));
-        PlayIdleAnimation();
     }
 
 }
