@@ -18,10 +18,10 @@ public class CharacterSpriteManager : MonoBehaviour
         lowerLegArmourL, lowerLegArmourR, shoeL, shoeR, fistArmourL, fistArmourR, shoulderArmourL, shoulderArmourR;                             //Armour
 
     private int skinIndex, upperSetIndex, lowerSetIndex, armourIndex, hairIndex, eyeIndex;
-    // Start is called before the first frame update
-    void Awake()
+    
+    private void Awake()
     {
-        CharacterPreset characterPreset = TestPlayer<PlayerData>.GetCharacterPreset();
+        CharacterPreset characterPreset = TestPlayer<PlayerData>.CharacterPreset;
         skinIndex = characterPreset.skinIndex;
         upperSetIndex = characterPreset.upperSetIndex;
         lowerSetIndex = characterPreset.lowerSetIndex;
@@ -29,9 +29,10 @@ public class CharacterSpriteManager : MonoBehaviour
         hairIndex = characterPreset.hairIndex;
         eyeIndex = characterPreset.eyeIndex;
         isMale = characterPreset.isMale;
-        SetupCharacter();
+        SetUpCharacter();
     }
-    void SetupCharacter()
+
+    private void SetUpCharacter()
     {
         currentLibrary.spriteLibraryAsset = isMale ? maleLibraryAsset : femaleLibraryAsset;
         eyes.SetCategoryAndLabel("Eyes", $"Eyes_{eyeIndex}");
@@ -57,8 +58,8 @@ public class CharacterSpriteManager : MonoBehaviour
         lowerLegL.SetCategoryAndLabel("LowerLegSkin", $"LowerLegSkin_{skinIndex}");
         lowerLegR.SetCategoryAndLabel("LowerLegSkin", $"LowerLegSkin_{skinIndex}");
 
-        int upperIndex = upperSetIndex + (armourIndex * 4);
-        int lowerIndex = lowerSetIndex + (armourIndex * 4);
+        int upperIndex = upperSetIndex + (armourIndex * 4); //Magic number???
+        int lowerIndex = lowerSetIndex + (armourIndex * 4); //Magic number???
         //Upper Set
         chestArmour.SetCategoryAndLabel("ChestArmour", $"ChestArmour_{upperIndex}");
         upperArmArmourL.SetCategoryAndLabel("UpperArmArmour", $"UpperArmArmour_{upperIndex}");
@@ -80,7 +81,7 @@ public class CharacterSpriteManager : MonoBehaviour
         shoeR.SetCategoryAndLabel("ShoeR", $"ShoeR_{lowerIndex}");
     }
 
-    void UpdateCharacterPreset()
+    private void UpdateCharacterPreset()
     {
         CharacterPreset characterPreset = new CharacterPreset();
 
@@ -92,7 +93,7 @@ public class CharacterSpriteManager : MonoBehaviour
         characterPreset.eyeIndex = eyeIndex;
         characterPreset.isMale = isMale;
 
-        TestPlayer<PlayerData>.SaveCharacterPreset(characterPreset);
+        TestPlayer<PlayerData>.CharacterPreset = characterPreset;
     }
 
     public void ChangeGender(bool isMale)
@@ -102,34 +103,34 @@ public class CharacterSpriteManager : MonoBehaviour
         UpdateCharacterPreset();
     }
 
+    private const int EYE_INDEX_MAX = 3;
     public void ChangeEyes(bool isNext)
     {
         eyeIndex = isNext ? eyeIndex + 1 : eyeIndex - 1;
-
-        if (eyeIndex < 0) { eyeIndex = 3; }
-        if (eyeIndex >= 4) { eyeIndex = 0; }
+        if (eyeIndex < 0) { eyeIndex = EYE_INDEX_MAX; }
+        if (eyeIndex > EYE_INDEX_MAX) { eyeIndex = 0; }
 
         eyes.SetCategoryAndLabel("Eyes", $"Eyes_{eyeIndex}");
         UpdateCharacterPreset();
     }
 
+    private const int HAIR_INDEX_MAX = 3;
     public void ChangeHair(bool isNext)
     {
         hairIndex = isNext ? hairIndex + 1 : hairIndex - 1;
-
-        if (hairIndex < 0) { hairIndex = 3; }
-        if (hairIndex >= 4) { hairIndex = 0; }
+        if (hairIndex < 0) { hairIndex = HAIR_INDEX_MAX; }
+        if (hairIndex > HAIR_INDEX_MAX) { hairIndex = 0; }
 
         hair.SetCategoryAndLabel("Hair", $"Hair_{hairIndex}");
         UpdateCharacterPreset();
     }
 
+    private const int SKIN_INDEX_MAX = 3;
     public void ChangeSkinTone(bool isNext)
     {
         skinIndex = isNext ? skinIndex + 1 : skinIndex - 1;
-
-        if (skinIndex < 0) { skinIndex = 3; }
-        if (skinIndex >= 4) { skinIndex = 0; }
+        if (skinIndex < 0) { skinIndex = SKIN_INDEX_MAX; }
+        if (skinIndex > SKIN_INDEX_MAX) { skinIndex = 0; }
 
         face.SetCategoryAndLabel("Face", $"Face_{skinIndex}");
         torso.SetCategoryAndLabel("TorsoSkin", $"TorsoSkin_{skinIndex}");
@@ -155,34 +156,40 @@ public class CharacterSpriteManager : MonoBehaviour
         UpdateCharacterPreset();
     }
 
+    private const int ARMOUR_INDEX_MAX = 6;
     public void ChangeArmourIndex(bool isNext)
     {
         armourIndex = isNext ? armourIndex + 1 : armourIndex - 1;
-        if (armourIndex < 0) { armourIndex = 6; }
-        if (armourIndex >= 7) { armourIndex = 0; }
+        if (armourIndex < 0) { armourIndex = ARMOUR_INDEX_MAX; }
+        if (armourIndex > ARMOUR_INDEX_MAX) { armourIndex = 0; }
+
         UpdateArmour();
     }
 
+    private const int UPPER_SET_INDEX_MAX = 3;
     public void ChangeUpperSetIndex(bool isNext)
     {
         upperSetIndex = isNext ? upperSetIndex + 1 : upperSetIndex - 1;
-        if (upperSetIndex < 0) { upperSetIndex = 3; }
-        if (upperSetIndex >= 4) { upperSetIndex = 0; }
+        if (upperSetIndex < 0) { upperSetIndex = UPPER_SET_INDEX_MAX; }
+        if (upperSetIndex > UPPER_SET_INDEX_MAX) { upperSetIndex = 0; }
+
         UpdateArmour();
     }
 
+    private const int LOWER_SET_INDEX_MAX = 3;
     public void ChangeLowerSetIndex(bool isNext)
     {
         lowerSetIndex = isNext ? lowerSetIndex + 1 : lowerSetIndex - 1;
-        if (lowerSetIndex < 0) { lowerSetIndex = 3; }
-        if (lowerSetIndex >= 4) { lowerSetIndex = 0; }
+        if (lowerSetIndex < 0) { lowerSetIndex = LOWER_SET_INDEX_MAX; }
+        if (lowerSetIndex > LOWER_SET_INDEX_MAX) { lowerSetIndex = 0; }
+
         UpdateArmour();
     }
 
     private void UpdateArmour()
     {
-        int upperIndex = upperSetIndex + (armourIndex * 4);
-        int lowerIndex = lowerSetIndex + (armourIndex * 4);
+        int upperIndex = upperSetIndex + (armourIndex * 4); //Magic number???
+        int lowerIndex = lowerSetIndex + (armourIndex * 4); //Magic number???
 
         //Upper Set
         chestArmour.SetCategoryAndLabel("ChestArmour", $"ChestArmour_{upperIndex}");

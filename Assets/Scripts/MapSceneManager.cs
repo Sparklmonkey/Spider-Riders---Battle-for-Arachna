@@ -65,7 +65,7 @@ public class MapSceneManager : MonoBehaviour
     }
     public void SetupMapScene(int scene)
     {
-        _missionIndex = TestPlayer<PlayerData>.GetPlayerMission();
+        _missionIndex = TestPlayer<PlayerData>.CurrentMissionIndex;
         ClearMapScene();
 
         GameObject backgroundPrefab = Resources.Load<GameObject>($"Prefabs/MissionBackground/Mission_{_missionIndex}/Background_{scene}");

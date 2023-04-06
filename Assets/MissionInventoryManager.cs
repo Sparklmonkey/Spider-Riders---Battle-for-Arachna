@@ -55,7 +55,7 @@ public class MissionInventoryManager : MonoBehaviour
     }
     public void RenderInventory()
     {
-        _inventoryList = TestPlayer<PlayerData>.GetInventory();
+        _inventoryList = TestPlayer<PlayerData>.Inventory;
         _currentPage = 0;
         _maxPages = Mathf.CeilToInt(_inventoryList.Count / 8f);
 

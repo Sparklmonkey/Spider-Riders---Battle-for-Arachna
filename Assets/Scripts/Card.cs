@@ -13,25 +13,27 @@ public class Card : ScriptableObject
 
     public List<StatModifier> statModifyList;
 
+    public string cardName;
     public string description;
 }
 
 [Serializable]
-public class StatModifier
+public struct StatModifier
 {
     public StatType statType;
     public int amount;
 }
+
 public enum CardType
 {
     Boost,
     Equipment,
-    BattleAction
+    BattleAction,
 }
 
 public enum StatType
 {
-    Power,      //Dice
-    Defense,    //Defense
-    Health      //Health
+    Power, //Referred to as Dice elsewhere
+    Defense,
+    Health,
 }

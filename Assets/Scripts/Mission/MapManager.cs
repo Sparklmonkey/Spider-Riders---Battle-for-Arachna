@@ -61,7 +61,7 @@ public class MapManager : MonoBehaviour
     public void SetupNextMission()
     {
         Destroy(_gridObject.gameObject);
-        _gridObject = Instantiate(Resources.Load<GameObject>($"Prefabs/TileMaps/Mission_{TestPlayer<PlayerData>.GetPlayerMission()}/Grid"), transform);
+        _gridObject = Instantiate(Resources.Load<GameObject>($"Prefabs/TileMaps/Mission_{TestPlayer<PlayerData>.CurrentMissionIndex}/Grid"), transform);
         _sceneList = new List<Tilemap>(_gridObject.GetComponentsInChildren<Tilemap>(true));
         SetupMap(0);
     }
@@ -90,7 +90,7 @@ public class MapManager : MonoBehaviour
 
     public void SetupFirstScene()
     {
-        _gridObject = Instantiate(Resources.Load<GameObject>($"Prefabs/TileMaps/Mission_{TestPlayer<PlayerData>.GetPlayerMission()}/Grid"), transform);
+        _gridObject = Instantiate(Resources.Load<GameObject>($"Prefabs/TileMaps/Mission_{TestPlayer<PlayerData>.CurrentMissionIndex}/Grid"), transform);
         _sceneList = new List<Tilemap>(_gridObject.GetComponentsInChildren<Tilemap>(true));
         _sceneIndex = 0;
         MapSceneManager.Instance.SetupMapScene(1);
