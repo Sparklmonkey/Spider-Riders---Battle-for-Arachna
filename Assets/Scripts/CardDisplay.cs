@@ -37,6 +37,9 @@ public class CardDisplay : MonoBehaviour, IPointerEnterHandler
         atkObject.SetActive(false);
         defObject.SetActive(false);
         healthObject.SetActive(false);
+        cardType.transform.GetChild(0).gameObject.SetActive(false);
+        cardType.transform.GetChild(1).gameObject.SetActive(false);
+        cardType.transform.GetChild(2).gameObject.SetActive(false);
         if (card.statModifyList != null)
         {
             foreach (StatModifier item in card.statModifyList)
@@ -60,7 +63,6 @@ public class CardDisplay : MonoBehaviour, IPointerEnterHandler
                 }
             }
         }
-
         switch (card.cardType)
         {
             case CardType.Boost:
@@ -75,7 +77,6 @@ public class CardDisplay : MonoBehaviour, IPointerEnterHandler
             default:
                 break;
         }
-
         cardImage.sprite = Resources.Load<Sprite>($"Sprites/Cards/Images/{card.cardType}/{card.name}");
         cardBack.sprite = Resources.Load<Sprite>($"Sprites/Cards/Back/{card.cardType}");
     }

@@ -35,5 +35,5 @@ public enum StatType
 {
     Power, //Referred to as Dice elsewhere
     Defense,
-    Health,
+    Health, //Referred to as Action in some places in Flash source code
 }
