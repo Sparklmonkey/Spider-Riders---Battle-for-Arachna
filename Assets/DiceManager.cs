@@ -86,9 +86,9 @@ public class DiceManager : MonoBehaviour
 
 public enum DiceFace
 {
-    Red,
-    Orange,
-    Blue,
     White,
-    Green
+    Red,
+    Yellow,
+    Green,
+    Blue,
 }

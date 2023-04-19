@@ -13,20 +13,21 @@ public class PlayerData : ScriptableObject
     public List<Card> deckC;
     public List<Card> cardInventory;
     public List<string> itemInventory;
-    public Stats stats;
-    public CharacterPreset armourIndexes;
+    public BattleParticipantStats stats;
+    public CharacterGraphicsPreset armourIndexes;
     public int missionIndex;
 }
 
 [Serializable]
-public class CharacterPreset
+public class CharacterGraphicsPreset
 {
     public int skinIndex, upperSetIndex, lowerSetIndex, armourIndex, hairIndex, eyeIndex;
     public bool isMale = true;
 }
 
 [Serializable]
-public class Stats
+public class BattleParticipantStats
 {
-    public int power, defense, health;
+    [UnityEngine.Serialization.FormerlySerializedAs("power")] public int attack;
+    public int defense, health;
 }

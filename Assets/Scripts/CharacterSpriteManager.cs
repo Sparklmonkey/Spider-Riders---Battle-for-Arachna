@@ -21,7 +21,7 @@ public class CharacterSpriteManager : MonoBehaviour
     
     private void Awake()
     {
-        CharacterPreset characterPreset = TestPlayer<PlayerData>.CharacterPreset;
+        CharacterGraphicsPreset characterPreset = TestPlayer<PlayerData>.CharacterPreset;
         skinIndex = characterPreset.skinIndex;
         upperSetIndex = characterPreset.upperSetIndex;
         lowerSetIndex = characterPreset.lowerSetIndex;
@@ -83,7 +83,7 @@ public class CharacterSpriteManager : MonoBehaviour
 
     private void UpdateCharacterPreset()
     {
-        CharacterPreset characterPreset = new CharacterPreset();
+        CharacterGraphicsPreset characterPreset = new CharacterGraphicsPreset();
 
         characterPreset.skinIndex = skinIndex;
         characterPreset.upperSetIndex = upperSetIndex;

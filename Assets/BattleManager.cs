@@ -96,13 +96,13 @@ public class BattleManager : MonoBehaviour
             GameObject go = Instantiate(cardDisplay, cardContent);
             CardDisplay cd = go.GetComponent<CardDisplay>();
             cd.cardName.text = player.playerData.cardInventory[rand].name;
-            cd.cardPrice.text = player.playerData.cardInventory[rand].buyCost.ToString();
-            cd.cardDesc.text = player.playerData.cardInventory[rand].description;
-            cd.cardImage.sprite = player.playerData.cardInventory[rand].image;
-            if (player.playerData.cardInventory[rand].statModifyList.Count > 0)
-                switch (player.playerData.cardInventory[rand].statModifyList[0].statType)
+            cd.cardPrice.text = player.playerData.cardInventory[rand].BuyCost.ToString();
+            cd.cardDesc.text = player.playerData.cardInventory[rand].Description;
+            cd.cardImage.sprite = player.playerData.cardInventory[rand].CardImage;
+            if (player.playerData.cardInventory[rand].ActivatedOwnerStatModifiers.Count > 0)
+                switch (player.playerData.cardInventory[rand].ActivatedOwnerStatModifiers[0].statType)
                 {
-                    case StatType.Power:
+                    case StatType.Attack:
                         cd.cardBack.sprite = yellowCardBack;
                         go.tag = "YellowCard";
                         break;
@@ -110,10 +110,10 @@ public class BattleManager : MonoBehaviour
                         cd.cardBack.sprite = greenCardBack;
                         go.tag = "GreenCard";
                         break;
-                    case StatType.Health:
-                        cd.cardBack.sprite = blueCardBack;
-                        go.tag = "BlueCard";
-                        break;
+                    //case StatType.Health:
+                    //    cd.cardBack.sprite = blueCardBack;
+                    //    go.tag = "BlueCard";
+                    //    break;
                     default:
                         break;
                 }
@@ -125,14 +125,14 @@ public class BattleManager : MonoBehaviour
     }
     public void AddCard(int cardIndex)
     {
-        for (int i = 0; i < currentHand[cardIndex].statModifyList.Count; i++)
+        for (int i = 0; i < currentHand[cardIndex].ActivatedOwnerStatModifiers.Count; i++)
         {
-            if (currentHand[cardIndex].statModifyList[i].statType == StatType.Power)
-                player.attack += currentHand[cardIndex].statModifyList[i].amount;
-            if (currentHand[cardIndex].statModifyList[i].statType == StatType.Defense)
-                player.defense += currentHand[cardIndex].statModifyList[i].amount;
-            if (currentHand[cardIndex].statModifyList[i].statType == StatType.Health)
-                player.health += currentHand[cardIndex].statModifyList[i].amount;
+            if (currentHand[cardIndex].ActivatedOwnerStatModifiers[i].statType == StatType.Attack)
+                player.attack += currentHand[cardIndex].ActivatedOwnerStatModifiers[i].amount;
+            if (currentHand[cardIndex].ActivatedOwnerStatModifiers[i].statType == StatType.Defense)
+                player.defense += currentHand[cardIndex].ActivatedOwnerStatModifiers[i].amount;
+            //if (currentHand[cardIndex].statModifyList[i].statType == StatType.Health)
+            //    player.health += currentHand[cardIndex].statModifyList[i].amount;
         }
     }
     //for when the dice roll is red, just add 1

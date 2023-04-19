@@ -14,6 +14,6 @@ public class BattleEntity: MonoBehaviour
     {
         health = playerData.stats.health;
         defense = playerData.stats.defense;
-        attack = playerData.stats.power;
+        attack = playerData.stats.attack;
     }
 }

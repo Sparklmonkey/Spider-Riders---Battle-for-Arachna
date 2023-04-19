@@ -12,11 +12,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8db25b18e0fef8d4ca7673421d24f95b, type: 3}
   m_Name: Boom Ball Bow
   m_EditorClassIdentifier: 
-  cardType: 1
-  buyCost: 2000
-  sellCost: 2000
-  image: {fileID: 21300000, guid: d2940793b81e63244bc1d439a238377f, type: 3}
-  statModifyList:
+  <CardType>k__BackingField: 1
+  <CardCategories>k__BackingField:
+    isWeapon: 1
+    isArmor: 0
+    isItem: 0
+  <BuyCost>k__BackingField: 2000
+  <SellCost>k__BackingField: 2000
+  <CardImage>k__BackingField: {fileID: 21300000, guid: d2940793b81e63244bc1d439a238377f, type: 3}
+  <ActivatedOwnerStatModifiers>k__BackingField:
   - statType: 0
     amount: 3
-  description: Increases your dice by +3 and remove 1 Opponent Boost Card
+  <ActivatedOpponentStatModifiers>k__BackingField: []
+  <CardsToDraw>k__BackingField: 0
+  <HealAmount>k__BackingField: 0
+  <TurnsActive>k__BackingField: -1
+  <CardName>k__BackingField: Boom Ball Bow
+  <Description>k__BackingField: Increases your dice by +3 and remove 1 Opponent Boost
+    Card

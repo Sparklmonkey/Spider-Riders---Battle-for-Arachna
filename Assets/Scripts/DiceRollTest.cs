@@ -25,7 +25,7 @@ public class DiceRollTest : MonoBehaviour
 
     IEnumerator DiceRollAnim(int diceAmount)
     {
-        int diceCount = TestPlayer<PlayerData>.GetPower();
+        int diceCount = TestPlayer<PlayerData>.GetAttack();
 
         for (int i = 0; i < diceAmount; i++)
         {

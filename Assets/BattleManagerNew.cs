@@ -41,13 +41,13 @@ public class BattleManagerNew : MonoBehaviour
     public bool IsPlayerTurn = true;
     public void SetupBattleManager(MobData mobData)
     {
-        _playerModifiers = _enemyModifiers = new Stats();
+        _playerModifiers = _enemyModifiers = new BattleParticipantStats();
         _mobData = mobData;
-        _enemyAtkLbl.DisplayNumber(mobData.stats.power);
+        _enemyAtkLbl.DisplayNumber(mobData.stats.attack);
         _enemyDefLbl.DisplayNumber(mobData.stats.defense);
         _enemyHealthLbl.DisplayNumber(mobData.stats.health);
 
-        _playerAtkLbl.DisplayNumber(TestPlayer<PlayerData>.GetPower());
+        _playerAtkLbl.DisplayNumber(TestPlayer<PlayerData>.GetAttack());
         _playerDefLbl.DisplayNumber(TestPlayer<PlayerData>.GetDefense());
         _playerHealthLbl.DisplayNumber(TestPlayer<PlayerData>.GetHealth());
         GameObject mobObject = Instantiate(_mobData.enemyPrefab, _enemyContainer);
@@ -58,11 +58,11 @@ public class BattleManagerNew : MonoBehaviour
         IsPlayerTurn = true;
     }
 
-    private Stats _playerModifiers, _enemyModifiers;
+    private BattleParticipantStats _playerModifiers, _enemyModifiers;
 
     public void RollDice()
     {
-        StartCoroutine(DicePoolManager.Instance.RollDiceForTurn(TestPlayer<PlayerData>.GetPower() + _playerModifiers.power, _playerAtkLocation));
+        StartCoroutine(DicePoolManager.Instance.RollDiceForTurn(TestPlayer<PlayerData>.GetAttack() + _playerModifiers.attack, _playerAtkLocation));
     }
 
     public void AddRedDie()
@@ -121,13 +121,13 @@ public class BattleManagerNew : MonoBehaviour
 
     private IEnumerator EnemyTurn()
     {
-        if(_mobData.stats.power == 0)
+        if(_mobData.stats.attack == 0)
         {
             EndTurn();
             yield return new WaitForSeconds(2f);
             yield break;
         }
-        yield return StartCoroutine(DicePoolManager.Instance.RollDiceForTurn(TestPlayer<PlayerData>.GetPower() + _enemyModifiers.power, _enemyAtkLocation));
+        yield return StartCoroutine(DicePoolManager.Instance.RollDiceForTurn(TestPlayer<PlayerData>.GetAttack() + _enemyModifiers.attack, _enemyAtkLocation));
     }
 
     [ContextMenu("Test Setup")]
