@@ -12,9 +12,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8db25b18e0fef8d4ca7673421d24f95b, type: 3}
   m_Name: Red Oracle Key
   m_EditorClassIdentifier: 
-  cardType: 1
-  buyCost: 1600
-  sellCost: 1600
-  image: {fileID: 21300000, guid: 789fd581a04742f468543019b37e3187, type: 3}
-  statModifyList: []
-  description: Merge 2 equipment weapon cards
+  <CardType>k__BackingField: 1
+  <CardCategories>k__BackingField:
+    isWeapon: 0
+    isArmor: 0
+    isItem: 0
+  <BuyCost>k__BackingField: 1600
+  <SellCost>k__BackingField: 1600
+  <CardImage>k__BackingField: {fileID: 21300000, guid: 789fd581a04742f468543019b37e3187, type: 3}
+  <ActivatedOwnerStatModifiers>k__BackingField: []
+  <ActivatedOpponentStatModifiers>k__BackingField: []
+  <CardsToDraw>k__BackingField: 0
+  <HealAmount>k__BackingField: 0
+  <TurnsActive>k__BackingField: -1
+  <CardName>k__BackingField: Red Oracle Key
+  <Description>k__BackingField: Merge 2 equipment weapon cards

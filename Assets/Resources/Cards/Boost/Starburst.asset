@@ -12,11 +12,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8db25b18e0fef8d4ca7673421d24f95b, type: 3}
   m_Name: Starburst
   m_EditorClassIdentifier: 
-  cardType: 0
-  buyCost: 100
-  sellCost: 100
-  image: {fileID: 21300000, guid: b2a837ca8cffa764a864dab4a3daa38d, type: 3}
-  statModifyList:
+  <CardType>k__BackingField: 0
+  <CardCategories>k__BackingField:
+    isWeapon: 0
+    isArmor: 0
+    isItem: 0
+  <BuyCost>k__BackingField: 100
+  <SellCost>k__BackingField: 100
+  <CardImage>k__BackingField: {fileID: 21300000, guid: b2a837ca8cffa764a864dab4a3daa38d, type: 3}
+  <ActivatedOwnerStatModifiers>k__BackingField:
   - statType: 0
     amount: 2
-  description: Increases your dice by +2
+  <ActivatedOpponentStatModifiers>k__BackingField: []
+  <CardsToDraw>k__BackingField: 0
+  <HealAmount>k__BackingField: 0
+  <TurnsActive>k__BackingField: 1
+  <CardName>k__BackingField: Starburst
+  <Description>k__BackingField: Increases your dice by +2

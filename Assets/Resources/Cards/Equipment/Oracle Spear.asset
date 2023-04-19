@@ -12,13 +12,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8db25b18e0fef8d4ca7673421d24f95b, type: 3}
   m_Name: Oracle Spear
   m_EditorClassIdentifier: 
-  cardType: 1
-  buyCost: 3000
-  sellCost: 3000
-  image: {fileID: 21300000, guid: 22ffc7b59eaa1524d8a11ce5e223f1ef, type: 3}
-  statModifyList:
+  <CardType>k__BackingField: 1
+  <CardCategories>k__BackingField:
+    isWeapon: 1
+    isArmor: 0
+    isItem: 0
+  <BuyCost>k__BackingField: 3000
+  <SellCost>k__BackingField: 3000
+  <CardImage>k__BackingField: {fileID: 21300000, guid: 22ffc7b59eaa1524d8a11ce5e223f1ef, type: 3}
+  <ActivatedOwnerStatModifiers>k__BackingField:
   - statType: 0
     amount: 4
   - statType: 1
     amount: 2
-  description: Increases your attack by +4 & defense by +2
+  <ActivatedOpponentStatModifiers>k__BackingField: []
+  <CardsToDraw>k__BackingField: 0
+  <HealAmount>k__BackingField: 0
+  <TurnsActive>k__BackingField: -1
+  <CardName>k__BackingField: Oracle Spear
+  <Description>k__BackingField: Increases your attack by +4 & defense by +2

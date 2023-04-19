@@ -9,6 +9,6 @@ public class MobData : ScriptableObject
     public string mobName;
     public int vPoints;
     public List<Card> deck;
-    public Stats stats;
+    public BattleParticipantStats stats;
     public GameObject enemyPrefab;
 }

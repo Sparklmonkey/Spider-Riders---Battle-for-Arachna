@@ -6,15 +6,20 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "Card", menuName = "ScriptableObjects/Card", order = 1)]
 public class Card : ScriptableObject
 {
-    public CardType cardType;
-    public int buyCost;
-    public int sellCost;
-    public Sprite image;
+    [field: SerializeField] public CardBackgroundType CardType { get; private set; }
+    [field: SerializeField] public CardCategories CardCategories { get; private set; }
+    [field: SerializeField] public int BuyCost { get; private set; }
+    [field: SerializeField] public int SellCost { get; private set; }
+    [field: SerializeField] public Sprite CardImage { get; private set; }
 
-    public List<StatModifier> statModifyList;
+    [field: SerializeField]/*[field: UnityEngine.Serialization.FormerlySerializedAs("<StatModifiers>k__BackingField")]*/ public List<StatModifier> ActivatedOwnerStatModifiers { get; private set; }
+    [field: SerializeField] public List<StatModifier> ActivatedOpponentStatModifiers { get; private set; }
+    [field: SerializeField] public int CardsToDraw { get; private set; }
+    [field: SerializeField] public int HealAmount { get; private set; }
+    [field: SerializeField] public int TurnsActive { get; private set; }
 
-    public string cardName;
-    public string description;
+    [field: SerializeField] public string CardName { get; private set; }
+    [field: SerializeField] public string Description { get; private set; }
 }
 
 [Serializable]
@@ -24,16 +29,24 @@ public struct StatModifier
     public int amount;
 }
 
-public enum CardType
+public enum CardBackgroundType
 {
     Boost,
     Equipment,
     BattleAction,
 }
 
+[Serializable]
+public struct CardCategories
+{
+    public bool isWeapon;
+    public bool isArmor;
+    public bool isItem;
+}
+
 public enum StatType
 {
-    Power, //Referred to as Dice elsewhere
+    Attack,
     Defense,
-    Health, //Referred to as Action in some places in Flash source code
+    Dice,
 }

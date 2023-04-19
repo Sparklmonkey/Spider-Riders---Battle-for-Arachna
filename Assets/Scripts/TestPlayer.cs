@@ -39,15 +39,15 @@ public class TestPlayer<T> : ScriptableObject where T : ScriptableObject
         return Instance.selectedDeck;
     }
 
-    public static CharacterPreset CharacterPreset
+    public static CharacterGraphicsPreset CharacterPreset
     {
         get => Instance.armourIndexes;
         set => Instance.armourIndexes = value;
     }
 
-    public static int GetPower()
+    public static int GetAttack()
     {
-        return Instance.stats.power;
+        return Instance.stats.attack;
     }
     public static int GetHealth()
     {

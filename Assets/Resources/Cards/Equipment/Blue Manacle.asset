@@ -12,11 +12,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8db25b18e0fef8d4ca7673421d24f95b, type: 3}
   m_Name: Blue Manacle
   m_EditorClassIdentifier: 
-  cardType: 1
-  buyCost: 1500
-  sellCost: 1500
-  image: {fileID: 21300000, guid: 8cfa25a7cdc258f4bb0a1333901e37d6, type: 3}
-  statModifyList:
+  <CardType>k__BackingField: 1
+  <CardCategories>k__BackingField:
+    isWeapon: 0
+    isArmor: 0
+    isItem: 1
+  <BuyCost>k__BackingField: 1500
+  <SellCost>k__BackingField: 1500
+  <CardImage>k__BackingField: {fileID: 21300000, guid: 8cfa25a7cdc258f4bb0a1333901e37d6, type: 3}
+  <ActivatedOwnerStatModifiers>k__BackingField:
   - statType: 1
     amount: 4
-  description: Increases your defense by +4
+  <ActivatedOpponentStatModifiers>k__BackingField: []
+  <CardsToDraw>k__BackingField: 0
+  <HealAmount>k__BackingField: 0
+  <TurnsActive>k__BackingField: -1
+  <CardName>k__BackingField: Blue Manacle
+  <Description>k__BackingField: Increases your defense by +4

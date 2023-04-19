@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8db25b18e0fef8d4ca7673421d24f95b, type: 3}
+  m_Name: Boost Blaze
+  m_EditorClassIdentifier: 
+  <CardType>k__BackingField: 2
+  <CardCategories>k__BackingField:
+    isWeapon: 0
+    isArmor: 0
+    isItem: 0
+  <BuyCost>k__BackingField: 200
+  <SellCost>k__BackingField: 200
+  <CardImage>k__BackingField: {fileID: 21300000, guid: 2011f60441e7eb64a812dcf6295971e2, type: 3}
+  <ActivatedOwnerStatModifiers>k__BackingField: []
+  <ActivatedOpponentStatModifiers>k__BackingField: []
+  <CardsToDraw>k__BackingField: 0
+  <HealAmount>k__BackingField: 0
+  <TurnsActive>k__BackingField: 1
+  <CardName>k__BackingField: Boost Blaze
+  <Description>k__BackingField: Each yellow on your dice roll count as +2 damage

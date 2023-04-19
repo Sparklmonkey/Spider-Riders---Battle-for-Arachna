@@ -31,8 +31,8 @@ public class CardDisplay : MonoBehaviour, IPointerEnterHandler
     public void SetupCardDisplay(Card card)
     {
         cardName.text = card.name;
-        cardDesc.text = card.description;
-        cardPrice.text = $"{card.buyCost}G";
+        cardDesc.text = card.Description;
+        cardPrice.text = $"{card.BuyCost}G";
         cardOnDisplay = card;
         atkObject.SetActive(false);
         defObject.SetActive(false);
@@ -40,13 +40,13 @@ public class CardDisplay : MonoBehaviour, IPointerEnterHandler
         cardType.transform.GetChild(0).gameObject.SetActive(false);
         cardType.transform.GetChild(1).gameObject.SetActive(false);
         cardType.transform.GetChild(2).gameObject.SetActive(false);
-        if (card.statModifyList != null)
+        if (card.ActivatedOwnerStatModifiers != null)
         {
-            foreach (StatModifier item in card.statModifyList)
+            foreach (StatModifier item in card.ActivatedOwnerStatModifiers)
             {
                 switch (item.statType)
                 {
-                    case StatType.Power:
+                    case StatType.Attack:
                         atkValue.text = item.amount.ToString();
                         atkObject.SetActive(true);
                         break;
@@ -54,31 +54,31 @@ public class CardDisplay : MonoBehaviour, IPointerEnterHandler
                         defValue.text = item.amount.ToString();
                         defObject.SetActive(true);
                         break;
-                    case StatType.Health:
-                        healthValue.text = item.amount.ToString();
-                        healthObject.SetActive(true);
-                        break;
+                    //case StatType.Health:
+                    //    healthValue.text = item.amount.ToString();
+                    //    healthObject.SetActive(true);
+                    //    break;
                     default:
                         break;
                 }
             }
         }
-        switch (card.cardType)
+        switch (card.CardType)
         {
-            case CardType.Boost:
+            case CardBackgroundType.Boost:
                 cardType.transform.GetChild(0).gameObject.SetActive(true);
                 break;
-            case CardType.Equipment:
+            case CardBackgroundType.Equipment:
                 cardType.transform.GetChild(1).gameObject.SetActive(true);
                 break;
-            case CardType.BattleAction:
+            case CardBackgroundType.BattleAction:
                 cardType.transform.GetChild(2).gameObject.SetActive(true);
                 break;
             default:
                 break;
         }
-        cardImage.sprite = Resources.Load<Sprite>($"Sprites/Cards/Images/{card.cardType}/{card.name}");
-        cardBack.sprite = Resources.Load<Sprite>($"Sprites/Cards/Back/{card.cardType}");
+        cardImage.sprite = Resources.Load<Sprite>($"Sprites/Cards/Images/{card.CardType}/{card.name}");
+        cardBack.sprite = Resources.Load<Sprite>($"Sprites/Cards/Back/{card.CardType}");
     }
 
     public void CardSelectedPressed(bool isSelected)

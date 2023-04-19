@@ -12,11 +12,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8db25b18e0fef8d4ca7673421d24f95b, type: 3}
   m_Name: Intervention
   m_EditorClassIdentifier: 
-  cardType: 0
-  buyCost: 1400
-  sellCost: 1400
-  image: {fileID: 21300000, guid: f54c245c9927a5844a19ea2646f1a66a, type: 3}
-  statModifyList:
+  <CardType>k__BackingField: 0
+  <CardCategories>k__BackingField:
+    isWeapon: 0
+    isArmor: 0
+    isItem: 0
+  <BuyCost>k__BackingField: 1400
+  <SellCost>k__BackingField: 1400
+  <CardImage>k__BackingField: {fileID: 21300000, guid: f54c245c9927a5844a19ea2646f1a66a, type: 3}
+  <ActivatedOwnerStatModifiers>k__BackingField:
   - statType: 0
     amount: 7
-  description: Increases your dice by +7
+  <ActivatedOpponentStatModifiers>k__BackingField: []
+  <CardsToDraw>k__BackingField: 0
+  <HealAmount>k__BackingField: 0
+  <TurnsActive>k__BackingField: 1
+  <CardName>k__BackingField: Intervention
+  <Description>k__BackingField: Increases your dice by +7
