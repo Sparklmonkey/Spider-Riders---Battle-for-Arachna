@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
@@ -6,25 +7,21 @@ using UnityEngine;
 public class BattleManager : MonoBehaviour
 {
     public MobData TestMob;
-    private static BattleManager _instance;
-    public static BattleManager Instance
+    private void Update()
     {
-        get { return _instance; }
-    }
-
-    private void Awake()
-    {
-
-        if (_instance != null && _instance != this)
+        if (_isVictory)
         {
-            Destroy(gameObject);
-        }
-        else
-        {
-            _instance = this;
+            MapManager.Instance.BattleVictory();
         }
     }
 
+    public event EventHandler<BattleManagerEventArgs> OnChangeTurn;
+    public class BattleManagerEventArgs : EventArgs
+    {
+        public bool IsPlayerTurn;
+    }
+
+    private bool _isVictory;
     private MobData _mobData;
     [SerializeField]
     private DicePoolManager _dicePoolManager;
@@ -58,15 +55,18 @@ public class BattleManager : MonoBehaviour
         _playerAnimator.PlayAnimation("Idle");
 
         IsPlayerTurn = true;
+        OnChangeTurn?.Invoke(this, new BattleManagerEventArgs { IsPlayerTurn = IsPlayerTurn });
     }
 
     private BattleParticipantStats _playerModifiers, _enemyModifiers;
 
-    public void RollDice()
+    public IEnumerator RollDice()
     {
-        StartCoroutine(_dicePoolManager.RollDiceForTurn(TestPlayer<PlayerData>.GetAttack() + _playerModifiers.attack, _playerAtkLocation));
+        AddRedDiceAction = AddRedDie;
+        yield return StartCoroutine(_dicePoolManager.RollDiceForTurn(TestPlayer<PlayerData>.GetAttack() + _playerModifiers.attack, _playerAtkLocation));
+        yield return StartCoroutine(_dicePoolManager.MoveRedDice(AddRedDiceAction));
     }
-
+    public Action AddRedDiceAction;
     public void AddRedDie()
     {
         if (IsPlayerTurn)
@@ -87,7 +87,8 @@ public class BattleManager : MonoBehaviour
         {
             StartCoroutine(_mobAnimator.PlayDeathAnim());
             yield return StartCoroutine(IsPlayerTurn ? _playerAnimator.PlayPlayerAttackAnim() : _mobAnimator.PlayMobAttackAnim());
-            yield return StartCoroutine(_playerAnimator.PlayVictoryAnim());
+            yield return StartCoroutine(_playerAnimator.PlayVictoryAnim()); 
+            _isVictory = true;
         }
         else
         {
@@ -115,6 +116,7 @@ public class BattleManager : MonoBehaviour
     private void EndTurn()
     {
         IsPlayerTurn = !IsPlayerTurn;
+        OnChangeTurn?.Invoke(this, new BattleManagerEventArgs { IsPlayerTurn = IsPlayerTurn });
         if (!IsPlayerTurn)
         {
             StartCoroutine(EnemyTurn());

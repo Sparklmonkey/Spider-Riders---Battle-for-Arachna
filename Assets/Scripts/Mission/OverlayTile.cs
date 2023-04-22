@@ -20,37 +20,35 @@ public class OverlayTile : MonoBehaviour
     public void RenderTileContent(string tileName)
     {
         name = tileName;
+
+        if (name.Contains("Item_"))
+        {
+            _itemObject = Instantiate(Resources.Load<GameObject>($"Prefabs/Items/{gameObject.name.Replace("Item_", "")}"), transform);
+            _itemObject.transform.position = transform.position;
+        }
+
+        if(name == "Action_Manacle")
+        {
+            _itemObject = Instantiate(Resources.Load<GameObject>($"Prefabs/Items/Statue"), transform);
+            _itemObject.transform.position = transform.position;
+        }
+
+        if (name.Contains("Action_"))
+        {
+            _itemObject = Instantiate(Resources.Load<GameObject>($"Prefabs/Items/Action_Anim"), transform);
+            _itemObject.transform.position = transform.position;
+        }
+
         switch (tileName)
         {
             case "Door_Open":
                 MapSceneManager.Instance.ChangeDoorToOpen();
                 break;
-            case "Door_Closed":
-                MapSceneManager.Instance.AddClosedDoorImage();
-                _itemObject = Instantiate(Resources.Load<GameObject>($"Prefabs/Items/Action_Anim"), transform);
-                _itemObject.transform.position = transform.position;
-                break;
-
             case "Board_Used":
                 MapSceneManager.Instance.AddBoardUsedImage();
                 break;
-            case "Rope":
-            case "Card_Item":
-            case "Manacle":
-            case "Statue":
-            case "Key":
-            case "Board_Overworld":
-                _itemObject = Instantiate(Resources.Load<GameObject>($"Prefabs/Items/{gameObject.name}"), transform);
-                _itemObject.transform.position = transform.position;
-                break;
-            case "Action_Rope_Unused_Right":
-            case "Action_Rope_Unused_Left":
-            case "Action_Board_Unused":
-                _itemObject = Instantiate(Resources.Load<GameObject>($"Prefabs/Items/Action_Anim"), transform);
-                _itemObject.transform.position = transform.position;
-                break;
-            case "Animate_Climb_Up_Right":
-            case "Animate_Climb_Up_Left":
+            case "Animate_ClimbUp_Right":
+            case "Animate_ClimbUp_Left":
                 MapSceneManager.Instance.AddRopeUsedImage();
                 break;
             default:
@@ -74,7 +72,7 @@ public class OverlayTile : MonoBehaviour
     }
     public void PlaceBoard()
     {
-        TestPlayer<PlayerData>.RemoveItemFromInventory("Board_Overworld");
+        TestPlayer<PlayerData>.RemoveItemFromInventory("Board");
         MapSceneManager.Instance.AddBoardUsedImage();
         Destroy(_itemObject);
     }
@@ -86,7 +84,7 @@ public class OverlayTile : MonoBehaviour
     }
     public void PickUpItem()
     {
-        TestPlayer<PlayerData>.AddItemToInventory(gameObject.name);
+        TestPlayer<PlayerData>.AddItemToInventory(gameObject.name.Replace("Item_", ""));
         Destroy(_itemObject);
     }
 
