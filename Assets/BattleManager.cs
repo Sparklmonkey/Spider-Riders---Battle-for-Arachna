@@ -2,262 +2,139 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
-using UnityEngine.UI;
 
-enum BattleState { START, PLAYERTURN, ENEMYTURN, WON, LOST }
 public class BattleManager : MonoBehaviour
 {
-    enum BattleAction { None, RollDice, Attack }
-    BattleAction chosenBattleAction = BattleAction.None;
-    BattleState state = BattleState.START;
-    //singletons are supposedly not good/nice but since we don't plan to scale this a ton, and 
-    //for the most part it's singleplayer, I'm going to use it.
-    public static BattleManager Instance;
-    [SerializeField]
-    private Button rollDiceButton;
-    [SerializeField]
-    private Button attackButton;
-    [SerializeField]
-    private Canvas canvas;
-    public DiceRollTest diceRoll;
-
-    BattleEntity player;
-    BattleEntity enemy;
-    GameObject currentAttack;
-    GameObject currentDefense;
-    public TextMeshProUGUI playerAttackText;
-    public TextMeshProUGUI playerDefenseText;
-    public TextMeshProUGUI playerHealthText;
-    public TextMeshProUGUI enemyAttackText;
-    public TextMeshProUGUI enemyDefenseText;
-    public TextMeshProUGUI enemyHealthText;
-    public Sprite yellowCardBack;
-    public Sprite blueCardBack;
-    public Sprite greenCardBack;
-    public GameObject playerAttack;
-    public Transform playerAttackPosition;
-    public GameObject playerDefense;
-    public Transform playerDefensePosition;
-    public GameObject enemyAttack;
-    public Transform enemyAttackPosition;
-    public GameObject enemyDefense;
-    public Transform enemyDefensePosition;
-    public GameObject playerHealth;
-    public OverlayTile currentTile;
-    List<Card> currentHand = new List<Card>();
-
-    public GameObject cardDisplay;
-    public Transform cardContent;
-    public GameObject battleScreen;
-    // Start is called before the first frame update
-    void Start()
+    public MobData TestMob;
+    private static BattleManager _instance;
+    public static BattleManager Instance
     {
-        if (!Instance)
-            Instance = this;
-        else
+        get { return _instance; }
+    }
+
+    private void Awake()
+    {
+
+        if (_instance != null && _instance != this)
+        {
             Destroy(gameObject);
-        DontDestroyOnLoad(gameObject);
-    }
-    private void Update()
-    {
-        if (state == BattleState.PLAYERTURN)
-        {
-            //set buttons to active
-            rollDiceButton.interactable = true;
-            rollDiceButton.gameObject.SetActive(true);
-            attackButton.interactable = true;
-            attackButton.gameObject.SetActive(true);
-            playerAttackText.text = player.attack.ToString();
-            playerDefenseText.text = player.defense.ToString();
-            playerHealthText.text = player.health.ToString();
-            enemyAttackText.text = enemy.attack.ToString();
-            enemyDefenseText.text = enemy.defense.ToString();
-            enemyHealthText.text = enemy.health.ToString();
         }
         else
         {
-            rollDiceButton.interactable = false;
-            attackButton.interactable = false;
+            _instance = this;
         }
     }
-    public void EnterBattle(BattleEntity player, BattleEntity enemy, OverlayTile tile)
+
+    private MobData _mobData;
+    [SerializeField]
+    private DicePoolManager _dicePoolManager;
+    [SerializeField]
+    private PlayerBattleManager _playerAnimator;
+    private MobAnimationManager _mobAnimator;
+    [SerializeField]
+    private DamageDisplayManager _damageDisplayManager;
+    [SerializeField]
+    private GameObject _damageValuePrefab;
+    [SerializeField]
+    private Transform _enemyContainer, _playercontainer, _enemyAtkLocation, _playerAtkLocation;
+    [SerializeField]
+    private NumberDisplayManager _playerAtkLbl, _playerDefLbl, _playerHealthLbl, _enemyAtkLbl, _enemyDefLbl, _enemyHealthLbl;
+
+    public bool IsPlayerTurn = true;
+    public void SetupBattleManager(MobData mobData)
     {
-        this.player = player;
-        playerAttackText.text = player.attack.ToString();
-        playerDefenseText.text = player.defense.ToString();
-        playerHealthText.text = player.health.ToString();
-        enemyAttackText.text = enemy.attack.ToString();
-        enemyDefenseText.text = enemy.defense.ToString();
-        enemyHealthText.text = enemy.health.ToString();
-        //instantiate 7 cards randomly
-        for (int i = 0; i < 7; i++)
+        _playerModifiers = _enemyModifiers = new BattleParticipantStats();
+        _mobData = mobData;
+        _enemyAtkLbl.DisplayNumber(mobData.stats.attack);
+        _enemyDefLbl.DisplayNumber(mobData.stats.defense);
+        _enemyHealthLbl.DisplayNumber(mobData.stats.health);
+
+        _playerAtkLbl.DisplayNumber(TestPlayer<PlayerData>.GetAttack());
+        _playerDefLbl.DisplayNumber(TestPlayer<PlayerData>.GetDefense());
+        _playerHealthLbl.DisplayNumber(TestPlayer<PlayerData>.GetHealth());
+        GameObject mobObject = Instantiate(_mobData.enemyPrefab, _enemyContainer);
+        _mobAnimator = mobObject.AddComponent<MobAnimationManager>();
+        _mobAnimator.SetupManager(mobData.mobName);
+        _playerAnimator.PlayAnimation("Idle");
+
+        IsPlayerTurn = true;
+    }
+
+    private BattleParticipantStats _playerModifiers, _enemyModifiers;
+
+    public void RollDice()
+    {
+        StartCoroutine(_dicePoolManager.RollDiceForTurn(TestPlayer<PlayerData>.GetAttack() + _playerModifiers.attack, _playerAtkLocation));
+    }
+
+    public void AddRedDie()
+    {
+        if (IsPlayerTurn)
         {
-            int rand = UnityEngine.Random.Range(0, player.playerData.cardInventory.Count);
-            GameObject go = Instantiate(cardDisplay, cardContent);
-            CardDisplay cd = go.GetComponent<CardDisplay>();
-            cd.cardName.text = player.playerData.cardInventory[rand].name;
-            cd.cardPrice.text = player.playerData.cardInventory[rand].BuyCost.ToString();
-            cd.cardDesc.text = player.playerData.cardInventory[rand].Description;
-            cd.cardImage.sprite = player.playerData.cardInventory[rand].CardImage;
-            if (player.playerData.cardInventory[rand].ActivatedOwnerStatModifiers.Count > 0)
-                switch (player.playerData.cardInventory[rand].ActivatedOwnerStatModifiers[0].statType)
-                {
-                    case StatType.Attack:
-                        cd.cardBack.sprite = yellowCardBack;
-                        go.tag = "YellowCard";
-                        break;
-                    case StatType.Defense:
-                        cd.cardBack.sprite = greenCardBack;
-                        go.tag = "GreenCard";
-                        break;
-                    //case StatType.Health:
-                    //    cd.cardBack.sprite = blueCardBack;
-                    //    go.tag = "BlueCard";
-                    //    break;
-                    default:
-                        break;
-                }
-            currentHand.Add(player.playerData.cardInventory[rand]);
-        }
-        this.enemy = enemy;
-        this.state = BattleState.PLAYERTURN;
-        this.currentTile = tile;
-    }
-    public void AddCard(int cardIndex)
-    {
-        for (int i = 0; i < currentHand[cardIndex].ActivatedOwnerStatModifiers.Count; i++)
-        {
-            if (currentHand[cardIndex].ActivatedOwnerStatModifiers[i].statType == StatType.Attack)
-                player.attack += currentHand[cardIndex].ActivatedOwnerStatModifiers[i].amount;
-            if (currentHand[cardIndex].ActivatedOwnerStatModifiers[i].statType == StatType.Defense)
-                player.defense += currentHand[cardIndex].ActivatedOwnerStatModifiers[i].amount;
-            //if (currentHand[cardIndex].statModifyList[i].statType == StatType.Health)
-            //    player.health += currentHand[cardIndex].statModifyList[i].amount;
-        }
-    }
-    //for when the dice roll is red, just add 1
-    public void AddAttack(int cardIndex)
-    {
-        player.attack += 1;
-    }
-    //for the player-button event
-    public void OnAttackButton()
-    {
-        if (state != BattleState.PLAYERTURN)
-            return;
-
-        StartCoroutine(PlayerAttack());
-    }
-    //for the player-button event
-    public void OnRollDiceButton()
-    {
-        if (state != BattleState.PLAYERTURN)
-            return;
-
-        diceRoll.RollDice(player.attack);
-    }
-    IEnumerator PlayerAttack()
-    {
-        //bring the health over
-        yield return PlayerAttackUIAnimation();
-        yield return EnemyDefenseAnimation();
-        //play the characer hit animation and deal damage
-        enemy.health -= player.attack - enemy.defense;
-        bool isDead = enemy.health <= 0;
-
-        yield return new WaitForSeconds(1f);
-        Destroy(currentAttack);
-        Destroy(currentDefense);
-
-        if (isDead)
-        {
-            state = BattleState.WON;
-            EndBattle();
+            _playerAtkLbl.DisplayNumber(_playerAtkLbl.NumberOnDisplay + 1);
         }
         else
         {
-            state = BattleState.ENEMYTURN;
+            _enemyAtkLbl.DisplayNumber(_enemyAtkLbl.NumberOnDisplay + 1);
+        }
+    }
+
+    public IEnumerator ShowDamageTakenAnim(int damage)
+    {
+        var numberDisplayer = Instantiate(_damageValuePrefab, (IsPlayerTurn ? _enemyContainer : _playercontainer)).GetComponent<NumberDisplayManager>();
+        StartCoroutine(numberDisplayer.MoveDamageText(damage));
+        if (damage > _mobData.stats.health)
+        {
+            StartCoroutine(_mobAnimator.PlayDeathAnim());
+            yield return StartCoroutine(IsPlayerTurn ? _playerAnimator.PlayPlayerAttackAnim() : _mobAnimator.PlayMobAttackAnim());
+            yield return StartCoroutine(_playerAnimator.PlayVictoryAnim());
+        }
+        else
+        {
+            StartCoroutine(IsPlayerTurn ? _playerAnimator.PlayPlayerAttackAnim() : _mobAnimator.PlayMobAttackAnim());
+            yield return StartCoroutine(_mobAnimator.PlayTakeDamageAnim());
+            _playerAnimator.PlayIdleAnimation();
+        }
+        
+    }
+
+    public IEnumerator AttackOpponent()
+    {
+        _dicePoolManager.ClearDice();
+        int result = _playerAtkLbl.NumberOnDisplay - _enemyDefLbl.NumberOnDisplay;
+        result = result > 0 ? result : 0;
+        yield return _damageDisplayManager.StartDamageCalculations(_playerAtkLbl.transform.parent.gameObject,
+            _enemyDefLbl.transform.parent.gameObject,
+            _playerHealthLbl.transform.parent.gameObject, result);
+        yield return StartCoroutine(ShowDamageTakenAnim(result));
+    }
+
+    public void PlayAttackAnimation()
+    {
+    }
+    private void EndTurn()
+    {
+        IsPlayerTurn = !IsPlayerTurn;
+        if (!IsPlayerTurn)
+        {
             StartCoroutine(EnemyTurn());
         }
     }
 
-    IEnumerator EnemyTurn()
+    private IEnumerator EnemyTurn()
     {
-        //bring the health over
-        yield return EnemyAttackUIAnimation();
-        yield return PlayerDefenseAnimation();
-        //play the characer hit animation and deal damage
-        player.health -= enemy.attack - player.defense;
+        if(_mobData.stats.attack == 0)
+        {
+            EndTurn();
+            yield return new WaitForSeconds(2f);
+            yield break;
+        }
+        yield return StartCoroutine(_dicePoolManager.RollDiceForTurn(TestPlayer<PlayerData>.GetAttack() + _enemyModifiers.attack, _enemyAtkLocation));
+    }
 
-        bool isDead = player.health == 0;
-
-        yield return new WaitForSeconds(1f);
-        Destroy(currentAttack);
-        Destroy(currentDefense);
-
-        if (isDead)
-        {
-            state = BattleState.LOST;
-            EndBattle();
-        }
-        else
-        {
-            state = BattleState.PLAYERTURN;
-        }
-
-    }
-    IEnumerator PlayerAttackUIAnimation()
+    [ContextMenu("Test Setup")]
+    public void TestSetup()
     {
-        currentAttack = Instantiate(playerAttack, playerAttack.transform.position, Quaternion.identity, canvas.transform);
-        while (Vector3.Distance(currentAttack.transform.position, playerAttackPosition.position) > 1f)
-        {
-            yield return null;
-            currentAttack.transform.position = Vector3.Lerp(currentAttack.transform.position, playerAttackPosition.position, Time.deltaTime * 4);
-        }
-        yield return null;
-    }
-    IEnumerator PlayerDefenseAnimation()
-    {
-        currentDefense = Instantiate(playerDefense, playerDefense.transform.position, Quaternion.identity, canvas.transform);
-        while (Vector3.Distance(currentDefense.transform.position, enemyDefensePosition.position) > 1f)
-        {
-            yield return null;
-            currentDefense.transform.position = Vector3.Lerp(currentDefense.transform.position, enemyDefensePosition.position, Time.deltaTime * 4);
-        }
-        yield return null;
-    }
-    IEnumerator EnemyAttackUIAnimation()
-    {
-        currentAttack = Instantiate(enemyAttack, enemyAttack.transform.position, Quaternion.identity, canvas.transform);
-        while (Vector3.Distance(currentAttack.transform.position, playerAttackPosition.position) > 1f)
-        {
-            yield return null;
-            currentAttack.transform.position = Vector3.Lerp(currentAttack.transform.position, playerAttackPosition.position, Time.deltaTime * 4);
-        }
-        yield return null;
-    }
-    IEnumerator EnemyDefenseAnimation()
-    {
-        currentDefense = Instantiate(enemyDefense, enemyDefense.transform.position, Quaternion.identity, canvas.transform);
-        while (Vector3.Distance(currentDefense.transform.position, enemyDefensePosition.position) > 1f)
-        {
-            yield return null;
-            currentDefense.transform.position = Vector3.Lerp(currentDefense.transform.position, enemyDefensePosition.position, Time.deltaTime * 4);
-        }
-        yield return null;
-    }
-    //exit battle and give the reward
-    void EndBattle()
-    {
-        if (state == BattleState.WON)
-        {
-            Destroy(currentTile.GetComponent<BattleEntity>());
-            //currentTile.npcName = "";
-            battleScreen.SetActive(false);
-        }
-        else if (state == BattleState.LOST)
-        {
-            battleScreen.SetActive(false);
-        }
+        SetupBattleManager(TestMob);
     }
 }

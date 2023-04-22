@@ -7,7 +7,7 @@ public abstract class CardEffect : ScriptableObject
 {
     //public abstract void Subscribe();
     //public abstract void Unsubscribe();
-    public abstract void Invoke(BattleManagerNew battleManager);
+    public abstract void Invoke(BattleManager battleManager);
 
     protected void HealToFull(bool applyToOpponent = false)
     {
@@ -98,6 +98,6 @@ public enum DiceCountType
 
 public struct CardEffectContext
 {
-    public BattleManagerNew battleManager;
+    public BattleManager battleManager;
     public Card parentCard;
 }
