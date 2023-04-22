@@ -48,7 +48,7 @@ public class DicePoolManager : MonoBehaviour
         for (int i = 0; i < atkValue; i++)
         {
             DiceManager dice = Instantiate(_dicePrefab, transform).GetComponent<DiceManager>();
-            DiceFace diceResult = (DiceFace)Random.Range(0, 5);
+            DiceFace diceResult = (DiceFace)UnityEngine.Random.Range(0, 5);
             dice.StartDiceRoll(diceResult, new Vector3(_startPoint.x + (columnCount * _diff), _startPoint.y - (_diff * rowCount)));
             if (diceResult.Equals(DiceFace.Red))
             {
@@ -116,36 +116,5 @@ public class DicePoolManager : MonoBehaviour
     }
 
 
-    private IEnumerator RollDiceForTurnCoroutine(int atkValue)
-    {
-        int redDiceCount = 0;
-        int rowCount = 0;
-        int columnCount = 0;
-        for (int i = 0; i < atkValue; i++)
-        {
-            DiceManager dice = Instantiate(_dicePrefab, transform).GetComponent<DiceManager>();
-            DiceFace diceResult = (DiceFace)Random.Range(0, 5);
-            dice.StartDiceRoll(diceResult, new Vector3(_startPoint.x + (columnCount * _diff), _startPoint.y - (_diff * rowCount)));
-            if (diceResult.Equals(DiceFace.Red))
-            {
-                redDiceCount++;
-            }
-
-            columnCount++;
-            if (columnCount == 14)
-            {
-                columnCount = 0;
-                rowCount++;
-            }
-            yield return new WaitForSeconds(0.1f);
-        }
-
-        while (_diceManagers.FindAll(x => x.IsAnimating).Count > 0)
-        {
-            yield return new WaitForSeconds(0.1f);
-        }
-
-        StartCoroutine(MoveRedDice());
-    }
 
 }
