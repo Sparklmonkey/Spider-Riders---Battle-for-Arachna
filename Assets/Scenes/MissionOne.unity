@@ -1345,6 +1345,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f24124e7563316849ab076064a6d9748, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _battleManager: {fileID: 455138306}
 --- !u!61 &319946634
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1684,8 +1685,7 @@ MonoBehaviour:
   _sceneList:
   - {fileID: 0}
   - {fileID: 0}
-  ItemList:
-  - Rope
+  _battleManager: {fileID: 0}
   OverlayTilePrefab: {fileID: 6869942500189489614, guid: 00b1a2302a2f20e4ebd392bbea6f3bfa, type: 3}
   OverlayTileContainer: {fileID: 587507200}
 --- !u!4 &436861401
@@ -5479,6 +5479,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2207ac41814afa3428a2632368fcb9a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _battleManager: {fileID: 455138306}
 --- !u!61 &1220456145
 BoxCollider2D:
   m_ObjectHideFlags: 0

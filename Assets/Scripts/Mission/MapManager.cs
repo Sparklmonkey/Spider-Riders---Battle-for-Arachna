@@ -15,7 +15,24 @@ public class MapManager : MonoBehaviour
     [SerializeField]
     private List<Tilemap> _sceneList;
 
-    public List<string> ItemList = new List<string> { "Rope", "CardItem", "Monacle" };
+    [SerializeField]
+    private BattleManager _battleManager;
+    private Vector2Int _battleTile;
+    public void SetupMobBattle(string mobName, Vector2Int battleTile)
+    {
+        _battleManager.gameObject.SetActive(true);
+        _battleTile = battleTile;
+        var mobData = Resources.Load<MobData>($"MobData/{mobName}");
+        _battleManager.SetupBattleManager(mobData);
+    }
+
+    public void BattleVictory()
+    {
+        ChangeTileToWalkable(_battleTile);
+        _battleManager.gameObject.SetActive(false);
+
+    }
+
     public Dictionary<Vector2Int, OverlayTile> Map;
 
     public OverlayTile OverlayTilePrefab;

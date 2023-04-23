@@ -1,33 +1,54 @@
-using System.Collections;
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class AttackBtnManager : MonoBehaviour
 {
+
+    [SerializeField]
+    private BattleManager _battleManager;
+    private bool _canAnimate = false;
     private Animator _animator;
     private void Awake()
     {
         _animator = GetComponent<Animator>();
+        _battleManager.OnChangeTurn += OnTurnChange;
     }
-    private void OnMouseDown()
+    private void OnTurnChange(object sender, BattleManager.BattleManagerEventArgs e)
     {
-        _animator.SetTrigger("Hover");
+        _canAnimate = e.IsPlayerTurn;
     }
+
+    private void OnMouseDown()
+        {
+            if (_canAnimate)
+            {
+                _animator.SetTrigger("Hover");
+            }
+        }
 
     private void OnMouseUp()
     {
-        _animator.SetTrigger("Idle");
-        StartCoroutine(BattleManager.Instance.AttackOpponent());
-        //Do Damage Calculation
+        if (_canAnimate)
+        {
+            _animator.SetTrigger("Idle");
+            StartCoroutine(_battleManager.AttackOpponent());
+        }
     }
 
     private void OnMouseEnter()
     {
-        _animator.SetTrigger("Hover");
+        if (_canAnimate)
+        {
+            _animator.SetTrigger("Hover");
+        }
     }
 
     private void OnMouseExit()
     {
-        _animator.SetTrigger("Idle");
+        if (_canAnimate)
+        {
+            _animator.SetTrigger("Idle");
+        }
     }
 }

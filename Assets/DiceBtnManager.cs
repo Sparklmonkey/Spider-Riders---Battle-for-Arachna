@@ -1,17 +1,26 @@
-using System.Collections;
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class DiceBtnManager : MonoBehaviour
 {
+    [SerializeField]
+    private BattleManager _battleManager;
     private Animator _animator;
+    private bool _canAnimate = false;
     private void Awake()
     {
         _animator = GetComponent<Animator>();
+        _battleManager.OnChangeTurn += OnTurnChange;
+    }
+
+    private void OnTurnChange(object sender, BattleManager.BattleManagerEventArgs e)
+    {
+        _canAnimate = e.IsPlayerTurn;
     }
     private void OnMouseDown()
     {
-        if (BattleManager.Instance.IsPlayerTurn)
+        if (_canAnimate)
         {
             _animator.SetTrigger("Click");
         }
@@ -19,16 +28,16 @@ public class DiceBtnManager : MonoBehaviour
 
     private void OnMouseUp()
     {
-        if (BattleManager.Instance.IsPlayerTurn)
+        if (_canAnimate)
         {
             _animator.SetTrigger("Idle");
-            BattleManager.Instance.RollDice();
+            StartCoroutine(_battleManager.RollDice());
         }
     }
 
     private void OnMouseEnter()
     {
-        if (BattleManager.Instance.IsPlayerTurn)
+        if (_canAnimate)
         {
             _animator.SetTrigger("Hover");
         }
@@ -36,7 +45,7 @@ public class DiceBtnManager : MonoBehaviour
 
     private void OnMouseExit()
     {
-        if (BattleManager.Instance.IsPlayerTurn)
+        if (_canAnimate)
         {
             _animator.SetTrigger("Idle");
         }

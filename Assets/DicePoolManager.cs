@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -20,7 +21,7 @@ public class DicePoolManager : MonoBehaviour
     {
         foreach (var dice in _diceManagers)
         {
-            if(dice != null)
+            if (dice != null)
             {
                 Destroy(dice.gameObject);
             }
@@ -30,7 +31,7 @@ public class DicePoolManager : MonoBehaviour
     }
     private void Awake()
     {
-            _dicePrefab = Resources.Load<GameObject>("Prefabs/Dice");
+        _dicePrefab = Resources.Load<GameObject>("Prefabs/Dice");
     }
 
     private GameObject _dicePrefab;
@@ -59,7 +60,7 @@ public class DicePoolManager : MonoBehaviour
             }
 
             columnCount++;
-            if(columnCount == 14)
+            if (columnCount == 14)
             {
                 columnCount = 0;
                 rowCount++;
@@ -67,7 +68,7 @@ public class DicePoolManager : MonoBehaviour
             yield return null;
         }
 
-        while(IsAllStillAnimating)
+        while (IsAllStillAnimating)
         {
             yield return null;
         }
@@ -93,15 +94,15 @@ public class DicePoolManager : MonoBehaviour
         yield return new WaitForSeconds(cumalativeLength);
 
         _diceManagers = diceList;
-        if (_redDiceManagers.Count > 0)
-        {
-            StartCoroutine(MoveRedDice());
-        }
     }
 
 
-    private IEnumerator MoveRedDice()
+    public IEnumerator MoveRedDice(Action addRedDie)
     {
+        if (_redDiceManagers.Count < 1)
+        {
+            yield break;
+        }
         foreach (var dice in _redDiceManagers)
         {
             while (Vector3.Distance(dice.transform.position, _redDieDestination.position) > 0.01f)
@@ -109,7 +110,7 @@ public class DicePoolManager : MonoBehaviour
                 dice.transform.position = Vector3.MoveTowards(dice.transform.position, _redDieDestination.position, Time.deltaTime * 5f);
                 yield return null;
             }
-            BattleManager.Instance.AddRedDie();
+            addRedDie();
             Destroy(dice.gameObject);
         }
     }
