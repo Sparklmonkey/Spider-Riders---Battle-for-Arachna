@@ -7,8 +7,14 @@ public abstract class CardEffect : ScriptableObject
 {
     //public abstract void Subscribe();
     //public abstract void Unsubscribe();
-    public abstract void Invoke(BattleManagerNew battleManager);
+    public abstract void Invoke(CardEffectContext cardEffectContext);
 
+    protected bool TryActivate(CardInstanceInBattle cardInstance)
+    {
+        if (cardInstance.IsActivated) return false;
+        cardInstance.IsActivated = true;
+        return true;
+    }
     protected void HealToFull(bool applyToOpponent = false)
     {
         // return if health is already >= max
@@ -68,12 +74,22 @@ public abstract class CardEffect : ScriptableObject
         // return the requested number of dice
         return 0;
     }
-    protected int GetPower(bool myStat = true)
+    protected int GetBaseAttack(bool myStat = true)
     {
-        // return the specified player's power stat
+        // return the specified player's attack stat
         return 0;
     }
-    protected int GetDefense(bool myStat = true)
+    protected int GetCurrentAttack(bool myStat = true)
+    {
+        // return the specified player's attack stat
+        return 0;
+    }
+    protected int GetBaseDefense(bool myStat = true)
+    {
+        // return the specified player's defense stat
+        return 0;
+    }
+    protected int GetCurrentDefense(bool myStat = true)
     {
         // return the specified player's defense stat
         return 0;
@@ -87,7 +103,7 @@ public abstract class CardEffect : ScriptableObject
     {
         // return the specified player's number of equipped armors
         return 0;
-    }    
+    }
 }
 
 public enum DiceCountType
@@ -96,8 +112,12 @@ public enum DiceCountType
     TotalMostRecentDieRoll,
 }
 
+public interface IBattleManager
+{
+}
+
 public struct CardEffectContext
 {
-    public BattleManagerNew battleManager;
-    public Card parentCard;
+    public IBattleManager battleManager;
+    public Card parentCardDefinition;
 }

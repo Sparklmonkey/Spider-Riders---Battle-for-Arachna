@@ -16,6 +16,7 @@ public class Card : ScriptableObject
     [field: SerializeField] public List<StatModifier> ActivatedOpponentStatModifiers { get; private set; }
     [field: SerializeField] public int CardsToDraw { get; private set; }
     [field: SerializeField] public int HealAmount { get; private set; }
+    [field: SerializeField] public int CardFuseLimit { get; private set; }
     [field: SerializeField] public int TurnsActive { get; private set; }
 
     [field: SerializeField] public string CardName { get; private set; }
