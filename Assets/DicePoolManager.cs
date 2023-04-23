@@ -4,12 +4,6 @@ using UnityEngine;
 
 public class DicePoolManager : MonoBehaviour
 {
-    private static DicePoolManager _instance;
-    public static DicePoolManager Instance
-    {
-        get { return _instance; }
-    }
-
     public bool IsAllStillAnimating { get { if (_diceManagers == null) { return false; } else { return _diceManagers.FindAll(x => x.IsAnimating).Count > 0; } } }
     private Transform _redDieDestination;
     private List<DiceManager> _redDiceManagers;
@@ -36,15 +30,7 @@ public class DicePoolManager : MonoBehaviour
     }
     private void Awake()
     {
-        if (_instance != null && _instance != this)
-        {
-            Destroy(gameObject);
-        }
-        else
-        {
-            _instance = this;
             _dicePrefab = Resources.Load<GameObject>("Prefabs/Dice");
-        }
     }
 
     private GameObject _dicePrefab;
@@ -123,7 +109,7 @@ public class DicePoolManager : MonoBehaviour
                 dice.transform.position = Vector3.MoveTowards(dice.transform.position, _redDieDestination.position, Time.deltaTime * 5f);
                 yield return null;
             }
-            BattleManagerNew.Instance.AddRedDie();
+            BattleManager.Instance.AddRedDie();
             Destroy(dice.gameObject);
         }
     }

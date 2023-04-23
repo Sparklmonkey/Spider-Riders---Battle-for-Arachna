@@ -17,7 +17,7 @@ public class AttackBtnManager : MonoBehaviour
     private void OnMouseUp()
     {
         _animator.SetTrigger("Idle");
-        StartCoroutine(BattleManagerNew.Instance.AttackOpponent());
+        StartCoroutine(BattleManager.Instance.AttackOpponent());
         //Do Damage Calculation
     }
 

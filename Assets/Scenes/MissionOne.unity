@@ -2189,10 +2189,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 455138303}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 432cd95e2fae27b40a41ae0852904e12, type: 3}
+  m_Script: {fileID: 11500000, guid: 30db84e0e3941604483931fbfc0b9383, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   TestMob: {fileID: 11400000, guid: dce6809768b2eea4da7807ea28a52410, type: 2}
+  _dicePoolManager: {fileID: 1979965537}
   _playerAnimator: {fileID: 561150964}
   _damageDisplayManager: {fileID: 455138307}
   _damageValuePrefab: {fileID: 9012423127891070160, guid: 4350f6264526162479004a93309ce057, type: 3}
@@ -3588,8 +3589,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dicePrefab: {fileID: 5177872181882871285, guid: 96266b686bf534480b040882b2d08d62, type: 3}
-  completedDieRolls: 
+  completedDieRolls: []
   diceRollAnimations: []
+  _canRollDice: 1
 --- !u!1 &717708558
 GameObject:
   m_ObjectHideFlags: 0
@@ -8557,32 +8559,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 30db84e0e3941604483931fbfc0b9383, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rollDiceButton: {fileID: 0}
-  attackButton: {fileID: 0}
-  canvas: {fileID: 0}
-  diceRoll: {fileID: 0}
-  playerAttackText: {fileID: 0}
-  playerDefenseText: {fileID: 0}
-  playerHealthText: {fileID: 0}
-  enemyAttackText: {fileID: 0}
-  enemyDefenseText: {fileID: 0}
-  enemyHealthText: {fileID: 0}
-  yellowCardBack: {fileID: 0}
-  blueCardBack: {fileID: 0}
-  greenCardBack: {fileID: 0}
-  playerAttack: {fileID: 0}
-  playerAttackPosition: {fileID: 0}
-  playerDefense: {fileID: 0}
-  playerDefensePosition: {fileID: 0}
-  enemyAttack: {fileID: 0}
-  enemyAttackPosition: {fileID: 0}
-  enemyDefense: {fileID: 0}
-  enemyDefensePosition: {fileID: 0}
-  playerHealth: {fileID: 0}
-  currentTile: {fileID: 0}
-  cardDisplay: {fileID: 0}
-  cardContent: {fileID: 0}
-  battleScreen: {fileID: 0}
+  TestMob: {fileID: 0}
+  _dicePoolManager: {fileID: 0}
+  _playerAnimator: {fileID: 0}
+  _damageDisplayManager: {fileID: 0}
+  _damageValuePrefab: {fileID: 0}
+  _enemyContainer: {fileID: 0}
+  _playercontainer: {fileID: 0}
+  _enemyAtkLocation: {fileID: 0}
+  _playerAtkLocation: {fileID: 0}
+  _playerAtkLbl: {fileID: 0}
+  _playerDefLbl: {fileID: 0}
+  _playerHealthLbl: {fileID: 0}
+  _enemyAtkLbl: {fileID: 0}
+  _enemyDefLbl: {fileID: 0}
+  _enemyHealthLbl: {fileID: 0}
+  IsPlayerTurn: 1
 --- !u!1001 &1946069963
 PrefabInstance:
   m_ObjectHideFlags: 0
