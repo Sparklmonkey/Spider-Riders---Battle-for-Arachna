@@ -6,7 +6,7 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "Card", menuName = "ScriptableObjects/Card", order = 1)]
 public class Card : ScriptableObject
 {
-    [field: SerializeField] public CardBackgroundType CardType { get; private set; }
+    [field: SerializeField] public CardTypeNew CardType { get; private set; }
     [field: SerializeField] public CardCategories CardCategories { get; private set; }
     [field: SerializeField] public int BuyCost { get; private set; }
     [field: SerializeField] public int SellCost { get; private set; }
@@ -18,6 +18,9 @@ public class Card : ScriptableObject
     [field: SerializeField] public int HealAmount { get; private set; }
     [field: SerializeField] public int CardFuseLimit { get; private set; }
     [field: SerializeField] public int TurnsActive { get; private set; }
+    [field: SerializeField] public CardEffect OnActivatedCardEffect { get; private set; }
+    [field: SerializeField] public CardEffect OnDeactivatedCardEffect { get; private set; }
+    [field: SerializeField] public CardEffect OnDroppedOntoCardEffect { get; private set; }
 
     [field: SerializeField] public string CardName { get; private set; }
     [field: SerializeField] public string Description { get; private set; }
@@ -28,13 +31,6 @@ public struct StatModifier
 {
     public StatType statType;
     public int amount;
-}
-
-public enum CardBackgroundType
-{
-    Boost,
-    Equipment,
-    BattleAction,
 }
 
 [Serializable]

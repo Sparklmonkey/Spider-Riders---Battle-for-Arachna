@@ -7,6 +7,6 @@ public class DrawPredefinedNumberOfCards : CardEffect
 {
     public override void Invoke(CardEffectContext cardEffectContext)
     {
-        DrawCards(cardEffectContext.parentCardDefinition.CardsToDraw);
+        DrawCards(cardEffectContext.thisCardInstance, cardEffectContext.thisCardInstance.CardDefinition.CardsToDraw);
     }
 }

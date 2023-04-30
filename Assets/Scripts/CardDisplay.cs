@@ -37,9 +37,6 @@ public class CardDisplay : MonoBehaviour, IPointerEnterHandler
         atkObject.SetActive(false);
         defObject.SetActive(false);
         healthObject.SetActive(false);
-        cardType.transform.GetChild(0).gameObject.SetActive(false);
-        cardType.transform.GetChild(1).gameObject.SetActive(false);
-        cardType.transform.GetChild(2).gameObject.SetActive(false);
         if (card.ActivatedOwnerStatModifiers != null)
         {
             foreach (StatModifier item in card.ActivatedOwnerStatModifiers)
@@ -54,31 +51,28 @@ public class CardDisplay : MonoBehaviour, IPointerEnterHandler
                         defValue.text = item.amount.ToString();
                         defObject.SetActive(true);
                         break;
-                    //case StatType.Health:
-                    //    healthValue.text = item.amount.ToString();
-                    //    healthObject.SetActive(true);
-                    //    break;
+                    case StatType.Dice:
+                        healthValue.text = item.amount.ToString();
+                        healthObject.SetActive(true);
+                        break;
                     default:
                         break;
                 }
             }
         }
-        switch (card.CardType)
+        if (card.CardType != null)
         {
-            case CardBackgroundType.Boost:
-                cardType.transform.GetChild(0).gameObject.SetActive(true);
-                break;
-            case CardBackgroundType.Equipment:
-                cardType.transform.GetChild(1).gameObject.SetActive(true);
-                break;
-            case CardBackgroundType.BattleAction:
-                cardType.transform.GetChild(2).gameObject.SetActive(true);
-                break;
-            default:
-                break;
+            foreach (Transform child in cardType.transform)
+            {
+                child.gameObject.SetActive(false);
+                if (card.CardType.StylizedTypeTextSprite == child.GetComponent<Image>().sprite)
+                {
+                    child.gameObject.SetActive(true);
+                }
+            }
         }
-        cardImage.sprite = Resources.Load<Sprite>($"Sprites/Cards/Images/{card.CardType}/{card.name}");
-        cardBack.sprite = Resources.Load<Sprite>($"Sprites/Cards/Back/{card.CardType}");
+        cardImage.sprite = card.CardImage;
+        cardBack.sprite = card.CardType.BackgroundSprite;
     }
 
     public void CardSelectedPressed(bool isSelected)

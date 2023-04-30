@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8db25b18e0fef8d4ca7673421d24f95b, type: 3}
   m_Name: Bug Blade
   m_EditorClassIdentifier: 
-  <CardType>k__BackingField: 1
+  <CardType>k__BackingField: {fileID: 11400000, guid: 7d59f3162f1a3d945a60e13d6b91fcf1, type: 2}
   <CardCategories>k__BackingField:
     isWeapon: 1
     isArmor: 0
@@ -26,6 +26,10 @@ MonoBehaviour:
   <ActivatedOpponentStatModifiers>k__BackingField: []
   <CardsToDraw>k__BackingField: 0
   <HealAmount>k__BackingField: 0
+  <CardFuseLimit>k__BackingField: 0
   <TurnsActive>k__BackingField: -1
+  <OnActivatedCardEffect>k__BackingField: {fileID: 0}
+  <OnDeactivatedCardEffect>k__BackingField: {fileID: 0}
+  <OnDroppedOntoCardEffect>k__BackingField: {fileID: 0}
   <CardName>k__BackingField: Bug Blade
   <Description>k__BackingField: Increases your attack by +1
