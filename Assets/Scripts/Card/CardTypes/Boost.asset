@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9069d6ef10f9802428916f6b52908ece, type: 3}
+  m_Name: Boost
+  m_EditorClassIdentifier: 
+  <Name>k__BackingField: Boost
+  <BackgroundSprite>k__BackingField: {fileID: 21300000, guid: 9fb091331faae174499f863f1802dad8, type: 3}
+  <StylizedTypeTextSprite>k__BackingField: {fileID: 21300000, guid: 77ada1c479e057e44812533a3ea41e05, type: 3}

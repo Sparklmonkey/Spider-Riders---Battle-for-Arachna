@@ -301,7 +301,6 @@ GameObject:
   - component: {fileID: 4524545803755206508}
   - component: {fileID: 4524545803755206509}
   - component: {fileID: 3987974379636021123}
-  - component: {fileID: 797335586933811521}
   m_Layer: 5
   m_Name: CardDisplay
   m_TagString: Untagged
@@ -363,7 +362,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 4dde40f55a7880843960b5d74be1cee7, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 643ecc64c57d47e41ae133cd4ab44253, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -390,28 +389,16 @@ MonoBehaviour:
   cardDesc: {fileID: 4882974219350463773}
   atkValue: {fileID: 523617724990494098}
   defValue: {fileID: 3886692057279872252}
-  healthValue: {fileID: 8332020952842665125}
+  diceValue: {fileID: 8332020952842665125}
   atkObject: {fileID: 4524545803543569713}
   defObject: {fileID: 4524545803506259463}
-  healthObject: {fileID: 4524545804712686394}
+  diceObject: {fileID: 4524545804712686394}
   cardType: {fileID: 8377923712150784161}
   cardImage: {fileID: 4524545803869331764}
   cardBack: {fileID: 4524545803755206509}
   largeDisplay: {fileID: 0}
   inventoryManager: {fileID: 0}
   selectCardBtn: {fileID: 0}
---- !u!114 &797335586933811521
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4524545803755206507}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5d7a9536c5b9849ba8b5fc0da66e80b6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &4524545803869331762
 GameObject:
   m_ObjectHideFlags: 0
@@ -863,7 +850,7 @@ GameObject:
   - component: {fileID: 4524545804712686399}
   - component: {fileID: 4524545804712686396}
   m_Layer: 5
-  m_Name: Modifier_Health
+  m_Name: Modifier_Dice
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1033,7 +1020,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 1
+  m_text: 2
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 3aab2455cea903f448fb3a25b9dfab39, type: 2}
   m_sharedMaterial: {fileID: -8601056595045305816, guid: 3aab2455cea903f448fb3a25b9dfab39, type: 2}
@@ -1249,7 +1236,7 @@ GameObject:
   - component: {fileID: 1118949429337522735}
   - component: {fileID: 8332020952842665125}
   m_Layer: 5
-  m_Name: HealthValue
+  m_Name: DiceValue
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1303,7 +1290,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 5
+  m_text: 1
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 3aab2455cea903f448fb3a25b9dfab39, type: 2}
   m_sharedMaterial: {fileID: -8601056595045305816, guid: 3aab2455cea903f448fb3a25b9dfab39, type: 2}

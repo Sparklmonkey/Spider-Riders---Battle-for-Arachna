@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8db25b18e0fef8d4ca7673421d24f95b, type: 3}
   m_Name: Light of the Oracle
   m_EditorClassIdentifier: 
-  <CardType>k__BackingField: {fileID: 11400000, guid: ba2278f2f393721438445987bb8bb3e9, type: 2}
+  <CardType>k__BackingField: {fileID: 11400000, guid: ae96df50bfea59c419b3c449490be82a, type: 2}
   <CardCategories>k__BackingField:
     isWeapon: 0
     isArmor: 0

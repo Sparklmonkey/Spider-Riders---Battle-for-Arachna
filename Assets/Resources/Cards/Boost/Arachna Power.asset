@@ -21,9 +21,13 @@ MonoBehaviour:
   <SellCost>k__BackingField: 3000
   <CardImage>k__BackingField: {fileID: 21300000, guid: dacbe0242e4f6b4458aecfb5f4f3e1e6, type: 3}
   <ActivatedOwnerStatModifiers>k__BackingField:
-  - statType: 0
-    amount: 10
-  <ActivatedOpponentStatModifiers>k__BackingField: []
+    attackModifier: 10
+    defenseModifier: 0
+    diceModifier: 0
+  <ActivatedOpponentStatModifiers>k__BackingField:
+    attackModifier: 0
+    defenseModifier: 0
+    diceModifier: 0
   <CardsToDraw>k__BackingField: 0
   <HealAmount>k__BackingField: 0
   <CardFuseLimit>k__BackingField: 0

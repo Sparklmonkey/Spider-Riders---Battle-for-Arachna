@@ -8,9 +8,9 @@ using UnityEngine.EventSystems;
 public class CardDisplay : MonoBehaviour, IPointerEnterHandler
 {
     [SerializeField]
-    public TextMeshProUGUI cardName, cardPrice, cardDesc, atkValue, defValue, healthValue;
+    public TextMeshProUGUI cardName, cardPrice, cardDesc, atkValue, defValue, diceValue;
     [SerializeField]
-    public GameObject atkObject, defObject, healthObject, cardType;
+    public GameObject atkObject, defObject, diceObject, cardType;
     [SerializeField]
     public Image cardImage, cardBack;
     [SerializeField]
@@ -34,32 +34,15 @@ public class CardDisplay : MonoBehaviour, IPointerEnterHandler
         cardDesc.text = card.Description;
         cardPrice.text = $"{card.BuyCost}G";
         cardOnDisplay = card;
-        atkObject.SetActive(false);
-        defObject.SetActive(false);
-        healthObject.SetActive(false);
-        if (card.ActivatedOwnerStatModifiers != null)
-        {
-            foreach (StatModifier item in card.ActivatedOwnerStatModifiers)
-            {
-                switch (item.statType)
-                {
-                    case StatType.Attack:
-                        atkValue.text = item.amount.ToString();
-                        atkObject.SetActive(true);
-                        break;
-                    case StatType.Defense:
-                        defValue.text = item.amount.ToString();
-                        defObject.SetActive(true);
-                        break;
-                    case StatType.Dice:
-                        healthValue.text = item.amount.ToString();
-                        healthObject.SetActive(true);
-                        break;
-                    default:
-                        break;
-                }
-            }
-        }
+        int attackModifier = card.ActivatedOwnerStatModifiers.attackModifier;
+        atkValue.text = attackModifier.ToString();
+        atkObject.SetActive(attackModifier != 0);
+        int defenseModifier = card.ActivatedOwnerStatModifiers.defenseModifier;
+        defValue.text = defenseModifier.ToString();
+        defObject.SetActive(defenseModifier != 0);
+        int diceModifier = card.ActivatedOwnerStatModifiers.diceModifier;
+        diceValue.text = diceModifier.ToString();
+        diceObject.SetActive(diceModifier != 0);
         if (card.CardType != null)
         {
             foreach (Transform child in cardType.transform)

@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8db25b18e0fef8d4ca7673421d24f95b, type: 3}
   m_Name: Axial Pike
   m_EditorClassIdentifier: 
-  <CardType>k__BackingField: {fileID: 11400000, guid: 7d59f3162f1a3d945a60e13d6b91fcf1, type: 2}
+  <CardType>k__BackingField: {fileID: 11400000, guid: db7c75e1fc61b4f439c8829174b9c3a5, type: 2}
   <CardCategories>k__BackingField:
     isWeapon: 1
     isArmor: 0
@@ -21,9 +21,13 @@ MonoBehaviour:
   <SellCost>k__BackingField: 800
   <CardImage>k__BackingField: {fileID: 21300000, guid: 76f17f93470d1f148bd186d47370c11d, type: 3}
   <ActivatedOwnerStatModifiers>k__BackingField:
-  - statType: 0
-    amount: 3
-  <ActivatedOpponentStatModifiers>k__BackingField: []
+    attackModifier: 3
+    defenseModifier: 0
+    diceModifier: 0
+  <ActivatedOpponentStatModifiers>k__BackingField:
+    attackModifier: 0
+    defenseModifier: 0
+    diceModifier: 0
   <CardsToDraw>k__BackingField: 0
   <HealAmount>k__BackingField: 0
   <CardFuseLimit>k__BackingField: 0
