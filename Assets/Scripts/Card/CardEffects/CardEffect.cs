@@ -75,11 +75,11 @@ public abstract class CardEffect : ScriptableObject
     {
         if (applyToOpponent)
         {
-            thisCardInstance.BattleState.ActiveOpponentStatModifiers = new StatModifiers();
+            thisCardInstance.BattleState.ActiveOpponentStatModifiers = StatModifiers.Empty;
         }
         else
         {
-            thisCardInstance.BattleState.ActiveOwnerStatModifiers = new StatModifiers();
+            thisCardInstance.BattleState.ActiveOwnerStatModifiers = StatModifiers.Empty;
         }
     }
     protected void RollNewDice(CardInPlay thisCardInstance)

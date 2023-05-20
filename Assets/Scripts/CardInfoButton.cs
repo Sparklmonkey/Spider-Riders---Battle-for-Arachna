@@ -3,10 +3,11 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
-public class CardInfoButton : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, IPointerClickHandler
+[RequireComponent(typeof(CircleCollider2D))]
+public class CardInfoButton : MonoBehaviour
 {
     [SerializeField] private List<Sprite> spriteList;
-    [SerializeField] private Image buttonImage;
+    [SerializeField] private SpriteRenderer buttonRenderer;
     [SerializeField] private CardInPlay cardInPlay;
 
     private Card CardDefinition
@@ -26,19 +27,30 @@ public class CardInfoButton : MonoBehaviour, IPointerEnterHandler, IPointerExitH
         }
     }
 
-    public void OnPointerClick(PointerEventData eventData)
+    private void OnMouseDown()
     {
-        buttonImage.sprite = spriteList[0];
-        Debug.LogWarning($"CardInfoButton of {cardInPlay} is requesting for {BattleManager} to open card info popup containing {CardDefinition} (This feature is not yet implemented)");
+        buttonRenderer.sprite = spriteList[0];
+        Debug.LogWarning($"Please fix CardInfoButton by importing its assets instead of using a purple circle");
     }
-    public void OnPointerEnter(PointerEventData eventData)
+    private void OnMouseUp()
     {
-        buttonImage.sprite = spriteList[0];
+        buttonRenderer.sprite = spriteList[0];
+        Debug.LogWarning($"Please fix CardInfoButton by importing its assets instead of using a purple circle");
+    }
+    private void OnMouseUpAsButton()
+    {
+        if (BattleManager == null || CardDefinition == null) return;
+        BattleManager.OpenCardDetailsPopup(CardDefinition);
+    }
+    private void OnMouseEnter()
+    {
+        buttonRenderer.sprite = spriteList[0];
         Debug.LogWarning($"Please fix CardInfoButton by importing its assets instead of using a purple circle");
         // Refer to DefineButton2 (2867) in battleSystem_2.swf
     }
-    public void OnPointerExit(PointerEventData eventData)
+    private void OnMouseExit()
     {
-        buttonImage.sprite = spriteList[0];
+        buttonRenderer.sprite = spriteList[0];
+        Debug.LogWarning($"Please fix CardInfoButton by importing its assets instead of using a purple circle");
     }
 }

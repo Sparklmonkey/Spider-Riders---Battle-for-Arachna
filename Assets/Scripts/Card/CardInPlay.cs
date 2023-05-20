@@ -6,11 +6,12 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
+[RequireComponent(typeof(BoxCollider2D))]
 public class CardInPlay : MonoBehaviour
 {
-    [SerializeField] private TextMeshProUGUI _cardName, _attackValue, _defenseValue, _diceValue;
+    [SerializeField] private TextMeshPro _cardName, _attackValue, _defenseValue, _diceValue;
     [SerializeField] private GameObject _attackObject, _defenseObject, _diceObject, _activationFrame;
-    [SerializeField] private Image _cardImage, _cardBack;
+    [SerializeField] private SpriteRenderer _cardImageRenderer, _cardBackRenderer;
     [SerializeField] private CardInfoButton _cardInfoButton;
     [SerializeField] private float _moveToPositionTime = 0.3f;
 
@@ -32,8 +33,8 @@ public class CardInPlay : MonoBehaviour
             CardDefinition = cardDefinition;
             BattleManager = battleManager;
             thisCard._cardName.text = CardDefinition.CardName;
-            thisCard._cardBack.sprite = CardDefinition.CardType.BackgroundSprite;
-            thisCard._cardImage.sprite = CardDefinition.CardImage;
+            thisCard._cardBackRenderer.sprite = CardDefinition.CardType.BackgroundSprite;
+            thisCard._cardImageRenderer.sprite = CardDefinition.CardImage;
         }
     }
     public class BattleStateData
@@ -47,8 +48,18 @@ public class CardInPlay : MonoBehaviour
             {
                 if (_state == value) return;
                 ThisCard._activationFrame.SetActive(value == State.Activated);
+                if (_state != State.Activated && value == State.Activated)
+                {
+                    ApplyOwnerModifiers();
+                    ApplyTargetModifiers();
+                    ThisCard.Reference.BattleManager.PlayCardActivationSound();
+                }
+                if (_state == State.Activated && value != State.Activated)
+                {
+                    RemoveOwnerModifiers();
+                    RemoveTargetModifiers();
+                }
                 _state = value;
-                if (_state == State.Destroying) PrepareForDestruction();
             }
         }
         public bool IsUninitialized => State != State.Uninitialized;
@@ -62,9 +73,15 @@ public class CardInPlay : MonoBehaviour
             set
             {
                 if (_cardSlot == value) return;
-                Debug.LogWarning($"CardInPlay {ThisCard} switching slot from {_cardSlot} - clean up connection");
+                if (!IsUninitialized && CardOwner != null && CardOwner.HandOfCards != null)
+                {
+                    CardOwner.HandOfCards.TryClearCard(ThisCard);
+                }
                 _cardSlot = value;
-                Debug.LogWarning($"CardInPlay {ThisCard} switching slot to {value} - set up connection");
+                if (!IsUninitialized && CardOwner != null && CardOwner.HandOfCards != null)
+                {
+                    CardOwner.HandOfCards.SetCard(ThisCard, value);
+                }
             }
         }
         private IBattleParticipant _cardOwner;
@@ -74,9 +91,17 @@ public class CardInPlay : MonoBehaviour
             set
             {
                 if (_cardOwner == value) return;
-                Debug.LogWarning($"CardInPlay {ThisCard} switching owner from {_cardOwner} - clean up connection");
+                if (!IsUninitialized && _cardOwner != null)
+                {
+                    if (_cardOwner.HandOfCards != null) _cardOwner.HandOfCards.TryClearCard(ThisCard);
+                    if (IsActivated) RemoveOwnerModifiers();
+                }
                 _cardOwner = value;
-                Debug.LogWarning($"CardInPlay {ThisCard} switching owner to {value} - set up connection");
+                if (!IsUninitialized && value != null)
+                {
+                    if (value.HandOfCards != null) value.HandOfCards.SetCard(ThisCard, CardSlot);
+                    if (IsActivated) ApplyOwnerModifiers();
+                }
             }
         }
         private IBattleParticipant _cardTarget;
@@ -86,9 +111,15 @@ public class CardInPlay : MonoBehaviour
             set
             {
                 if (_cardTarget == value) return;
-                Debug.LogWarning($"CardInPlay {ThisCard} switching target from {_cardTarget} - clean up connection");
+                if (IsActivated && _cardTarget != null)
+                {
+                    RemoveTargetModifiers();
+                }
                 _cardOwner = value;
-                Debug.LogWarning($"CardInPlay {ThisCard} switching target to {value} - set up connection");
+                if (IsActivated && value != null)
+                {
+                    ApplyTargetModifiers();
+                }
             }
         }
         private int _cardsLeftToDraw;
@@ -97,8 +128,13 @@ public class CardInPlay : MonoBehaviour
             get => _cardsLeftToDraw;
             set
             {
+                if (IsUninitialized)
+                {
+                    _cardsLeftToDraw = 0;
+                    return;
+                }
                 if ( _cardsLeftToDraw == value) return;
-                Debug.LogWarning($"CardInPlay {ThisCard} used to allow {_cardsLeftToDraw} more draws, now {value} - notify appropriate parties");
+                if (CardOwner != null) CardOwner.AddCardsToDraw(value - _cardsLeftToDraw);
                 _cardsLeftToDraw = value;
             }
         }
@@ -122,7 +158,11 @@ public class CardInPlay : MonoBehaviour
             get => _usedFuses;
             set
             {
-                if (!IsActivated) return;
+                if (IsUninitialized)
+                {
+                    _usedFuses = 0;
+                    return;
+                }
                 _usedFuses = value;
             }
         }
@@ -133,9 +173,13 @@ public class CardInPlay : MonoBehaviour
             get => _activeOwnerStatModifiers;
             set
             {
-                if (!IsActivated) return;
+                if (IsUninitialized)
+                {
+                    _activeOwnerStatModifiers = StatModifiers.Empty;
+                    return;
+                }
                 if (_activeOwnerStatModifiers == value) return;
-                Debug.LogWarning($"CardInPlay {ThisCard} owner modifiers changing from {_activeOwnerStatModifiers} to {value} - notify appropriate parties");
+                CardOwner.StatModifiers += (value - _activeOwnerStatModifiers);
                 _activeOwnerStatModifiers = value;
                 UpdateOwnerStatsVisuals();
             }
@@ -146,9 +190,13 @@ public class CardInPlay : MonoBehaviour
             get => _activeOpponentStatModifiers;
             set
             {
-                if (!IsActivated) return;
+                if (IsUninitialized)
+                {
+                    _activeOpponentStatModifiers = StatModifiers.Empty;
+                    return;
+                }
                 if (_activeOpponentStatModifiers == value) return;
-                Debug.LogWarning($"CardInPlay {ThisCard} opponent modifiers changing from {_activeOpponentStatModifiers} to {value} - notify appropriate parties");
+                CardTarget.StatModifiers += (value - _activeOpponentStatModifiers);
                 _activeOpponentStatModifiers = value;
             }
         }
@@ -165,12 +213,13 @@ public class CardInPlay : MonoBehaviour
             CardSlot = cardSlot;
             CardOwner = cardOwner;
             CardTarget = null;
-            CardsLeftToDraw = 0;
+
+            _cardsLeftToDraw = 0;
             _elapsedTurnsActive = 0;
             _usedFuses = 0;
-            _activeOwnerStatModifiers = new StatModifiers();
+            _activeOwnerStatModifiers = StatModifiers.Empty;
             UpdateOwnerStatsVisuals();
-            _activeOpponentStatModifiers = new StatModifiers();
+            _activeOpponentStatModifiers = StatModifiers.Empty;
             return this;
         }
         public BattleStateData PutInPlay()
@@ -183,13 +232,12 @@ public class CardInPlay : MonoBehaviour
         {
             if (State != State.InPlay) throw new InvalidOperationException($"CardInPlay must be InPlay to activate: {ThisCard}");
             State = State.Activated;
-            Debug.LogWarning($"CardInPlay {ThisCard} activated - play a sound, etc!");
             return this;
         }
         public BattleStateData Expire()
         {
             if (State != State.Activated) throw new InvalidOperationException($"CardInPlay must be Activated to expire: {ThisCard}");
-            ThisCard.StartCoroutine(DestroyInCemetery());
+            ThisCard._miscCoroutine = ThisCard.StartCoroutine(DestroyInCemetery());
             return this;
         }
         public IEnumerator DestroyInCemetery()
@@ -198,9 +246,10 @@ public class CardInPlay : MonoBehaviour
             CardSlot = CardSlot.OnCemetery;
             State = State.Destroying;
             ThisCard._movementCoroutine = ThisCard.StartCoroutine(
-                ThisCard.MovementData.MoveToDestination(CardOwner.GetSlotPosition(CardSlot.OnCemetery), ThisCard._moveToPositionTime, true)
+                ThisCard.MovementData.MoveToDestination(CardOwner.HandOfCards.GetSlotPosition(CardSlot.OnCemetery), ThisCard._moveToPositionTime, true)
             );
             yield return ThisCard._movementCoroutine;
+            CardOwner.HandOfCards.TriggerTrashCanAnimationOrOverlap();
             yield return DestroySelf();
         }
         public IEnumerator DestroyInPlace()
@@ -210,14 +259,42 @@ public class CardInPlay : MonoBehaviour
             yield return DestroySelf();
         }
 
-        private void PrepareForDestruction()
-        {
-            Debug.LogWarning($"CardInPlay {ThisCard} preparing for destruction - clean up stats, connections, etc!");
-        }
         private IEnumerator DestroySelf()
         {
-            Debug.LogWarning($"CardInPlay {ThisCard} is selfdestructing - implement this...");
+            State = State.Destroying;
+            Destroy(ThisCard);
+            // Could alternatively have a pool manager set this gameObject to inactive, set State to Uninitialized, and put it back in the pool, etc
             yield break;
+        }
+        private void ApplyOwnerModifiers()
+        {
+            if (CardOwner != null)
+            {
+                CardOwner.AddCardsToDraw(CardsLeftToDraw);
+                CardOwner.StatModifiers += ActiveOwnerStatModifiers;
+            }
+        }
+        private void RemoveOwnerModifiers()
+        {
+            if (CardOwner != null)
+            {
+                CardOwner.AddCardsToDraw(-CardsLeftToDraw);
+                CardOwner.StatModifiers -= ActiveOwnerStatModifiers;
+            }
+        }
+        private void ApplyTargetModifiers()
+        {
+            if (CardTarget != null)
+            {
+                CardTarget.StatModifiers += ActiveOpponentStatModifiers;
+            }
+        }
+        private void RemoveTargetModifiers()
+        {
+            if (CardTarget != null)
+            {
+                CardTarget.StatModifiers -= ActiveOpponentStatModifiers;
+            }
         }
         private void UpdateOwnerStatsVisuals()
         {
@@ -240,6 +317,7 @@ public class CardInPlay : MonoBehaviour
     public MovementDragSnap MovementData { get; private set; }
     
     private Camera _mainCamera;
+    private Coroutine _miscCoroutine;
     private Coroutine _movementCoroutine;
 
     private void OnEnable()
@@ -249,48 +327,44 @@ public class CardInPlay : MonoBehaviour
         if (BattleState.IsInPlay) return;
         BattleState.PutInPlay();
     }
-    private void Update()
-    {
-        if (MovementData.IsDragging) MovementData.DragPosition = _mainCamera.ScreenToWorldPoint(Input.mousePosition);
-    }
     private void OnMouseDown()
     {
         if (_movementCoroutine != null) return;
         MovementData.DragPosition = _mainCamera.ScreenToWorldPoint(Input.mousePosition);
         _movementCoroutine = StartCoroutine(MovementData.Drag());
     }
+    private void OnMouseDrag()
+    {
+        if (MovementData.IsDragging) MovementData.DragPosition = _mainCamera.ScreenToWorldPoint(Input.mousePosition);
+    }
     private void OnMouseUp()
     {
         if (!MovementData.IsDragging) return;
         Vector3 mousePosition = _mainCamera.ScreenToWorldPoint(Input.mousePosition);
-        IBattleParticipant cardOwner = BattleState.CardOwner;
+        IHandOfCardsManager hand = BattleState.CardOwner.HandOfCards;
 
-        if (cardOwner.TryGetSlot(mousePosition, out CardSlot slot))
+        if (hand.TryGetSlot(mousePosition, out CardSlot slot))
         {
-            switch (slot)
+            if (slot == CardSlot.OnCemetery)
             {
-                case CardSlot.OnCemetery:
-                    BattleState.DestroyInCemetery();
-                    break;
-                case CardSlot.OnDeck:
-                    _movementCoroutine = StartCoroutine(MovementData.MoveToDestination(cardOwner.GetSlotPosition(BattleState.CardSlot), _moveToPositionTime, true));
-                    break;
-                default:
-                    if (cardOwner.TryGetCardInSlot(slot, out CardInPlay cardInSlot))
-                    {
-                        cardInSlot.DropCardOnto(this);
-                    }
-                    else
-                    {
-                        BattleState.CardSlot = slot;
-                        _movementCoroutine = StartCoroutine(MovementData.MoveToDestination(cardOwner.GetSlotPosition(slot), _moveToPositionTime, true));
-                    }
-                    break;
+                BattleState.DestroyInCemetery();
+            }
+            else
+            {
+                if (hand.TryGetCardInSlot(slot, out CardInPlay cardInSlot))
+                {
+                    cardInSlot.DropCardOnto(this);
+                }
+                else
+                {
+                    if (slot != CardSlot.OnDeck) BattleState.CardSlot = slot;
+                    _movementCoroutine = StartCoroutine(MovementData.MoveToDestination(hand.GetSlotPosition(slot), _moveToPositionTime, true));
+                }
             }
         }
         else
         {
-            _movementCoroutine = StartCoroutine(MovementData.MoveToDestination(cardOwner.GetSlotPosition(BattleState.CardSlot), _moveToPositionTime, true));
+            _movementCoroutine = StartCoroutine(MovementData.MoveToDestination(hand.GetSlotPosition(BattleState.CardSlot), _moveToPositionTime, true));
         }
     }
 
@@ -300,8 +374,9 @@ public class CardInPlay : MonoBehaviour
         CardSlot cardSlot)
     {
         Reference = new References(this, cardDefinition, battleManager);
-        MovementData = new MovementDragSnap(transform).TeleportToPosition(cardOwner.GetSlotPosition(cardSlot));
+        MovementData = new MovementDragSnap(transform).TeleportToPosition(cardOwner.HandOfCards.GetSlotPosition(cardSlot));
         // _mainCamera is initialized in OnEnable.
+        _miscCoroutine = null;
         _movementCoroutine = null;
         BattleState = new BattleStateData(this).Initialize(cardOwner, cardSlot);
         return this;
@@ -330,7 +405,7 @@ public class CardInPlay : MonoBehaviour
         if (IsFusingComplete(droppedCard)) throw new InvalidOperationException($"DropCardOnto was somehow called between {this} and {droppedCard}, but one or more is not initialized...");
         // 0. Move the cards to the same position
         droppedCard._movementCoroutine = StartCoroutine(
-            droppedCard.MovementData.MoveToDestination(droppedCard.BattleState.CardOwner.GetSlotPosition(BattleState.CardSlot), droppedCard._moveToPositionTime, true)
+            droppedCard.MovementData.MoveToDestination(droppedCard.BattleState.CardOwner.HandOfCards.GetSlotPosition(BattleState.CardSlot), droppedCard._moveToPositionTime, true)
         );
         // 1. Use this card's drop effect - drop effects should check for card activation status
         if (Reference.CardDefinition.OnDroppedOntoCardEffect != null)
@@ -353,7 +428,7 @@ public class CardInPlay : MonoBehaviour
             if (droppedCard == null) return;
         }
         // 3. Swap the cards' positions
-        _movementCoroutine = StartCoroutine(MovementData.MoveToDestination(BattleState.CardOwner.GetSlotPosition(droppedCard.BattleState.CardSlot), _moveToPositionTime, true));
+        _movementCoroutine = StartCoroutine(MovementData.MoveToDestination(BattleState.CardOwner.HandOfCards.GetSlotPosition(droppedCard.BattleState.CardSlot), _moveToPositionTime, true));
         CardSlot temporarySlot = BattleState.CardSlot;
         BattleState.CardSlot = droppedCard.BattleState.CardSlot;
         droppedCard.BattleState.CardSlot = temporarySlot;
