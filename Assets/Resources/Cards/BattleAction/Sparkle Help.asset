@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8db25b18e0fef8d4ca7673421d24f95b, type: 3}
   m_Name: Sparkle Help
   m_EditorClassIdentifier: 
-  <CardType>k__BackingField: 2
+  <CardType>k__BackingField: {fileID: 11400000, guid: ae96df50bfea59c419b3c449490be82a, type: 2}
   <CardCategories>k__BackingField:
     isWeapon: 0
     isArmor: 0
@@ -24,6 +24,10 @@ MonoBehaviour:
   <ActivatedOpponentStatModifiers>k__BackingField: []
   <CardsToDraw>k__BackingField: 0
   <HealAmount>k__BackingField: 5
+  <CardFuseLimit>k__BackingField: 0
   <TurnsActive>k__BackingField: 0
+  <OnActivatedCardEffect>k__BackingField: {fileID: 0}
+  <OnDeactivatedCardEffect>k__BackingField: {fileID: 0}
+  <OnDroppedOntoCardEffect>k__BackingField: {fileID: 0}
   <CardName>k__BackingField: Sparkle Help
   <Description>k__BackingField: Add 5 Health Points

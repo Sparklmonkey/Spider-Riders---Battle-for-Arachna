@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/Scripts/CardInfoButton.cs.meta
+guid: 756d18fd759d2fd469e3f54afe90c898
+========
+guid: 26fb276d60226344abb4fd5716cde942
+>>>>>>>> master:Assets/Scripts/SpiderRiderRankStats.cs.meta
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

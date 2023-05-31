@@ -8,9 +8,9 @@ using UnityEngine.EventSystems;
 public class CardDisplay : MonoBehaviour, IPointerEnterHandler
 {
     [SerializeField]
-    public TextMeshProUGUI cardName, cardPrice, cardDesc, atkValue, defValue, healthValue;
+    public TextMeshProUGUI cardName, cardPrice, cardDesc, atkValue, defValue, diceValue;
     [SerializeField]
-    public GameObject atkObject, defObject, healthObject, cardType;
+    public GameObject atkObject, defObject, diceObject, cardType;
     [SerializeField]
     public Image cardImage, cardBack;
     [SerializeField]
@@ -34,51 +34,28 @@ public class CardDisplay : MonoBehaviour, IPointerEnterHandler
         cardDesc.text = card.Description;
         cardPrice.text = $"{card.BuyCost}G";
         cardOnDisplay = card;
-        atkObject.SetActive(false);
-        defObject.SetActive(false);
-        healthObject.SetActive(false);
-        cardType.transform.GetChild(0).gameObject.SetActive(false);
-        cardType.transform.GetChild(1).gameObject.SetActive(false);
-        cardType.transform.GetChild(2).gameObject.SetActive(false);
-        if (card.ActivatedOwnerStatModifiers != null)
+        int attackModifier = card.ActivatedOwnerStatModifiers.attackModifier;
+        atkValue.text = attackModifier.ToString();
+        atkObject.SetActive(attackModifier != 0);
+        int defenseModifier = card.ActivatedOwnerStatModifiers.defenseModifier;
+        defValue.text = defenseModifier.ToString();
+        defObject.SetActive(defenseModifier != 0);
+        int diceModifier = card.ActivatedOwnerStatModifiers.diceModifier;
+        diceValue.text = diceModifier.ToString();
+        diceObject.SetActive(diceModifier != 0);
+        if (card.CardType != null)
         {
-            foreach (StatModifier item in card.ActivatedOwnerStatModifiers)
+            foreach (Transform child in cardType.transform)
             {
-                switch (item.statType)
+                child.gameObject.SetActive(false);
+                if (card.CardType.StylizedTypeTextSprite == child.GetComponent<Image>().sprite)
                 {
-                    case StatType.Attack:
-                        atkValue.text = item.amount.ToString();
-                        atkObject.SetActive(true);
-                        break;
-                    case StatType.Defense:
-                        defValue.text = item.amount.ToString();
-                        defObject.SetActive(true);
-                        break;
-                    //case StatType.Health:
-                    //    healthValue.text = item.amount.ToString();
-                    //    healthObject.SetActive(true);
-                    //    break;
-                    default:
-                        break;
+                    child.gameObject.SetActive(true);
                 }
             }
         }
-        switch (card.CardType)
-        {
-            case CardBackgroundType.Boost:
-                cardType.transform.GetChild(0).gameObject.SetActive(true);
-                break;
-            case CardBackgroundType.Equipment:
-                cardType.transform.GetChild(1).gameObject.SetActive(true);
-                break;
-            case CardBackgroundType.BattleAction:
-                cardType.transform.GetChild(2).gameObject.SetActive(true);
-                break;
-            default:
-                break;
-        }
-        cardImage.sprite = Resources.Load<Sprite>($"Sprites/Cards/Images/{card.CardType}/{card.name}");
-        cardBack.sprite = Resources.Load<Sprite>($"Sprites/Cards/Back/{card.CardType}");
+        cardImage.sprite = card.CardImage;
+        cardBack.sprite = card.CardType.BackgroundSprite;
     }
 
     public void CardSelectedPressed(bool isSelected)

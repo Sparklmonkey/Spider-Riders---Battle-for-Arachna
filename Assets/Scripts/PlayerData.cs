@@ -28,6 +28,6 @@ public class CharacterGraphicsPreset
 [Serializable]
 public class BattleParticipantStats
 {
-    [UnityEngine.Serialization.FormerlySerializedAs("power")] public int attack;
+    public int attack;
     public int defense, health;
 }

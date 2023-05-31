@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/Scripts/IBattleParticipant.cs.meta
+guid: 868f3bcd71095864f97575caadb483a0
+========
+guid: d9bd0677a34a23d429d5a8f0e6b602e4
+>>>>>>>> master:Assets/Scripts/CardEffects/CardEffect.cs.meta
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/Scripts/IBattleManager.cs.meta
+guid: d82a6157fe300864ab66fb409e48dc10
+========
+guid: 80c2e96a740b3044392b96cee0685fa5
+>>>>>>>> master:Assets/Scripts/SpiderRiderRankStatsSet.cs.meta
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

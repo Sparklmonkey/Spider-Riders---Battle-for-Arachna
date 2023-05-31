@@ -72,10 +72,10 @@ public class DicePoolManager : MonoBehaviour
         {
             yield return null;
         }
-        StartCoroutine(RemoveWhiteDie());
+        StartCoroutine(RemoveWhiteDice());
     }
 
-    private IEnumerator RemoveWhiteDie()
+    private IEnumerator RemoveWhiteDice()
     {
         var diceList = new List<DiceManager>();
         float cumalativeLength = 0;
