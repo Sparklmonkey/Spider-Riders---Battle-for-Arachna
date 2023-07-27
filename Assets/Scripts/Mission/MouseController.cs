@@ -154,9 +154,8 @@ public class MouseController : MonoBehaviour
             if (_currentPath[0].gameObject.name.Contains("Battle_"))
             {
                 string enemyName = _currentPath[0].gameObject.name.Replace("Battle_", "");
+                _currentPath.Clear();
                 MapManager.Instance.SetupMobBattle(enemyName, new Vector2Int(_characterObject.CurrentTile.tileLocation.x, _characterObject.CurrentTile.tileLocation.y));
-                _currentPath.Clear();
-                _currentPath.Clear();
                 return;
             }
 
@@ -171,22 +170,22 @@ public class MouseController : MonoBehaviour
                     _characterObject.transform.position = playerStartTile.transform.position;
                     _currentPath.Clear();
                     return;
-                case "Animate_ClimbUp_Left":
+                case "Animate_Climb_Up_Left":
                     _characterObject.CurrentTile = MapManager.Instance.Map[new Vector2Int(_characterObject.CurrentTile.tileLocation.x - 4, _characterObject.CurrentTile.tileLocation.y - 4)];
                     _characterObject.transform.position = _characterObject.CurrentTile.transform.position;
                     _currentPath.Clear();
                     return;
-                case "Animate_ClimbDown_Left":
+                case "Animate_Climb_Down_Left":
                     _characterObject.CurrentTile = MapManager.Instance.Map[new Vector2Int(_characterObject.CurrentTile.tileLocation.x + 4, _characterObject.CurrentTile.tileLocation.y + 4)];
                     _characterObject.transform.position = _characterObject.CurrentTile.transform.position;
                     _currentPath.Clear();
                     return;
-                case "Animate_ClimbUp_Right":
+                case "Animate_Climb_Up_Right":
                     _characterObject.CurrentTile = MapManager.Instance.Map[new Vector2Int(_characterObject.CurrentTile.tileLocation.x + 4, _characterObject.CurrentTile.tileLocation.y + 3)];
                     _characterObject.transform.position = _characterObject.CurrentTile.transform.position;
                     _currentPath.Clear();
                     return;
-                case "Animate_ClimbDown_Right":
+                case "Animate_Climb_Down_Right":
                     _characterObject.CurrentTile = MapManager.Instance.Map[new Vector2Int(_characterObject.CurrentTile.tileLocation.x - 4, _characterObject.CurrentTile.tileLocation.y - 3)];
                     _characterObject.transform.position = _characterObject.CurrentTile.transform.position;
                     _currentPath.Clear();
