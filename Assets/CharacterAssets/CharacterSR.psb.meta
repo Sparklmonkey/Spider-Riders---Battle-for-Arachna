@@ -47,6 +47,7 @@ ScriptedImporter:
     flipbookRows: 0
     flipbookColumns: 0
     ignorePngGamma: 0
+    cookieMode: 0
     filterMode: 1
     aniso: 1
     mipBias: 0
@@ -89,6 +90,7 @@ ScriptedImporter:
     tessellationDetail: 0
     parentGroupIndex: -1
     uvTransform: {x: 0, y: 0}
+    spritePosition: {x: 0, y: 0}
   mosaicSpriteImportData: []
   rigSpriteImportData:
   - name: Hair
@@ -111,7 +113,8 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: 2, y: -425}
+    uvTransform: {x: 172, y: 228}
+    spritePosition: {x: 170, y: 653}
   - name: Face
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -132,7 +135,8 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: 136, y: -639}
+    uvTransform: {x: 347, y: 4}
+    spritePosition: {x: 211, y: 643}
   - name: Eyes
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -153,7 +157,8 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: -104, y: -425}
+    uvTransform: {x: 111, y: 248}
+    spritePosition: {x: 215, y: 673}
   - name: ShoulderArmourL
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -174,7 +179,8 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: -233, y: 155}
+    uvTransform: {x: 54, y: 670}
+    spritePosition: {x: 287, y: 515}
   - name: ShoulderL
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -195,7 +201,8 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: 100, y: -214}
+    uvTransform: {x: 388, y: 305}
+    spritePosition: {x: 288, y: 519}
   - name: UpperArmArmourL
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -216,7 +223,8 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: -259, y: 449}
+    uvTransform: {x: 91, y: 921}
+    spritePosition: {x: 350, y: 472}
   - name: UpperArmL
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -237,7 +245,8 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: 55, y: 27}
+    uvTransform: {x: 403, y: 500}
+    spritePosition: {x: 348, y: 473}
   - name: ForeArmArmourL
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -258,7 +267,8 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: -395, y: -150}
+    uvTransform: {x: -10, y: 230}
+    spritePosition: {x: 385, y: 380}
   - name: ForeArmL
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -279,7 +289,8 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: -395, y: 66}
+    uvTransform: {x: -6, y: 455}
+    spritePosition: {x: 389, y: 389}
   - name: FistArmourL
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -300,7 +311,8 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: -402, y: 420}
+    uvTransform: {x: 52, y: 760}
+    spritePosition: {x: 454, y: 340}
   - name: FistL
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -321,7 +333,8 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: -67, y: 456}
+    uvTransform: {x: 394, y: 802}
+    spritePosition: {x: 461, y: 346}
   - name: ChestArmour
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -342,7 +355,8 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: -20, y: -420}
+    uvTransform: {x: 172, y: 4}
+    spritePosition: {x: 192, y: 424}
   - name: Torso
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -363,7 +377,8 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: -188, y: -427}
+    uvTransform: {x: 4, y: 4}
+    spritePosition: {x: 192, y: 431}
   - name: LowerLegArmourL
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -384,7 +399,8 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: -106, y: 334}
+    uvTransform: {x: 172, y: 386}
+    spritePosition: {x: 278, y: 52}
   - name: LowerLegL
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -405,7 +421,8 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: -39, y: 326}
+    uvTransform: {x: 252, y: 388}
+    spritePosition: {x: 291, y: 62}
   - name: ShoeL
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -426,7 +443,8 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: 121, y: 219}
+    uvTransform: {x: 403, y: 228}
+    spritePosition: {x: 282, y: 9}
   - name: UpperLegArmourL
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -447,7 +465,8 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: -39, y: 593}
+    uvTransform: {x: 252, y: 836}
+    spritePosition: {x: 291, y: 243}
   - name: UpperLegL
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -468,7 +487,8 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: -122, y: 617}
+    uvTransform: {x: 171, y: 862}
+    spritePosition: {x: 293, y: 245}
   - name: LowerLegArmourR
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -489,7 +509,8 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: -32, y: 570}
+    uvTransform: {x: 172, y: 624}
+    spritePosition: {x: 204, y: 54}
   - name: LowerLegR
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -510,7 +531,8 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: 45, y: 548}
+    uvTransform: {x: 252, y: 612}
+    spritePosition: {x: 207, y: 64}
   - name: ShoeR
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -531,7 +553,8 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: -147, y: 840}
+    uvTransform: {x: 4, y: 857}
+    spritePosition: {x: 151, y: 17}
   - name: UpperLegArmourR
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -552,7 +575,8 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: -203, y: 439}
+    uvTransform: {x: 4, y: 684}
+    spritePosition: {x: 207, y: 245}
   - name: UpperLegR
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -573,7 +597,8 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: 135, y: -21}
+    uvTransform: {x: 348, y: 226}
+    spritePosition: {x: 213, y: 247}
   - name: Waist
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -594,7 +619,8 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: 134, y: -233}
+    uvTransform: {x: 347, y: 140}
+    spritePosition: {x: 213, y: 373}
   - name: ShoulderArmourL #1
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -615,7 +641,8 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: -160, y: 383}
+    uvTransform: {x: -13, y: 915}
+    spritePosition: {x: 147, y: 532}
   - name: ShoulderL #1
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -636,7 +663,8 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: 238, y: -135}
+    uvTransform: {x: 388, y: 401}
+    spritePosition: {x: 150, y: 536}
   - name: UpperArmArmourL #1
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -657,7 +685,8 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: 282, y: 171}
+    uvTransform: {x: 398, y: 660}
+    spritePosition: {x: 116, y: 489}
   - name: UpperArmL #1
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -678,7 +707,8 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: 281, y: 90}
+    uvTransform: {x: 400, y: 580}
+    spritePosition: {x: 119, y: 490}
   - name: ForeArmArmourL #1
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -699,7 +729,8 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: -42, y: -59}
+    uvTransform: {x: -7, y: 338}
+    spritePosition: {x: 35, y: 397}
   - name: ForeArmL #1
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -720,7 +751,8 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: -43, y: 157}
+    uvTransform: {x: -3, y: 563}
+    spritePosition: {x: 40, y: 406}
   - name: FistArmourL #1
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -741,7 +773,8 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: 400, y: 368}
+    uvTransform: {x: 390, y: 725}
+    spritePosition: {x: -10, y: 357}
   - name: FistL #1
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -762,7 +795,8 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: 399, y: 509}
+    uvTransform: {x: 397, y: 872}
+    spritePosition: {x: -2, y: 363}
   characterData:
     bones:
     - name: bone_1

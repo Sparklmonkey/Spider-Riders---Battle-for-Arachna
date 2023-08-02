@@ -47,6 +47,7 @@ ScriptedImporter:
     flipbookRows: 0
     flipbookColumns: 0
     ignorePngGamma: 0
+    cookieMode: 0
     filterMode: 1
     aniso: 1
     mipBias: 0
@@ -89,6 +90,7 @@ ScriptedImporter:
     tessellationDetail: 0
     parentGroupIndex: -1
     uvTransform: {x: 0, y: 0}
+    spritePosition: {x: 0, y: 0}
   mosaicSpriteImportData: []
   rigSpriteImportData:
   - name: leg_L-one
@@ -537,7 +539,8 @@ ScriptedImporter:
     - {x: 0, y: 27}
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: 44, y: 34}
+    uvTransform: {x: 124, y: 108}
+    spritePosition: {x: 80, y: 74}
   - name: leg_L-two
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -1025,7 +1028,8 @@ ScriptedImporter:
     - {x: 41, y: 16}
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: -104, y: 199}
+    uvTransform: {x: -21, y: 211}
+    spritePosition: {x: 83, y: 12}
   - name: leg_L-three
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -1492,7 +1496,8 @@ ScriptedImporter:
     - {x: 0, y: 27}
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: -25, y: 208}
+    uvTransform: {x: 135, y: 209}
+    spritePosition: {x: 160, y: 1}
   - name: leg_L-four
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -2001,7 +2006,8 @@ ScriptedImporter:
     - {x: 43, y: 18}
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: -37, y: -8}
+    uvTransform: {x: 199, y: 4}
+    spritePosition: {x: 236, y: 12}
   - name: head
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -2526,7 +2532,8 @@ ScriptedImporter:
     - {x: 7, y: 37}
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: -177, y: 39}
+    uvTransform: {x: 4, y: 138}
+    spritePosition: {x: 181, y: 99}
   - name: abdomen
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -2974,7 +2981,8 @@ ScriptedImporter:
     - {x: 0, y: 31}
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: 0, y: -121}
+    uvTransform: {x: 4, y: 4}
+    spritePosition: {x: 4, y: 125}
   - name: leg_R-one
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -3552,7 +3560,8 @@ ScriptedImporter:
     - {x: 50, y: 16}
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: 3, y: 161}
+    uvTransform: {x: 86, y: 251}
+    spritePosition: {x: 83, y: 90}
   - name: leg_R-two
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -4129,7 +4138,8 @@ ScriptedImporter:
     - {x: 49, y: 15}
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: -224, y: 289}
+    uvTransform: {x: -37, y: 377}
+    spritePosition: {x: 187, y: 88}
   - name: leg_R-three
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -4657,7 +4667,8 @@ ScriptedImporter:
     - {x: 18, y: 45}
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: -112, y: 241}
+    uvTransform: {x: 117, y: 326}
+    spritePosition: {x: 229, y: 85}
   - name: leg_R-four
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -5195,7 +5206,8 @@ ScriptedImporter:
     - {x: 17, y: 46}
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: -260, y: 275}
+    uvTransform: {x: 2, y: 325}
+    spritePosition: {x: 262, y: 50}
   characterData:
     bones:
     - name: bone_1
