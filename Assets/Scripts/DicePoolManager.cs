@@ -19,6 +19,8 @@ public class DicePoolManager : MonoBehaviour
 
     public void ClearDice()
     {
+        if (_diceManagers == null) { return; }
+        if (_diceManagers.Count == 0) { return; }
         foreach (var dice in _diceManagers)
         {
             if (dice != null)

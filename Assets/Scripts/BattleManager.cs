@@ -11,6 +11,8 @@ public class BattleManager : MonoBehaviour
     {
         if (_isVictory)
         {
+            _isVictory = false;
+            Destroy(_mobAnimator.gameObject);
             MapManager.Instance.BattleVictory();
         }
     }
