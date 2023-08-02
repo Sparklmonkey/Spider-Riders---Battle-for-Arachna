@@ -6,9 +6,18 @@ public class DamageDisplayManager : MonoBehaviour
 {
     [SerializeField]
     private Transform _atkDestination, _defDestination, _hpDestination, _centerStage, _calculationSymbols;
-
     private GameObject _attackObject, _defenseObject, _hpObject;
     private int _damage;
+
+    public void ClearDamageCalculations()
+    {
+        Destroy(_attackObject);
+        Destroy(_defenseObject);
+        Destroy(_hpObject);
+        _calculationSymbols.gameObject.SetActive(false);
+        MapManager.Instance.IsInBattle = false;
+    }
+
     public IEnumerator StartDamageCalculations(GameObject attackObject, GameObject defenseObject, GameObject hpObject, int result)
     {
         _attackObject = Instantiate(attackObject, _centerStage);
@@ -51,5 +60,7 @@ public class DamageDisplayManager : MonoBehaviour
         yield return new WaitForSeconds(0.5f);
         _hpObject.SetActive(true);
         _hpObject.GetComponentInChildren<NumberDisplayManager>().DisplayNumber(_damage);
+        yield return new WaitForSeconds(0.5f);
+        ClearDamageCalculations();
     }
 }

@@ -8,8 +8,8 @@ public class PathFinder
 {
     public List<OverlayTile> FindPath(OverlayTile startTile, OverlayTile endTile)
     {
-        List<OverlayTile> openList = new List<OverlayTile>();
-        List<OverlayTile> closedList = new List<OverlayTile>();
+        List<OverlayTile> openList = new ();
+        List<OverlayTile> closedList = new ();
 
         openList.Add(startTile);
 
@@ -50,7 +50,7 @@ public class PathFinder
 
     private List<OverlayTile> GetFinishedList(OverlayTile startTile, OverlayTile endTile)
     {
-        List<OverlayTile> finishedList = new List<OverlayTile>();
+        List<OverlayTile> finishedList = new ();
         OverlayTile currentTile = endTile;
 
         while(currentTile != startTile)

@@ -102,7 +102,7 @@ MonoBehaviour:
   - Rope
   - Rope
   stats:
-    power: 15
+    attack: 6
     defense: 6
     health: 3
   armourIndexes:

@@ -18,9 +18,12 @@ public class MapManager : MonoBehaviour
     [SerializeField]
     private BattleManager _battleManager;
     private Vector2Int _battleTile;
+    public bool IsInBattle = false;
+
     public void SetupMobBattle(string mobName, Vector2Int battleTile)
     {
         _battleManager.gameObject.SetActive(true);
+        IsInBattle = true;
         _battleTile = battleTile;
         var mobData = Resources.Load<MobData>($"MobData/{mobName}");
         _battleManager.SetupBattleManager(mobData);

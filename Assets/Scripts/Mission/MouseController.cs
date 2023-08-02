@@ -32,6 +32,7 @@ public class MouseController : MonoBehaviour
     void LateUpdate()
     {
         if (MissionInventoryManager.Instance.IsInventoryOpen) { return; }
+        if (MapManager.Instance.IsInBattle) { return; }
         var focusedTileHit = GetFocusOnTile();
 
         if (focusedTileHit.HasValue)
