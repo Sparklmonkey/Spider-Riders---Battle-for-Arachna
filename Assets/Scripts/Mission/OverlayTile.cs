@@ -29,13 +29,19 @@ public class OverlayTile : MonoBehaviour
 
         if(name == "Action_Manacle")
         {
-            _itemObject = Instantiate(Resources.Load<GameObject>($"Prefabs/Items/Statue"), transform);
+            _itemObject = Instantiate(Resources.Load<GameObject>("Prefabs/Items/Statue"), transform);
             _itemObject.transform.position = transform.position;
         }
 
         if (name.Contains("Action_"))
         {
-            _itemObject = Instantiate(Resources.Load<GameObject>($"Prefabs/Items/Action_Anim"), transform);
+            _itemObject = Instantiate(Resources.Load<GameObject>("Prefabs/Items/Action_Anim"), transform);
+            _itemObject.transform.position = transform.position;
+        }
+
+        if (name.Contains("Battle_"))
+        {
+            _itemObject = Instantiate(Resources.Load<GameObject>("Sprites/MobOverworld/Mob"), transform);
             _itemObject.transform.position = transform.position;
         }
 

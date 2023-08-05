@@ -25,7 +25,7 @@ public class MapManager : MonoBehaviour
         _battleManager.gameObject.SetActive(true);
         IsInBattle = true;
         _battleTile = battleTile;
-        var mobData = Resources.Load<MobData>($"MobData/{mobName}");
+        var mobData = MobDirectory.Instance.GetMobDataWithId(mobName);
         _battleManager.SetupBattleManager(mobData);
     }
 

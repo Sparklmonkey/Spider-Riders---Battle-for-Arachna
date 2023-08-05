@@ -24,7 +24,7 @@ public class BattleManager : MonoBehaviour
     }
 
     private bool _isVictory;
-    private MobData _mobData;
+    private MobDataStruct _mobData;
     [SerializeField]
     private DicePoolManager _dicePoolManager;
     [SerializeField]
@@ -40,7 +40,7 @@ public class BattleManager : MonoBehaviour
     private NumberDisplayManager _playerAtkLbl, _playerDefLbl, _playerHealthLbl, _enemyAtkLbl, _enemyDefLbl, _enemyHealthLbl;
 
     public bool IsPlayerTurn = true;
-    public void SetupBattleManager(MobData mobData)
+    public void SetupBattleManager(MobDataStruct mobData)
     {
         _playerModifiers = _enemyModifiers = new BattleParticipantStats();
         _mobData = mobData;
@@ -51,7 +51,7 @@ public class BattleManager : MonoBehaviour
         _playerAtkLbl.DisplayNumber(TestPlayer<PlayerData>.GetAttack());
         _playerDefLbl.DisplayNumber(TestPlayer<PlayerData>.GetDefense());
         _playerHealthLbl.DisplayNumber(TestPlayer<PlayerData>.GetHealth());
-        GameObject mobObject = Instantiate(_mobData.enemyPrefab, _enemyContainer);
+        GameObject mobObject = Instantiate(Resources.Load<GameObject>($"Enemies/{mobData.id}"), _enemyContainer);
         _mobAnimator = mobObject.AddComponent<MobAnimationManager>();
         _mobAnimator.SetupManager(mobData.mobName);
         _playerAnimator.PlayAnimation("Idle");
@@ -139,6 +139,6 @@ public class BattleManager : MonoBehaviour
     [ContextMenu("Test Setup")]
     public void TestSetup()
     {
-        SetupBattleManager(TestMob);
+
     }
 }
