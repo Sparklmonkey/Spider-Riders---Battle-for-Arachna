@@ -51,7 +51,7 @@ public class BattleManager : MonoBehaviour
         _playerAtkLbl.DisplayNumber(TestPlayer<PlayerData>.GetAttack());
         _playerDefLbl.DisplayNumber(TestPlayer<PlayerData>.GetDefense());
         _playerHealthLbl.DisplayNumber(TestPlayer<PlayerData>.GetHealth());
-        GameObject mobObject = Instantiate(Resources.Load<GameObject>($"Enemies/{mobData.id}"), _enemyContainer);
+        GameObject mobObject = Instantiate(Resources.Load<GameObject>($"Enemies/Mob"), _enemyContainer);
         _mobAnimator = mobObject.AddComponent<MobAnimationManager>();
         _mobAnimator.SetupManager(mobData.mobName);
         _playerAnimator.PlayAnimation("Idle");

@@ -20,6 +20,7 @@ public class MobAnimationManager : MonoBehaviour
     {
         _spriteRenderer = GetComponent<SpriteRenderer>();
     }
+
     public void SetupManager(string mobName)
     {
         if (mobName.Contains("Door"))
@@ -81,7 +82,7 @@ public class MobAnimationManager : MonoBehaviour
 
     public IEnumerator PlayMobAttackAnim()
     {
-        LoadAnimationSprites("Hit");
+        LoadAnimationSprites("Attack");
         yield return new WaitForSeconds(_animLength);
         PlayIdleAnimation();
     }

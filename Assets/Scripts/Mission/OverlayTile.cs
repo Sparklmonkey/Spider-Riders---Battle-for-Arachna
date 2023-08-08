@@ -42,6 +42,9 @@ public class OverlayTile : MonoBehaviour
         if (name.Contains("Battle_"))
         {
             _itemObject = Instantiate(Resources.Load<GameObject>("Sprites/MobOverworld/Mob"), transform);
+            var mobAnimator = _itemObject.AddComponent<MobAnimationManager>();
+            mobAnimator.SetupManager(MobDirectory.Instance.GetMobDataWithId($"{gameObject.name.Replace("Battle_", "")}").mobName);
+
             _itemObject.transform.position = transform.position;
         }
 
