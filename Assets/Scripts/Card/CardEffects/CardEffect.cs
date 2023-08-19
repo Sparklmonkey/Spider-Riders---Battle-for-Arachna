@@ -1,11 +1,11 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Assertions;
 
 public abstract class CardEffect : ScriptableObject
 {
-    public abstract void Invoke(CardEffectContext cardEffectContext);
+    public abstract IEnumerator Invoke(CardEffectContext cardEffectContext);
 
     protected bool TryActivate(CardInPlay cardInstance)
     {
@@ -13,43 +13,82 @@ public abstract class CardEffect : ScriptableObject
         cardInstance.BattleState.Activate();
         return true;
     }
-    protected IBattleParticipant RequestTarget(CardInPlay thisCardInstance)
+    protected IEnumerator RequestTarget(CardInPlay thisCardInstance)
     {
-        // thisCardInstance.BattleManager.MethodName(thisCardInstance)
-        // Ask for a target, set the CardInPlay's target
-        return null;
+        yield return thisCardInstance.StartCoroutine(thisCardInstance.Reference.BattleManager.RequestTarget(thisCardInstance, SetTarget));
     }
-    protected void HealToFull(CardInPlay thisCardInstance, bool applyToOpponent = false)
+    private void SetTarget(CardInPlay thisCardInstance, IBattleParticipant cardTarget)
     {
-        // return if health is already >= max
-        // heal up to full health
+        thisCardInstance.BattleState.CardTarget = cardTarget;
     }
-    protected void Heal(CardInPlay thisCardInstance, int healAmount, bool applyToOpponent = false)
+    protected IEnumerator HealToFull(CardInPlay thisCardInstance, bool applyToOpponent = false)
     {
-        // heal by the specified amount
+        if (applyToOpponent)
+        {
+            IBattleParticipant target = thisCardInstance.BattleState.CardTarget;
+            if (target == null) yield break;
+            target.CurrentHealth = target.MaxHealth;
+        }
+        else
+        {
+            IBattleParticipant owner = thisCardInstance.BattleState.CardOwner;
+            if (owner == null) yield break;
+            owner.CurrentHealth = owner.MaxHealth;
+        }
     }
-    protected void HealCapped(CardInPlay thisCardInstance, int healAmount, bool applyToOpponent = false)
+    protected IEnumerator Heal(CardInPlay thisCardInstance, int healAmount, bool applyToOpponent = false)
     {
-        // heal by the specified amount, but don't go over max health
+        if (applyToOpponent)
+        {
+            IBattleParticipant target = thisCardInstance.BattleState.CardTarget;
+            if (target == null) yield break;
+            target.CurrentHealth += healAmount;
+        }
+        else
+        {
+            IBattleParticipant owner = thisCardInstance.BattleState.CardOwner;
+            if (owner == null) yield break;
+            owner.CurrentHealth += healAmount;
+        }
     }
-    protected void TargetAndDestroyACard(CardInPlay thisCardInstance, CardType cardType, bool applyToOpponent = true)
+    protected IEnumerator HealCapped(CardInPlay thisCardInstance, int healAmount, bool applyToOpponent = false)
+    {
+        if (applyToOpponent)
+        {
+            IBattleParticipant target = thisCardInstance.BattleState.CardTarget;
+            if (target == null) yield break;
+            healAmount = Math.Min(target.MaxHealth - target.CurrentHealth, healAmount);
+            target.CurrentHealth += healAmount;
+        }
+        else
+        {
+            IBattleParticipant owner = thisCardInstance.BattleState.CardOwner;
+            if (owner == null) yield break;
+            healAmount = Math.Min(owner.MaxHealth - owner.CurrentHealth, healAmount);
+            owner.CurrentHealth += healAmount;
+        }
+    }
+    protected IEnumerator TargetAndDestroyACard(CardInPlay thisCardInstance, CardType cardType, bool applyToOpponent = true)
     {
         // return if there is no card of the specified type in the hand
         // if AI player, automatically select a card to destroy and destroy it
         // if human player, pop up destruction UI keyed to the cardType
+        yield return null;
     }
-    protected void TargetAndDestroyACard(CardInPlay thisCardInstance, CardCategories permissibleCardCategories, bool applyToOpponent = true)
+    protected IEnumerator TargetAndDestroyACard(CardInPlay thisCardInstance, CardCategories permissibleCardCategories, bool applyToOpponent = true)
     {
         // return if there is no card of the specified type in the hand
         // if AI player, automatically select a card to destroy and destroy it
         // if human player, pop up destruction UI keyed to the permissibleCardCategories
+        yield return null;
     }
-    protected void SetPredefinedStatModifiers(CardInPlay thisCardInstance)
+    protected IEnumerator SetPredefinedStatModifiers(CardInPlay thisCardInstance)
     {
         OverwriteStatModifiers(thisCardInstance, thisCardInstance.Reference.CardDefinition.ActivatedOwnerStatModifiers, false);
         OverwriteStatModifiers(thisCardInstance, thisCardInstance.Reference.CardDefinition.ActivatedOpponentStatModifiers, true);
+        yield return null;
     }
-    protected void OverwriteStatModifiers(CardInPlay thisCardInstance, StatModifiers newStatModifiers, bool applyToOpponent = false)
+    protected IEnumerator OverwriteStatModifiers(CardInPlay thisCardInstance, StatModifiers newStatModifiers, bool applyToOpponent = false)
     {
         if (applyToOpponent)
         {
@@ -59,8 +98,9 @@ public abstract class CardEffect : ScriptableObject
         {
             thisCardInstance.BattleState.ActiveOwnerStatModifiers = newStatModifiers;
         }
+        yield return null;
     }
-    protected void ApplyStatModifiers(CardInPlay thisCardInstance, StatModifiers statModifiers, bool applyToOpponent = false)
+    protected IEnumerator ApplyStatModifiers(CardInPlay thisCardInstance, StatModifiers statModifiers, bool applyToOpponent = false)
     {
         if (applyToOpponent)
         {
@@ -70,8 +110,9 @@ public abstract class CardEffect : ScriptableObject
         {
             thisCardInstance.BattleState.ActiveOwnerStatModifiers += statModifiers;
         }
+        yield return null;
     }
-    protected void ClearStatModifiers(CardInPlay thisCardInstance, bool applyToOpponent = false)
+    protected IEnumerator ClearStatModifiers(CardInPlay thisCardInstance, bool applyToOpponent = false)
     {
         if (applyToOpponent)
         {
@@ -81,28 +122,34 @@ public abstract class CardEffect : ScriptableObject
         {
             thisCardInstance.BattleState.ActiveOwnerStatModifiers = StatModifiers.Empty;
         }
+        yield return null;
     }
-    protected void RollNewDice(CardInPlay thisCardInstance)
+    protected IEnumerator RollNewDice(CardInPlay thisCardInstance)
     {
         // thisCardInstance.Reference.BattleManager.ClearDice();
         // StartCoroutine(thisCardInstance.BattleManager.RollDice());
+        yield return null;
     }
-    protected void RollSomeDice(CardInPlay thisCardInstance, int quantity)
+    protected IEnumerator RollSomeDice(CardInPlay thisCardInstance, int quantity)
     {
         // thisCardInstance.Reference.BattleManager.ClearDice();
         // StartCoroutine(thisCardInstance.BattleManager.RollDice(quantity));
+        yield return null;
     }
-    protected void DrawCards(CardInPlay thisCardInstance, int quantity)
+    protected IEnumerator DrawCards(CardInPlay thisCardInstance, int quantity)
     {
         thisCardInstance.BattleState.CardsLeftToDraw += quantity;
+        yield return null;
     }
-    protected void DestroyCardsInHands(CardInPlay thisCardInstance)
+    protected IEnumerator DestroyCardsInHands(CardInPlay thisCardInstance)
     {
         // destroy all cards in battle parcicipants' hands
+        yield return null;
     }
-    protected void DestroyCardsInDecks(CardInPlay thisCardInstance)
+    protected IEnumerator DestroyCardsInDecks(CardInPlay thisCardInstance)
     {
         // destroy all cards in battle participants' decks
+        yield return null;
     }
     protected bool TryFuseCard(CardInPlay thisCardInstance, CardInPlay otherCardInstance, CardType cardType)
     {

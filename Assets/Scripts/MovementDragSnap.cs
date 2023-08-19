@@ -17,28 +17,28 @@ public class MovementDragSnap
     public bool IsStationary => MovementState == MovementDragSnapState.Stationary;
     public bool IsDragging => MovementState == MovementDragSnapState.Dragging;
     public bool IsMovingToPosition => MovementState == MovementDragSnapState.MovingToPosition;
-    public Vector3 DragPosition { get; set; }
+    public Vector2 DragPosition { get; set; }
 
 
     public MovementDragSnap(Transform thisCardTransform)
     {
         TransformToMove = thisCardTransform;
         MovementState = MovementDragSnapState.Stationary;
-        DragPosition = Vector3.zero;
+        DragPosition = Vector2.zero;
     }
 
-    public MovementDragSnap TeleportToPosition(Vector3 newPosition)
+    public MovementDragSnap TeleportToPosition(Vector2 newPosition)
     {
         if (MovementState != MovementDragSnapState.Stationary) return this;
         TransformToMove.transform.position = newPosition;
         return this;
     }
-    public IEnumerator MoveToDestination(Vector3 newPosition, float movementDuration, bool stopDragging = false)
+    public IEnumerator MoveToDestination(Vector2 newPosition, float movementDuration, bool stopDragging = false)
     {
         if (IsMovingToPosition || !(IsDragging && stopDragging)) yield break;
         MovementState = MovementDragSnapState.MovingToPosition;
 
-        Vector3 startPosition = TransformToMove.position;
+        Vector2 startPosition = TransformToMove.position;
         float movementElapsedTime = 0f;
         float movementProgress = movementDuration > 0f ? 0f : 1f;
 
@@ -49,7 +49,7 @@ public class MovementDragSnap
 
             movementElapsedTime += Time.deltaTime;
             movementProgress = movementElapsedTime / movementDuration;
-            TransformToMove.position = Vector3.Lerp(startPosition, newPosition, movementProgress);
+            TransformToMove.position = Vector2.Lerp(startPosition, newPosition, movementProgress);
         }
         MovementState = MovementDragSnapState.Stationary;
     }
@@ -68,7 +68,7 @@ public class MovementDragSnap
         if (!IsStationary) return;
         MovementState = MovementDragSnapState.Dragging;
     }
-    public void UpdateDragging(Vector3 currentDragPosition)
+    public void UpdateDragging(Vector2 currentDragPosition)
     {
         if (!IsDragging) return;
         TransformToMove.position = DragPosition = currentDragPosition;

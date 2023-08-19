@@ -3,8 +3,6 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
-using UnityEngine.EventSystems;
-using UnityEngine.UI;
 
 [RequireComponent(typeof(BoxCollider2D))]
 public class CardInPlay : MonoBehaviour
@@ -237,7 +235,7 @@ public class CardInPlay : MonoBehaviour
         public BattleStateData Expire()
         {
             if (State != State.Activated) throw new InvalidOperationException($"CardInPlay must be Activated to expire: {ThisCard}");
-            ThisCard._miscCoroutine = ThisCard.StartCoroutine(DestroyInCemetery());
+            ThisCard.StartCoroutine(DestroyInCemetery());
             return this;
         }
         public IEnumerator DestroyInCemetery()
@@ -317,7 +315,6 @@ public class CardInPlay : MonoBehaviour
     public MovementDragSnap MovementData { get; private set; }
     
     private Camera _mainCamera;
-    private Coroutine _miscCoroutine;
     private Coroutine _movementCoroutine;
 
     private void OnEnable()
@@ -353,7 +350,7 @@ public class CardInPlay : MonoBehaviour
             {
                 if (hand.TryGetCardInSlot(slot, out CardInPlay cardInSlot))
                 {
-                    cardInSlot.DropCardOnto(this);
+                    StartCoroutine(cardInSlot.DropCardOnto(this));
                 }
                 else
                 {
@@ -376,30 +373,29 @@ public class CardInPlay : MonoBehaviour
         Reference = new References(this, cardDefinition, battleManager);
         MovementData = new MovementDragSnap(transform).TeleportToPosition(cardOwner.HandOfCards.GetSlotPosition(cardSlot));
         // _mainCamera is initialized in OnEnable.
-        _miscCoroutine = null;
         _movementCoroutine = null;
         BattleState = new BattleStateData(this).Initialize(cardOwner, cardSlot);
         return this;
     }
-    public void InvokeActivateEffect()
+    public IEnumerator InvokeActivateEffect()
     {
         CardEffect activateEffect = Reference.CardDefinition.OnActivatedCardEffect;
-        if (activateEffect == null) return;
-        activateEffect.Invoke(new CardEffectContext
+        if (activateEffect == null) yield break;
+        yield return StartCoroutine(activateEffect.Invoke(new CardEffectContext
         {
             thisCardInstance = this,
-        });
+        }));
     }
-    public void InvokeDeactivateEffect()
+    public IEnumerator InvokeDeactivateEffect()
     {
         CardEffect deactivateEffect = Reference.CardDefinition.OnDeactivatedCardEffect;
-        if (deactivateEffect == null) return;
-        deactivateEffect.Invoke(new CardEffectContext
+        if (deactivateEffect == null) yield break;
+        yield return StartCoroutine(deactivateEffect.Invoke(new CardEffectContext
         {
             thisCardInstance = this,
-        });
+        }));
     }
-    public void DropCardOnto(CardInPlay droppedCard)
+    public IEnumerator DropCardOnto(CardInPlay droppedCard)
     {
         // Continue until there is one card remaining (FusingComplete)
         if (IsFusingComplete(droppedCard)) throw new InvalidOperationException($"DropCardOnto was somehow called between {this} and {droppedCard}, but one or more is not initialized...");
@@ -410,22 +406,22 @@ public class CardInPlay : MonoBehaviour
         // 1. Use this card's drop effect - drop effects should check for card activation status
         if (Reference.CardDefinition.OnDroppedOntoCardEffect != null)
         {
-            Reference.CardDefinition.OnDroppedOntoCardEffect.Invoke(new CardEffectContext
+            yield return StartCoroutine(Reference.CardDefinition.OnDroppedOntoCardEffect.Invoke(new CardEffectContext
             {
                 thisCardInstance = this,
                 otherCardInstance = droppedCard,
-            });
-            if (IsFusingComplete(droppedCard)) return;
+            }));
+            if (IsFusingComplete(droppedCard)) yield break;
         }
         // 2. Use the other card's drop effect - drop effects should check for card activation status
         if (droppedCard.Reference.CardDefinition.OnDroppedOntoCardEffect != null)
         {
-            droppedCard.Reference.CardDefinition.OnDroppedOntoCardEffect.Invoke(new CardEffectContext
+            yield return StartCoroutine(droppedCard.Reference.CardDefinition.OnDroppedOntoCardEffect.Invoke(new CardEffectContext
             {
                 thisCardInstance = droppedCard,
                 otherCardInstance = this,
-            });
-            if (droppedCard == null) return;
+            }));
+            if (droppedCard == null) yield break;
         }
         // 3. Swap the cards' positions
         _movementCoroutine = StartCoroutine(MovementData.MoveToDestination(BattleState.CardOwner.HandOfCards.GetSlotPosition(droppedCard.BattleState.CardSlot), _moveToPositionTime, true));

@@ -5,8 +5,11 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "DrawPredefinedNumberOfCards", menuName = "ScriptableObjects/CardEffects/DrawPredefinedNumberOfCards", order = 1)]
 public class DrawPredefinedNumberOfCards : CardEffect
 {
-    public override void Invoke(CardEffectContext cardEffectContext)
+    public override IEnumerator Invoke(CardEffectContext cardEffectContext)
     {
-        DrawCards(cardEffectContext.thisCardInstance, cardEffectContext.thisCardInstance.Reference.CardDefinition.CardsToDraw);
+        yield return cardEffectContext.thisCardInstance.StartCoroutine(DrawCards(
+            cardEffectContext.thisCardInstance,
+            cardEffectContext.thisCardInstance.Reference.CardDefinition.CardsToDraw
+        ));
     }
 }
