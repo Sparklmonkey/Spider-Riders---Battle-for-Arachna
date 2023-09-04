@@ -6,7 +6,6 @@ using UnityEngine;
 
 public class BattleManager : MonoBehaviour
 {
-    public MobData TestMob;
     private void Update()
     {
         if (_isVictory)
