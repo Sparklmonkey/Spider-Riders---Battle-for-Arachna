@@ -1,0 +1,35 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class ActionRopeLeftInteractable : MonoBehaviour, IInteractable
+{
+    private GameObject _childObject;
+    public void OnInteract()
+    {
+        return;
+    }
+
+    public void OnUseItem(string item)
+    {
+        if(item != "Rope") { return; }
+
+        TestPlayer<PlayerData>.RemoveItemFromInventory("Rope");
+
+        MapSceneManager.Instance.AddRopeUsedImage();
+
+        var tileScript = GetComponent<OverlayTile>();
+
+        MapManager.Instance.ChangeTileRopeUsed(new Vector2Int(tileScript.tileLocation.x, tileScript.tileLocation.y),
+                        new Vector2Int(tileScript.tileLocation.x - 4, tileScript.tileLocation.y - 4), false);
+
+        Destroy(_childObject);
+        Destroy(this);
+    }
+
+    public void Setup()
+    {
+        _childObject = Instantiate(Resources.Load<GameObject>("Prefabs/Items/Action_Anim"), transform);
+        _childObject.transform.position = transform.position;
+    }
+}

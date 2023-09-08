@@ -35,6 +35,7 @@ public class MissionInventoryManager : MonoBehaviour
     private List<Transform> _inventoryItemContainers;
     [SerializeField]
     private TextMeshProUGUI _inventoryTitle, _pageLbl;
+
     public void OpenInventory()
     {
         _animator.SetTrigger("Open");
@@ -102,31 +103,30 @@ public class MissionInventoryManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //if (Input.GetMouseButtonDown(0))
+        //{
+        //    var mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        //    var mousePosition2D = new Vector2(mousePosition.x, mousePosition.y);
 
-        if (Input.GetMouseButtonDown(0))
-        {
-            var mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-            var mousePosition2D = new Vector2(mousePosition.x, mousePosition.y);
+        //    RaycastHit2D[] hits = Physics2D.RaycastAll(mousePosition2D, Vector2.zero);
+        //    if (hits.Length > 0)
+        //    {
+        //        InventoryItem inventoryItem = hits.OrderByDescending(i => i.collider.transform.position.z).First().transform.GetComponent<InventoryItem>();
 
-            RaycastHit2D[] hits = Physics2D.RaycastAll(mousePosition2D, Vector2.zero);
-            if (hits.Length > 0)
-            {
-                InventoryItem inventoryItem = hits.OrderByDescending(i => i.collider.transform.position.z).First().transform.GetComponent<InventoryItem>();
+        //        if (inventoryItem == null) { return; }
+        //        if (inventoryItem == _currentItem) { return; }
+        //        if (_currentItem != null) { _currentItem.EndDrag(); }
+        //        inventoryItem.StartDrag();
+        //        _currentItem = inventoryItem;
+        //    }
+        //}
 
-                if (inventoryItem == null) { return; }
-                if (inventoryItem == _currentItem) { return; }
-                if (_currentItem != null) { _currentItem.EndDrag(); }
-                inventoryItem.StartDrag();
-                _currentItem = inventoryItem;
-            }
-        }
-
-        if (Input.GetMouseButtonUp(0))
-        {
-            if (_currentItem == null) { return; }
-            _currentItem.EndDrag();
-            _currentItem = null;
-        }
+        //if (Input.GetMouseButtonUp(0))
+        //{
+        //    if (_currentItem == null) { return; }
+        //    _currentItem.EndDrag();
+        //    _currentItem = null;
+        //}
 
     }
 }

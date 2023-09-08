@@ -62,10 +62,8 @@ public class MobAnimationManager : MonoBehaviour
         _loop = false;
         _frame = 1;
         animationSpriteList = new List<Sprite>(Resources.LoadAll<Sprite>($"Enemies/{_mobName}/{animName}"));
-        _animLength = animationSpriteList.Count / 12.0f;
-        _frameSeconds = _animLength / 12.0f;
-        Debug.Log($"Anim Length: {_animLength}");
-        Debug.Log($"Frame Seconds: {_frameSeconds}");
+        _animLength = animationSpriteList.Count / 24.0f;
+        _frameSeconds = _animLength / 24.0f;
     }
 
     public void PlayIdleAnimation()

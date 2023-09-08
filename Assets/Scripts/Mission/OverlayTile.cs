@@ -20,26 +20,26 @@ public class OverlayTile : MonoBehaviour
         _overlaySprite = gameObject.GetComponent<SpriteRenderer>();
     }
 
+    public void DestroyChildObject()
+    {
+        Destroy(_itemObject);
+    }
+
     public void RenderTileContent(string tileName)
     {
         name = tileName;
 
-        if (name.Contains("Transition_"))
-        {
-            gameObject.AddComponent<TransitionInteractable>();
-        }
+        var scriptName = name.Split("_");
 
-        if (name.Contains("MissionEnd"))
-        {
-            gameObject.AddComponent<MissionEndInteratable>();
-        }
+        var scriptObject = Type.GetType($"{scriptName[0]}Interactable");
+        if(scriptObject == null) { return; }
 
-        if (name.Contains("Card_"))
-        {
-            _itemObject = Instantiate(Resources.Load<GameObject>($"Prefabs/Items/Card"), transform);
-            _itemObject.transform.position = transform.position;
-            gameObject.AddComponent<CardInteractable>();
-        }
+        gameObject.AddComponent(scriptObject);
+
+        //if (name.Contains("Transition_"))
+        //{
+            //gameObject.AddComponent<TransitionInteractable>();
+        //}
 
         if (name.Contains("Item_"))
         {
@@ -60,17 +60,6 @@ public class OverlayTile : MonoBehaviour
             _itemObject.transform.position = transform.position;
         }
 
-        if (name.Contains("Battle_"))
-        {
-            _itemObject = Instantiate(Resources.Load<GameObject>("Sprites/MobOverworld/Mob"), transform);
-            _itemObject.name = gameObject.name.Replace("Battle_", "");
-            var mobAnimator = _itemObject.AddComponent<MobAnimationManager>();
-            mobAnimator.SetupManager(MobDirectory.Instance.GetMobDataWithId($"{gameObject.name.Replace("Battle_", "")}").mobName);
-            gameObject.AddComponent<MobInteractable>();
-
-            _itemObject.transform.position = transform.position;
-        }
-
         switch (tileName)
         {
             case "Door_Open":
@@ -86,38 +75,6 @@ public class OverlayTile : MonoBehaviour
             default:
                 break;
         }
-    }
-
-    public bool GiveManacle()
-    {
-        if (!TestPlayer<PlayerData>.PlayerHasItem("Manacle")) { return false; }
-        TestPlayer<PlayerData>.RemoveItemFromInventory("Manacle");
-        MapSceneManager.Instance.OpenManaclePortal();
-        Destroy(_itemObject);
-        return true;
-    }
-    public void PlaceRope()
-    {
-        TestPlayer<PlayerData>.RemoveItemFromInventory("Rope");
-        MapSceneManager.Instance.AddRopeUsedImage();
-        Destroy(_itemObject);
-    }
-    public void PlaceBoard()
-    {
-        TestPlayer<PlayerData>.RemoveItemFromInventory("Board");
-        MapSceneManager.Instance.AddBoardUsedImage();
-        Destroy(_itemObject);
-    }
-    public void OpenDoor()
-    {
-        TestPlayer<PlayerData>.RemoveItemFromInventory("Key");
-        MapSceneManager.Instance.ChangeDoorToOpen();
-        Destroy(_itemObject);
-    }
-    public void PickUpItem()
-    {
-        TestPlayer<PlayerData>.AddItemToInventory(gameObject.name.Replace("Item_", ""));
-        Destroy(_itemObject);
     }
 
     private void OnMouseDown()

@@ -61,53 +61,12 @@ public class MouseController : MonoBehaviour
         {
             var overlayTile = focusedTileHit.Value.collider.gameObject;
             var tileScript = overlayTile.GetComponent<OverlayTile>();
-            switch (item)
-            {
-                case "Rope":
-                    if(overlayTile.name == "Action_Rope_Right")
-                    {
-                        tileScript.PlaceRope();
-                        MapManager.Instance.ChangeTileRopeUsed(new Vector2Int(tileScript.tileLocation.x, tileScript.tileLocation.y),
-                                        new Vector2Int(tileScript.tileLocation.x + 4, tileScript.tileLocation.y + 3), true);
-                    }
-                    else if(overlayTile.name == "Action_Rope_Left")
-                    {
-                        tileScript.PlaceRope();
-                        MapManager.Instance.ChangeTileRopeUsed(new Vector2Int(tileScript.tileLocation.x, tileScript.tileLocation.y), 
-                                        new Vector2Int(tileScript.tileLocation.x - 4, tileScript.tileLocation.y - 4), false);
-                    }
-                    break;
-                case "Key":
-                    if (overlayTile.name == "Action_Door")
-                    {
-                        tileScript.OpenDoor();
-                        MapManager.Instance.ChangeTileToOpenDoor(new Vector2Int(tileScript.tileLocation.x, tileScript.tileLocation.y));
-                        MapManager.Instance.ChangeTileToWalkable(new Vector2Int(tileScript.tileLocation.x, tileScript.tileLocation.y + 1));
-                    }
-                    break;
-                case "Board":
-                    if(overlayTile.name == "Action_Board")
-                    {
-                        tileScript.PlaceBoard();
-                        MapManager.Instance.ChangeTileToWalkable(new Vector2Int(tileScript.tileLocation.x - 1, tileScript.tileLocation.y));
-                        MapManager.Instance.ChangeTileToWalkable(new Vector2Int(tileScript.tileLocation.x - 2, tileScript.tileLocation.y));
-                        MapManager.Instance.ChangeTileToWalkable(new Vector2Int(tileScript.tileLocation.x - 3, tileScript.tileLocation.y));
-                        MapManager.Instance.ChangeTileToBoardUsed(new Vector2Int(tileScript.tileLocation.x, tileScript.tileLocation.y));
-                    }
-                    return;
-                case "Manacle":
-                    if(overlayTile.name == "Statue")
-                    {
-                        tileScript.GiveManacle();
-                        MapManager.Instance.OpenPortal();
-                        MapManager.Instance.ChangeTileToWalkable(new Vector2Int(tileScript.tileLocation.x, tileScript.tileLocation.y + 1));
-                    }
-                    return;
-                default:
-                    break;
-            }
+
+            var interactable = tileScript.GetComponent<IInteractable>();
+            interactable.OnUseItem(item);
         }
     }
+
     private bool _runTriggered;
     private void MoveAlongPath()
     {
@@ -126,15 +85,12 @@ public class MouseController : MonoBehaviour
 
             if (_currentPath[0].gameObject.name.Contains("Item_"))
             {
-                _currentPath[0].PickUpItem();
                 _currentPath.Clear();
                 MapManager.Instance.ChangeTileToWalkable(new Vector2Int(_characterObject.CurrentTile.tileLocation.x, _characterObject.CurrentTile.tileLocation.y));
                 return;
             }
 
-
-
-                switch (_currentPath[0].gameObject.name)
+            switch (_currentPath[0].gameObject.name)
             {
                 case "Animate_Climb_Up_Left":
                     _characterObject.CurrentTile = MapManager.Instance.Map[new Vector2Int(_characterObject.CurrentTile.tileLocation.x - 4, _characterObject.CurrentTile.tileLocation.y - 4)];

@@ -10,4 +10,14 @@ public class MissionEndInteratable : MonoBehaviour, IInteractable
         MapSceneManager.Instance.SetupMapScene(1);
         MapManager.Instance.SetupNextMission();
     }
+
+    public void OnUseItem(string item)
+    {
+        return;
+    }
+
+    public void Setup()
+    {
+        return;
+    }
 }

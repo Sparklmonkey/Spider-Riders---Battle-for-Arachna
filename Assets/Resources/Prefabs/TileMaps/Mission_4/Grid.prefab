@@ -2365,7 +2365,7 @@ Tilemap:
   - first: {x: -1, y: 2, z: 0}
     second:
       serializedVersion: 2
-      m_TileIndex: 3
+      m_TileIndex: 10
       m_TileSpriteIndex: 2
       m_TileMatrixIndex: 0
       m_TileColorIndex: 2
@@ -3950,8 +3950,8 @@ Tilemap:
     m_Data: {fileID: 11400000, guid: 077a017a3e749c347a2644847f93a3af, type: 2}
   - m_RefCount: 1
     m_Data: {fileID: 11400000, guid: 9529388ea1b1a1f458c21a70f9769627, type: 2}
-  - m_RefCount: 2
-    m_Data: {fileID: 11400000, guid: b22eb99666b5a934e84c81be9fd8041a, type: 2}
+  - m_RefCount: 1
+    m_Data: {fileID: 11400000, guid: 33e28d63c562d4109b3e17530679bbed, type: 2}
   - m_RefCount: 3
     m_Data: {fileID: 11400000, guid: 75ed53ec4bc2f41cf803e10ed901235b, type: 2}
   - m_RefCount: 1
@@ -3964,6 +3964,8 @@ Tilemap:
     m_Data: {fileID: 11400000, guid: d0c046c7fd82f434297168c410fedac1, type: 2}
   - m_RefCount: 176
     m_Data: {fileID: 11400000, guid: b04fdebe3b175604a89b1f36232e499a, type: 2}
+  - m_RefCount: 1
+    m_Data: {fileID: 11400000, guid: bfc5f59c9c03b4107830e70b0f350b0b, type: 2}
   m_TileSpriteArray:
   - m_RefCount: 0
     m_Data: {fileID: 0}
@@ -4105,7 +4107,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &5438093030879555652
 Transform:
   m_ObjectHideFlags: 0
@@ -8049,7 +8051,7 @@ Tilemap:
   - m_RefCount: 1
     m_Data: {fileID: 11400000, guid: f7208211c441041db98ec205e61b95c0, type: 2}
   - m_RefCount: 1
-    m_Data: {fileID: 11400000, guid: b22eb99666b5a934e84c81be9fd8041a, type: 2}
+    m_Data: {fileID: 11400000, guid: 56c43f8d09c71487eb37ae7ed111c45b, type: 2}
   - m_RefCount: 152
     m_Data: {fileID: 11400000, guid: b04fdebe3b175604a89b1f36232e499a, type: 2}
   - m_RefCount: 2
@@ -8115,7 +8117,7 @@ Tilemap:
     m_Data: {r: 0.7696508, g: 0.5518868, b: 1, a: 1}
   m_TileObjectToInstantiateArray: []
   m_AnimationFrameRate: 1
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_Origin: {x: -13, y: -13, z: 0}
   m_Size: {x: 27, y: 28, z: 1}
   m_TileAnchor: {x: 0.5, y: 0.5, z: 0}
@@ -20071,10 +20073,10 @@ Tilemap:
   - first: {x: 2, y: 9, z: 0}
     second:
       serializedVersion: 2
-      m_TileIndex: 0
-      m_TileSpriteIndex: 0
+      m_TileIndex: 8
+      m_TileSpriteIndex: 4
       m_TileMatrixIndex: 0
-      m_TileColorIndex: 4
+      m_TileColorIndex: 7
       m_TileObjectToInstantiateIndex: 65535
       dummyAlignment: 0
       m_AllTileFlags: 1073741825
@@ -20390,7 +20392,7 @@ Tilemap:
       m_AllTileFlags: 1073741825
   m_AnimatedTiles: {}
   m_TileAssetArray:
-  - m_RefCount: 117
+  - m_RefCount: 116
     m_Data: {fileID: 11400000, guid: b04fdebe3b175604a89b1f36232e499a, type: 2}
   - m_RefCount: 264
     m_Data: {fileID: 11400000, guid: 077a017a3e749c347a2644847f93a3af, type: 2}
@@ -20406,8 +20408,8 @@ Tilemap:
     m_Data: {fileID: 0}
   - m_RefCount: 0
     m_Data: {fileID: 0}
-  - m_RefCount: 0
-    m_Data: {fileID: 0}
+  - m_RefCount: 1
+    m_Data: {fileID: 11400000, guid: 219dbf85bac7540e193a641db64905ce, type: 2}
   - m_RefCount: 1
     m_Data: {fileID: 11400000, guid: 0839b5da9339e9b4a9f26bc34c19b683, type: 2}
   - m_RefCount: 1
@@ -20415,7 +20417,7 @@ Tilemap:
   - m_RefCount: 4
     m_Data: {fileID: 11400000, guid: 59e4f5870097bea4f9bae3a666d3838e, type: 2}
   m_TileSpriteArray:
-  - m_RefCount: 123
+  - m_RefCount: 122
     m_Data: {fileID: 21300000, guid: 2e3d0524f74239b49be88cdbd78d73e0, type: 3}
   - m_RefCount: 265
     m_Data: {fileID: 21300000, guid: 96020387fa398ac4984aae8bc81e2be6, type: 3}
@@ -20423,8 +20425,8 @@ Tilemap:
     m_Data: {fileID: 0}
   - m_RefCount: 2
     m_Data: {fileID: 21300000, guid: 2aaa330a079eb424e97a78c24c4a6df5, type: 3}
-  - m_RefCount: 0
-    m_Data: {fileID: 0}
+  - m_RefCount: 1
+    m_Data: {fileID: 21300000, guid: 0b742df316f38324db14231e674dd4fd, type: 3}
   m_TileMatrixArray:
   - m_RefCount: 390
     m_Data:
@@ -20453,14 +20455,14 @@ Tilemap:
     m_Data: {r: 0.9339623, g: 0.066082224, b: 0.066082224, a: 1}
   - m_RefCount: 264
     m_Data: {r: 1, g: 0, b: 0, a: 1}
-  - m_RefCount: 117
+  - m_RefCount: 116
     m_Data: {r: 0.16983688, g: 1, b: 0, a: 1}
   - m_RefCount: 0
     m_Data: {r: NaN, g: NaN, b: NaN, a: NaN}
   - m_RefCount: 0
     m_Data: {r: NaN, g: NaN, b: NaN, a: NaN}
-  - m_RefCount: 0
-    m_Data: {r: 7.905e-41, g: 7.905e-41, b: 7.905e-41, a: 7.905e-41}
+  - m_RefCount: 1
+    m_Data: {r: 1, g: 1, b: 1, a: 1}
   - m_RefCount: 1
     m_Data: {r: 0.495283, g: 0.52269435, b: 1, a: 1}
   - m_RefCount: 1

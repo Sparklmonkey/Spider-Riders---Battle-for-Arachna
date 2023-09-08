@@ -14,16 +14,21 @@ public class InventoryItem : MonoBehaviour
 
     public event Action<string> OnUseItem;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
     private void Awake()
     {
         _originalParent = transform.parent;
         _initialPosition = _originalParent.transform.position;
+    }
+
+    private void OnMouseDrag()
+    {
+        IsClicked = true;
+    }
+
+    private void OnMouseUp()
+    {
+        IsClicked = false;
+
     }
 
     public void StartDrag()

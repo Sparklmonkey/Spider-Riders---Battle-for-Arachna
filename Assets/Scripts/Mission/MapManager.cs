@@ -40,7 +40,7 @@ public class MapManager : MonoBehaviour
 
     public void BattleVictory()
     {
-        ChangeTileToWalkable(_battleTile);
+        //ChangeTileToWalkable(_battleTile);
         _battleManager.gameObject.SetActive(false);
 
     }
