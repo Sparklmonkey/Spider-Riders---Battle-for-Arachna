@@ -17,14 +17,14 @@ public class DeckButtonLetter : MonoBehaviour
     {
         switch (TestPlayer<PlayerData>.GetSelectedDeck())
         {
-            case "A":
-                TestPlayer<PlayerData>.ChangeDeck("B");
+            case SelectedDeck.A:
+                TestPlayer<PlayerData>.ChangeDeck(SelectedDeck.B);
                 break;
-            case "B":
-                TestPlayer<PlayerData>.ChangeDeck("C");
+            case SelectedDeck.B:
+                TestPlayer<PlayerData>.ChangeDeck(SelectedDeck.C);
                 break;
-            case "C":
-                TestPlayer<PlayerData>.ChangeDeck("A");
+            case SelectedDeck.C:
+                TestPlayer<PlayerData>.ChangeDeck(SelectedDeck.A);
                 break;
             default:
                 break;

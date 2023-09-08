@@ -20,6 +20,13 @@ public class TestPlayer<T> : ScriptableObject where T : ScriptableObject
     public static void FinishMission() { Instance.missionIndex++; }
 
     public static List<string> Inventory { get => Instance.itemInventory; } //Change items to something other than string?
+
+
+    public static void AddCardToInventory(Card card)
+    {
+        Instance.cardInventory.Add(card);
+    }
+
     public static void AddItemToInventory(string itemToAdd)
     {
         Instance.itemInventory.Add(itemToAdd);
@@ -29,12 +36,12 @@ public class TestPlayer<T> : ScriptableObject where T : ScriptableObject
         Instance.itemInventory.Remove(itemToAdd);
     }
 
-    public static void ChangeDeck(string letter) //Change selected deck to enum
+    public static void ChangeDeck(SelectedDeck deck) 
     {
-        Instance.selectedDeck = letter; //Change selected deck to enum
+        Instance.selectedDeck = deck;
     }
 
-    public static string GetSelectedDeck() //Change selected deck to enum
+    public static SelectedDeck GetSelectedDeck() 
     {
         return Instance.selectedDeck;
     }
