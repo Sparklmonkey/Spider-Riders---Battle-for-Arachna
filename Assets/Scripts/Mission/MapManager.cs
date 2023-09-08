@@ -1,4 +1,3 @@
-using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
@@ -14,6 +13,8 @@ public class MapManager : MonoBehaviour
 
     [SerializeField]
     private List<Tilemap> _sceneList;
+    [SerializeField]
+    private PlayerController _playerController;
 
     [SerializeField]
     private BattleManager _battleManager;
@@ -25,6 +26,14 @@ public class MapManager : MonoBehaviour
         _battleManager.gameObject.SetActive(true);
         IsInBattle = true;
         _battleTile = battleTile;
+        var mobData = MobDirectory.Instance.GetMobDataWithId(mobName);
+        _battleManager.SetupBattleManager(mobData);
+    }
+
+    public void SetupMobBattle(string mobName)
+    {
+        _battleManager.gameObject.SetActive(true);
+        IsInBattle = true;
         var mobData = MobDirectory.Instance.GetMobDataWithId(mobName);
         _battleManager.SetupBattleManager(mobData);
     }
@@ -108,8 +117,9 @@ public class MapManager : MonoBehaviour
     }
 
 
-    public void SetupFirstScene()
+    public void SetupFirstScene(PlayerController controller)
     {
+        _playerController = controller;
         _gridObject = Instantiate(Resources.Load<GameObject>($"Prefabs/TileMaps/Mission_{TestPlayer<PlayerData>.CurrentMissionIndex}/Grid"), transform);
         _sceneList = new List<Tilemap>(_gridObject.GetComponentsInChildren<Tilemap>(true));
         _sceneIndex = 0;
@@ -135,6 +145,7 @@ public class MapManager : MonoBehaviour
                     overlayTile.GetComponent<SpriteRenderer>().sortingOrder = sortingOrder;
                     overlayTile.tileLocation = tilePosition;
                     overlayTile.RenderTileContent(_currentTileMap.GetTile(tilePosition).name);
+                    overlayTile.OnTileClick += _playerController.StartPathFinding;
                     Map.Add(tileKey, overlayTile);
                 }
             }
@@ -170,10 +181,13 @@ public class MapManager : MonoBehaviour
                     overlayTile.GetComponent<SpriteRenderer>().sortingOrder = sortingOrder;
                     overlayTile.tileLocation = tilePosition;
                     overlayTile.RenderTileContent(_currentTileMap.GetTile(tilePosition).name);
+                    overlayTile.OnTileClick += _playerController.StartPathFinding;
                     Map.Add(tileKey, overlayTile);
                 }
             }
         }
+        var playerStartTile = GetPlayerStartTile(_previousSceneIndex);
+        _playerController.SetPosition(playerStartTile);
     }
 
 

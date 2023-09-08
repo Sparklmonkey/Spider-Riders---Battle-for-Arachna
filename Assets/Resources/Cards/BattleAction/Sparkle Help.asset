@@ -20,8 +20,14 @@ MonoBehaviour:
   <BuyCost>k__BackingField: 100
   <SellCost>k__BackingField: 100
   <CardImage>k__BackingField: {fileID: 21300000, guid: 3f350c2b2c7d9894f8df9b2fda798dc1, type: 3}
-  <ActivatedOwnerStatModifiers>k__BackingField: []
-  <ActivatedOpponentStatModifiers>k__BackingField: []
+  <ActivatedOwnerStatModifiers>k__BackingField:
+    attackModifier: 0
+    defenseModifier: 0
+    diceModifier: 0
+  <ActivatedOpponentStatModifiers>k__BackingField:
+    attackModifier: 0
+    defenseModifier: 0
+    diceModifier: 0
   <CardsToDraw>k__BackingField: 0
   <HealAmount>k__BackingField: 5
   <CardFuseLimit>k__BackingField: 0
@@ -30,4 +36,5 @@ MonoBehaviour:
   <OnDeactivatedCardEffect>k__BackingField: {fileID: 0}
   <OnDroppedOntoCardEffect>k__BackingField: {fileID: 0}
   <CardName>k__BackingField: Sparkle Help
+  <CardId>k__BackingField: 417
   <Description>k__BackingField: Add 5 Health Points

@@ -23,5 +23,6 @@ public class Card : ScriptableObject
     [field: SerializeField] public CardEffect OnDroppedOntoCardEffect { get; private set; }
 
     [field: SerializeField] public string CardName { get; private set; }
+    [field: SerializeField] public string CardId { get; private set; }
     [field: SerializeField] public string Description { get; private set; }
 }

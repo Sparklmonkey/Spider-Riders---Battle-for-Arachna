@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -10,6 +11,9 @@ public class InventoryItem : MonoBehaviour
     private Transform _originalParent;
     [SerializeField]
     private SpriteRenderer spriteRenderer;
+
+    public event Action<string> OnUseItem;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -38,7 +42,7 @@ public class InventoryItem : MonoBehaviour
     public void EndDrag()
     {
         IsClicked = false;
-        MouseController.UseItemFromInventory(name);
+        OnUseItem?.Invoke(name);
         MissionInventoryManager.Instance.IsInventoryOpen = false;
         Destroy(gameObject);
     }

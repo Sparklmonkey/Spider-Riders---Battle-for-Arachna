@@ -36,4 +36,5 @@ MonoBehaviour:
   <OnDeactivatedCardEffect>k__BackingField: {fileID: 0}
   <OnDroppedOntoCardEffect>k__BackingField: {fileID: 0}
   <CardName>k__BackingField: Spy
+  <CardId>k__BackingField: 303
   <Description>k__BackingField: Decreases your opponents dice by -1

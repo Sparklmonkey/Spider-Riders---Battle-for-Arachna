@@ -29,6 +29,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1.7, y: 1.7, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -44,6 +45,7 @@ SpriteRenderer:
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -96,6 +98,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c11d7aff8cbb52f4098407b319698649, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  G: 0
+  H: 0
+  Previous: {fileID: 0}
+  tileLocation: {x: 0, y: 0, z: 0}
 --- !u!60 &3456951061982258811
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -121,7 +127,7 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: -0.28902733, y: 0.0009726584}
-      - {x: -0.0010716468, y: -0.14859441}
-      - {x: 0.28849226, y: 0.0004182756}
-      - {x: 0.0026184618, y: 0.14652003}
+    - - {x: -0.34, y: 0}
+      - {x: 0, y: -0.19}
+      - {x: 0.34, y: 0}
+      - {x: 0, y: 0.19}

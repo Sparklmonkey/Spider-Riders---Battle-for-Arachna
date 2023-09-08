@@ -20,8 +20,14 @@ MonoBehaviour:
   <BuyCost>k__BackingField: 200
   <SellCost>k__BackingField: 200
   <CardImage>k__BackingField: {fileID: 21300000, guid: 2011f60441e7eb64a812dcf6295971e2, type: 3}
-  <ActivatedOwnerStatModifiers>k__BackingField: []
-  <ActivatedOpponentStatModifiers>k__BackingField: []
+  <ActivatedOwnerStatModifiers>k__BackingField:
+    attackModifier: 0
+    defenseModifier: 0
+    diceModifier: 0
+  <ActivatedOpponentStatModifiers>k__BackingField:
+    attackModifier: 0
+    defenseModifier: 0
+    diceModifier: 0
   <CardsToDraw>k__BackingField: 0
   <HealAmount>k__BackingField: 0
   <CardFuseLimit>k__BackingField: 0
@@ -30,4 +36,5 @@ MonoBehaviour:
   <OnDeactivatedCardEffect>k__BackingField: {fileID: 0}
   <OnDroppedOntoCardEffect>k__BackingField: {fileID: 0}
   <CardName>k__BackingField: Boost Blaze
+  <CardId>k__BackingField: 411
   <Description>k__BackingField: Each yellow on your dice roll count as +2 damage

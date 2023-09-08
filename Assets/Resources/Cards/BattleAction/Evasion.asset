@@ -36,4 +36,5 @@ MonoBehaviour:
   <OnDeactivatedCardEffect>k__BackingField: {fileID: 0}
   <OnDroppedOntoCardEffect>k__BackingField: {fileID: 0}
   <CardName>k__BackingField: Evasion
+  <CardId>k__BackingField: 401
   <Description>k__BackingField: -2 dice to opponent

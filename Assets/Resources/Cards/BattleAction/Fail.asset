@@ -36,4 +36,5 @@ MonoBehaviour:
   <OnDeactivatedCardEffect>k__BackingField: {fileID: 0}
   <OnDroppedOntoCardEffect>k__BackingField: {fileID: 0}
   <CardName>k__BackingField: Fail
+  <CardId>k__BackingField: 400
   <Description>k__BackingField: -1 dice to opponent

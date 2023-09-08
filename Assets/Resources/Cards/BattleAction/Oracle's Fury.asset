@@ -36,4 +36,5 @@ MonoBehaviour:
   <OnDeactivatedCardEffect>k__BackingField: {fileID: 0}
   <OnDroppedOntoCardEffect>k__BackingField: {fileID: 0}
   <CardName>k__BackingField: Oracle's Fury
+  <CardId>k__BackingField: 420
   <Description>k__BackingField: -6 to opponent defense

@@ -36,4 +36,5 @@ MonoBehaviour:
   <OnDeactivatedCardEffect>k__BackingField: {fileID: 0}
   <OnDroppedOntoCardEffect>k__BackingField: {fileID: 0}
   <CardName>k__BackingField: Assault Shield
+  <CardId>k__BackingField: 205
   <Description>k__BackingField: Increases your defense by +6

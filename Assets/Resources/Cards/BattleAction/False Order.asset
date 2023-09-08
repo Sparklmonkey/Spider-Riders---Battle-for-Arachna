@@ -20,8 +20,14 @@ MonoBehaviour:
   <BuyCost>k__BackingField: 100
   <SellCost>k__BackingField: 100
   <CardImage>k__BackingField: {fileID: 21300000, guid: 1d773948af56be745a4a165324c16c0d, type: 3}
-  <ActivatedOwnerStatModifiers>k__BackingField: []
-  <ActivatedOpponentStatModifiers>k__BackingField: []
+  <ActivatedOwnerStatModifiers>k__BackingField:
+    attackModifier: 0
+    defenseModifier: 0
+    diceModifier: 0
+  <ActivatedOpponentStatModifiers>k__BackingField:
+    attackModifier: 0
+    defenseModifier: 0
+    diceModifier: 0
   <CardsToDraw>k__BackingField: 0
   <HealAmount>k__BackingField: 0
   <CardFuseLimit>k__BackingField: 0
@@ -30,4 +36,5 @@ MonoBehaviour:
   <OnDeactivatedCardEffect>k__BackingField: {fileID: 0}
   <OnDroppedOntoCardEffect>k__BackingField: {fileID: 0}
   <CardName>k__BackingField: False Order
+  <CardId>k__BackingField: 403
   <Description>k__BackingField: Counter 1 opponent battle action card

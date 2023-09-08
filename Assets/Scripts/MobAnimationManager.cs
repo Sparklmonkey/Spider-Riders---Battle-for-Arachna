@@ -19,6 +19,7 @@ public class MobAnimationManager : MonoBehaviour
     private void Awake()
     {
         _spriteRenderer = GetComponent<SpriteRenderer>();
+        _spriteRenderer.transform.localScale = new(1f, 1f, 1f);
     }
 
     public void SetupManager(string mobName)

@@ -36,5 +36,6 @@ MonoBehaviour:
   <OnDeactivatedCardEffect>k__BackingField: {fileID: 0}
   <OnDroppedOntoCardEffect>k__BackingField: {fileID: 0}
   <CardName>k__BackingField: Ballistic Mace
+  <CardId>k__BackingField: 107
   <Description>k__BackingField: Increases your dice by +3 and you can remove one
     Opponent Equipment Card

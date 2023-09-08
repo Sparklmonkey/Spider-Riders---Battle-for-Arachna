@@ -36,4 +36,5 @@ MonoBehaviour:
   <OnDeactivatedCardEffect>k__BackingField: {fileID: 0}
   <OnDroppedOntoCardEffect>k__BackingField: {fileID: 0}
   <CardName>k__BackingField: Deep Freeze
+  <CardId>k__BackingField: 505
   <Description>k__BackingField: Increases your dice by +3

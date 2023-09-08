@@ -20,7 +20,7 @@ public class MouseController : MonoBehaviour
 
         if (_characterObject == null)
         {
-            MapManager.Instance.SetupFirstScene();
+            //MapManager.Instance.SetupFirstScene();
             var playerStartTile = MapManager.Instance.GetPlayerStartTile(0);
             _characterObject = Instantiate(CharacterPrefab).GetComponent<CharacterMapInfo>();
             _characterObject.CurrentTile = playerStartTile;
@@ -28,24 +28,16 @@ public class MouseController : MonoBehaviour
         }
     }
 
+    public void StartPathFinding(OverlayTile destination)
+    {
+        _currentPath = _pathFinder.FindPath(_characterObject.CurrentTile, destination);
+    }
+
     // Update is called once per frame
     void LateUpdate()
     {
         if (MissionInventoryManager.Instance.IsInventoryOpen) { return; }
         if (MapManager.Instance.IsInBattle) { return; }
-        var focusedTileHit = GetFocusOnTile();
-
-        if (focusedTileHit.HasValue)
-        {
-            var overlayTile = focusedTileHit.Value.collider.gameObject;
-            transform.position = overlayTile.transform.position;
-            GetComponent<SpriteRenderer>().sortingOrder = overlayTile.GetComponent<SpriteRenderer>().sortingOrder;
-
-            if (Input.GetMouseButtonDown(0))
-            {
-                _currentPath = _pathFinder.FindPath(_characterObject.CurrentTile, overlayTile.GetComponent<OverlayTile>());
-            }
-        }
 
         if(_currentPath.Count > 0)
         {
@@ -140,37 +132,10 @@ public class MouseController : MonoBehaviour
                 return;
             }
 
-            if (_currentPath[0].gameObject.name.Contains("Transition_"))
-            {
-                int nextScene = int.Parse(_currentPath[0].gameObject.name.Replace("Transition_", ""));
-                MapSceneManager.Instance.SetupMapScene(nextScene);
-                MapManager.Instance.SetupMap(nextScene - 1);
-                var playerStartTile = MapManager.Instance.GetPlayerStartTile(nextScene);
-                _characterObject.CurrentTile = playerStartTile;
-                _characterObject.transform.position = playerStartTile.transform.position;
-                _currentPath.Clear();
-                return;
-            }
 
-            if (_currentPath[0].gameObject.name.Contains("Battle_"))
-            {
-                string enemyName = _currentPath[0].gameObject.name.Replace("Battle_", "");
-                _currentPath.Clear();
-                MapManager.Instance.SetupMobBattle(enemyName, new Vector2Int(_characterObject.CurrentTile.tileLocation.x, _characterObject.CurrentTile.tileLocation.y));
-                return;
-            }
 
                 switch (_currentPath[0].gameObject.name)
             {
-                case "MissionEnd":
-                    TestPlayer<PlayerData>.FinishMission();
-                    MapSceneManager.Instance.SetupMapScene(1);
-                    MapManager.Instance.SetupNextMission();
-                    var playerStartTile = MapManager.Instance.GetPlayerStartTile(0);
-                    _characterObject.CurrentTile = playerStartTile;
-                    _characterObject.transform.position = playerStartTile.transform.position;
-                    _currentPath.Clear();
-                    return;
                 case "Animate_Climb_Up_Left":
                     _characterObject.CurrentTile = MapManager.Instance.Map[new Vector2Int(_characterObject.CurrentTile.tileLocation.x - 4, _characterObject.CurrentTile.tileLocation.y - 4)];
                     _characterObject.transform.position = _characterObject.CurrentTile.transform.position;

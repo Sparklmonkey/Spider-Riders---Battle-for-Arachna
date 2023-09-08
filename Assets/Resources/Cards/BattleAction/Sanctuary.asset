@@ -20,8 +20,14 @@ MonoBehaviour:
   <BuyCost>k__BackingField: 400
   <SellCost>k__BackingField: 400
   <CardImage>k__BackingField: {fileID: 21300000, guid: ab855adf295639a48ac7392f3df8083f, type: 3}
-  <ActivatedOwnerStatModifiers>k__BackingField: []
-  <ActivatedOpponentStatModifiers>k__BackingField: []
+  <ActivatedOwnerStatModifiers>k__BackingField:
+    attackModifier: 0
+    defenseModifier: 0
+    diceModifier: 0
+  <ActivatedOpponentStatModifiers>k__BackingField:
+    attackModifier: 0
+    defenseModifier: 0
+    diceModifier: 0
   <CardsToDraw>k__BackingField: 0
   <HealAmount>k__BackingField: 10
   <CardFuseLimit>k__BackingField: 0
@@ -30,4 +36,5 @@ MonoBehaviour:
   <OnDeactivatedCardEffect>k__BackingField: {fileID: 0}
   <OnDroppedOntoCardEffect>k__BackingField: {fileID: 0}
   <CardName>k__BackingField: Sanctuary
+  <CardId>k__BackingField: 418
   <Description>k__BackingField: Add 10 Health Points

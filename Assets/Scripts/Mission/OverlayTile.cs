@@ -1,5 +1,4 @@
-using System.Collections;
-using System.Collections.Generic;
+using System;
 using UnityEngine;
 
 public class OverlayTile : MonoBehaviour
@@ -13,18 +12,40 @@ public class OverlayTile : MonoBehaviour
     public bool IsBlocked { get { return gameObject.name == "NotWalkableTile"; } }
     public OverlayTile Previous;
     public Vector3Int tileLocation;
+
+    public event Action<OverlayTile> OnTileClick;
+
     private void Awake()
     {
         _overlaySprite = gameObject.GetComponent<SpriteRenderer>();
     }
+
     public void RenderTileContent(string tileName)
     {
         name = tileName;
+
+        if (name.Contains("Transition_"))
+        {
+            gameObject.AddComponent<TransitionInteractable>();
+        }
+
+        if (name.Contains("MissionEnd"))
+        {
+            gameObject.AddComponent<MissionEndInteratable>();
+        }
+
+        if (name.Contains("Card_"))
+        {
+            _itemObject = Instantiate(Resources.Load<GameObject>($"Prefabs/Items/Card"), transform);
+            _itemObject.transform.position = transform.position;
+            gameObject.AddComponent<CardInteractable>();
+        }
 
         if (name.Contains("Item_"))
         {
             _itemObject = Instantiate(Resources.Load<GameObject>($"Prefabs/Items/{gameObject.name.Replace("Item_", "")}"), transform);
             _itemObject.transform.position = transform.position;
+            //gameObject.AddComponent<ItemInteractable>();
         }
 
         if(name == "Action_Manacle")
@@ -42,8 +63,10 @@ public class OverlayTile : MonoBehaviour
         if (name.Contains("Battle_"))
         {
             _itemObject = Instantiate(Resources.Load<GameObject>("Sprites/MobOverworld/Mob"), transform);
+            _itemObject.name = gameObject.name.Replace("Battle_", "");
             var mobAnimator = _itemObject.AddComponent<MobAnimationManager>();
             mobAnimator.SetupManager(MobDirectory.Instance.GetMobDataWithId($"{gameObject.name.Replace("Battle_", "")}").mobName);
+            gameObject.AddComponent<MobInteractable>();
 
             _itemObject.transform.position = transform.position;
         }
@@ -95,6 +118,15 @@ public class OverlayTile : MonoBehaviour
     {
         TestPlayer<PlayerData>.AddItemToInventory(gameObject.name.Replace("Item_", ""));
         Destroy(_itemObject);
+    }
+
+    private void OnMouseDown()
+    {
+        OnTileClick?.Invoke(this);
+    }
+
+    private void OnMouseUp()
+    {
     }
 
     public bool StartBattle()

@@ -1334,6 +1334,7 @@ MonoBehaviour:
   _sceneList:
   - {fileID: 0}
   - {fileID: 0}
+  _playerController: {fileID: 1574153072}
   _battleManager: {fileID: 455138306}
   IsInBattle: 0
   OverlayTilePrefab: {fileID: 6869942500189489614, guid: 00b1a2302a2f20e4ebd392bbea6f3bfa, type: 3}
@@ -1785,7 +1786,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 30db84e0e3941604483931fbfc0b9383, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  TestMob: {fileID: 11400000, guid: dce6809768b2eea4da7807ea28a52410, type: 2}
   _dicePoolManager: {fileID: 1979965537}
   _playerAnimator: {fileID: 561150964}
   _damageDisplayManager: {fileID: 455138307}
@@ -4600,6 +4600,7 @@ GameObject:
   - component: {fileID: 1574153070}
   - component: {fileID: 1574153069}
   - component: {fileID: 1574153071}
+  - component: {fileID: 1574153072}
   m_Layer: 0
   m_Name: Cursor
   m_TagString: Untagged
@@ -4614,7 +4615,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1574153068}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 74cab4b8de1fb464b9ccc05861955aee, type: 3}
   m_Name: 
@@ -4688,6 +4689,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1574153072
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1574153068}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f7029638a6ad4be697d30a4302250b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CharacterPrefab: {fileID: 542253580845100213, guid: 97242878f5cfa4892a05f04c986c3936, type: 3}
 --- !u!1 &1606660225
 GameObject:
   m_ObjectHideFlags: 0

@@ -20,8 +20,14 @@ MonoBehaviour:
   <BuyCost>k__BackingField: 2000
   <SellCost>k__BackingField: 2000
   <CardImage>k__BackingField: {fileID: 21300000, guid: 1017a188bf5aefe42bcf3d205e597421, type: 3}
-  <ActivatedOwnerStatModifiers>k__BackingField: []
-  <ActivatedOpponentStatModifiers>k__BackingField: []
+  <ActivatedOwnerStatModifiers>k__BackingField:
+    attackModifier: 0
+    defenseModifier: 0
+    diceModifier: 0
+  <ActivatedOpponentStatModifiers>k__BackingField:
+    attackModifier: 0
+    defenseModifier: 0
+    diceModifier: 0
   <CardsToDraw>k__BackingField: 0
   <HealAmount>k__BackingField: 0
   <CardFuseLimit>k__BackingField: 0
@@ -30,4 +36,5 @@ MonoBehaviour:
   <OnDeactivatedCardEffect>k__BackingField: {fileID: 0}
   <OnDroppedOntoCardEffect>k__BackingField: {fileID: 0}
   <CardName>k__BackingField: Rider Master
+  <CardId>k__BackingField: 415
   <Description>k__BackingField: All weapon Equipment card give you +2 damage
