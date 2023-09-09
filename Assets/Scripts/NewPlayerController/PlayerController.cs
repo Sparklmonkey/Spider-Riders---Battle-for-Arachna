@@ -23,7 +23,7 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (MissionInventoryManager.Instance.IsInventoryOpen) { return; }
+        if (OverworldUIManager.Instance.IsInventoryOpen) { return; }
         if (MapManager.Instance.IsInBattle) { return; }
 
         _movementController.MoveAlongPath();
@@ -31,7 +31,7 @@ public class PlayerController : MonoBehaviour
 
     public void StartPathFinding(OverlayTile destination)
     {
-        if (MissionInventoryManager.Instance.IsInventoryOpen) { return; }
+        if (OverworldUIManager.Instance.IsInventoryOpen) { return; }
         if (MapManager.Instance.IsInBattle) { return; }
         _movementController.StartMovingPlayer(destination);
     }

@@ -20,7 +20,7 @@ public class ActionRopeRightInteractable : MonoBehaviour, IInteractable
         var tileScript = GetComponent<OverlayTile>();
 
         MapManager.Instance.ChangeTileRopeUsed(new Vector2Int(tileScript.tileLocation.x, tileScript.tileLocation.y),
-                        new Vector2Int(tileScript.tileLocation.x + 4, tileScript.tileLocation.y + 3), true);
+                        new Vector2Int(tileScript.tileLocation.x + 4, tileScript.tileLocation.y + 4), true);
 
         Destroy(_childObject);
         Destroy(this);

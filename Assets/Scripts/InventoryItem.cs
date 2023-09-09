@@ -13,6 +13,7 @@ public class InventoryItem : MonoBehaviour
     private SpriteRenderer spriteRenderer;
 
     public event Action<string> OnUseItem;
+    public event Action<bool> OnDragStart;
 
     private void Awake()
     {
@@ -20,22 +21,20 @@ public class InventoryItem : MonoBehaviour
         _initialPosition = _originalParent.transform.position;
     }
 
-    private void OnMouseDrag()
+    private void OnMouseDown()
     {
         IsClicked = true;
+        transform.parent = MapSceneManager.Instance.transform;
+        OnDragStart?.Invoke(false);
+    }
+
+    private void OnMouseDrag()
+    {
     }
 
     private void OnMouseUp()
     {
-        IsClicked = false;
-
-    }
-
-    public void StartDrag()
-    {
-        IsClicked = true;
-        transform.parent = MapSceneManager.Instance.transform;
-        MissionInventoryManager.Instance.CloseInventory(false);
+        EndDrag();
     }
 
     public void SetupInventoryItem(string itemName)
@@ -48,7 +47,7 @@ public class InventoryItem : MonoBehaviour
     {
         IsClicked = false;
         OnUseItem?.Invoke(name);
-        MissionInventoryManager.Instance.IsInventoryOpen = false;
+        OverworldUIManager.Instance.IsInventoryOpen = false;
         Destroy(gameObject);
     }
     // Update is called once per frame

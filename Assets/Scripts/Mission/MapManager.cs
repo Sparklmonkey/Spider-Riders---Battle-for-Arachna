@@ -52,6 +52,7 @@ public class MapManager : MonoBehaviour
     public GameObject OverlayTileContainer;
     private Tilemap _currentTileMap;
     private int _sceneIndex, _previousSceneIndex;
+
     public OverlayTile GetPlayerStartTile(int origin)
     {
         if(origin == 0)
@@ -62,6 +63,11 @@ public class MapManager : MonoBehaviour
         {
             return Map.First(x => x.Value.name == $"Spawn_{_previousSceneIndex}").Value;
         }
+    }
+
+    public void MovePlayerToTile(Vector2Int destination)
+    {
+        _playerController.SetPosition(Map[destination]);
     }
 
     public void ChangeTileToWalkable(Vector2Int tile)
@@ -81,10 +87,10 @@ public class MapManager : MonoBehaviour
     }
     public void ChangeTileRopeUsed(Vector2Int goUp, Vector2Int goDown, bool isRight)
     {
-        _currentTileMap.SetTile(new Vector3Int(goUp.x, goUp.y, 0), Resources.Load<TileBase>($"TileTypes/Actions/Animate_Climb_Up_{(isRight ? "Right" : "Left")}"));
-        Map[goUp].gameObject.name = $"Animate_Climb_Up_{(isRight ? "Right" : "Left")}";
-        _currentTileMap.SetTile(new Vector3Int(goDown.x, goDown.y, 0), Resources.Load<TileBase>($"TileTypes/Actions/Animate_Climb_Down_{(isRight ? "Right" : "Left")}"));
-        Map[goDown].gameObject.name = $"Animate_Climb_Down_{(isRight ? "Right" : "Left")}";
+        _currentTileMap.SetTile(new Vector3Int(goUp.x, goUp.y, 0), Resources.Load<TileBase>($"TileTypes/Actions/AnimateClimbUp{(isRight ? "Right" : "Left")}"));
+        Map[goUp].RenderTileContent($"AnimateClimbUp{(isRight ? "Right" : "Left")}");
+        _currentTileMap.SetTile(new Vector3Int(goDown.x, goDown.y, 0), Resources.Load<TileBase>($"TileTypes/Actions/AnimateClimbDown{(isRight ? "Right" : "Left")}"));
+        Map[goDown].RenderTileContent($"AnimateClimbDown{(isRight ? "Right" : "Left")}");
     }
 
     public void SetupNextMission()

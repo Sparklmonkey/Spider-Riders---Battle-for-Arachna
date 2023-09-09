@@ -2031,7 +2031,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: add0db0e1b8694e95966fc4feccca105, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inventoryManager: {fileID: 0}
+  IsInventoryOpen: 0
+  inventoryManager: {fileID: 1141845022}
 --- !u!1 &475885923
 GameObject:
   m_ObjectHideFlags: 0
@@ -3660,10 +3661,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2592977633008565214, guid: 6b3a6afb958bc434c97df5446d2d0b5d, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5067075505249053176, guid: 6b3a6afb958bc434c97df5446d2d0b5d, type: 3}
-      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []

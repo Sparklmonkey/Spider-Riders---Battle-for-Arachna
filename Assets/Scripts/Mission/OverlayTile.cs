@@ -34,31 +34,31 @@ public class OverlayTile : MonoBehaviour
         var scriptObject = Type.GetType($"{scriptName[0]}Interactable");
         if(scriptObject == null) { return; }
 
-        gameObject.AddComponent(scriptObject);
+        var component = gameObject.AddComponent(scriptObject);
 
-        //if (name.Contains("Transition_"))
+        if(component is IInteractable interactable)
+        {
+            interactable.Setup();
+        }
+
+        //if (name.Contains("Item_"))
         //{
-            //gameObject.AddComponent<TransitionInteractable>();
+        //    _itemObject = Instantiate(Resources.Load<GameObject>($"Prefabs/Items/{gameObject.name.Replace("Item_", "")}"), transform);
+        //    _itemObject.transform.position = transform.position;
+        //    //gameObject.AddComponent<ItemInteractable>();
         //}
 
-        if (name.Contains("Item_"))
-        {
-            _itemObject = Instantiate(Resources.Load<GameObject>($"Prefabs/Items/{gameObject.name.Replace("Item_", "")}"), transform);
-            _itemObject.transform.position = transform.position;
-            //gameObject.AddComponent<ItemInteractable>();
-        }
+        //if(name == "Action_Manacle")
+        //{
+        //    _itemObject = Instantiate(Resources.Load<GameObject>("Prefabs/Items/Statue"), transform);
+        //    _itemObject.transform.position = transform.position;
+        //}
 
-        if(name == "Action_Manacle")
-        {
-            _itemObject = Instantiate(Resources.Load<GameObject>("Prefabs/Items/Statue"), transform);
-            _itemObject.transform.position = transform.position;
-        }
-
-        if (name.Contains("Action_"))
-        {
-            _itemObject = Instantiate(Resources.Load<GameObject>("Prefabs/Items/Action_Anim"), transform);
-            _itemObject.transform.position = transform.position;
-        }
+        //if (name.Contains("Action_"))
+        //{
+        //    _itemObject = Instantiate(Resources.Load<GameObject>("Prefabs/Items/Action_Anim"), transform);
+        //    _itemObject.transform.position = transform.position;
+        //}
 
         switch (tileName)
         {
@@ -68,8 +68,8 @@ public class OverlayTile : MonoBehaviour
             case "Board_Used":
                 MapSceneManager.Instance.AddBoardUsedImage();
                 break;
-            case "Animate_ClimbUp_Right":
-            case "Animate_ClimbUp_Left":
+            case "Animate_Climb_Up_Right":
+            case "Animate_Climb_Up_Left":
                 MapSceneManager.Instance.AddRopeUsedImage();
                 break;
             default:

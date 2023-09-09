@@ -6,25 +6,6 @@ using UnityEngine;
 
 public class MissionInventoryManager : MonoBehaviour
 {
-    private static MissionInventoryManager _instance;
-    public static MissionInventoryManager Instance
-    {
-        get { return _instance; }
-    }
-
-
-    private void Awake()
-    {
-        if (_instance != null && _instance != this)
-        {
-            Destroy(gameObject);
-        }
-        else
-        {
-            _instance = this;
-        }
-    }
-    public bool IsInventoryOpen;
     private Animator _animator;
     private int _maxPages;
     private int _currentPage;
@@ -39,7 +20,7 @@ public class MissionInventoryManager : MonoBehaviour
     public void OpenInventory()
     {
         _animator.SetTrigger("Open");
-        IsInventoryOpen = true;
+        OverworldUIManager.Instance.IsInventoryOpen = true;
     }
 
     public void CloseInventory(bool isFromButton)
@@ -52,7 +33,7 @@ public class MissionInventoryManager : MonoBehaviour
 
         _inventoryContainer.SetActive(false);
         _animator.SetTrigger("Close");
-        IsInventoryOpen = !isFromButton;
+        OverworldUIManager.Instance.IsInventoryOpen = !isFromButton;
     }
     public void RenderInventory()
     {
@@ -67,6 +48,8 @@ public class MissionInventoryManager : MonoBehaviour
             if (i >= _inventoryList.Count) { break; }
             var inventoryItem = Instantiate(_inventoryItemPrefab, _inventoryItemContainers[i]).GetComponent<InventoryItem>();
             inventoryItem.SetupInventoryItem(_inventoryList[i]);
+            inventoryItem.OnDragStart += CloseInventory;
+            inventoryItem.OnUseItem += OverworldUIManager.Instance.UseItemFromInventory;
         }
     }
 

@@ -36,7 +36,7 @@ public class MouseController : MonoBehaviour
     // Update is called once per frame
     void LateUpdate()
     {
-        if (MissionInventoryManager.Instance.IsInventoryOpen) { return; }
+        if (OverworldUIManager.Instance.IsInventoryOpen) { return; }
         if (MapManager.Instance.IsInBattle) { return; }
 
         if(_currentPath.Count > 0)
@@ -50,20 +50,6 @@ public class MouseController : MonoBehaviour
                 _characterObject.StopRunAnim();
                 _runTriggered = false;
             }
-        }
-    }
-
-    public static void UseItemFromInventory(string item)
-    {
-        var focusedTileHit = GetFocusOnTileUnderSprite();
-
-        if (focusedTileHit.HasValue)
-        {
-            var overlayTile = focusedTileHit.Value.collider.gameObject;
-            var tileScript = overlayTile.GetComponent<OverlayTile>();
-
-            var interactable = tileScript.GetComponent<IInteractable>();
-            interactable.OnUseItem(item);
         }
     }
 
@@ -89,33 +75,7 @@ public class MouseController : MonoBehaviour
                 MapManager.Instance.ChangeTileToWalkable(new Vector2Int(_characterObject.CurrentTile.tileLocation.x, _characterObject.CurrentTile.tileLocation.y));
                 return;
             }
-
-            switch (_currentPath[0].gameObject.name)
-            {
-                case "Animate_Climb_Up_Left":
-                    _characterObject.CurrentTile = MapManager.Instance.Map[new Vector2Int(_characterObject.CurrentTile.tileLocation.x - 4, _characterObject.CurrentTile.tileLocation.y - 4)];
-                    _characterObject.transform.position = _characterObject.CurrentTile.transform.position;
-                    _currentPath.Clear();
-                    return;
-                case "Animate_Climb_Down_Left":
-                    _characterObject.CurrentTile = MapManager.Instance.Map[new Vector2Int(_characterObject.CurrentTile.tileLocation.x + 4, _characterObject.CurrentTile.tileLocation.y + 4)];
-                    _characterObject.transform.position = _characterObject.CurrentTile.transform.position;
-                    _currentPath.Clear();
-                    return;
-                case "Animate_Climb_Up_Right":
-                    _characterObject.CurrentTile = MapManager.Instance.Map[new Vector2Int(_characterObject.CurrentTile.tileLocation.x + 4, _characterObject.CurrentTile.tileLocation.y + 3)];
-                    _characterObject.transform.position = _characterObject.CurrentTile.transform.position;
-                    _currentPath.Clear();
-                    return;
-                case "Animate_Climb_Down_Right":
-                    _characterObject.CurrentTile = MapManager.Instance.Map[new Vector2Int(_characterObject.CurrentTile.tileLocation.x - 4, _characterObject.CurrentTile.tileLocation.y - 3)];
-                    _characterObject.transform.position = _characterObject.CurrentTile.transform.position;
-                    _currentPath.Clear();
-                    return;
-                default:
-                    break;
-            }
-            
+                        
             _currentPath.RemoveAt(0);
         }
     }
@@ -141,17 +101,4 @@ public class MouseController : MonoBehaviour
     }
 
 
-    public static RaycastHit2D? GetFocusOnTileUnderSprite()
-    {
-        var mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-        var mousePosition2D = new Vector2(mousePosition.x, mousePosition.y);
-
-        RaycastHit2D[] hits = Physics2D.RaycastAll(mousePosition2D, Vector2.zero);
-        if (hits.Length > 1)
-        {
-            return hits.OrderByDescending(i => i.collider.transform.position.z).First(x => x.transform.GetComponent<OverlayTile>() != null);
-        }
-
-        return null;
-    }
 }

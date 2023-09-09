@@ -179,7 +179,7 @@ GameObject:
   - component: {fileID: 6388142513252782254}
   - component: {fileID: 5714198292811408596}
   - component: {fileID: 8302320850739618524}
-  - component: {fileID: 442123539}
+  - component: {fileID: 4187737265413763996}
   m_Layer: 0
   m_Name: Inv_Arrow_Prev
   m_TagString: Untagged
@@ -280,7 +280,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.34, y: 0.36}
   m_EdgeRadius: 0
---- !u!114 &442123539
+--- !u!114 &4187737265413763996
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -289,9 +289,24 @@ MonoBehaviour:
   m_GameObject: {fileID: 701264910983991017}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d719842c8c9e75f46888b15ffe668de4, type: 3}
+  m_Script: {fileID: 11500000, guid: 5ca91b5c1e8bf46f68ec7db9a00023fb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  OnSpriteClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1872038144}
+        m_TargetAssemblyTypeName: MissionInventoryManager, Assembly-CSharp
+        m_MethodName: ChangePage
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &806711503807957990
 GameObject:
   m_ObjectHideFlags: 0
@@ -474,7 +489,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 52077cb6df9e60945ad267f8222a528c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  IsInventoryOpen: 0
   _inventoryContainer: {fileID: 5067075505249053176}
   _inventoryItemPrefab: {fileID: 8649288432912324146, guid: 8bbcefed969e82745b950194b7bc8c86, type: 3}
   _inventoryItemContainers:
@@ -490,7 +504,7 @@ MonoBehaviour:
   _pageLbl: {fileID: 8782030800457611583}
 --- !u!95 &7639738528556002423
 Animator:
-  serializedVersion: 4
+  serializedVersion: 5
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -507,7 +521,7 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
+  m_KeepAnimatorStateOnDisable: 0
 --- !u!1 &1615973370889082679
 GameObject:
   m_ObjectHideFlags: 0
@@ -686,7 +700,7 @@ GameObject:
   - component: {fileID: 3004160947394748881}
   - component: {fileID: 731315686212000447}
   - component: {fileID: 1375307941564051721}
-  - component: {fileID: 1074781986}
+  - component: {fileID: 7614588670615111073}
   m_Layer: 0
   m_Name: Inv_Close_Button
   m_TagString: Untagged
@@ -787,7 +801,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.43, y: 0.41}
   m_EdgeRadius: 0
---- !u!114 &1074781986
+--- !u!114 &7614588670615111073
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -796,9 +810,24 @@ MonoBehaviour:
   m_GameObject: {fileID: 1910290821364351295}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2850a326fcd161140aa4ab4d41ced68d, type: 3}
+  m_Script: {fileID: 11500000, guid: 5ca91b5c1e8bf46f68ec7db9a00023fb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  OnSpriteClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1872038144}
+        m_TargetAssemblyTypeName: MissionInventoryManager, Assembly-CSharp
+        m_MethodName: CloseInventory
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!1 &3893886154710805448
 GameObject:
   m_ObjectHideFlags: 0
@@ -1199,7 +1228,7 @@ GameObject:
   - component: {fileID: 8327782273356100610}
   - component: {fileID: 7049315232568954091}
   - component: {fileID: 6180965375627470500}
-  - component: {fileID: 123190724}
+  - component: {fileID: 4369642190301914396}
   m_Layer: 0
   m_Name: Inv_Arrow_Next
   m_TagString: Untagged
@@ -1300,7 +1329,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.34, y: 0.36}
   m_EdgeRadius: 0
---- !u!114 &123190724
+--- !u!114 &4369642190301914396
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1309,9 +1338,24 @@ MonoBehaviour:
   m_GameObject: {fileID: 4839429196005681458}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 268c65e9c39a8894489fbfad85cf0c13, type: 3}
+  m_Script: {fileID: 11500000, guid: 5ca91b5c1e8bf46f68ec7db9a00023fb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  OnSpriteClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1872038144}
+        m_TargetAssemblyTypeName: MissionInventoryManager, Assembly-CSharp
+        m_MethodName: ChangePage
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!1 &5067075505249053176
 GameObject:
   m_ObjectHideFlags: 0
